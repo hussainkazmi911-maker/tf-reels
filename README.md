@@ -66,3 +66,11 @@ Instagram is the only connected network. Replies/DMs for the keyword are handled
 
 ## Status
 See each `days/dayNN/meta.json`. Days 1-3 were delivered and posted by Hussain earlier (not in this repo). Day 4 and Day 5 are scheduled from here.
+
+## Social extras: carousels and stories (added Nov 8)
+Rendered with `pipeline/social/render_social.py` (needs `bash pipeline/setup.sh` for fonts and logo, Playwright Chromium). Assets live in `social/dayNN/` and are served from `https://raw.githubusercontent.com/hussainkazmi911-maker/tf-reels/main/social/dayNN/<file>.png`.
+- **Story (every reel day):** one 1080x1920 image, scheduled 20 minutes after the reel: `social/dayNN/story.json` -> `python3 pipeline/social/render_social.py story social/dayNN/story.json OUT/` -> copy `story.png` to `social/dayNN/story.png`. JSON: `{"day":N,"niche":"Gym owners","line":"a member skips two weeks and nobody notices.","owner":"Gym owner","keyword":"MEMBERS"}` (line = the reel hook, from `days/dayNN/script.json` line 0, lower-cased after the colon; use a non-breaking space in "9 PM"-style phrases). Metricool: `instagramData {"type":"STORY"}`, empty `text`, `media` = the story URL, date = reel date at 20:20 Asia/Karachi.
+- **Carousel (selected days only, Tue and Fri 22:00 Asia/Karachi = 12:00 PM ET):** six 1080x1350 slides from the reel script: `hook`, `cost`, `fix`, `list` (3 items from script lines 4-6), `flow` (3 steps from the board line), `cta`. See `social/day04/carousel.json` and `social/day05/carousel.json` for the exact shape. Render with `python3 pipeline/social/render_social.py carousel social/dayNN/carousel.json OUT/` and copy `slide_1..6.png` to `social/dayNN/carousel_1..6.png`. Metricool: `instagramData {"type":"POST"}`, `media` = the six URLs in order, caption = hook + "Swipe for Forge Fix of the Day #N: ..." + "Save this ..." line + `Comment "KEYWORD" ...` + share line + exactly 5 hashtags (same as the reel's), `firstCommentText` as the reel.
+- Carousel days (Day -> slot): Day 4 -> Tue 10 Nov, Day 5 -> Fri 13 Nov, Day 7 -> Tue 17 Nov, Day 10 -> Fri 20 Nov, Day 13 -> Tue 24 Nov, Day 16 -> Fri 27 Nov, Day 19 -> Tue 1 Dec, Day 22 -> Fri 4 Dec, Day 25 -> Tue 8 Dec, Day 28 -> Fri 11 Dec.
+- Highlight covers: `social/covers/` (8 PNGs, `covers.json` defines them).
+- Never put analytics or personal data in this repo; it is public.
