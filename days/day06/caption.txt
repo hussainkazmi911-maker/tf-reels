@@ -1,0 +1,12 @@
+Salon owners: two DMs book one chair and nobody notices. Saturday arrives, both clients show up, and one walks out.
+
+Forge Fix of the Day #6 - a booking system that fills every chair:
+- Clients pick a stylist and book in two taps
+- A small deposit holds the slot, so nobody double books
+- Reminders go out automatically, so the chair stays full
+- Every booking tracked: requested, confirmed, done
+
+Salon owner? Comment "CHAIR" and we'll send you the details.
+Know a salon or barbershop owner still booking by DM? Send them this reel.
+
+#salonowner #barbershop #salonmarketing #salonbooking #businessautomation
