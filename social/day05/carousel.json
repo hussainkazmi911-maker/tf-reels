@@ -1,0 +1,8 @@
+{"day":5,"niche":"Gyms and fitness studios","keyword":"MEMBERS","slides":[
+{"k":"hook","t":"A member skips two weeks. [[Nobody notices.]]","s":"Gym owners, this one is for you."},
+{"k":"cost","t":"By the end of the month, they've [[quietly cancelled.]]","s":"Nobody noticed, so nobody stepped in."},
+{"k":"fix","t":"A member app that brings people back","s":"Forge Fix of the Day #5"},
+{"k":"list","t":"What it does","items":["Members check in and book classes in two taps","Skip two weeks and a friendly nudge goes out automatically","They come back, and billing runs itself"]},
+{"k":"flow","t":"At-risk members, handled","steps":["At risk","Nudge sent","Back in class"],"s":"Fewer cancellations. Steady revenue."},
+{"k":"cta","t":"Gym owner?","share":"Know a gym owner? Send them this."}
+]}

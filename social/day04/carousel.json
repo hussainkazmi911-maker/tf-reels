@@ -1,0 +1,46 @@
+{
+ "day": 4,
+ "niche": "Real estate agents",
+ "keyword": "LEADS",
+ "slides": [
+  {
+   "k": "hook",
+   "t": "A buyer enquires at 9 PM Saturday. [[You're asleep.]]",
+   "s": "Real estate agents, this one is for you."
+  },
+  {
+   "k": "cost",
+   "t": "By noon Sunday, they've [[signed with someone else.]]",
+   "s": "A slow reply is a lost lead."
+  },
+  {
+   "k": "fix",
+   "t": "A CRM that replies in seconds",
+   "s": "Forge Fix of the Day #4"
+  },
+  {
+   "k": "list",
+   "t": "What it does",
+   "items": [
+    "Instant reply to every new enquiry",
+    "Name, budget and preferred area saved to your pipeline",
+    "Wake up to viewings already booked"
+   ]
+  },
+  {
+   "k": "flow",
+   "t": "Every deal, tracked",
+   "steps": [
+    "Enquiry",
+    "Viewing",
+    "Offer"
+   ],
+   "s": "One pipeline, nothing slips."
+  },
+  {
+   "k": "cta",
+   "t": "Real estate agent?",
+   "share": "Know an agent who loses leads overnight? Send them this."
+  }
+ ]
+}

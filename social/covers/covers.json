@@ -1,0 +1,10 @@
+{"covers":[
+{"icon":"audit","file":"free-audit","label":"Free audit"},
+{"icon":"local","file":"local-services","label":"Local services"},
+{"icon":"health","file":"clinics-fitness","label":"Clinics & fitness"},
+{"icon":"shops","file":"shops-food","label":"Shops & food"},
+{"icon":"property","file":"property-travel","label":"Property & travel"},
+{"icon":"ops","file":"operations","label":"Operations"},
+{"icon":"pros","file":"professionals","label":"Professionals"},
+{"icon":"creators","file":"creators-founders","label":"Creators & founders"}
+]}
