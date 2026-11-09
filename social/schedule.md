@@ -6,3 +6,6 @@
 | Carousel | 4 | Tue 10 Nov 22:00 | scheduled |
 | Carousel | 5 | Fri 13 Nov 22:00 | scheduled |
 | Story | 6 | Tue 10 Nov 20:20 | scheduled |
+| Story | 7 | Wed 11 Nov 20:20 | scheduled |
+| Story | 8 | Thu 12 Nov 20:20 | scheduled |
+| Carousel | 7 | Tue 17 Nov 22:00 | scheduled |

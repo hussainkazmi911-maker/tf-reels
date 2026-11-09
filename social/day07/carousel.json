@@ -1,0 +1,8 @@
+{"day":7,"niche":"Cleaning companies","keyword":"QUOTE","slides":[
+{"k":"hook","t":"Quotes by text take [[all evening.]]","s":"Cleaning company owners, this one is for you."},
+{"k":"cost","t":"By the time you reply, they've [[booked another cleaner.]]","s":"The slow quote lost the job."},
+{"k":"fix","t":"An instant quote that books the job","s":"Forge Fix of the Day #7"},
+{"k":"list","t":"What it does","items":["Customers pick their rooms and see the price","They pick a day and the job lands on the schedule","Every customer is saved, ready for the next clean"]},
+{"k":"flow","t":"Every job, tracked","steps":["Quoted","Booked","Done"],"s":"Faster quotes. Fewer chases. Fuller schedules."},
+{"k":"cta","t":"Cleaning company owner?","share":"Know a cleaning owner? Send them this."}
+]}
