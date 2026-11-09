@@ -1,0 +1,12 @@
+Law firms: enquiries arrive by email, call and voicemail. Nobody logs them, and by the time you find one, it's gone.
+
+Forge Fix of the Day #8 - an intake assistant that files every enquiry:
+- Clients describe the issue and securely upload their documents
+- Every enquiry becomes a matter file with a lawyer and a next step
+- Clients follow progress in their own secure portal
+- Every matter tracked: enquiry, intake, matter
+
+Law firm owner? Comment "INTAKE" and we'll send you the details.
+Know a law firm still logging enquiries by hand? Send them this reel.
+
+#lawfirm #lawyersofinstagram #legaltech #lawfirmmarketing #businessautomation
