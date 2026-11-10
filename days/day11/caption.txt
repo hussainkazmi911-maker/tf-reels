@@ -1,0 +1,12 @@
+Physio owners: a patient forgets their session and the slot sits empty. Paper forms pile up, and admin runs the day.
+
+Forge Fix of the Day #11 - digital intake, booking and reminders:
+- Patients book online and fill in their forms on their phone before they arrive
+- Intake forms and session notes live in one patient record
+- Automatic text reminders go out before every session
+- One calendar for every therapist, with every patient tracked: booked, reminded, seen
+
+Clinic owner? Comment "HEALTH" and we'll send you the details.
+Know a physio or chiro clinic still handing out clipboards? Send them this reel.
+
+#physiotherapy #chiropractor #physioclinic #clinicmarketing #businessautomation
