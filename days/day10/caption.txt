@@ -1,0 +1,12 @@
+Garage owners: "Is my car ready?" That's the fourth call today. Every call stops the work, jobs slip, and the afternoon is gone.
+
+Forge Fix of the Day #10 - a booking site that texts every update:
+- Customers pick a time and add their car details online
+- Every job shows its status, from booked to ready
+- The customer gets a text when the car is ready for pickup
+- One schedule for every bay, and far fewer calls
+
+Garage owner? Comment "GARAGE" and we'll send you the details.
+Know a garage owner still answering "is it ready?" calls? Send them this reel.
+
+#autorepair #autodetailing #garageowner #autoshopmarketing #businessautomation
