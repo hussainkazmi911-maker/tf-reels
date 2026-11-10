@@ -1,0 +1,8 @@
+{"day":10,"niche":"Auto repair and detailing shops","keyword":"GARAGE","slides":[
+{"k":"hook","t":"“Is my car ready?” That's the fourth call [[today.]]","s":"Garage owners, this one is for you."},
+{"k":"cost","t":"Every call stops the work. [[The afternoon is gone.]]","s":"Jobs slip while you answer the phone."},
+{"k":"fix","t":"A booking site that texts every update","s":"Forge Fix of the Day #10"},
+{"k":"list","t":"What it does","items":["Customers pick a time and add their car details","Each job shows its status, from booked to ready","Ready? The customer gets a text for pickup"]},
+{"k":"flow","t":"Every job, tracked","steps":["Booked in","Work under way","Ready for pickup"],"s":"Fewer calls. Happier customers. Smoother days."},
+{"k":"cta","t":"Garage owner?","share":"Know a garage owner? Send them this."}
+]}
