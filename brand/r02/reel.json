@@ -1,0 +1,10 @@
+{"title":"Restaurant example fix","beats":[
+{"d":3.6,"bg":"ink","kicker":"EK RESTAURANT KI KAHANI","fs":100,"lines":["Saturday raat.","Rush ka time.","Ek order *galat* gaya."]},
+{"d":5.6,"bg":"paper","kicker":"EXAMPLE: EK RESTAURANT OWNER","fs":54,"lines":["Orders *WhatsApp* par aate hain:"],"visual":{"type":"chat","step":0.8,"msgs":[{"f":"c","t":"2 biryani, 1 raita. Table 4"},{"f":"c","t":"Bhai mera order kahan hai?","m":"Seen"},{"f":"c","t":"Bill galat hai"}]}},
+{"d":4.6,"bg":"red","kicker":"NATIJA","fs":92,"lines":["Order *bhool* gaya.","Customer *chala* gaya."]},
+{"d":3.2,"bg":"lime","kicker":"FORGE FIX OF THE DAY","fs":92,"lines":["Fix: *QR* se","table par order."]},
+{"d":8.0,"bg":"ink","kicker":"KAISE KAAM KARTA HAI","fs":56,"lines":["Customer *scan* karta hai, baaki apne aap:"],"visual":{"type":"flow","step":0.85,"nodes":["Table ka QR scan","Menu se order","Order seedha kitchen mein","Payment ho gayi"]}},
+{"d":5.6,"bg":"blue","kicker":"OWNER KO KYA DIKHTA HAI","fs":78,"lines":["Har table ka *haal*","ek screen par."],"sub":"Kaun sa table khali, kis ka order ban raha hai."},
+{"d":4.6,"bg":"paper","kicker":"HUM YE BANATE HAIN","fs":60,"lines":["Result:"],"visual":{"type":"pills","step":0.7,"items":["Kam galtiyan","Tez service","Saaf hisaab"]}},
+{"d":4.8,"bg":"ink","fs":68,"lines":["Restaurant owner?","Comment *ORDER*"],"sub":"Ye example story hai, real client nahi. Follow karein · Hussain Kazmi"}
+]}

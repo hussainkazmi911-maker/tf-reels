@@ -1,0 +1,16 @@
+Saturday raat, rush ka time, aur ek order galat gaya. Ek restaurant owner ka example:
+
+Orders WhatsApp par aate hain, kuch bhool jate hain, customer chala jata hai.
+
+Forge Fix of the Day - table par QR se order:
+- Customer table ka QR scan karta hai aur menu se order karta hai
+- Order seedha kitchen mein jata hai
+- Payment usi waqt ho jati hai
+- Owner ko har table ka haal ek screen par dikhta hai
+
+Ye ek example story hai, real client nahi.
+
+Restaurant owner? Comment "ORDER" karein, hum aap ko details bhej denge.
+Kisi restaurant wale ko jaante hain? Ye reel unhein bhej dein.
+
+#restaurantowner #restaurantbusiness #qrmenu #smallbusiness #businessautomation

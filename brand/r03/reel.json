@@ -1,0 +1,9 @@
+{"title":"Bas ek chhota sa change","beats":[
+{"d":3.4,"bg":"ink","kicker":"AGENCY WALON KO PATA HAI","fs":96,"lines":["Client ne kaha:","“Bas ek *chhota*","sa change.”"]},
+{"d":7.4,"bg":"paper","kicker":"AUR PHIR...","fs":56,"lines":["Aap ka *weekend*:"],"visual":{"type":"chat","step":1.0,"msgs":[{"f":"c","t":"Bas ek chhota sa change","m":"Friday 6 PM"},{"f":"c","t":"Ek aur chhoti si cheez","m":"Saturday 11 PM"},{"f":"c","t":"Ye bhi add kar dein?","m":"Sunday 9 AM"}]}},
+{"d":4.6,"bg":"red","kicker":"NATIJA","fs":100,"lines":["Weekend *gaya.*","Paisa *wahi.*"]},
+{"d":4.0,"bg":"ink","kicker":"GHALTI KIS KI?","fs":86,"lines":["Client ki nahi.","*Process* ki."]},
+{"d":9.4,"bg":"lime","kicker":"3 LINE KA FIX","fs":58,"lines":["Har change se pehle:"],"visual":{"type":"checklist","step":0.95,"items":[["Request likh kar lo",""],["Time aur cost batao",""],["“Haan” ke baad kaam",""]]}},
+{"d":4.8,"bg":"blue","kicker":"PHIR","fs":78,"lines":["Client ko *saaf* pata,","aap ko *aaram*."]},
+{"d":5.0,"bg":"ink","fs":68,"lines":["Agency ya freelancer?","Comment *SCOPE*"],"sub":"Hum checklist bhej denge. Follow karein · Hussain Kazmi"}
+]}
