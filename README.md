@@ -74,3 +74,5 @@ Rendered with `pipeline/social/render_social.py` (needs `bash pipeline/setup.sh`
 - Carousel days (Day -> slot): Day 4 -> Tue 10 Nov, Day 5 -> Fri 13 Nov, Day 7 -> Tue 17 Nov, Day 10 -> Fri 20 Nov, Day 13 -> Tue 24 Nov, Day 16 -> Fri 27 Nov, Day 19 -> Tue 1 Dec, Day 22 -> Fri 4 Dec, Day 25 -> Tue 8 Dec, Day 28 -> Fri 11 Dec.
 - Highlight covers: `social/covers/` (8 PNGs, `covers.json` defines them).
 - Never put analytics or personal data in this repo; it is public.
+
+- Language test: Day 14 is the Hindustani test reel (Hindi voice via script_hi.json, Roman Urdu captions in script.json, meta lang "hindustani"). Compare its views with Days 11-13 before switching other days.

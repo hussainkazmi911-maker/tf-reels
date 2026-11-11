@@ -1,0 +1,12 @@
+Shop owners: suit dukaan mein bik gaya, aur website par ab bhi "available" hai. Phir customer order karta hai aur aap ko refund dena parta hai.
+
+Forge Fix of the Day #14 - shop aur website ka stock ek system mein:
+- Counter par sale hoti hai, website ka stock usi waqt update ho jata hai
+- Online order aaye to shop ka stock bhi saath kam hota hai
+- Ek screen par dikhta hai: kya bika, kya bacha
+- Har order tracked: ordered, packed, delivered
+
+Shop owner? Comment "STOCK" karein, hum aap ko details bhej denge.
+Aap ka koi jaanne wala shop owner stock ke masle se pareshan hai? Ye reel unhein bhej dein.
+
+#retailbusiness #boutiqueowner #inventorymanagement #smallbusinesspakistan #businessautomation
