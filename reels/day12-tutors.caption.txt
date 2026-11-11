@@ -1,0 +1,12 @@
+Tutors: a parent pays by chat and the receipt gets lost. Enrolment, payments and lessons end up in five different chats.
+
+Forge Fix of the Day #12 - one portal for enrolment and payments:
+- Students pick a course and enrol on their phone
+- They pay by card in the same flow, no screenshots to match
+- Every student gets a record and an automatic welcome message
+- One timetable for every tutor, and parents get a receipt
+
+Tutor or coach? Comment "LEARN" and we'll send you the details.
+Know a tutor still running enrolment through chats? Send them this reel.
+
+#tutoring #onlinecoach #tutorsofinstagram #educationbusiness #businessautomation
