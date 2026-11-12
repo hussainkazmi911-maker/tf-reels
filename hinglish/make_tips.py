@@ -86,13 +86,13 @@ ep('r03',
 # ------------------------------------------------------------ r04 PROPOSAL
 ep('r04',
    [(0, 2, W, 56), (2, 3, W, 78), (3, 4, LI, 130, dict(mt=6)), (4, 5, W, 66), (5, 8, RD, 56, dict(mt=22))],
-   dict(bl='PROPOSAL', bt='Hello sir, I am an expert', bat=12, cf=None, ct=None, cap=[(4, 7, 'ink', 66)],
+   dict(bl='PROPOSAL', bt='Hello sir, I am an expert', bat=1, cf=None, ct=None, cap=[(4, 7, 'ink', 66)],
         rl='INBOX', rt='0 replies', rat=15, st='COPY PASTE.', sat=17),
    dict(chips=[('Client', 0), ('copy', 2), ('paste', 3)], big=[(4, 6, W, 110), (6, 10, W, 100)],
         sub='cringe.<br>sab same.', subAt=10, minisAt=2),
    [build('FIRST LINE', 2, lst('PROPOSAL', [R('Site slow hai', 'About their problem', 'GOOD', 4), R('Hello sir', 'About yourself', 'SKIP', 8, **RED)])),
     build('PROOF', 5, lst('PROOF', [R('Similar project', 'One relevant example', 'ADD', 3), R('Two lines only', 'Short and clear', 'OK', 8)])),
-    build('A QUESTION', 4, chat([('r', 'Kya main ek plan bhej doon?', 4), ('c', 'Haan, zaroor bhejiye', 9)], rr(X['r04']['lines'][6], [(3, 5, LI, 72)])))],
+    build('A QUESTION', 4, chat([('r', 'Kya main ek plan bhej doon?', 4), ('c', 'Haan, zaroor bhejiye', 7)], rr(X['r04']['lines'][6], [(3, 5, LI, 72)])))],
    [(1, 2, W, 90, dict(mt=60)), (2, 3, LI, 110, dict(strike='copy', mt=14)), (3, 5, W, 72, dict(mt=14)), (5, 7, W, 56, dict(mt=14)), (7, 11, LI, 56, dict(mt=10))], 'REPLIES', 7)
 
 # ------------------------------------------------------------ r05 PAYMENT

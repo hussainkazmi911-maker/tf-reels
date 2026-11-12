@@ -133,7 +133,7 @@
   "bubble": {
    "label": "PROPOSAL",
    "text": "Hello sir, I am an expert",
-   "at": 12
+   "at": 1
   },
   "rows": [
    {
@@ -286,7 +286,7 @@
      {
       "who": "c",
       "text": "Haan, zaroor bhejiye",
-      "at": 9,
+      "at": 7,
       "y": 425
      }
     ],

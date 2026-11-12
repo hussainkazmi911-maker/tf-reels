@@ -74,23 +74,41 @@ for k, (ls, le) in enumerate(spans):
     cumw = list(itertools.accumulate(pw))
     segd = [b - a for a, b in sg]; cums = list(itertools.accumulate(segd))
     # choose K-1 of P-1 phrase boundaries to coincide with the K-1 internal silences
-    if K > 1:
+    if K > P:
+        # more speech segments than phrases (extra pauses inside a phrase): pick the P-1 silences that best match phrase ends,
+        # each phrase then spreads over the speech of the segments between those silences
         bestc, bestc_pick = math.inf, None
-        for comb in itertools.combinations(range(P - 1), min(K - 1, P - 1)):
-            c = sum((cumw[j] / tw - cums[m] / cums[-1]) ** 2 for m, j in enumerate(comb))
+        for comb in itertools.combinations(range(K - 1), P - 1):
+            c = sum((cumw[j] / tw - cums[m2] / cums[-1]) ** 2 for j, m2 in enumerate(comb))
             if c < bestc: bestc, bestc_pick = c, comb
-        cut = list(bestc_pick) + [P - 1]
+        cut = list(range(P)); groups = []; a0 = 0
+        for m2 in list(bestc_pick) + [K - 1]:
+            groups.append(sg[a0:m2 + 1]); a0 = m2 + 1
     else:
-        cut = [P - 1]
+        if K > 1:
+            bestc, bestc_pick = math.inf, None
+            for comb in itertools.combinations(range(P - 1), min(K - 1, P - 1)):
+                c = sum((cumw[j] / tw - cums[m] / cums[-1]) ** 2 for m, j in enumerate(comb))
+                if c < bestc: bestc, bestc_pick = c, comb
+            cut = list(bestc_pick) + [P - 1]
+        else:
+            cut = [P - 1]
+        groups = [[g] for g in sg]
     words = [None] * len(ws)
     p0 = 0
     for m, cj in enumerate(cut):
-        if m >= len(sg): break
+        if m >= len(groups): break
         idx = [i for p in ph[p0:cj + 1] for i in p]
-        a, b = sg[m]
+        gs = groups[m]; gd = sum(b - a for a, b in gs)
+        def mp(f, gs=gs, gd=gd):   # fraction of this phrase's speech -> absolute time
+            x = f * gd
+            for a, b in gs:
+                if x <= b - a: return a + x
+                x -= b - a
+            return gs[-1][1]
         wsum = sum(W[i] for i in idx); c = 0
         for i in idx:
-            s0 = a + (b - a) * c / wsum; c += W[i]; s1 = a + (b - a) * c / wsum
+            s0 = mp(c / wsum); c += W[i]; s1 = mp(c / wsum)
             words[i] = {'w': ws[i], 's': round(s0 + LEAD, 3), 'e': round(s1 + LEAD, 3)}
         p0 = cj + 1
     for i in range(len(words)):
