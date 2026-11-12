@@ -26,6 +26,7 @@ html,body{width:720px;height:1280px;overflow:hidden;background:#000}
 /* brand */
 #brand{position:absolute;left:34px;top:36px;display:flex;align-items:center;gap:12px;z-index:50;color:var(--fg);font-weight:800;font-size:19px;letter-spacing:2.5px}
 #brand img{width:42px;height:42px;border-radius:10px}
+#tag{position:absolute;right:34px;top:44px;z-index:50;color:var(--fg);font-weight:800;font-size:15px;letter-spacing:2.2px;border:2px solid currentColor;border-radius:30px;padding:6px 14px;opacity:.85}
 /* hub */
 .hub{position:absolute;left:40px;top:122px;width:118px;height:118px;border-radius:50%;background:var(--ink);color:var(--lime);text-align:center;box-shadow:0 0 0 10px rgba(198,255,53,.28)}
 .hub small{display:block;margin-top:23px;font-weight:800;font-size:15px;letter-spacing:3px}
@@ -62,6 +63,7 @@ html,body{width:720px;height:1280px;overflow:hidden;background:#000}
 <body>
 <div id="root">
  <div id="brand"><img src="logo.png"><span>THE TOTAL FORGE</span></div>
+ <div id="tag">EXAMPLE SCENARIO</div>
 
  <!-- S0 -->
  <div class="scene dark" id="s0">
@@ -242,6 +244,7 @@ scenes.forEach((s,i)=>{s.el=$('s'+i);s.t0=i==0?0:L[s.line].start-.1;s.t1=i==scen
 function draw(t){let si=scenes.findIndex(s=>t>=s.t0&&t<s.t1);if(si<0)si=t<0?0:scenes.length-1;
   scenes.forEach((s,i)=>{s.el.style.display=i===si?'block':'none'});
   document.documentElement.style.setProperty('--fg',scenes[si].fg);
+  document.getElementById('tag').style.display=[0,1,2,4,5,6].includes(si)?'block':'none';
   scenes[si].draw(t)}
 window.draw=draw;window.SCENES=scenes;
 draw(0);
