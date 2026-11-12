@@ -3,14 +3,14 @@
  "business": "Pick a niche",
  "keyword": "FOCUS",
  "lines": [
-  "Hum web agency hain. Isse kaam nahi milta.",
-  "Ek agency ne bola, hum sab kuch karte hain. Client ko samajh hi nahi aaya, usse kaunsa kaam dena hai.",
-  "Sab kuch karne wale ko, koi khaas kaam nahi milta.",
+  "Hum sab kuch karte hain. Bhai, isi wajah se kaam nahi milta.",
+  "Ek agency ne bola, hum sab kuch karte hain. Client ko samajh hi nahi aaya, isse kaunsa kaam dena hai.",
+  "Jo sab kuch karta hai, uski koi pehchaan nahi banti.",
   "Toh yeh teen steps lo.",
   "One. Ek tarah ka client chuno, jaise skincare brands.",
   "Two. Ek problem chuno, jaise slow Shopify store.",
   "Three. Us ek problem ka ek sample banao.",
-  "Result? Aap expert dikhte ho, aur client seedha aapko chunta hai.",
+  "Result? Tum expert lagte ho, aur client seedha tumhe chunta hai.",
   "Want the guide? Comment FOCUS, hum aapko DM kar denge."
  ],
  "bridge": {
@@ -94,26 +94,26 @@
    {
     "r": [
      3,
-     4
+     5
     ],
-    "size": 78,
+    "size": 69,
     "color": "white"
    },
    {
     "r": [
-     4,
-     6
+     5,
+     8
     ],
-    "size": 56,
+    "size": 51,
     "color": "red",
     "mt": 22
    },
    {
     "r": [
-     6,
-     8
+     8,
+     12
     ],
-    "size": 56,
+    "size": 40,
     "color": "red"
    }
   ]
@@ -149,25 +149,25 @@
  "mess": {
   "chips": [
    {
-    "text": "Sab",
+    "text": "Jo",
     "at": 0
    },
    {
-    "text": "kuch",
+    "text": "sab",
     "at": 1
    },
    {
-    "text": "karne",
+    "text": "kuch",
     "at": 2
    }
   ],
   "rows": [
    {
     "r": [
-     6,
+     7,
      8
     ],
-    "size": 76,
+    "size": 96,
     "color": "white"
    },
    {

@@ -3,14 +3,14 @@
  "business": "Getting paid from US clients in Pakistan",
  "keyword": "PAYMENT",
  "lines": [
-  "Client ne payment bhej di. Aap tak kaise aayegi?",
-  "Ek freelancer ne kaam pura kiya, par payment ka rasta pehle se nahi dekha.",
-  "Aakhri din pata chala, ki options hi limited hain.",
-  "Toh yeh teen cheezein pehle dekho.",
-  "One. Payoneer account banao. Yeh aapko US bank details deta hai.",
-  "Two. Local bank mein payout aam taur par ek se teen working days leta hai.",
-  "Three. Wise Pakistan mein abhi open nahi hai, toh uspar plan mat banao.",
-  "Result? Kaam ke baad payment ka tension nahi, aur plan pehle se ready.",
+  "Client ne payment bhej di. Ab paisa tumhare paas kaise aayega, bhai?",
+  "Ek freelancer ne kaam khatam kiya, par payment ka rasta pehle check hi nahi kiya. Last moment pe scene bigad gaya.",
+  "Bina plan ke kaam karna, bhai, lowkey risky hai.",
+  "Toh yeh teen cheezein pehle sort karo.",
+  "One. Payoneer account banao. Woh tumhe US bank details deta hai.",
+  "Two. Local bank payout aam taur par ek se teen working days leta hai.",
+  "Three. Wise Pakistan mein abhi open nahi hai, uspe plan mat banao.",
+  "Result? Paisa tension free, aur plan pehle se ready.",
   "Want the guide? Comment PAYMENT, hum aapko DM kar denge."
  ],
  "bridge": {
@@ -51,7 +51,7 @@
    },
    {
     "top": 715,
-    "size": 68,
+    "size": 51,
     "toks": [
      [
       4,
@@ -59,7 +59,11 @@
      ],
      [
       5,
-      "DEKHO."
+      "SORT"
+     ],
+     [
+      6,
+      "KARO."
      ]
     ]
    }
@@ -67,7 +71,7 @@
   "dots": [
    2,
    3,
-   5
+   6
   ]
  },
  "hub": "TIP",
@@ -108,7 +112,7 @@
      5,
      7
     ],
-    "size": 46,
+    "size": 56,
     "color": "red",
     "mt": 22
    },
@@ -117,9 +121,16 @@
      7,
      9
     ],
-    "size": 52,
-    "color": "red",
-    "mt": 4
+    "size": 56,
+    "color": "red"
+   },
+   {
+    "r": [
+     9,
+     12
+    ],
+    "size": 40,
+    "color": "red"
    }
   ]
  },
@@ -135,7 +146,7 @@
      10,
      14
     ],
-    "size": 38,
+    "size": 40,
     "color": "ink"
    }
   ],
@@ -154,39 +165,39 @@
  "mess": {
   "chips": [
    {
-    "text": "Aakhri",
+    "text": "Bina",
     "at": 0
    },
    {
-    "text": "options",
-    "at": 5
+    "text": "plan",
+    "at": 1
    },
    {
-    "text": "limited",
-    "at": 7
+    "text": "kaam",
+    "at": 3
    }
   ],
   "rows": [
    {
     "r": [
-     7,
-     8
+     6,
+     7
     ],
-    "size": 109,
+    "size": 120,
     "color": "white"
    },
    {
     "r": [
-     8,
+     7,
      9
     ],
-    "size": 120,
+    "size": 76,
     "color": "white"
    }
   ],
-  "sub": "din aakhri,<br>options kam.",
+  "sub": "bina plan,<br>bada risk.",
   "subAt": 8,
-  "minisAt": 5,
+  "minisAt": 3,
   "subSize": 58
  },
  "builds": [
@@ -260,8 +271,8 @@
      "rows": [
       {
        "r": [
-        12,
-        15
+        11,
+        14
        ],
        "size": 54,
        "color": "ink"
@@ -300,8 +311,8 @@
      "rows": [
       {
        "r": [
-        10,
-        13
+        9,
+        12
        ],
        "size": 51,
        "color": "ink"
@@ -325,43 +336,52 @@
    {
     "r": [
      1,
-     4
+     2
     ],
-    "size": 64,
+    "size": 100,
     "color": "white",
     "mt": 60
    },
    {
     "r": [
-     4,
-     6
+     2,
+     3
     ],
-    "size": 76,
-    "color": "white",
-    "mt": 14
-   },
-   {
-    "r": [
-     6,
-     8
-    ],
-    "size": 59,
+    "size": 100,
     "color": "lime",
     "strike": "tension",
     "mt": 14
    },
    {
     "r": [
-     8,
-     13
+     3,
+     4
     ],
-    "size": 34,
+    "size": 90,
     "color": "white",
-    "mt": 24
+    "mt": 14
+   },
+   {
+    "r": [
+     4,
+     7
+    ],
+    "size": 54,
+    "color": "white",
+    "mt": 14
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 72,
+    "color": "lime",
+    "mt": 10
    }
   ],
   "chip": "&#10003; PLAN READY",
-  "chipAt": 12
+  "chipAt": 8
  },
  "cta": {
   "thing": "guide",

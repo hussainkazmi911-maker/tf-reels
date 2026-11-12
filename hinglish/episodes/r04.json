@@ -3,14 +3,14 @@
  "business": "A proposal that gets replies",
  "keyword": "PROPOSAL",
  "lines": [
-  "Chalis proposals bheje, reply zero. Galti kahan thi?",
-  "Ek freelancer ne sabko wahi copy paste proposal bheja. Pehli line thi, hello sir, I am an expert.",
-  "Client ne do second mein dekha, aur band kar diya.",
-  "Toh yeh teen cheezein badlo.",
-  "One. Pehli line client ki problem par likho, apne baare mein nahi.",
+  "Chalis proposals, reply zero. Bhai, scene kya hai?",
+  "Ek freelancer ne sabko wahi copy paste proposal bheja. Pehli line thi, hello sir, I am an expert. Client ne do second mein tab close kar diya.",
+  "Client ko copy paste door se pakad aa jata hai. Cringe.",
+  "Toh yeh teen moves lo.",
+  "One. Pehli line mein client ki problem bolo, apna intro nahi.",
   "Two. Ek relevant project ka proof do, bas do line mein.",
-  "Three. End mein ek sawaal poochho, taaki reply banta ho.",
-  "Result? Proposal copy nahi lagta, aur reply aane lagte hain.",
+  "Three. End mein ek sawaal pucho, taaki reply banta ho.",
+  "Result? Proposal copy paste nahi lagta, aur replies aane lagte hain.",
   "Want the template? Comment PROPOSAL, hum aapko DM kar denge."
  ],
  "bridge": {
@@ -45,7 +45,7 @@
     "toks": [
      [
       3,
-      "CHEEZEIN"
+      "MOVES"
      ]
     ]
    },
@@ -55,7 +55,7 @@
     "toks": [
      [
       4,
-      "BADLO."
+      "LO."
      ]
     ]
    }
@@ -79,7 +79,7 @@
      0,
      2
     ],
-    "size": 48,
+    "size": 45,
     "color": "white"
    },
    {
@@ -95,24 +95,24 @@
      3,
      4
     ],
-    "size": 78,
-    "color": "white"
-   },
-   {
-    "r": [
-     4,
-     5
-    ],
     "size": 130,
     "color": "lime",
     "mt": 6
    },
    {
     "r": [
+     4,
+     5
+    ],
+    "size": 66,
+    "color": "white"
+   },
+   {
+    "r": [
      5,
      8
     ],
-    "size": 46,
+    "size": 54,
     "color": "red",
     "mt": 22
    }
@@ -153,34 +153,34 @@
     "at": 0
    },
    {
-    "text": "dekha,",
-    "at": 5
+    "text": "copy",
+    "at": 2
    },
    {
-    "text": "band",
-    "at": 7
+    "text": "paste",
+    "at": 3
    }
   ],
   "rows": [
    {
     "r": [
-     7,
-     8
+     4,
+     6
     ],
-    "size": 120,
+    "size": 109,
     "color": "white"
    },
    {
     "r": [
-     8,
+     6,
      10
     ],
-    "size": 85,
+    "size": 42,
     "color": "white"
    }
   ],
-  "sub": "reply?<br>zero.",
-  "subAt": 9,
+  "sub": "cringe.<br>sab same.",
+  "subAt": 10,
   "minisAt": 2,
   "subSize": 58
  },
@@ -197,7 +197,7 @@
       "title": "Site slow hai",
       "sub": "About their problem",
       "chip": "GOOD",
-      "at": 3
+      "at": 4
      },
      {
       "title": "Hello sir",
@@ -213,8 +213,8 @@
      "rows": [
       {
        "r": [
-        9,
-        12
+        8,
+        11
        ],
        "size": 48,
        "color": "ink"
@@ -330,22 +330,31 @@
      3,
      5
     ],
-    "size": 69,
+    "size": 72,
     "color": "white",
     "mt": 14
    },
    {
     "r": [
      5,
-     10
+     7
+    ],
+    "size": 56,
+    "color": "white",
+    "mt": 14
+   },
+   {
+    "r": [
+     7,
+     11
     ],
     "size": 34,
-    "color": "white",
-    "mt": 24
+    "color": "lime",
+    "mt": 10
    }
   ],
   "chip": "&#10003; REPLIES",
-  "chipAt": 6
+  "chipAt": 7
  },
  "cta": {
   "thing": "template",

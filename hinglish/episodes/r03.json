@@ -3,14 +3,14 @@
  "business": "3 lesser-known places to find US clients",
  "keyword": "HIDDEN",
  "lines": [
-  "Upwork par bheed hai. Yeh teen jagah kam log jaante hain.",
-  "Ek agency owner roz Upwork par proposals bhejta raha. Competition bahut, reply bahut kam.",
-  "Jahan sab jaate hain, wahan sabse zyada bheed hoti hai.",
-  "Toh yeh teen jagah try karo.",
-  "One. Hacker News ka freelancer thread. Companies wahan seedha hire karti hain.",
-  "Two. Clutch. Wahan buyers agencies dhoondte hain, aur profile free hai.",
-  "Three. Sortlist. Free registration, aur buyers agency dhoondte hain.",
-  "Result? Kam bheed, aur buyers se seedhi baat.",
+  "Upwork pe sab hain, bhai. Yeh teen spots pe kam log jaate hain.",
+  "Ek new agency owner roz Upwork pe proposals bhejta raha. Competition full on, reply zero. Bhai, cooked.",
+  "Jahan sab jaate hain, wahan bheed hoti hai. Simple scene.",
+  "Toh yeh teen spots try karo.",
+  "One. Hacker News ka freelancer thread. Companies wahan seedha freelancer dhoondti hain.",
+  "Two. Clutch. Free profile banao, buyers wahan agencies dhoondte hain.",
+  "Three. Sortlist. Free listing, aur buyers wahan agency dhoondte hain.",
+  "Result? Kam bheed, seedhi baat. Sorted.",
   "Want the list? Comment HIDDEN, hum aapko DM kar denge."
  ],
  "bridge": {
@@ -45,7 +45,7 @@
     "toks": [
      [
       3,
-      "JAGAH"
+      "SPOTS"
      ]
     ]
    },
@@ -98,15 +98,15 @@
    {
     "r": [
      3,
-     4
+     5
     ],
-    "size": 78,
+    "size": 66,
     "color": "white"
    },
    {
     "r": [
-     4,
-     7
+     5,
+     8
     ],
     "size": 54,
     "color": "white",
@@ -114,19 +114,19 @@
    },
    {
     "r": [
-     7,
-     9
+     8,
+     10
     ],
-    "size": 46,
+    "size": 56,
     "color": "red",
     "mt": 20
    },
    {
     "r": [
-     9,
-     11
+     10,
+     13
     ],
-    "size": 46,
+    "size": 51,
     "color": "red"
    }
   ]
@@ -135,31 +135,31 @@
   "bubble": {
    "label": "AGENCY OWNER",
    "text": "Proposal bheja \u2713",
-   "at": 6
+   "at": 7
   },
   "rows": [
    {
     "r": [
-     11,
-     14
+     13,
+     15
     ],
-    "size": 48,
+    "size": 66,
     "color": "ink"
    }
   ],
   "reply": {
    "label": "UPWORK",
    "text": "Bahut proposals",
-   "at": 9
+   "at": 10
   },
   "stamp": {
    "text": "BHEED ZYADA.",
-   "at": 12,
+   "at": 11,
    "size": 58
   },
   "clock": {
-   "from": 6,
-   "to": 8
+   "from": 7,
+   "to": 9
   }
  },
  "mess": {
@@ -180,24 +180,24 @@
   "rows": [
    {
     "r": [
-     7,
-     8
+     5,
+     6
     ],
     "size": 120,
     "color": "white"
    },
    {
     "r": [
-     8,
-     10
+     6,
+     8
     ],
     "size": 85,
     "color": "white"
    }
   ],
   "sub": "sab wahi,<br>toh bheed wahi.",
-  "subAt": 9,
-  "minisAt": 5,
+  "subAt": 8,
+  "minisAt": 3,
   "subSize": 58
  },
  "builds": [
@@ -219,7 +219,7 @@
       "title": "You reply or post",
       "sub": "Seeking work, remote",
       "chip": "YOU",
-      "at": 9
+      "at": 10
      }
     ],
     "caption": {
@@ -227,7 +227,7 @@
      "rows": [
       {
        "r": [
-        8,
+        9,
         12
        ],
        "size": 34,
@@ -246,16 +246,16 @@
     "header": "CLUTCH",
     "rows": [
      {
-      "title": "Buyers search",
-      "sub": "Agencies by service",
-      "chip": "FIND",
-      "at": 3
-     },
-     {
       "title": "Free profile",
       "sub": "Create it once",
       "chip": "FREE",
-      "at": 9
+      "at": 3
+     },
+     {
+      "title": "Buyers search",
+      "sub": "Agencies by service",
+      "chip": "FIND",
+      "at": 5
      }
     ],
     "caption": {
@@ -264,9 +264,9 @@
       {
        "r": [
         7,
-        11
+        10
        ],
-       "size": 36,
+       "size": 34,
        "color": "ink"
       }
      ]
@@ -299,8 +299,8 @@
      "rows": [
       {
        "r": [
-        6,
-        9
+        7,
+        10
        ],
        "size": 36,
        "color": "ink"
@@ -342,24 +342,24 @@
    {
     "r": [
      3,
-     6
+     5
     ],
-    "size": 59,
+    "size": 64,
     "color": "white",
     "mt": 10
    },
    {
     "r": [
-     6,
-     8
+     5,
+     6
     ],
-    "size": 64,
+    "size": 109,
     "color": "lime",
     "mt": 10
    }
   ],
   "chip": "&#10003; LESS CROWDED",
-  "chipAt": 2
+  "chipAt": 5
  },
  "cta": {
   "thing": "list",

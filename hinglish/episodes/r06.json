@@ -3,14 +3,14 @@
  "business": "Pricing without underpricing",
  "keyword": "PRICE",
  "lines": [
-  "Sasta kaam karke koi aage nahi badha.",
-  "Ek freelancer ne sabse kam rate rakha. Client bahut aaye, par mahine ke end mein haath khaali.",
-  "Kam rate ka matlab zyada kaam hota hai, zyada paisa nahi.",
+  "Sasta kaam karke koi aage nahi gaya, bhai. Sach mein.",
+  "Ek freelancer ne sabse kam rate rakha. Clients bohat aaye, par month end pe haath khaali.",
+  "Sasta rate matlab zyada kaam, zyada paisa nahi. Seedha nuksan.",
   "Toh yeh teen cheezein badlo.",
-  "One. Ghante ke bajaye project ka price batao.",
-  "Two. Teen packages rakho, basic, standard aur premium.",
-  "Three. Price batane se pehle client ka budget poochho.",
-  "Result? Client choose karta hai, aur aap bargain nahi karte.",
+  "One. Ghante ka nahi, project ka price batao.",
+  "Two. Teen packages rakho. Basic, standard aur premium.",
+  "Three. Price batane se pehle client ka budget pucho.",
+  "Result? Client choose karta hai, aur tum bargain nahi karte.",
   "Want the checklist? Comment PRICE, hum aapko DM kar denge."
  ],
  "bridge": {
@@ -103,11 +103,20 @@
    {
     "r": [
      5,
-     7
+     8
     ],
-    "size": 56,
+    "size": 48,
     "color": "red",
     "mt": 22
+   },
+   {
+    "r": [
+     8,
+     10
+    ],
+    "size": 56,
+    "color": "white",
+    "mt": 6
    }
   ]
  },
@@ -120,8 +129,8 @@
   "rows": [
    {
     "r": [
-     15,
-     17
+     14,
+     16
     ],
     "size": 59,
     "color": "ink"
@@ -134,7 +143,7 @@
   },
   "stamp": {
    "text": "HAATH KHAALI.",
-   "at": 15,
+   "at": 14,
    "size": 54
   },
   "clock": {
@@ -145,7 +154,7 @@
  "mess": {
   "chips": [
    {
-    "text": "Kam",
+    "text": "Sasta",
     "at": 0
    },
    {
@@ -154,30 +163,30 @@
    },
    {
     "text": "kaam",
-    "at": 5
+    "at": 4
    }
   ],
   "rows": [
    {
     "r": [
-     8,
-     9
+     3,
+     5
     ],
-    "size": 100,
+    "size": 69,
     "color": "white"
    },
    {
     "r": [
-     9,
-     11
+     5,
+     8
     ],
-    "size": 69,
+    "size": 45,
     "color": "white"
    }
   ],
-  "sub": "kaam zyada.<br>paisa wahi.",
-  "subAt": 10,
-  "minisAt": 5,
+  "sub": "seedha<br>nuksan.",
+  "subAt": 8,
+  "minisAt": 1,
   "subSize": 58
  },
  "builds": [

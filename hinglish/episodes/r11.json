@@ -3,14 +3,14 @@
  "business": "Before you quit your job for an agency",
  "keyword": "QUIT",
  "lines": [
-  "Job chhodke agency banani hai? Pehle yeh teen kaam karo.",
-  "Ek employee ne ek din resign de diya. Teen mahine baad, na client tha, na plan.",
-  "Pehle clients, phir resignation. Ulta karne se dabav badhta hai.",
+  "Job chhodke agency banani hai? Pehle yeh teen kaam karo, bhai.",
+  "Ek banda ek din achanak resign maar ke nikal gaya. Teen mahine baad, na client tha, na plan.",
+  "Pehle clients, phir resignation. Ulta kiya toh pressure full on.",
   "Toh yeh teen kaam pehle karo.",
-  "One. Job ke saath, ek chhota paying client pakdo.",
+  "One. Job ke saath ek chhota paying client pakdo.",
   "Two. Ek skill aur ek niche chuno, aur uske teen samples banao.",
   "Three. Resign tab karo, jab kharcha nikalne layak clients ho.",
-  "Result? Aap bhaagte nahi, tayyari se agency shuru karte ho.",
+  "Result? Tum bhaagte nahi, tayyari se agency shuru karte ho.",
   "Want the checklist? Comment QUIT, hum aapko DM kar denge."
  ],
  "bridge": {
@@ -115,9 +115,9 @@
    {
     "r": [
      8,
-     10
+     11
     ],
-    "size": 76,
+    "size": 48,
     "color": "red"
    }
   ]
@@ -131,8 +131,8 @@
   "rows": [
    {
     "r": [
-     11,
-     14
+     13,
+     16
     ],
     "size": 54,
     "color": "ink"
@@ -141,16 +141,16 @@
   "reply": {
    "label": "INCOME",
    "text": "Zero",
-   "at": 12
+   "at": 14
   },
   "stamp": {
    "text": "NO PLAN.",
-   "at": 15,
+   "at": 16,
    "size": 70
   },
   "clock": {
-   "from": 8,
-   "to": 10
+   "from": 10,
+   "to": 12
   }
  },
  "mess": {
@@ -174,7 +174,7 @@
      4,
      6
     ],
-    "size": 76,
+    "size": 85,
     "color": "white"
    },
    {
@@ -182,7 +182,7 @@
      6,
      10
     ],
-    "size": 38,
+    "size": 36,
     "color": "white"
    }
   ],

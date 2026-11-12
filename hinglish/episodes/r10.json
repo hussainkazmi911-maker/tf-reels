@@ -3,14 +3,14 @@
  "business": "A cold email to a US business",
  "keyword": "EMAIL",
  "lines": [
-  "Chaar line ki email, aur US client ka reply. Kaise?",
-  "Ek freelancer ne dus businesses ko lambi email bheji, apne baare mein. Reply ek bhi nahi aaya.",
-  "Kisi ke paas aapki poori kahani padhne ka time nahi hota.",
-  "Toh yeh teen line likho.",
+  "Chaar line ki email, aur US client ka reply. Sach mein.",
+  "Ek freelancer ne dus businesses ko lambi email bheji, apne baare mein. Reply ek bhi nahi aaya. Cooked.",
+  "Kisi ke paas tumhari poori life story padhne ka time nahi.",
+  "Toh yeh teen lines likho.",
   "One. Pehli line mein unki website ki ek specific cheez batao.",
   "Two. Doosri line mein ek problem aur uska chhota hal batao.",
-  "Three. Aakhri line mein ek sawaal, kya main chhota plan bhej doon?",
-  "Result? Email chhoti hai, aur jawab dena aasaan.",
+  "Three. Aakhri line mein sawaal, kya main chhota plan bhej doon?",
+  "Result? Email chhoti hai, aur reply dena easy.",
   "Want the template? Comment EMAIL, hum aapko DM kar denge."
  ],
  "bridge": {
@@ -45,7 +45,7 @@
     "toks": [
      [
       3,
-      "LINE"
+      "LINES"
      ]
     ]
    },
@@ -111,9 +111,9 @@
    {
     "r": [
      9,
-     10
+     11
     ],
-    "size": 78,
+    "size": 76,
     "color": "red",
     "mt": 18
    }
@@ -154,21 +154,21 @@
     "at": 0
    },
    {
-    "text": "kahani",
-    "at": 5
+    "text": "story",
+    "at": 6
    },
    {
     "text": "time",
-    "at": 8
+    "at": 9
    }
   ],
   "rows": [
    {
     "r": [
-     8,
+     7,
      9
     ],
-    "size": 120,
+    "size": 85,
     "color": "white"
    },
    {
@@ -182,7 +182,7 @@
   ],
   "sub": "lambi email?<br>delete.",
   "subAt": 10,
-  "minisAt": 6,
+  "minisAt": 5,
   "subSize": 58
  },
  "builds": [
@@ -284,7 +284,7 @@
         4,
         6
        ],
-       "size": 72,
+       "size": 69,
        "color": "lime"
       }
      ]

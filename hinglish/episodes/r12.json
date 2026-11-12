@@ -3,14 +3,14 @@
  "business": "Scope creep",
  "keyword": "SCOPE",
  "lines": [
-  "Bas ek chhota sa change. Aur phir chhe baar.",
-  "Ek freelancer ne logo banaya. Client ne chhe baar change mangwaya, aur paisa wahi raha.",
-  "Scope likhit mein nahi tha, toh kaam khatam hi nahi hua.",
+  "Bas ek chhota sa change. Phir chhe baar. Dimaag ka dahi.",
+  "Ek freelancer ne logo banaya. Client ne chhe baar changes maange, aur paisa wahi raha.",
+  "Scope likha nahi tha, toh kaam khatam hi nahi hua.",
   "Toh yeh teen cheezein pehle likho.",
-  "One. Kaam mein kya kya milega, yeh likhit mein batao.",
+  "One. Kaam mein kya kya milega, yeh likh ke batao.",
   "Two. Revisions ki limit rakho, jaise do rounds.",
   "Three. Shuru karne se pehle aadha advance lo.",
-  "Result? Kaam khatam hota hai, aur payment bhi.",
+  "Result? Kaam bhi khatam, payment bhi.",
   "Want the checklist? Comment SCOPE, hum aapko DM kar denge."
  ],
  "bridge": {
@@ -106,18 +106,18 @@
    {
     "r": [
      5,
-     7
+     8
     ],
-    "size": 66,
+    "size": 51,
     "color": "red",
     "mt": 22
    },
    {
     "r": [
-     7,
-     9
+     8,
+     11
     ],
-    "size": 66,
+    "size": 51,
     "color": "red"
    }
   ]
@@ -134,7 +134,7 @@
      7,
      10
     ],
-    "size": 48,
+    "size": 45,
     "color": "ink"
    }
   ],
@@ -157,34 +157,34 @@
     "at": 0
    },
    {
-    "text": "likhit",
+    "text": "likha",
     "at": 1
    },
    {
     "text": "nahi",
-    "at": 3
+    "at": 2
    }
   ],
   "rows": [
    {
     "r": [
-     6,
-     8
+     5,
+     7
     ],
     "size": 69,
     "color": "white"
    },
    {
     "r": [
-     8,
-     11
+     7,
+     10
     ],
     "size": 64,
     "color": "white"
    }
   ],
   "sub": "ek change,<br>phir ek aur.",
-  "subAt": 10,
+  "subAt": 9,
   "minisAt": 3,
   "subSize": 58
  },
@@ -226,7 +226,7 @@
         7,
         10
        ],
-       "size": 42,
+       "size": 54,
        "color": "ink"
       }
      ]
@@ -329,17 +329,26 @@
      1,
      3
     ],
-    "size": 69,
+    "size": 90,
     "color": "white",
     "mt": 60
    },
    {
     "r": [
      3,
+     4
+    ],
+    "size": 100,
+    "color": "lime",
+    "mt": 10
+   },
+   {
+    "r": [
+     4,
      5
     ],
-    "size": 85,
-    "color": "lime",
+    "size": 90,
+    "color": "white",
     "mt": 10
    },
    {
@@ -347,22 +356,13 @@
      5,
      6
     ],
-    "size": 72,
-    "color": "white",
-    "mt": 10
-   },
-   {
-    "r": [
-     6,
-     8
-    ],
-    "size": 64,
+    "size": 110,
     "color": "lime",
     "mt": 10
    }
   ],
   "chip": "&#10003; DONE + PAID",
-  "chipAt": 6
+  "chipAt": 5
  },
  "cta": {
   "thing": "checklist",

@@ -3,14 +3,14 @@
  "business": "Client red flags",
  "keyword": "FLAGS",
  "lines": [
-  "Client mein yeh red flags dikhein, toh ruk jao.",
-  "Ek freelancer ne free test project kiya. Client ne kaam le liya, aur payment kabhi nahi bheji.",
-  "Signs pehle hi dikh gaye the.",
+  "Client mein yeh red flags dikhein, toh seedha ruk jao.",
+  "Ek freelancer ne free test project kiya. Client ne kaam le liya, aur payment kabhi nahi bheji. Ghosted.",
+  "Signs pehle hi dikh gaye the. Bas ignore kiye.",
   "Toh yeh teen flags yaad rakho.",
   "One. Free test project, ya pehle poora kaam dikhao.",
   "Two. Advance se inkaar, ya payment baad mein dene ki baat.",
-  "Three. Budget saaf nahi, aur har cheez urgent.",
-  "Result? Aap sahi client choose karte hain, aur time bachta hai.",
+  "Three. Budget clear nahi, aur har cheez urgent.",
+  "Result? Tum sahi client choose karte ho, aur time bachta hai.",
   "Want the checklist? Comment FLAGS, hum aapko DM kar denge."
  ],
  "bridge": {
@@ -106,9 +106,9 @@
    {
     "r": [
      6,
-     9
+     10
     ],
-    "size": 56,
+    "size": 40,
     "color": "red",
     "mt": 22
    }
@@ -184,7 +184,7 @@
    }
   ],
   "sub": "ignore kiya,<br>nuksan hua.",
-  "subAt": 5,
+  "subAt": 8,
   "minisAt": 3,
   "subSize": 58
  },
@@ -344,7 +344,7 @@
      4,
      7
     ],
-    "size": 42,
+    "size": 48,
     "color": "white",
     "mt": 10
    },
