@@ -36,4 +36,5 @@ if a[1] == 'test':
     print(len(ts), 'test frames', [round(x, 2) for x in ts])
 else:
     n = int(a[2]); k = int(a[3]); tot = int(T['total'] * 30) + 1
-    run(range(k, tot, n), 'frames', 1.5)
+    sc = float(a[4]) if len(a) > 4 else 1.5
+    run(range(k, tot, n), 'frames_prev' if sc < 1.5 else 'frames', sc)
