@@ -5,3 +5,4 @@ frames/
 *.mp4
 timing.js
 frames_prev/
+*.log
