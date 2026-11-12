@@ -144,17 +144,18 @@ ep('r10',
     build('LINE 3', 1, chat([('r', 'Chhota plan bhej doon?', 5), ('c', 'Haan, bhej dijiye', 11)], rr(X['r10']['lines'][6], [(4, 6, LI, 72)])))],
    [(1, 2, W, 110, dict(mt=60)), (2, 4, LI, 90, dict(mt=10)), (4, 7, W, 64, dict(mt=10)), (7, 8, LI, 100, dict(mt=10))], 'EASY REPLY', 5)
 
-# ------------------------------------------------------------ r11 UPWORK
+# ------------------------------------------------------------ r11 QUIT (job to agency)
 ep('r11',
-   [(0, 1, LI, 130), (1, 3, W, 78, dict(mt=6)), (3, 5, W, 70), (5, 8, RD, 56, dict(mt=22))],
-   dict(bl='FREELANCER', bt='50 jobs par apply', bat=5, cf=None, ct=None, cap=[(10, 12, 'ink', 70)],
-        rl='CONNECTS', rt='0 left', rat=10, st='KAAM ZERO.', sat=16),
-   dict(chips=[('Connect', 1), ('pandrah', 4), ('cents', 5)], big=[(8, 10, W, 100), (10, 13, W, 100)],
-        sub='sirf andaza?<br>paisa gaya.', subAt=12, minisAt=6),
-   [build('FRESH JOB', 2, lst('JOBS', [R('Posted today', 'Be among the first', 'FRESH', 2), R('Posted last week', 'Many proposals already', 'CROWDED', 7, **RED)])),
-    build('CLIENT CHECK', 1, lst('CLIENT', [R('Payment', 'Client payment status', 'VERIFIED', 4), R('Hiring history', 'Past jobs and reviews', 'CHECK', 8)])),
-    build('READ FULLY', 3, lst('JOB POST', [R('Read it fully', 'Every requirement', 'READ', 3), R('Write to match', 'Use their words', 'MATCH', 8)]))],
-   [(1, 2, W, 100, dict(mt=60)), (2, 3, LI, 100, dict(mt=10)), (3, 5, W, 72, dict(mt=10)), (5, 8, W, 60, dict(mt=10)), (8, 11, LI, 72, dict(mt=8))], 'FEWER CONNECTS', 2)
+   [(0, 2, W, 56), (2, 3, LI, 120, dict(mt=6)), (3, 5, W, 70), (5, 8, W, 56, dict(mt=18)), (8, 10, RD, 78)],
+   dict(bl='EMPLOYEE', bt='Resign de diya ✓', bat=5, cf=8, ct=10, cap=[(11, 14, 'ink', 66)],
+        rl='INCOME', rt='Zero', rat=12, st='NO PLAN.', sat=15),
+   dict(chips=[('Pehle', 0), ('clients,', 1), ('phir', 2)], big=[(4, 6, W, 110), (6, 10, W, 90)],
+        sub='pehle income,<br>phir resign.', subAt=9, minisAt=3),
+   [build('FIRST CLIENT', 7, lst('WHILE EMPLOYED', [R('Day job', 'Keep your salary', 'KEEP', 1), R('First client', 'One small paid project', 'PAID', 6)])),
+    build('SKILL + NICHE', 2, lst('YOUR OFFER', [R('Skill', 'Web, ads or design', 'PICK', 2), R('3 samples', 'Show before you sell', 'PROOF', 9)])),
+    build('RESIGN LATER', 1, lst('CHECK FIRST', [R('Monthly costs', 'Write the number down', 'LIST', 5), R('Client income', 'Covers those costs', 'MATCH', 8)]))],
+   [(1, 4, W, 64, dict(mt=60)), (4, 6, W, 64, dict(mt=10)), (6, 7, LI, 110, dict(mt=10)), (7, 10, LI, 66, dict(mt=6))], 'READY FIRST', 4)
+
 
 # ------------------------------------------------------------ r12 SCOPE
 ep('r12',
@@ -183,7 +184,7 @@ ep('r13',
 # ------------------------------------------------------------ r14 FOCUS
 ep('r14',
    [(0, 2, W, 56), (2, 3, LI, 110, dict(mt=6)), (3, 4, W, 78), (4, 6, RD, 56, dict(mt=22)), (6, 8, RD, 56)],
-   dict(bl='FREELANCER', bt='Main sab kuch karta hoon', bat=4, cf=None, ct=None, cap=[(11, 15, 'ink', 60)],
+   dict(bl='AGENCY', bt='Hum sab kuch karte hain', bat=4, cf=None, ct=None, cap=[(11, 15, 'ink', 60)],
         rl='CLIENT', rt='Kya dena hai? Pata nahi', rat=15, st='KAAM NAHI.', sat=19),
    dict(chips=[('Sab', 0), ('kuch', 1), ('karne', 2)], big=[(6, 8, W, 120), (8, 10, W, 120)],
         sub='sab kuch,<br>par pehchaan nahi.', subAt=9, minisAt=4),

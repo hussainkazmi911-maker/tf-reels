@@ -1,17 +1,17 @@
 {
  "id": "r11",
- "business": "Upwork Connects: do not waste them",
- "keyword": "UPWORK",
+ "business": "Before you quit your job for an agency",
+ "keyword": "QUIT",
  "lines": [
-  "Upwork par har proposal ka paisa lagta hai.",
-  "Ek freelancer ne bina dekhe pachaas jobs par apply kiya. Connects khatam, aur kaam ek bhi nahi.",
-  "Har Connect ki price pandrah cents hai, toh andaze se apply mat karo.",
-  "Toh yeh teen cheezein check karo.",
-  "One. Job fresh ho, taaki aap pehle proposals mein rahein.",
-  "Two. Client ki payment verified ho, aur hiring history dekho.",
-  "Three. Job post poori padho, aur usi ke hisaab se likho.",
-  "Result? Kam Connects lagte hain, aur replies ke chance badhte hain.",
-  "Want the checklist? Comment UPWORK, hum aapko DM kar denge."
+  "Job chhodke agency banani hai? Pehle yeh teen kaam karo.",
+  "Ek employee ne ek din resign de diya. Teen mahine baad, na client tha, na plan.",
+  "Pehle clients, phir resignation. Ulta karne se dabav badhta hai.",
+  "Toh yeh teen kaam pehle karo.",
+  "One. Job ke saath, ek chhota paying client pakdo.",
+  "Two. Ek skill aur ek niche chuno, aur uske teen samples banao.",
+  "Three. Resign tab karo, jab kharcha nikalne layak clients ho.",
+  "Result? Aap bhaagte nahi, tayyari se agency shuru karte ho.",
+  "Want the checklist? Comment QUIT, hum aapko DM kar denge."
  ],
  "bridge": {
   "items": [
@@ -45,7 +45,7 @@
     "toks": [
      [
       3,
-      "CHEEZEIN"
+      "KAAM"
      ]
     ]
    },
@@ -55,7 +55,7 @@
     "toks": [
      [
       4,
-      "CHECK"
+      "PEHLE"
      ],
      [
       5,
@@ -81,18 +81,18 @@
    {
     "r": [
      0,
-     1
+     2
     ],
-    "size": 128,
-    "color": "lime"
+    "size": 56,
+    "color": "white"
    },
    {
     "r": [
-     1,
+     2,
      3
     ],
-    "size": 78,
-    "color": "white",
+    "size": 120,
+    "color": "lime",
     "mt": 6
    },
    {
@@ -108,100 +108,145 @@
      5,
      8
     ],
-    "size": 48,
-    "color": "red",
-    "mt": 22
-   }
-  ]
- },
- "pain": {
-  "bubble": {
-   "label": "FREELANCER",
-   "text": "50 jobs par apply",
-   "at": 5
-  },
-  "rows": [
-   {
-    "r": [
-     10,
-     12
-    ],
-    "size": 48,
-    "color": "ink"
-   }
-  ],
-  "reply": {
-   "label": "CONNECTS",
-   "text": "0 left",
-   "at": 10
-  },
-  "stamp": {
-   "text": "KAAM ZERO.",
-   "at": 16,
-   "size": 70
-  },
-  "clock": null
- },
- "mess": {
-  "chips": [
-   {
-    "text": "Connect",
-    "at": 1
+    "size": 54,
+    "color": "white",
+    "mt": 18
    },
-   {
-    "text": "pandrah",
-    "at": 4
-   },
-   {
-    "text": "cents",
-    "at": 5
-   }
-  ],
-  "rows": [
    {
     "r": [
      8,
      10
     ],
-    "size": 85,
+    "size": 76,
+    "color": "red"
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "EMPLOYEE",
+   "text": "Resign de diya \u2713",
+   "at": 5
+  },
+  "rows": [
+   {
+    "r": [
+     11,
+     14
+    ],
+    "size": 54,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "INCOME",
+   "text": "Zero",
+   "at": 12
+  },
+  "stamp": {
+   "text": "NO PLAN.",
+   "at": 15,
+   "size": 70
+  },
+  "clock": {
+   "from": 8,
+   "to": 10
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Pehle",
+    "at": 0
+   },
+   {
+    "text": "clients,",
+    "at": 1
+   },
+   {
+    "text": "phir",
+    "at": 2
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     4,
+     6
+    ],
+    "size": 76,
     "color": "white"
    },
    {
     "r": [
-     10,
-     13
+     6,
+     10
     ],
-    "size": 51,
+    "size": 38,
     "color": "white"
    }
   ],
-  "sub": "sirf andaza?<br>paisa gaya.",
-  "subAt": 12,
-  "minisAt": 6,
+  "sub": "pehle income,<br>phir resign.",
+  "subAt": 9,
+  "minisAt": 3,
   "subSize": 58
  },
  "builds": [
   {
-   "title": "FRESH JOB",
+   "title": "FIRST CLIENT",
+   "titleAt": 7,
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "WHILE EMPLOYED",
+    "rows": [
+     {
+      "title": "Day job",
+      "sub": "Keep your salary",
+      "chip": "KEEP",
+      "at": 1
+     },
+     {
+      "title": "First client",
+      "sub": "One small paid project",
+      "chip": "PAID",
+      "at": 6
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        6,
+        9
+       ],
+       "size": 38,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "SKILL + NICHE",
    "titleAt": 2,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "JOBS",
+    "header": "YOUR OFFER",
     "rows": [
      {
-      "title": "Posted today",
-      "sub": "Be among the first",
-      "chip": "FRESH",
+      "title": "Skill",
+      "sub": "Web, ads or design",
+      "chip": "PICK",
       "at": 2
      },
      {
-      "title": "Posted last week",
-      "sub": "Many proposals already",
-      "chip": "CROWDED",
-      "at": 7,
-      "bg": "#ff4b3a",
-      "fg": "#ffffff"
+      "title": "3 samples",
+      "sub": "Show before you sell",
+      "chip": "PROOF",
+      "at": 9
      }
     ],
     "caption": {
@@ -209,10 +254,10 @@
      "rows": [
       {
        "r": [
-        7,
-        10
+        9,
+        12
        ],
-       "size": 34,
+       "size": 40,
        "color": "ink"
       }
      ]
@@ -220,58 +265,22 @@
    }
   },
   {
-   "title": "CLIENT CHECK",
+   "title": "RESIGN LATER",
    "titleAt": 1,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "CLIENT",
+    "header": "CHECK FIRST",
     "rows": [
      {
-      "title": "Payment",
-      "sub": "Client payment status",
-      "chip": "VERIFIED",
-      "at": 4
+      "title": "Monthly costs",
+      "sub": "Write the number down",
+      "chip": "LIST",
+      "at": 5
      },
      {
-      "title": "Hiring history",
-      "sub": "Past jobs and reviews",
-      "chip": "CHECK",
-      "at": 8
-     }
-    ],
-    "caption": {
-     "top": 880,
-     "rows": [
-      {
-       "r": [
-        7,
-        10
-       ],
-       "size": 36,
-       "color": "ink"
-      }
-     ]
-    }
-   }
-  },
-  {
-   "title": "READ FULLY",
-   "titleAt": 3,
-   "bg": "cream",
-   "demo": {
-    "type": "list",
-    "header": "JOB POST",
-    "rows": [
-     {
-      "title": "Read it fully",
-      "sub": "Every requirement",
-      "chip": "READ",
-      "at": 3
-     },
-     {
-      "title": "Write to match",
-      "sub": "Use their words",
+      "title": "Client income",
+      "sub": "Covers those costs",
       "chip": "MATCH",
       "at": 8
      }
@@ -281,10 +290,10 @@
      "rows": [
       {
        "r": [
-        8,
-        11
+        7,
+        10
        ],
-       "size": 48,
+       "size": 45,
        "color": "ink"
       }
      ]
@@ -306,55 +315,46 @@
    {
     "r": [
      1,
-     2
+     4
     ],
-    "size": 100,
+    "size": 45,
     "color": "white",
     "mt": 60
    },
    {
     "r": [
-     2,
-     3
+     4,
+     6
     ],
-    "size": 96,
-    "color": "lime",
-    "mt": 10
-   },
-   {
-    "r": [
-     3,
-     5
-    ],
-    "size": 69,
+    "size": 64,
     "color": "white",
     "mt": 10
    },
    {
     "r": [
-     5,
-     8
+     6,
+     7
     ],
-    "size": 54,
-    "color": "white",
+    "size": 110,
+    "color": "lime",
     "mt": 10
    },
    {
     "r": [
-     8,
-     11
+     7,
+     10
     ],
-    "size": 40,
+    "size": 51,
     "color": "lime",
-    "mt": 8
+    "mt": 6
    }
   ],
-  "chip": "&#10003; FEWER CONNECTS",
-  "chipAt": 2
+  "chip": "&#10003; READY FIRST",
+  "chipAt": 4
  },
  "cta": {
   "thing": "checklist",
   "noun": "checklist",
-  "keyword": "UPWORK"
+  "keyword": "QUIT"
  }
 }

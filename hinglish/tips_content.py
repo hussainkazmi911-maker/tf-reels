@@ -125,18 +125,18 @@ T('r10', '2026-11-21', 'Sat 21 Nov', 'Story and tips', 'A cold email to a US bus
   '#coldemail #coldoutreach #freelancingtips #usclients #thetotalforge',
   "Cold email template (4 line):\nSubject: Quick idea for [business name]\n1. Maine aapki website par [specific cheez] dekhi.\n2. [Problem] ho sakti hai, aur uska ek chhota hal hai: [hal].\n3. Maine [relevant kaam] kiya hai: [link].\n4. Kya main ek chhota plan bhej doon?\n\nEk email, ek hi ask. Aur wahi likho jo sach ho.")
 
-T('r11', '2026-11-22', 'Sun 22 Nov', 'Where to find', 'Upwork Connects: do not waste them', 'UPWORK', 'checklist',
-  ["Upwork par har proposal ka paisa lagta hai.",
-   "Ek freelancer ne bina dekhe pachaas jobs par apply kiya. Connects khatam, aur kaam ek bhi nahi.",
-   "Har Connect ki price pandrah cents hai, toh andaze se apply mat karo.",
-   "Toh yeh teen cheezein check karo.",
-   "One. Job fresh ho, taaki aap pehle proposals mein rahein.",
-   "Two. Client ki payment verified ho, aur hiring history dekho.",
-   "Three. Job post poori padho, aur usi ke hisaab se likho.",
-   "Result? Kam Connects lagte hain, aur replies ke chance badhte hain."],
-  '#upwork #upworkfreelancer #freelancingtips #freelancepakistan #thetotalforge',
-  "Upwork par apply karne se pehle check karo:\n1. Job fresh hai (kuch ghante purani).\n2. Client ki payment verified hai.\n3. Client ki hiring history aur reviews dekho.\n4. Job post poori padho, aur proposal ki pehli line usi par likho.\n\nUpwork ke mutabiq ek Connect 15 cents ka hota hai, aur fees badalti rehti hain. Upwork ka current fee page dekh lein.",
-  'Checked 12 Nov: Connects $0.15 each. Caption says rules change.')
+T('r11', '2026-11-22', 'Sun 22 Nov', 'Job to agency', 'Before you quit your job for an agency', 'QUIT', 'checklist',
+  ["Job chhodke agency banani hai? Pehle yeh teen kaam karo.",
+   "Ek employee ne ek din resign de diya. Teen mahine baad, na client tha, na plan.",
+   "Pehle clients, phir resignation. Ulta karne se dabav badhta hai.",
+   "Toh yeh teen kaam pehle karo.",
+   "One. Job ke saath, ek chhota paying client pakdo.",
+   "Two. Ek skill aur ek niche chuno, aur uske teen samples banao.",
+   "Three. Resign tab karo, jab kharcha nikalne layak clients ho.",
+   "Result? Aap bhaagte nahi, tayyari se agency shuru karte ho."],
+  '#startanagency #quitjob #sidehustle #smallagency #thetotalforge',
+  "Job chhodne se pehle checklist:\n1. Job ke saath ek chhota paying client lo (ek chhota project bhi chalega).\n2. Ek skill aur ek niche chuno, aur us niche ke teen samples banao.\n3. Apna mahine ka kharcha likho, aur dekho clients ki income us kharche ko kitna cover karti hai.\n4. Resign tab karo jab client income us kharche ke qareeb ho.\n\nYeh general checklist hai, financial advice nahi. Apni situation ke hisaab se faisla lein.",
+  'No factual claims about platforms. General guidance only; caption carries a not-financial-advice line.')
 
 T('r12', '2026-11-23', 'Mon 23 Nov', 'Story and tips', 'Scope creep', 'SCOPE', 'checklist',
   ["Bas ek chhota sa change. Aur phir chhe baar.",
@@ -163,27 +163,27 @@ T('r13', '2026-11-24', 'Tue 24 Nov', 'Tips', 'Client red flags', 'FLAGS', 'check
   "Client red flags:\n1. Free test project, ya pehle poora kaam dikhao.\n2. Advance se inkaar, ya payment baad mein dene ki baat.\n3. Budget saaf nahi, aur har cheez urgent.\n\nEk flag dikhe toh ruk kar sawaal poochho. Do dikhein toh dobara soch lo.")
 
 T('r14', '2026-11-25', 'Wed 25 Nov', 'Tips', 'Pick a niche', 'FOCUS', 'guide',
-  ["Main web developer hoon. Isse kaam nahi milta.",
-   "Ek freelancer ne bola, main sab kuch karta hoon. Client ko samajh hi nahi aaya, usse kaunsa kaam dena hai.",
+  ["Hum web agency hain. Isse kaam nahi milta.",
+   "Ek agency ne bola, hum sab kuch karte hain. Client ko samajh hi nahi aaya, usse kaunsa kaam dena hai.",
    "Sab kuch karne wale ko, koi khaas kaam nahi milta.",
    "Toh yeh teen steps lo.",
    "One. Ek tarah ka client chuno, jaise skincare brands.",
    "Two. Ek problem chuno, jaise slow Shopify store.",
    "Three. Us ek problem ka ek sample banao.",
    "Result? Aap expert dikhte ho, aur client seedha aapko chunta hai."],
-  '#niche #freelanceniche #freelancingtips #personalbranding #thetotalforge',
+  '#niche #agencyniche #smallagency #freelancingtips #thetotalforge',
   "Niche chunne ka guide:\n1. Ek tarah ka client: jaise skincare brands, dentists ya coaches.\n2. Ek problem: jaise slow website ya purani branding.\n3. Ek sample: us problem ka ek chhota kaam banao.\n4. Headline: [kaam] for [client type].\n\nShuru mein ek niche, 30 din ke liye. Phir dekho kaunsa reply aata hai.")
 
 T('r15', '2026-11-26', 'Thu 26 Nov', 'Tips', 'A 30-minute daily routine', 'ROUTINE', 'planner',
-  ["Roz tees minute. Freelancer ka simple routine.",
-   "Ek freelancer ek din bahut kaam karta, aur phir hafte bhar kuch nahi.",
+  ["Roz tees minute. Agency ka simple routine.",
+   "Ek agency ek din bahut kaam karti, aur phir hafte bhar kuch nahi.",
    "Kabhi kabhi ka josh, clients nahi laata.",
    "Toh roz yeh teen kaam karo.",
    "One. Paanch clients ko message ya proposal bhejo.",
    "Two. Apni profile ya portfolio mein ek chhota sudhaar karo.",
    "Three. Ek sheet mein likho, kisne reply kiya aur kisne nahi.",
    "Result? Ek mahine mein, aapke paas ek system hota hai."],
-  '#freelanceroutine #dailyroutine #productivity #freelancer #thetotalforge',
+  '#freelanceroutine #dailyroutine #smallagency #sidehustle #thetotalforge',
   "Roz 30 minute ka planner:\n- 15 min: 5 messages ya proposals.\n- 10 min: profile ya portfolio mein ek chhota sudhaar.\n- 5 min: sheet mein likho, kisne reply kiya.\n\nHafte ke end mein dekho: kitne bheje, kitne reply, kya sikha. Agle hafte ek cheez badlo.")
 
 
@@ -193,8 +193,10 @@ def caption(x):
     cap = (f"{L[0]}\n\n{L[1]}\n\n{L[3].replace('Toh ', '').capitalize().rstrip('.')}:\n"
            f"1. {tips[0]}\n2. {tips[1]}\n3. {tips[2]}\n\n"
            f"{thing} chahiye? Comment \"{x['kw']}\" karein, hum aapko DM kar denge.\n\n")
-    if x['id'] in ('r03', 'r05', 'r11'):
+    if x['id'] in ('r03', 'r05'):
         cap += "Fees aur rules badalte rehte hain, platform par ek baar check kar lein.\n\n"
+    if x['id'] == 'r11':
+        cap += "Yeh general tips hain, financial advice nahi. Resign karne se pehle apni situation dekh lein.\n\n"
     cap += f"Example scenario: yeh ek misaal hai, real client nahi.\n\n{x['hashtags']}"
     return cap
 
@@ -202,7 +204,7 @@ def first_comment(x):
     return f"{x['thing'].capitalize()} chahiye? Comment \"{x['kw']}\" aur hum DM mein bhej denge."
 
 def alt(x):
-    return f"Animated Hinglish tips reel for freelancers: {x['lines'][0]} Three tips, shown on screen."
+    return f"Animated Hinglish tips reel for freelancers and small agencies: {x['lines'][0]} Three tips, shown on screen."
 
 if __name__ == '__main__':
     for x in TIPS:
