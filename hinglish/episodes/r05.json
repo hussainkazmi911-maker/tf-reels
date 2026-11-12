@@ -1,109 +1,169 @@
 {
  "id": "r05",
- "business": "Tutors and academies",
- "keyword": "LEARN",
+ "business": "Getting paid from US clients in Pakistan",
+ "keyword": "PAYMENT",
  "lines": [
-  "Fees ka hisaab chats mein hai, aur mahine ke end mein pata chalta hai.",
-  "Parent ne poocha, fees jama hui? You checked after two days. Tab tak, student chala gaya.",
-  "Fees, attendance aur marks alag alag jagah bikhre hain.",
-  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
-  "One. A fee tracker. Har student ki fee, due date ke saath.",
-  "Two. Automatic reminders, taaki koi parent bhoole nahi.",
-  "Three. A parent portal, jahan attendance aur marks dikhte hain.",
-  "Result? Parents ko jawab milta hai, aapko time.",
-  "Want this for your academy? Comment LEARN, hum aap ko details bhej denge."
+  "Client ne payment bhej di. Aap tak kaise aayegi?",
+  "Ek freelancer ne kaam pura kiya, par payment ka rasta pehle se nahi dekha.",
+  "Aakhri din pata chala, ki options hi limited hain.",
+  "Toh yeh teen cheezein pehle dekho.",
+  "One. Payoneer account banao. Yeh aapko US bank details deta hai.",
+  "Two. Local bank mein payout aam taur par ek se teen working days leta hai.",
+  "Three. Wise Pakistan mein abhi open nahi hai, toh uspar plan mat banao.",
+  "Result? Kaam ke baad payment ka tension nahi, aur plan pehle se ready.",
+  "Want the guide? Comment PAYMENT, hum aapko DM kar denge."
+ ],
+ "bridge": {
+  "items": [
+   {
+    "top": 235,
+    "size": 56,
+    "toks": [
+     [
+      0,
+      "TOH"
+     ],
+     [
+      1,
+      "YEH"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      2,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      3,
+      "CHEEZEIN"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 68,
+    "toks": [
+     [
+      4,
+      "PEHLE"
+     ],
+     [
+      5,
+      "DEKHO."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   2,
+   3,
+   5
+  ]
+ },
+ "hub": "TIP",
+ "tag": "EXAMPLE SCENARIO",
+ "tagged": [
+  1,
+  2
  ],
  "hook": {
   "rows": [
    {
     "r": [
      0,
-     3
+     2
     ],
     "size": 56,
     "color": "white"
    },
    {
     "r": [
-     3,
-     4
+     2,
+     3
     ],
-    "size": 150,
+    "size": 109,
     "color": "lime",
     "mt": 6
    },
    {
     "r": [
-     4,
-     6
+     3,
+     5
     ],
     "size": 78,
     "color": "white"
    },
    {
     "r": [
-     6,
-     11
+     5,
+     7
     ],
-    "size": 40,
+    "size": 46,
     "color": "red",
-    "mt": 18
+    "mt": 22
    },
    {
     "r": [
-     11,
-     14
+     7,
+     9
     ],
     "size": 52,
     "color": "red",
-    "mt": 6
+    "mt": 4
    }
   ]
  },
  "pain": {
   "bubble": {
-   "label": "PARENT",
-   "text": "fees jama hui?",
-   "at": "fees"
-  },
-  "clock": {
-   "to": "days.",
-   "from": "You"
+   "label": "CLIENT",
+   "text": "Payment sent \u2713",
+   "at": 7
   },
   "rows": [
    {
     "r": [
-     8,
-     11
+     10,
+     14
     ],
-    "size": 66,
+    "size": 38,
     "color": "ink"
    }
   ],
   "reply": {
-   "label": "DOOSRI ACADEMY",
-   "text": "Admission open &#10003;",
-   "at": "Tab"
+   "label": "FREELANCER",
+   "text": "Paisa kahan hai?",
+   "at": 11
   },
   "stamp": {
-   "text": "STUDENT GAYA.",
-   "at": "student",
-   "size": 54
-  }
+   "text": "RASTA NAHI.",
+   "at": 13,
+   "size": 63
+  },
+  "clock": null
  },
  "mess": {
   "chips": [
    {
-    "text": "Fees",
-    "at": "Fees,"
+    "text": "Aakhri",
+    "at": 0
    },
    {
-    "text": "Attendance",
-    "at": "attendance"
+    "text": "options",
+    "at": 5
    },
    {
-    "text": "Marks",
-    "at": "marks"
+    "text": "limited",
+    "at": 7
    }
   ],
   "rows": [
@@ -112,7 +172,7 @@
      7,
      8
     ],
-    "size": 120,
+    "size": 109,
     "color": "white"
    },
    {
@@ -124,117 +184,130 @@
     "color": "white"
    }
   ],
-  "sub": "kaun defaulter hai?<br>pata nahi.",
-  "subAt": "hain.",
-  "minisAt": "marks",
+  "sub": "din aakhri,<br>options kam.",
+  "subAt": 8,
+  "minisAt": 5,
   "subSize": 58
  },
  "builds": [
   {
-   "title": "FEE TRACKER",
-   "titleAt": "fee",
+   "title": "PAYONEER",
+   "titleAt": 1,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "FEES",
+    "header": "PAYONEER",
     "rows": [
      {
-      "title": "Ayesha K.",
-      "sub": "Class 9",
-      "chip": "PAID",
-      "at": "Har"
+      "title": "Account",
+      "sub": "Create it first",
+      "chip": "OPEN",
+      "at": 2
      },
      {
-      "title": "Bilal A.",
-      "sub": "Class 8",
-      "chip": "DUE",
-      "at": "student",
-      "bg": "#ffd166",
-      "fg": "#0b0d09"
-     },
-     {
-      "title": "Sara M.",
-      "sub": "Class 10",
-      "chip": "DUE",
-      "at": "fee,",
-      "chip2": "PAID \u2713",
-      "chip2At": "saath.",
-      "bg": "#ffd166",
-      "fg": "#0b0d09",
-      "bg2": "#0b0d09",
-      "fg2": "#c6ff35"
-     }
-    ]
-   }
-  },
-  {
-   "title": "REMINDERS",
-   "titleAt": "Automatic",
-   "bg": "dark",
-   "demo": {
-    "type": "chat",
-    "msgs": [
-     {
-      "who": "r",
-      "text": "Reminder: fee kal due hai",
-      "at": "reminders,",
-      "y": 300
-     },
-     {
-      "who": "c",
-      "text": "Thanks, kal bhej dunga",
-      "at": "koi",
-      "y": 425
-     },
-     {
-      "who": "r",
-      "text": "Payment mil gayi &#10003;",
-      "at": "bhoole",
-      "y": 550
+      "title": "US bank details",
+      "sub": "Client pays here",
+      "chip": "READY",
+      "at": 6
      }
     ],
     "caption": {
-     "top": 900,
+     "top": 880,
      "rows": [
       {
        "r": [
-        6,
-        8
+        8,
+        11
        ],
-       "size": 80,
-       "color": "lime"
+       "size": 45,
+       "color": "ink"
       }
      ]
     }
    }
   },
   {
-   "title": "PARENT PORTAL",
-   "titleAt": "parent",
+   "title": "LOCAL BANK",
+   "titleAt": 1,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "AYESHA K.",
+    "header": "PAYOUT",
     "rows": [
      {
-      "title": "Attendance",
-      "sub": "This month",
-      "chip": "92%",
-      "at": "jahan"
+      "title": "Payoneer",
+      "sub": "Payout sent",
+      "chip": "SENT",
+      "at": 4
      },
      {
-      "title": "Math test",
-      "sub": "Unit 3",
-      "chip": "85/100",
-      "at": "attendance"
+      "title": "Bank transfer",
+      "sub": "Takes 1 to 3 days",
+      "chip": "WAIT",
+      "at": 11,
+      "bg": "#ffd166",
+      "fg": "#0b0d09"
      },
      {
-      "title": "Fees",
-      "sub": "November",
-      "chip": "PAID",
-      "at": "marks"
+      "title": "Local bank",
+      "sub": "Money received",
+      "chip": "DONE",
+      "at": 12
      }
-    ]
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        12,
+        15
+       ],
+       "size": 54,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "WISE",
+   "titleAt": 1,
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "WISE",
+    "rows": [
+     {
+      "title": "Wise",
+      "sub": "Not open in Pakistan",
+      "chip": "CLOSED",
+      "at": 5,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
+     },
+     {
+      "title": "Your plan",
+      "sub": "Use another option",
+      "chip": "SKIP",
+      "at": 10,
+      "bg": "#ffd166",
+      "fg": "#0b0d09"
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        10,
+        13
+       ],
+       "size": 51,
+       "color": "ink"
+      }
+     ]
+    }
    }
   }
  ],
@@ -252,36 +325,47 @@
    {
     "r": [
      1,
-     3
+     4
     ],
-    "size": 72,
+    "size": 64,
     "color": "white",
-    "mt": 66
+    "mt": 60
    },
    {
     "r": [
-     3,
+     4,
      6
     ],
-    "size": 80,
-    "color": "lime",
-    "mt": 24
+    "size": 76,
+    "color": "white",
+    "mt": 14
    },
    {
     "r": [
      6,
      8
     ],
-    "size": 72,
+    "size": 59,
+    "color": "lime",
+    "strike": "tension",
+    "mt": 14
+   },
+   {
+    "r": [
+     8,
+     13
+    ],
+    "size": 34,
     "color": "white",
     "mt": 24
    }
   ],
-  "chip": "&#10003; NO CHASING",
-  "chipAt": "aapko"
+  "chip": "&#10003; PLAN READY",
+  "chipAt": 12
  },
  "cta": {
-  "noun": "academy",
-  "keyword": "LEARN"
+  "thing": "guide",
+  "noun": "guide",
+  "keyword": "PAYMENT"
  }
 }

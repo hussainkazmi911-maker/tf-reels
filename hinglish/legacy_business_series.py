@@ -1,3 +1,4 @@
+# LEGACY (business series, Reels 1-15 of the first plan). Do not run: it overwrites episodes/ posts.json scripts.json. Current series: make_tips.py + tips_content.py.
 # Generates episodes/r02..r15.json (animation data), posts.json (captions/dates) and scripts.json (voice scripts).
 # usage: python3 make_episodes.py
 import json, re, os

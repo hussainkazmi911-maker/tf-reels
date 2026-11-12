@@ -1,60 +1,123 @@
 {
  "id": "r15",
- "business": "Travel agents",
- "keyword": "TRIP",
+ "business": "A 30-minute daily routine",
+ "keyword": "ROUTINE",
  "lines": [
-  "Ek trip ka quote banane mein ghanta lag jaata hai.",
-  "Customer ne poocha, Dubai ka package? You sent the quote next day. Tab tak, usne book kar liya.",
-  "Quotes, payments aur plans, sab chats mein bikhre hain.",
-  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
-  "One. An enquiry form, jismein trip ki details hoti hain.",
-  "Two. A quote template, jo minutes mein ready hota hai.",
-  "Three. A booking tracker, jahan har payment ka status dikhta hai.",
-  "Result? Quote jaldi, booking confirm.",
-  "Want this for your agency? Comment TRIP, hum aap ko details bhej denge."
+  "Roz tees minute. Freelancer ka simple routine.",
+  "Ek freelancer ek din bahut kaam karta, aur phir hafte bhar kuch nahi.",
+  "Kabhi kabhi ka josh, clients nahi laata.",
+  "Toh roz yeh teen kaam karo.",
+  "One. Paanch clients ko message ya proposal bhejo.",
+  "Two. Apni profile ya portfolio mein ek chhota sudhaar karo.",
+  "Three. Ek sheet mein likho, kisne reply kiya aur kisne nahi.",
+  "Result? Ek mahine mein, aapke paas ek system hota hai.",
+  "Want the planner? Comment ROUTINE, hum aapko DM kar denge."
+ ],
+ "bridge": {
+  "items": [
+   {
+    "top": 235,
+    "size": 56,
+    "toks": [
+     [
+      0,
+      "TOH"
+     ],
+     [
+      1,
+      "ROZ"
+     ],
+     [
+      2,
+      "YEH"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      3,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      4,
+      "KAAM"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      5,
+      "KARO."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   3,
+   4,
+   5
+  ]
+ },
+ "hub": "TIP",
+ "tag": "EXAMPLE SCENARIO",
+ "tagged": [
+  1,
+  2
  ],
  "hook": {
   "rows": [
    {
     "r": [
      0,
-     3
-    ],
-    "size": 56,
-    "color": "white"
-   },
-   {
-    "r": [
-     3,
-     4
-    ],
-    "size": 150,
-    "color": "lime",
-    "mt": 6
-   },
-   {
-    "r": [
-     4,
-     6
+     1
     ],
     "size": 78,
     "color": "white"
    },
    {
     "r": [
-     6,
-     8
+     1,
+     2
     ],
-    "size": 52,
+    "size": 130,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     2,
+     3
+    ],
+    "size": 78,
+    "color": "white"
+   },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 46,
     "color": "red",
     "mt": 22
    },
    {
     "r": [
-     8,
-     10
+     5,
+     7
     ],
-    "size": 52,
+    "size": 46,
     "color": "red",
     "mt": 4
    }
@@ -62,198 +125,188 @@
  },
  "pain": {
   "bubble": {
-   "label": "CUSTOMER",
-   "text": "Dubai ka package?",
-   "at": "Dubai"
-  },
-  "clock": {
-   "to": "day.",
-   "from": "You"
+   "label": "DAY ONE",
+   "text": "Aaj bahut kaam kiya",
+   "at": 4
   },
   "rows": [
    {
     "r": [
-     10,
-     12
+     11,
+     13
     ],
     "size": 66,
     "color": "ink"
    }
   ],
   "reply": {
-   "label": "DOOSRA AGENT",
-   "text": "Package booked &#10003;",
-   "at": "Tab"
+   "label": "WEEK",
+   "text": "Koi activity nahi",
+   "at": 11
   },
   "stamp": {
-   "text": "CLIENT GAYA.",
-   "at": "usne",
-   "size": 58
+   "text": "JOSH GAYA.",
+   "at": 12,
+   "size": 70
+  },
+  "clock": {
+   "from": 9,
+   "to": 10
   }
  },
  "mess": {
   "chips": [
    {
-    "text": "Quotes",
-    "at": "Quotes,"
+    "text": "Kabhi",
+    "at": 0
    },
    {
-    "text": "Payments",
-    "at": "payments"
+    "text": "josh,",
+    "at": 3
    },
    {
-    "text": "Plans",
-    "at": "plans,"
+    "text": "clients",
+    "at": 4
    }
   ],
   "rows": [
    {
     "r": [
-     7,
-     8
+     4,
+     6
     ],
-    "size": 120,
+    "size": 64,
     "color": "white"
    },
    {
     "r": [
-     8,
-     9
+     6,
+     7
     ],
     "size": 120,
     "color": "white"
    }
   ],
-  "sub": "kaunsa trip confirm?<br>pata nahi.",
-  "subAt": "hain.",
-  "minisAt": "chats",
+  "sub": "josh aaya,<br>josh gaya.",
+  "subAt": 6,
+  "minisAt": 3,
   "subSize": 58
  },
  "builds": [
   {
-   "title": "ENQUIRY FORM",
-   "titleAt": "enquiry",
-   "bg": "white",
+   "title": "OUTREACH",
+   "titleAt": 1,
+   "bg": "cream",
    "demo": {
-    "type": "form",
-    "header": "Trip enquiry",
-    "fields": [
+    "type": "list",
+    "header": "5 PER DAY",
+    "rows": [
      {
-      "label": "NAME",
-      "value": "Ayesha K.",
-      "at": "enquiry"
+      "title": "Client 1",
+      "sub": "Message sent",
+      "chip": "SENT",
+      "at": 2
      },
      {
-      "label": "DESTINATION",
-      "value": "Dubai",
-      "at": "trip"
+      "title": "Client 2",
+      "sub": "Message sent",
+      "chip": "SENT",
+      "at": 4
      },
      {
-      "label": "DATES",
-      "value": "15 to 20 Dec",
-      "at": "details"
+      "title": "Client 3",
+      "sub": "Proposal sent",
+      "chip": "SENT",
+      "at": 6
      }
     ],
-    "button": {
-     "text": "REQUEST QUOTE",
-     "at": "hoti",
-     "done": "SENT \u2713",
-     "doneAt": "hain."
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        5,
+        8
+       ],
+       "size": 42,
+       "color": "ink"
+      }
+     ]
     }
    }
   },
   {
-   "title": "QUOTE TEMPLATE",
-   "titleAt": "quote",
+   "title": "ONE FIX",
+   "titleAt": 2,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "QUOTE",
+    "header": "10 MINUTES",
     "rows": [
      {
-      "title": "Flights",
-      "sub": "Return",
-      "chip": "ADDED",
-      "at": "quote"
+      "title": "Profile",
+      "sub": "Update one line",
+      "chip": "EDIT",
+      "at": 2
      },
      {
-      "title": "Hotel",
-      "sub": "4 nights",
-      "chip": "ADDED",
-      "at": "template,"
-     },
-     {
-      "title": "Airport transfer",
-      "sub": "Both ways",
-      "chip": "ADDED",
-      "at": "minutes"
+      "title": "Portfolio",
+      "sub": "Improve one project",
+      "chip": "EDIT",
+      "at": 4
      }
-    ]
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        7,
+        10
+       ],
+       "size": 38,
+       "color": "ink"
+      }
+     ]
+    }
    }
   },
   {
-   "title": "BOOKING TRACKER",
-   "titleAt": "booking",
+   "title": "TRACK",
+   "titleAt": 2,
    "bg": "cream",
    "demo": {
-    "type": "board",
-    "appear": "har",
-    "cols": [
+    "type": "list",
+    "header": "YOUR SHEET",
+    "rows": [
      {
-      "name": "ENQUIRY",
-      "bg": "#ffd166",
-      "fg": "#0b0d09",
-      "at": "jahan"
+      "title": "Client A",
+      "sub": "Replied",
+      "chip": "YES",
+      "at": 7
      },
      {
-      "name": "QUOTED",
-      "bg": "#c6ff35",
-      "fg": "#0b0d09",
-      "at": "payment"
-     },
-     {
-      "name": "BOOKED",
-      "bg": "#0b0d09",
-      "fg": "#c6ff35",
-      "at": "status"
+      "title": "Client B",
+      "sub": "No reply yet",
+      "chip": "NO",
+      "at": 10,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      }
     ],
-    "cards": [
-     {
-      "id": "Dubai",
-      "name": "Ayesha K.",
-      "item": "15 to 20 Dec",
-      "row": 0,
-      "moves": [
-       {
-        "at": "status",
-        "to": 1
-       },
-       {
-        "at": "dikhta",
-        "to": 2
-       }
-      ]
-     },
-     {
-      "id": "Istanbul",
-      "name": "Bilal A.",
-      "item": "3 Jan",
-      "row": 1,
-      "moves": [
-       {
-        "at": "dikhta",
-        "to": 1
-       }
-      ]
-     },
-     {
-      "id": "Skardu",
-      "name": "Sara M.",
-      "item": "June",
-      "row": 2
-     }
-    ]
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        8,
+        11
+       ],
+       "size": 51,
+       "color": "ink"
+      }
+     ]
+    }
    }
   }
  ],
@@ -271,35 +324,46 @@
    {
     "r": [
      1,
-     2
+     4
     ],
-    "size": 110,
+    "size": 51,
     "color": "white",
-    "mt": 70
+    "mt": 60
    },
    {
     "r": [
-     2,
-     3
+     4,
+     6
     ],
-    "size": 110,
-    "color": "lime"
+    "size": 72,
+    "color": "white",
+    "mt": 10
    },
    {
     "r": [
-     3,
-     5
+     6,
+     8
     ],
-    "size": 76,
+    "size": 85,
+    "color": "lime",
+    "mt": 10
+   },
+   {
+    "r": [
+     8,
+     10
+    ],
+    "size": 72,
     "color": "white",
-    "mt": 18
+    "mt": 10
    }
   ],
-  "chip": "&#10003; BOOKED",
-  "chipAt": "booking"
+  "chip": "&#10003; A SYSTEM",
+  "chipAt": 7
  },
  "cta": {
-  "noun": "agency",
-  "keyword": "TRIP"
+  "thing": "planner",
+  "noun": "planner",
+  "keyword": "ROUTINE"
  }
 }

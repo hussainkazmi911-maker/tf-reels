@@ -1,258 +1,300 @@
 {
  "id": "r14",
- "business": "Property managers",
- "keyword": "TENANT",
+ "business": "Pick a niche",
+ "keyword": "FOCUS",
  "lines": [
-  "Rent kisne diya, kisne nahi? Kisi ko yaad nahi.",
-  "Tenant ne poocha, geyser kab theek hoga? You replied after two weeks. Tab tak, tenant naraaz.",
-  "Rent, requests aur repairs chats mein bikhre hain.",
-  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
-  "One. A tenant request form, jismein problem aur photo hoti hai.",
-  "Two. A rent due tracker, jahan har tenant ka status dikhta hai.",
-  "Three. A maintenance board, jahan har repair ka task dikhta hai.",
-  "Result? Har request ka jawab, har rent ka hisaab.",
-  "Want this for your rentals? Comment TENANT, hum aap ko details bhej denge."
+  "Main web developer hoon. Isse kaam nahi milta.",
+  "Ek freelancer ne bola, main sab kuch karta hoon. Client ko samajh hi nahi aaya, usse kaunsa kaam dena hai.",
+  "Sab kuch karne wale ko, koi khaas kaam nahi milta.",
+  "Toh yeh teen steps lo.",
+  "One. Ek tarah ka client chuno, jaise skincare brands.",
+  "Two. Ek problem chuno, jaise slow Shopify store.",
+  "Three. Us ek problem ka ek sample banao.",
+  "Result? Aap expert dikhte ho, aur client seedha aapko chunta hai.",
+  "Want the guide? Comment FOCUS, hum aapko DM kar denge."
+ ],
+ "bridge": {
+  "items": [
+   {
+    "top": 235,
+    "size": 56,
+    "toks": [
+     [
+      0,
+      "TOH"
+     ],
+     [
+      1,
+      "YEH"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      2,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      3,
+      "STEPS"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      4,
+      "LO."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   2,
+   3,
+   4
+  ]
+ },
+ "hub": "TIP",
+ "tag": "EXAMPLE SCENARIO",
+ "tagged": [
+  1,
+  2
  ],
  "hook": {
   "rows": [
    {
     "r": [
      0,
-     1
+     2
     ],
     "size": 56,
     "color": "white"
    },
    {
     "r": [
-     1,
+     2,
      3
     ],
-    "size": 110,
+    "size": 85,
     "color": "lime",
-    "mt": 8
+    "mt": 6
    },
    {
     "r": [
      3,
-     5
+     4
     ],
     "size": 78,
     "color": "white"
    },
    {
     "r": [
-     5,
-     9
+     4,
+     6
     ],
-    "size": 52,
+    "size": 56,
     "color": "red",
     "mt": 22
+   },
+   {
+    "r": [
+     6,
+     8
+    ],
+    "size": 56,
+    "color": "red"
    }
   ]
  },
  "pain": {
   "bubble": {
-   "label": "TENANT",
-   "text": "geyser kab theek hoga?",
-   "at": "geyser"
-  },
-  "clock": {
-   "to": "weeks.",
-   "from": "You"
+   "label": "FREELANCER",
+   "text": "Main sab kuch karta hoon",
+   "at": 4
   },
   "rows": [
    {
     "r": [
-     9,
-     12
+     11,
+     15
     ],
-    "size": 62,
+    "size": 38,
     "color": "ink"
    }
   ],
   "reply": {
-   "label": "DOOSRA FLAT",
-   "text": "Lease signed &#10003;",
-   "at": "Tab"
+   "label": "CLIENT",
+   "text": "Kya dena hai? Pata nahi",
+   "at": 15
   },
   "stamp": {
-   "text": "TENANT GAYA.",
-   "at": "tenant",
-   "size": 58
-  }
+   "text": "KAAM NAHI.",
+   "at": 19,
+   "size": 70
+  },
+  "clock": null
  },
  "mess": {
   "chips": [
    {
-    "text": "Rent",
-    "at": "Rent,"
+    "text": "Sab",
+    "at": 0
    },
    {
-    "text": "Requests",
-    "at": "requests"
+    "text": "kuch",
+    "at": 1
    },
    {
-    "text": "Repairs",
-    "at": "repairs"
+    "text": "karne",
+    "at": 2
    }
   ],
   "rows": [
    {
     "r": [
      6,
-     7
+     8
     ],
-    "size": 120,
+    "size": 76,
     "color": "white"
    },
    {
     "r": [
-     7,
-     8
+     8,
+     10
     ],
-    "size": 120,
+    "size": 69,
     "color": "white"
    }
   ],
-  "sub": "kaunsa kaam baaki?<br>pata nahi.",
-  "subAt": "hain.",
-  "minisAt": "repairs",
+  "sub": "sab kuch,<br>par pehchaan nahi.",
+  "subAt": 9,
+  "minisAt": 4,
   "subSize": 58
  },
  "builds": [
   {
-   "title": "REQUEST FORM",
-   "titleAt": "request",
-   "bg": "white",
+   "title": "CLIENT TYPE",
+   "titleAt": 4,
+   "bg": "cream",
    "demo": {
-    "type": "form",
-    "header": "Repair request",
-    "fields": [
+    "type": "list",
+    "header": "PICK ONE",
+    "rows": [
      {
-      "label": "FLAT",
-      "value": "B-12",
-      "at": "tenant"
+      "title": "Everyone",
+      "sub": "Too broad",
+      "chip": "SKIP",
+      "at": 4,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      },
      {
-      "label": "ISSUE",
-      "value": "Geyser not heating",
-      "at": "problem"
-     },
-     {
-      "label": "PHOTO",
-      "value": "geyser.jpg",
-      "at": "photo"
+      "title": "Skincare brands",
+      "sub": "One type of client",
+      "chip": "PICK",
+      "at": 7
      }
     ],
-    "button": {
-     "text": "SEND REQUEST",
-     "at": "hoti",
-     "done": "SENT \u2713",
-     "doneAt": "hai."
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        6,
+        9
+       ],
+       "size": 34,
+       "color": "ink"
+      }
+     ]
     }
    }
   },
   {
-   "title": "RENT TRACKER",
-   "titleAt": "rent",
+   "title": "ONE PROBLEM",
+   "titleAt": 2,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "NOVEMBER",
+    "header": "PROBLEM",
     "rows": [
      {
-      "title": "Flat B-12",
-      "sub": "Ayesha K.",
-      "chip": "PAID",
-      "at": "har"
+      "title": "Slow store",
+      "sub": "Shopify speed",
+      "chip": "FIX",
+      "at": 5
      },
      {
-      "title": "Flat C-04",
-      "sub": "Bilal A.",
-      "chip": "DUE",
-      "at": "tenant",
-      "chip2": "PAID \u2713",
-      "chip2At": "dikhta",
-      "bg": "#ffd166",
-      "fg": "#0b0d09",
-      "bg2": "#c6ff35",
-      "fg2": "#0b0d09"
-     },
-     {
-      "title": "Flat A-07",
-      "sub": "Sara M.",
-      "chip": "OVERDUE",
-      "at": "status",
-      "bg": "#ff4b3a",
-      "fg": "#ffffff"
+      "title": "Only this one",
+      "sub": "Not everything",
+      "chip": "FOCUS",
+      "at": 7
      }
-    ]
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        5,
+        8
+       ],
+       "size": 40,
+       "color": "ink"
+      }
+     ]
+    }
    }
   },
   {
-   "title": "REPAIR BOARD",
-   "titleAt": "maintenance",
+   "title": "SAMPLE",
+   "titleAt": 6,
    "bg": "cream",
    "demo": {
-    "type": "board",
-    "appear": "har",
-    "cols": [
+    "type": "list",
+    "header": "SAMPLE",
+    "rows": [
      {
-      "name": "NEW",
-      "bg": "#ffd166",
-      "fg": "#0b0d09",
-      "at": "jahan"
+      "title": "Before",
+      "sub": "Slow Shopify page",
+      "chip": "SLOW",
+      "at": 3,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      },
      {
-      "name": "FIXING",
-      "bg": "#c6ff35",
-      "fg": "#0b0d09",
-      "at": "repair"
-     },
-     {
-      "name": "DONE",
-      "bg": "#0b0d09",
-      "fg": "#c6ff35",
-      "at": "task"
+      "title": "After",
+      "sub": "Your sample fix",
+      "chip": "FAST",
+      "at": 7
      }
     ],
-    "cards": [
-     {
-      "id": "B-12",
-      "name": "Geyser",
-      "item": "Plumber",
-      "row": 0,
-      "moves": [
-       {
-        "at": "task",
-        "to": 1
-       },
-       {
-        "at": "dikhta",
-        "to": 2
-       }
-      ]
-     },
-     {
-      "id": "C-04",
-      "name": "Light",
-      "item": "Electrician",
-      "row": 1,
-      "moves": [
-       {
-        "at": "dikhta",
-        "to": 1
-       }
-      ]
-     },
-     {
-      "id": "A-07",
-      "name": "AC",
-      "item": "Vendor",
-      "row": 2
-     }
-    ]
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        5,
+        8
+       ],
+       "size": 48,
+       "color": "ink"
+      }
+     ]
+    }
    }
   }
  ],
@@ -270,35 +312,64 @@
    {
     "r": [
      1,
+     2
+    ],
+    "size": 72,
+    "color": "white",
+    "mt": 60
+   },
+   {
+    "r": [
+     2,
      3
     ],
-    "size": 80,
-    "color": "white",
-    "mt": 70
+    "size": 110,
+    "color": "lime",
+    "mt": 10
    },
    {
     "r": [
      3,
      5
     ],
-    "size": 100,
-    "color": "lime"
+    "size": 72,
+    "color": "white",
+    "mt": 10
    },
    {
     "r": [
      5,
+     7
+    ],
+    "size": 64,
+    "color": "white",
+    "mt": 10
+   },
+   {
+    "r": [
+     7,
      9
     ],
-    "size": 56,
-    "color": "white",
-    "mt": 20
+    "size": 64,
+    "color": "lime",
+    "mt": 8
+   },
+   {
+    "r": [
+     9,
+     11
+    ],
+    "size": 69,
+    "color": "lime",
+    "mt": 6
    }
   ],
-  "chip": "&#10003; NOTHING MISSED",
-  "chipAt": "jawab,"
+  "chip": "&#10003; CHOSEN",
+  "chipAt": 9
  },
  "cta": {
-  "noun": "rentals",
-  "keyword": "TENANT"
+  "thing": "guide",
+  "noun": "guide",
+  "keyword": "FOCUS"
  }
 }

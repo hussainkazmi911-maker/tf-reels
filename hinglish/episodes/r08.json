@@ -1,60 +1,123 @@
 {
  "id": "r08",
- "business": "Gyms",
- "keyword": "MEMBERS",
+ "business": "A LinkedIn profile US clients open",
+ "keyword": "LINKEDIN",
  "lines": [
-  "Member ki fee due hai, lekin kisi ko pata nahi.",
-  "Member ne poocha, plan renew kaise karun? You replied after three days. Tab tak, membership gayi.",
-  "Fees, attendance aur plans alag alag diary mein hain.",
-  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
-  "One. A member signup, jismein fee due date set hoti hai.",
-  "Two. Renewal reminders, taaki koi membership expire na ho.",
-  "Three. A check-in log, jahan har member ki attendance dikhti hai.",
-  "Result? Sab members ka hisaab, ek hi screen par.",
-  "Want this for your gym? Comment MEMBERS, hum aap ko details bhej denge."
+  "Aapki LinkedIn profile client ko kya batati hai?",
+  "Ek client ne profile kholi. Headline thi, hardworking professional. Usne ek second mein band kar di.",
+  "Kyunki usse pata nahi chala, aap kya karte ho.",
+  "Toh yeh teen cheezein theek karo.",
+  "One. Headline mein likho, aap kya karte ho aur kiske liye.",
+  "Two. Featured section mein apne teen best projects lagao.",
+  "Three. Roz paanch sahi logon ko connect karo, chhote note ke saath.",
+  "Result? Profile aapka kaam batati hai, aur client message karta hai.",
+  "Want the checklist? Comment LINKEDIN, hum aapko DM kar denge."
+ ],
+ "bridge": {
+  "items": [
+   {
+    "top": 235,
+    "size": 56,
+    "toks": [
+     [
+      0,
+      "TOH"
+     ],
+     [
+      1,
+      "YEH"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      2,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      3,
+      "CHEEZEIN"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      4,
+      "THEEK"
+     ],
+     [
+      5,
+      "KARO."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   2,
+   3,
+   5
+  ]
+ },
+ "hub": "TIP",
+ "tag": "EXAMPLE SCENARIO",
+ "tagged": [
+  1,
+  2
  ],
  "hook": {
   "rows": [
    {
     "r": [
      0,
-     2
+     1
     ],
     "size": 56,
     "color": "white"
    },
    {
     "r": [
-     2,
-     4
+     1,
+     2
     ],
-    "size": 130,
+    "size": 96,
     "color": "lime",
-    "mt": 8
+    "mt": 6
    },
    {
     "r": [
-     4,
-     5
+     2,
+     3
     ],
     "size": 78,
     "color": "white"
    },
    {
     "r": [
-     5,
-     8
+     3,
+     5
     ],
-    "size": 52,
+    "size": 46,
     "color": "red",
     "mt": 22
    },
    {
     "r": [
-     8,
-     10
+     5,
+     8
     ],
-    "size": 52,
+    "size": 46,
     "color": "red",
     "mt": 4
    }
@@ -62,57 +125,57 @@
  },
  "pain": {
   "bubble": {
-   "label": "MEMBER",
-   "text": "renew kaise karun?",
-   "at": "plan"
-  },
-  "clock": {
-   "to": "days.",
-   "from": "You"
+   "label": "HEADLINE",
+   "text": "Hardworking professional",
+   "at": 5
   },
   "rows": [
    {
     "r": [
-     9,
-     12
+     13,
+     16
     ],
-    "size": 62,
+    "size": 64,
     "color": "ink"
    }
   ],
   "reply": {
-   "label": "DOOSRA GYM",
-   "text": "Membership joined &#10003;",
-   "at": "Tab"
+   "label": "CLIENT",
+   "text": "Tab closed",
+   "at": 13
   },
   "stamp": {
-   "text": "MEMBER GAYA.",
-   "at": "membership",
-   "size": 58
+   "text": "PROFILE BAND.",
+   "at": 15,
+   "size": 54
+  },
+  "clock": {
+   "from": 10,
+   "to": 12
   }
  },
  "mess": {
   "chips": [
    {
-    "text": "Fees",
-    "at": "Fees,"
+    "text": "usse",
+    "at": 1
    },
    {
-    "text": "Attendance",
-    "at": "attendance"
+    "text": "pata",
+    "at": 2
    },
    {
-    "text": "Plans",
-    "at": "plans"
+    "text": "nahi",
+    "at": 3
    }
   ],
   "rows": [
    {
     "r": [
-     4,
+     5,
      6
     ],
-    "size": 110,
+    "size": 100,
     "color": "white"
    },
    {
@@ -120,71 +183,119 @@
      6,
      9
     ],
-    "size": 66,
+    "size": 59,
     "color": "white"
    }
   ],
-  "sub": "kaun active hai?<br>pata nahi.",
-  "subAt": "hain.",
-  "minisAt": "plans",
+  "sub": "headline?<br>koi clue nahi.",
+  "subAt": 8,
+  "minisAt": 5,
   "subSize": 58
  },
  "builds": [
   {
-   "title": "MEMBER SIGNUP",
-   "titleAt": "member",
-   "bg": "white",
+   "title": "HEADLINE",
+   "titleAt": 1,
+   "bg": "cream",
    "demo": {
-    "type": "form",
-    "header": "New member",
-    "fields": [
+    "type": "list",
+    "header": "HEADLINE",
+    "rows": [
      {
-      "label": "NAME",
-      "value": "Hamza R.",
-      "at": "member"
+      "title": "Hardworking pro",
+      "sub": "Says nothing",
+      "chip": "OLD",
+      "at": 1,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      },
      {
-      "label": "PLAN",
-      "value": "Monthly",
-      "at": "fee"
-     },
-     {
-      "label": "DUE DATE",
-      "value": "1 Dec",
-      "at": "date"
+      "title": "Shopify developer",
+      "sub": "for skincare brands",
+      "chip": "NEW",
+      "at": 9
      }
     ],
-    "button": {
-     "text": "JOIN GYM",
-     "at": "set",
-     "done": "JOINED \u2713",
-     "doneAt": "hai."
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        8,
+        11
+       ],
+       "size": 51,
+       "color": "ink"
+      }
+     ]
     }
    }
   },
   {
-   "title": "REMINDERS",
-   "titleAt": "Renewal",
+   "title": "FEATURED",
+   "titleAt": 1,
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "FEATURED",
+    "rows": [
+     {
+      "title": "Project one",
+      "sub": "Your best work",
+      "chip": "PIN",
+      "at": 5
+     },
+     {
+      "title": "Project two",
+      "sub": "Your best work",
+      "chip": "PIN",
+      "at": 6
+     },
+     {
+      "title": "Project three",
+      "sub": "Your best work",
+      "chip": "PIN",
+      "at": 7
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        6,
+        9
+       ],
+       "size": 38,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "CONNECT",
+   "titleAt": 6,
    "bg": "dark",
    "demo": {
     "type": "chat",
     "msgs": [
      {
       "who": "r",
-      "text": "Membership kal expire hogi &#9888;",
-      "at": "reminders,",
+      "text": "Hi Sam, aapka kaam acha laga",
+      "at": 6,
       "y": 300
      },
      {
-      "who": "c",
-      "text": "Renew kar do",
-      "at": "koi",
+      "who": "r",
+      "text": "Main speed fix karta hoon",
+      "at": 8,
       "y": 425
      },
      {
-      "who": "r",
-      "text": "Renewed &#10003; See you at the gym",
-      "at": "expire",
+      "who": "c",
+      "text": "Sure, baat karte hain",
+      "at": 11,
       "y": 550
      }
     ],
@@ -193,45 +304,14 @@
      "rows": [
       {
        "r": [
-        6,
-        9
+        1,
+        3
        ],
-       "size": 70,
+       "size": 66,
        "color": "lime"
       }
      ]
     }
-   }
-  },
-  {
-   "title": "CHECK-IN LOG",
-   "titleAt": "check-in",
-   "bg": "cream",
-   "demo": {
-    "type": "list",
-    "header": "TODAY",
-    "rows": [
-     {
-      "title": "Hamza R.",
-      "sub": "Checked in 6:15 AM",
-      "chip": "IN",
-      "at": "har"
-     },
-     {
-      "title": "Sara K.",
-      "sub": "Checked in 7:00 AM",
-      "chip": "IN",
-      "at": "member"
-     },
-     {
-      "title": "Bilal A.",
-      "sub": "Fee due",
-      "chip": "DUE",
-      "at": "attendance",
-      "bg": "#ffd166",
-      "fg": "#0b0d09"
-     }
-    ]
    }
   }
  ],
@@ -249,35 +329,55 @@
    {
     "r": [
      1,
+     2
+    ],
+    "size": 100,
+    "color": "white",
+    "mt": 60
+   },
+   {
+    "r": [
+     2,
      4
     ],
-    "size": 68,
-    "color": "white",
-    "mt": 66
+    "size": 72,
+    "color": "lime",
+    "mt": 10
    },
    {
     "r": [
      4,
-     5
+     6
     ],
-    "size": 110,
-    "color": "lime"
+    "size": 69,
+    "color": "white",
+    "mt": 10
    },
    {
     "r": [
-     5,
-     9
+     6,
+     8
     ],
-    "size": 70,
+    "size": 64,
     "color": "white",
-    "mt": 20
+    "mt": 10
+   },
+   {
+    "r": [
+     8,
+     11
+    ],
+    "size": 42,
+    "color": "lime",
+    "mt": 10
    }
   ],
-  "chip": "&#10003; ALL TRACKED",
-  "chipAt": "hisaab,"
+  "chip": "&#10003; NEW MESSAGES",
+  "chipAt": 8
  },
  "cta": {
-  "noun": "gym",
-  "keyword": "MEMBERS"
+  "thing": "checklist",
+  "noun": "checklist",
+  "keyword": "LINKEDIN"
  }
 }

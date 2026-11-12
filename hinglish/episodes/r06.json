@@ -1,191 +1,286 @@
 {
  "id": "r06",
- "business": "Clinics and dentists",
- "keyword": "CLINIC",
+ "business": "Pricing without underpricing",
+ "keyword": "PRICE",
  "lines": [
-  "Aaj teen patients nahi aaye, aur slot khaali gaye.",
-  "Patient ne appointment li, phir bhool gaya. You noticed that evening. Tab tak, slot khaali.",
-  "Appointments calls, WhatsApp aur diary mein bikhri hain.",
-  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
-  "One. An online appointment booking. Patient khud slot chunta hai.",
-  "Two. SMS aur WhatsApp reminders, appointment se pehle.",
-  "Three. A patient record, jahan har visit ka note dikhta hai.",
-  "Result? Slots bharte hain, patients bhoolte nahi.",
-  "Want this for your clinic? Comment CLINIC, hum aap ko details bhej denge."
+  "Sasta kaam karke koi aage nahi badha.",
+  "Ek freelancer ne sabse kam rate rakha. Client bahut aaye, par mahine ke end mein haath khaali.",
+  "Kam rate ka matlab zyada kaam hota hai, zyada paisa nahi.",
+  "Toh yeh teen cheezein badlo.",
+  "One. Ghante ke bajaye project ka price batao.",
+  "Two. Teen packages rakho, basic, standard aur premium.",
+  "Three. Price batane se pehle client ka budget poochho.",
+  "Result? Client choose karta hai, aur aap bargain nahi karte.",
+  "Want the checklist? Comment PRICE, hum aapko DM kar denge."
+ ],
+ "bridge": {
+  "items": [
+   {
+    "top": 235,
+    "size": 56,
+    "toks": [
+     [
+      0,
+      "TOH"
+     ],
+     [
+      1,
+      "YEH"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      2,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      3,
+      "CHEEZEIN"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      4,
+      "BADLO."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   2,
+   3,
+   4
+  ]
+ },
+ "hub": "TIP",
+ "tag": "EXAMPLE SCENARIO",
+ "tagged": [
+  1,
+  2
  ],
  "hook": {
   "rows": [
    {
     "r": [
      0,
-     2
+     1
     ],
-    "size": 56,
-    "color": "white"
+    "size": 130,
+    "color": "lime"
    },
    {
     "r": [
-     2,
+     1,
      3
     ],
-    "size": 110,
-    "color": "lime",
-    "mt": 8
+    "size": 76,
+    "color": "white",
+    "mt": 6
    },
    {
     "r": [
      3,
      5
     ],
-    "size": 78,
-    "color": "white"
+    "size": 66,
+    "color": "white",
+    "mt": 8
    },
    {
     "r": [
      5,
      7
     ],
-    "size": 52,
+    "size": 56,
     "color": "red",
     "mt": 22
-   },
-   {
-    "r": [
-     7,
-     9
-    ],
-    "size": 52,
-    "color": "red",
-    "mt": 4
    }
   ]
  },
  "pain": {
   "bubble": {
-   "label": "PATIENT",
-   "text": "kal 10 baje &#10003;",
-   "at": "appointment"
-  },
-  "clock": {
-   "to": "evening.",
-   "from": "You"
+   "label": "FREELANCER",
+   "text": "Rate: sabse kam",
+   "at": 3
   },
   "rows": [
    {
     "r": [
-     9,
-     11
+     15,
+     17
     ],
-    "size": 66,
+    "size": 59,
     "color": "ink"
    }
   ],
   "reply": {
-   "label": "10:00 SLOT",
-   "text": "Koi nahi aaya",
-   "at": "Tab"
+   "label": "CLIENTS",
+   "text": "Bahut clients \u2713",
+   "at": 7
   },
   "stamp": {
-   "text": "SLOT KHAALI.",
-   "at": "slot",
-   "size": 58
+   "text": "HAATH KHAALI.",
+   "at": 15,
+   "size": 54
+  },
+  "clock": {
+   "from": 11,
+   "to": 14
   }
  },
  "mess": {
   "chips": [
    {
-    "text": "Calls",
-    "at": "calls,"
+    "text": "Kam",
+    "at": 0
    },
    {
-    "text": "WhatsApp",
-    "at": "WhatsApp"
+    "text": "rate",
+    "at": 1
    },
    {
-    "text": "Diary",
-    "at": "diary"
+    "text": "kaam",
+    "at": 5
    }
   ],
   "rows": [
    {
     "r": [
-     6,
-     7
+     8,
+     9
     ],
-    "size": 120,
+    "size": 100,
     "color": "white"
    },
    {
     "r": [
-     7,
-     8
+     9,
+     11
     ],
-    "size": 120,
+    "size": 69,
     "color": "white"
    }
   ],
-  "sub": "aaj kaun aa raha hai?<br>pata nahi.",
-  "subAt": "hain.",
-  "minisAt": "diary",
-  "subSize": 52
+  "sub": "kaam zyada.<br>paisa wahi.",
+  "subAt": 10,
+  "minisAt": 5,
+  "subSize": 58
  },
  "builds": [
   {
-   "title": "ONLINE BOOKING",
-   "titleAt": "online",
+   "title": "PROJECT PRICE",
+   "titleAt": 4,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "TODAY",
+    "header": "QUOTE",
     "rows": [
      {
-      "title": "Ayesha K.",
-      "sub": "Check-up",
-      "chip": "BOOKED",
-      "at": "online",
-      "tag": "09:00"
+      "title": "Per hour",
+      "sub": "Hours, hours, hours",
+      "chip": "OLD",
+      "at": 1,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      },
      {
-      "title": "Bilal A.",
-      "sub": "Follow-up",
-      "chip": "BOOKED",
-      "at": "Patient",
-      "tag": "09:30"
-     },
-     {
-      "title": "Sara M.",
-      "sub": "Check-up",
-      "chip": "BOOKED",
-      "at": "slot",
-      "tag": "10:00"
+      "title": "Per project",
+      "sub": "One clear price",
+      "chip": "NEW",
+      "at": 4
      }
-    ]
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        5,
+        8
+       ],
+       "size": 51,
+       "color": "ink"
+      }
+     ]
+    }
    }
   },
   {
-   "title": "REMINDERS",
-   "titleAt": "SMS",
+   "title": "PACKAGES",
+   "titleAt": 2,
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "PACKAGES",
+    "rows": [
+     {
+      "title": "Basic",
+      "sub": "Core work only",
+      "chip": "ENTRY",
+      "at": 4
+     },
+     {
+      "title": "Standard",
+      "sub": "Most clients pick",
+      "chip": "POPULAR",
+      "at": 5
+     },
+     {
+      "title": "Premium",
+      "sub": "Everything included",
+      "chip": "FULL",
+      "at": 7,
+      "bg": "#ffd166",
+      "fg": "#0b0d09"
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        5,
+        8
+       ],
+       "size": 36,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "BUDGET",
+   "titleAt": 7,
    "bg": "dark",
    "demo": {
     "type": "chat",
     "msgs": [
      {
       "who": "r",
-      "text": "Reminder: kal 9:00 baje",
-      "at": "reminders,",
+      "text": "Aapka budget kitna hai?",
+      "at": 7,
       "y": 300
      },
      {
       "who": "c",
-      "text": "Confirmed, aa raha hoon",
-      "at": "appointment",
+      "text": "Let me check, bata deta hoon",
+      "at": 8,
       "y": 425
-     },
-     {
-      "who": "r",
-      "text": "See you tomorrow &#10003;",
-      "at": "pehle",
-      "y": 550
      }
     ],
     "caption": {
@@ -196,40 +291,11 @@
         5,
         8
        ],
-       "size": 60,
+       "size": 48,
        "color": "lime"
       }
      ]
     }
-   }
-  },
-  {
-   "title": "PATIENT RECORD",
-   "titleAt": "patient",
-   "bg": "cream",
-   "demo": {
-    "type": "list",
-    "header": "AYESHA K.",
-    "rows": [
-     {
-      "title": "Visit: 12 Oct",
-      "sub": "Follow-up in 2 weeks",
-      "chip": "SAVED",
-      "at": "jahan"
-     },
-     {
-      "title": "Visit: 28 Oct",
-      "sub": "Reminder set",
-      "chip": "SAVED",
-      "at": "har"
-     },
-     {
-      "title": "Next: 15 Nov",
-      "sub": "Booked online",
-      "chip": "BOOKED",
-      "at": "note"
-     }
-    ]
    }
   }
  ],
@@ -247,35 +313,56 @@
    {
     "r": [
      1,
-     4
+     3
     ],
-    "size": 70,
+    "size": 59,
     "color": "white",
-    "mt": 66
+    "mt": 60
    },
    {
     "r": [
-     4,
+     3,
      5
     ],
-    "size": 96,
+    "size": 76,
     "color": "lime",
-    "mt": 20
+    "mt": 14
    },
    {
     "r": [
      5,
      7
     ],
-    "size": 78,
-    "color": "lime"
+    "size": 72,
+    "color": "white",
+    "mt": 14
+   },
+   {
+    "r": [
+     7,
+     8
+    ],
+    "size": 109,
+    "color": "lime",
+    "strike": "bargain",
+    "mt": 14
+   },
+   {
+    "r": [
+     8,
+     10
+    ],
+    "size": 69,
+    "color": "white",
+    "mt": 10
    }
   ],
-  "chip": "&#10003; SLOT FULL",
-  "chipAt": "Slots"
+  "chip": "&#10003; YOU CHOOSE",
+  "chipAt": 3
  },
  "cta": {
-  "noun": "clinic",
-  "keyword": "CLINIC"
+  "thing": "checklist",
+  "noun": "checklist",
+  "keyword": "PRICE"
  }
 }

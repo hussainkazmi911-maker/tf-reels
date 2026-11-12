@@ -1,175 +1,281 @@
 {
  "id": "r04",
- "business": "Retail shops",
- "keyword": "STOCK",
+ "business": "A proposal that gets replies",
+ "keyword": "PROPOSAL",
  "lines": [
-  "Shop mein suit bik gaya, website par abhi bhi available hai.",
-  "Customer ne order kiya, stock nahi tha. You apologised two days later. Tab tak, review kharab.",
-  "Stock shop, website aur diary mein alag alag hai.",
-  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
-  "One. Shop aur website ka stock, ek hi jagah sync.",
-  "Two. A low-stock alert, taaki item khatam hone se pehle pata chale.",
-  "Three. A daily sales screen, jahan har cheez ka hisaab dikhta hai.",
-  "Result? Jo shop mein hai, wahi website par hai.",
-  "Want this for your shop? Comment STOCK, hum aap ko details bhej denge."
+  "Chalis proposals bheje, reply zero. Galti kahan thi?",
+  "Ek freelancer ne sabko wahi copy paste proposal bheja. Pehli line thi, hello sir, I am an expert.",
+  "Client ne do second mein dekha, aur band kar diya.",
+  "Toh yeh teen cheezein badlo.",
+  "One. Pehli line client ki problem par likho, apne baare mein nahi.",
+  "Two. Ek relevant project ka proof do, bas do line mein.",
+  "Three. End mein ek sawaal poochho, taaki reply banta ho.",
+  "Result? Proposal copy nahi lagta, aur reply aane lagte hain.",
+  "Want the template? Comment PROPOSAL, hum aapko DM kar denge."
+ ],
+ "bridge": {
+  "items": [
+   {
+    "top": 235,
+    "size": 56,
+    "toks": [
+     [
+      0,
+      "TOH"
+     ],
+     [
+      1,
+      "YEH"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      2,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      3,
+      "CHEEZEIN"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      4,
+      "BADLO."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   2,
+   3,
+   4
+  ]
+ },
+ "hub": "TIP",
+ "tag": "EXAMPLE SCENARIO",
+ "tagged": [
+  1,
+  2
  ],
  "hook": {
   "rows": [
    {
     "r": [
      0,
+     2
+    ],
+    "size": 48,
+    "color": "white"
+   },
+   {
+    "r": [
+     2,
      3
     ],
-    "size": 56,
+    "size": 78,
     "color": "white"
    },
    {
     "r": [
      3,
+     4
+    ],
+    "size": 78,
+    "color": "white"
+   },
+   {
+    "r": [
+     4,
      5
     ],
-    "size": 120,
+    "size": 130,
     "color": "lime",
     "mt": 6
    },
    {
     "r": [
      5,
-     9
+     8
     ],
-    "size": 50,
-    "color": "white",
-    "mt": 14
-   },
-   {
-    "r": [
-     9,
-     11
-    ],
-    "size": 58,
+    "size": 46,
     "color": "red",
-    "mt": 16
+    "mt": 22
    }
   ]
  },
  "pain": {
   "bubble": {
-   "label": "CUSTOMER",
-   "text": "Order kar diya!",
-   "at": "order"
-  },
-  "clock": {
-   "to": "later.",
-   "from": "You"
+   "label": "PROPOSAL",
+   "text": "Hello sir, I am an expert",
+   "at": 12
   },
   "rows": [
    {
     "r": [
-     9,
-     12
+     4,
+     7
     ],
-    "size": 66,
+    "size": 51,
     "color": "ink"
    }
   ],
   "reply": {
-   "label": "NEW REVIEW",
-   "text": "&#9733; Item nahi mila",
-   "at": "Tab"
+   "label": "INBOX",
+   "text": "0 replies",
+   "at": 15
   },
   "stamp": {
-   "text": "REVIEW KHARAB.",
-   "at": "review",
-   "size": 50
-  }
+   "text": "COPY PASTE.",
+   "at": 17,
+   "size": 63
+  },
+  "clock": null
  },
  "mess": {
   "chips": [
    {
-    "text": "Shop",
-    "at": "shop,"
+    "text": "Client",
+    "at": 0
    },
    {
-    "text": "Website",
-    "at": "website"
+    "text": "dekha,",
+    "at": 5
    },
    {
-    "text": "Diary",
-    "at": "diary"
+    "text": "band",
+    "at": 7
    }
   ],
   "rows": [
    {
     "r": [
-     6,
-     7
+     7,
+     8
     ],
     "size": 120,
     "color": "white"
    },
    {
     "r": [
-     7,
-     9
+     8,
+     10
     ],
-    "size": 120,
+    "size": 85,
     "color": "white"
    }
   ],
-  "sub": "kitna bacha hai?<br>pata nahi.",
-  "subAt": "hai.",
-  "minisAt": "diary",
+  "sub": "reply?<br>zero.",
+  "subAt": 9,
+  "minisAt": 2,
   "subSize": 58
  },
  "builds": [
   {
-   "title": "STOCK SYNC",
-   "titleAt": "stock,",
+   "title": "FIRST LINE",
+   "titleAt": 2,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "STOCK",
+    "header": "PROPOSAL",
     "rows": [
      {
-      "title": "Black suit (M)",
-      "sub": "Shop + website",
-      "chip": "3 LEFT",
-      "at": "Shop",
-      "chip2": "2 LEFT",
-      "chip2At": "jagah"
+      "title": "Site slow hai",
+      "sub": "About their problem",
+      "chip": "GOOD",
+      "at": 3
      },
      {
-      "title": "Lawn suit",
-      "sub": "Shop + website",
-      "chip": "5 LEFT",
-      "at": "website"
-     },
-     {
-      "title": "Watch strap",
-      "sub": "Shop + website",
-      "chip": "8 LEFT",
-      "at": "stock,"
+      "title": "Hello sir",
+      "sub": "About yourself",
+      "chip": "SKIP",
+      "at": 8,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      }
-    ]
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        9,
+        12
+       ],
+       "size": 48,
+       "color": "ink"
+      }
+     ]
+    }
    }
   },
   {
-   "title": "LOW-STOCK ALERT",
-   "titleAt": "low-stock",
+   "title": "PROOF",
+   "titleAt": 5,
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "PROOF",
+    "rows": [
+     {
+      "title": "Similar project",
+      "sub": "One relevant example",
+      "chip": "ADD",
+      "at": 3
+     },
+     {
+      "title": "Two lines only",
+      "sub": "Short and clear",
+      "chip": "OK",
+      "at": 8
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        8,
+        11
+       ],
+       "size": 59,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "A QUESTION",
+   "titleAt": 4,
    "bg": "dark",
    "demo": {
     "type": "chat",
     "msgs": [
      {
       "who": "r",
-      "text": "&#9888; Black suit (M): sirf 2 bache",
-      "at": "alert,",
+      "text": "Kya main ek plan bhej doon?",
+      "at": 4,
       "y": 300
      },
      {
-      "who": "r",
-      "text": "Reorder reminder bhej diya &#10003;",
-      "at": "pehle",
+      "who": "c",
+      "text": "Haan, zaroor bhejiye",
+      "at": 9,
       "y": 425
      }
     ],
@@ -178,43 +284,14 @@
      "rows": [
       {
        "r": [
-        10,
-        12
+        3,
+        5
        ],
-       "size": 80,
+       "size": 72,
        "color": "lime"
       }
      ]
     }
-   }
-  },
-  {
-   "title": "SALES SCREEN",
-   "titleAt": "daily",
-   "bg": "cream",
-   "demo": {
-    "type": "list",
-    "header": "SALES TODAY",
-    "rows": [
-     {
-      "title": "Suits",
-      "sub": "Sold today",
-      "chip": "12",
-      "at": "jahan"
-     },
-     {
-      "title": "Shoes",
-      "sub": "Sold today",
-      "chip": "8",
-      "at": "har"
-     },
-     {
-      "title": "Accessories",
-      "sub": "Sold today",
-      "chip": "21",
-      "at": "cheez"
-     }
-    ]
    }
   }
  ],
@@ -232,35 +309,47 @@
    {
     "r": [
      1,
+     2
+    ],
+    "size": 90,
+    "color": "white",
+    "mt": 60
+   },
+   {
+    "r": [
+     2,
+     3
+    ],
+    "size": 110,
+    "color": "lime",
+    "strike": "copy",
+    "mt": 14
+   },
+   {
+    "r": [
+     3,
      5
     ],
-    "size": 64,
+    "size": 69,
     "color": "white",
-    "mt": 66
+    "mt": 14
    },
    {
     "r": [
      5,
-     7
+     10
     ],
-    "size": 88,
-    "color": "lime",
+    "size": 34,
+    "color": "white",
     "mt": 24
-   },
-   {
-    "r": [
-     7,
-     9
-    ],
-    "size": 88,
-    "color": "lime"
    }
   ],
-  "chip": "&#10003; STOCK MATCHED",
-  "chipAt": "wahi"
+  "chip": "&#10003; REPLIES",
+  "chipAt": 6
  },
  "cta": {
-  "noun": "shop",
-  "keyword": "STOCK"
+  "thing": "template",
+  "noun": "template",
+  "keyword": "PROPOSAL"
  }
 }

@@ -1,51 +1,114 @@
 {
  "id": "r11",
- "business": "Wholesalers",
- "keyword": "WHOLESALE",
+ "business": "Upwork Connects: do not waste them",
+ "keyword": "UPWORK",
  "lines": [
-  "Udhaar ka hisaab diary mein hai, aur diary kho gayi.",
-  "Retailer ne poocha, mera balance kitna hai? You found it after an hour. Tab tak, order gaya.",
-  "Orders, payments aur prices diary aur WhatsApp mein bikhre hain.",
-  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
-  "One. A price list page, jo retailer khud dekh sakta hai.",
-  "Two. A bulk order form, jismein retailer quantity khud bharta hai.",
-  "Three. A payments ledger, jahan har retailer ka hisaab dikhta hai.",
-  "Result? Udhaar ka hisaab, ek click par.",
-  "Want this for your business? Comment WHOLESALE, hum aap ko details bhej denge."
+  "Upwork par har proposal ka paisa lagta hai.",
+  "Ek freelancer ne bina dekhe pachaas jobs par apply kiya. Connects khatam, aur kaam ek bhi nahi.",
+  "Har Connect ki price pandrah cents hai, toh andaze se apply mat karo.",
+  "Toh yeh teen cheezein check karo.",
+  "One. Job fresh ho, taaki aap pehle proposals mein rahein.",
+  "Two. Client ki payment verified ho, aur hiring history dekho.",
+  "Three. Job post poori padho, aur usi ke hisaab se likho.",
+  "Result? Kam Connects lagte hain, aur replies ke chance badhte hain.",
+  "Want the checklist? Comment UPWORK, hum aapko DM kar denge."
+ ],
+ "bridge": {
+  "items": [
+   {
+    "top": 235,
+    "size": 56,
+    "toks": [
+     [
+      0,
+      "TOH"
+     ],
+     [
+      1,
+      "YEH"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      2,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      3,
+      "CHEEZEIN"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      4,
+      "CHECK"
+     ],
+     [
+      5,
+      "KARO."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   2,
+   3,
+   5
+  ]
+ },
+ "hub": "TIP",
+ "tag": "EXAMPLE SCENARIO",
+ "tagged": [
+  1,
+  2
  ],
  "hook": {
   "rows": [
    {
     "r": [
      0,
-     3
+     1
     ],
-    "size": 56,
-    "color": "white"
+    "size": 128,
+    "color": "lime"
    },
    {
     "r": [
-     3,
-     4
+     1,
+     3
     ],
-    "size": 150,
-    "color": "lime",
+    "size": 78,
+    "color": "white",
     "mt": 6
    },
    {
     "r": [
-     4,
-     6
+     3,
+     5
     ],
-    "size": 78,
+    "size": 69,
     "color": "white"
    },
    {
     "r": [
-     6,
-     10
+     5,
+     8
     ],
-    "size": 50,
+    "size": 48,
     "color": "red",
     "mt": 22
    }
@@ -53,170 +116,179 @@
  },
  "pain": {
   "bubble": {
-   "label": "RETAILER",
-   "text": "mera balance kitna hai?",
-   "at": "mera"
-  },
-  "clock": {
-   "to": "hour.",
-   "from": "You"
+   "label": "FREELANCER",
+   "text": "50 jobs par apply",
+   "at": 5
   },
   "rows": [
    {
     "r": [
      10,
-     13
+     12
     ],
-    "size": 66,
+    "size": 48,
     "color": "ink"
    }
   ],
   "reply": {
-   "label": "DOOSRA SUPPLIER",
-   "text": "Order confirmed &#10003;",
-   "at": "Tab"
+   "label": "CONNECTS",
+   "text": "0 left",
+   "at": 10
   },
   "stamp": {
-   "text": "ORDER GAYA.",
-   "at": "order",
-   "size": 63
-  }
+   "text": "KAAM ZERO.",
+   "at": 16,
+   "size": 70
+  },
+  "clock": null
  },
  "mess": {
   "chips": [
    {
-    "text": "Orders",
-    "at": "Orders"
+    "text": "Connect",
+    "at": 1
    },
    {
-    "text": "Payments",
-    "at": "payments"
+    "text": "pandrah",
+    "at": 4
    },
    {
-    "text": "Prices",
-    "at": "prices"
+    "text": "cents",
+    "at": 5
    }
   ],
   "rows": [
    {
     "r": [
      8,
-     9
+     10
     ],
-    "size": 120,
+    "size": 85,
     "color": "white"
    },
    {
     "r": [
-     9,
-     10
+     10,
+     13
     ],
-    "size": 120,
+    "size": 51,
     "color": "white"
    }
   ],
-  "sub": "kis ka kitna baaki?<br>pata nahi.",
-  "subAt": "hain.",
-  "minisAt": "diary",
-  "subSize": 52
+  "sub": "sirf andaza?<br>paisa gaya.",
+  "subAt": 12,
+  "minisAt": 6,
+  "subSize": 58
  },
  "builds": [
   {
-   "title": "PRICE LIST",
-   "titleAt": "price",
+   "title": "FRESH JOB",
+   "titleAt": 2,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "PRICE LIST",
+    "header": "JOBS",
     "rows": [
      {
-      "title": "Sugar 50kg",
-      "sub": "Rs. 8,500",
-      "chip": "ORDER",
-      "at": "list"
+      "title": "Posted today",
+      "sub": "Be among the first",
+      "chip": "FRESH",
+      "at": 2
      },
      {
-      "title": "Rice 25kg",
-      "sub": "Rs. 7,200",
-      "chip": "ORDER",
-      "at": "retailer"
-     },
-     {
-      "title": "Cooking oil 5L",
-      "sub": "Rs. 2,400",
-      "chip": "ORDER",
-      "at": "dekh"
-     }
-    ]
-   }
-  },
-  {
-   "title": "BULK ORDER",
-   "titleAt": "bulk",
-   "bg": "white",
-   "demo": {
-    "type": "form",
-    "header": "Bulk order",
-    "fields": [
-     {
-      "label": "RETAILER",
-      "value": "Karim Traders",
-      "at": "retailer"
-     },
-     {
-      "label": "ITEM",
-      "value": "Sugar 50kg",
-      "at": "quantity"
-     },
-     {
-      "label": "QUANTITY",
-      "value": "20 bags",
-      "at": "khud"
+      "title": "Posted last week",
+      "sub": "Many proposals already",
+      "chip": "CROWDED",
+      "at": 7,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      }
     ],
-    "button": {
-     "text": "SEND ORDER",
-     "at": "bharta",
-     "done": "ORDER SENT \u2713",
-     "doneAt": "hai."
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        7,
+        10
+       ],
+       "size": 34,
+       "color": "ink"
+      }
+     ]
     }
    }
   },
   {
-   "title": "PAYMENTS LEDGER",
-   "titleAt": "payments",
+   "title": "CLIENT CHECK",
+   "titleAt": 1,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "LEDGER",
+    "header": "CLIENT",
     "rows": [
      {
-      "title": "Karim Traders",
-      "sub": "Rs. 45,000 pending",
-      "chip": "DUE",
-      "at": "har",
-      "chip2": "PAID \u2713",
-      "chip2At": "dikhta",
-      "bg": "#ffd166",
-      "fg": "#0b0d09",
-      "bg2": "#0b0d09",
-      "fg2": "#c6ff35"
+      "title": "Payment",
+      "sub": "Client payment status",
+      "chip": "VERIFIED",
+      "at": 4
      },
      {
-      "title": "Noor Store",
-      "sub": "Cleared",
-      "chip": "PAID",
-      "at": "retailer"
-     },
-     {
-      "title": "Ali and Sons",
-      "sub": "Rs. 12,500 pending",
-      "chip": "DUE",
-      "at": "hisaab",
-      "bg": "#ffd166",
-      "fg": "#0b0d09"
+      "title": "Hiring history",
+      "sub": "Past jobs and reviews",
+      "chip": "CHECK",
+      "at": 8
      }
-    ]
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        7,
+        10
+       ],
+       "size": 36,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "READ FULLY",
+   "titleAt": 3,
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "JOB POST",
+    "rows": [
+     {
+      "title": "Read it fully",
+      "sub": "Every requirement",
+      "chip": "READ",
+      "at": 3
+     },
+     {
+      "title": "Write to match",
+      "sub": "Use their words",
+      "chip": "MATCH",
+      "at": 8
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        8,
+        11
+       ],
+       "size": 48,
+       "color": "ink"
+      }
+     ]
+    }
    }
   }
  ],
@@ -234,35 +306,55 @@
    {
     "r": [
      1,
+     2
+    ],
+    "size": 100,
+    "color": "white",
+    "mt": 60
+   },
+   {
+    "r": [
+     2,
      3
     ],
-    "size": 72,
-    "color": "white",
-    "mt": 70
+    "size": 96,
+    "color": "lime",
+    "mt": 10
    },
    {
     "r": [
      3,
-     4
+     5
     ],
-    "size": 110,
-    "color": "lime"
+    "size": 69,
+    "color": "white",
+    "mt": 10
    },
    {
     "r": [
-     4,
-     7
+     5,
+     8
     ],
-    "size": 90,
+    "size": 54,
     "color": "white",
-    "mt": 20
+    "mt": 10
+   },
+   {
+    "r": [
+     8,
+     11
+    ],
+    "size": 40,
+    "color": "lime",
+    "mt": 8
    }
   ],
-  "chip": "&#10003; BALANCE CLEAR",
-  "chipAt": "ek"
+  "chip": "&#10003; FEWER CONNECTS",
+  "chipAt": 2
  },
  "cta": {
-  "noun": "business",
-  "keyword": "WHOLESALE"
+  "thing": "checklist",
+  "noun": "checklist",
+  "keyword": "UPWORK"
  }
 }

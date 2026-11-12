@@ -1,117 +1,115 @@
 {
  "id": "r03",
- "business": "Restaurants",
- "keyword": "MENU",
+ "business": "3 places to find US clients",
+ "keyword": "SITES",
  "lines": [
-  "Rush ke time phone uthane wala koi nahi, aur order gaya.",
-  "Customer ne poocha, aaj table milegi? You replied after an hour. Tab tak, woh chala gaya.",
-  "Orders phone, WhatsApp aur DMs mein bikhre hain.",
-  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
-  "One. A digital menu. Customer scan karta hai aur seedha order karta hai.",
-  "Two. A table booking form. Date, time aur guests, bas teen tap.",
-  "Three. A kitchen screen, jahan har order live dikhta hai.",
-  "Result? Rush mein bhi order sahi, aur customer khush.",
-  "Want this for your restaurant? Comment MENU, hum aap ko details bhej denge."
+  "US client chahiye? Pehle yeh teen jagah dekho.",
+  "Ek freelancer sirf ek website par proposals bhejta raha. Mahina nikal gaya, kaam nahi mila.",
+  "Ek hi jagah par sab daav lagana, yahi sabse badi galti hai.",
+  "Toh yeh teen jagah try karo.",
+  "One. Upwork. Fresh jobs par jaldi proposal bhejo.",
+  "Two. LinkedIn. Founders ko seedha ek chhota message karo.",
+  "Three. Contra. Portfolio banao, aur wahan commission nahi lagta.",
+  "Result? Ek hafte mein teen raaste, aur clients ke saamne aap.",
+  "Want the list? Comment SITES, hum aapko DM kar denge."
+ ],
+ "bridge": {
+  "items": [
+   {
+    "top": 235,
+    "size": 56,
+    "toks": [
+     [
+      0,
+      "TOH"
+     ],
+     [
+      1,
+      "YEH"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      2,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      3,
+      "JAGAH"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      4,
+      "TRY"
+     ],
+     [
+      5,
+      "KARO."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   2,
+   3,
+   5
+  ]
+ },
+ "hub": "TIP",
+ "tag": "EXAMPLE SCENARIO",
+ "tagged": [
+  1,
+  2
  ],
  "hook": {
   "rows": [
    {
     "r": [
      0,
-     3
+     2
     ],
     "size": 56,
     "color": "white"
    },
    {
     "r": [
-     3,
-     4
+     2,
+     3
     ],
-    "size": 150,
+    "size": 96,
     "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 66,
+    "color": "white",
     "mt": 8
    },
    {
     "r": [
-     4,
-     6
-    ],
-    "size": 78,
-    "color": "white"
-   },
-   {
-    "r": [
-     6,
-     8
-    ],
-    "size": 78,
-    "color": "white"
-   },
-   {
-    "r": [
-     8,
-     11
-    ],
-    "size": 52,
-    "color": "red",
-    "mt": 22
-   }
-  ]
- },
- "pain": {
-  "bubble": {
-   "label": "CUSTOMER",
-   "text": "aaj table milegi?",
-   "at": "aaj"
-  },
-  "clock": {
-   "to": "hour.",
-   "from": "You"
-  },
-  "rows": [
-   {
-    "r": [
-     8,
-     11
-    ],
-    "size": 66,
-    "color": "ink"
-   }
-  ],
-  "reply": {
-   "label": "DOOSRA RESTAURANT",
-   "text": "Table booked &#10003;",
-   "at": "Tab"
-  },
-  "stamp": {
-   "text": "CUSTOMER GAYA.",
-   "at": "woh",
-   "size": 50
-  }
- },
- "mess": {
-  "chips": [
-   {
-    "text": "Phone",
-    "at": "phone,"
-   },
-   {
-    "text": "WhatsApp",
-    "at": "WhatsApp"
-   },
-   {
-    "text": "DMs",
-    "at": "DMs"
-   }
-  ],
-  "rows": [
-   {
-    "r": [
-     6,
+     5,
      7
     ],
-    "size": 120,
+    "size": 76,
     "color": "white"
    },
    {
@@ -119,144 +117,195 @@
      7,
      8
     ],
+    "size": 46,
+    "color": "red",
+    "mt": 22
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "FREELANCER",
+   "text": "Proposals bhej diye",
+   "at": 6
+  },
+  "rows": [
+   {
+    "r": [
+     12,
+     15
+    ],
+    "size": 51,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "INBOX",
+   "text": "No replies yet",
+   "at": 12
+  },
+  "stamp": {
+   "text": "ZERO KAAM.",
+   "at": 13,
+   "size": 70
+  },
+  "clock": {
+   "from": 9,
+   "to": 11
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Ek",
+    "at": 0
+   },
+   {
+    "text": "jagah",
+    "at": 2
+   },
+   {
+    "text": "daav",
+    "at": 5
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     9,
+     10
+    ],
     "size": 120,
+    "color": "white"
+   },
+   {
+    "r": [
+     10,
+     12
+    ],
+    "size": 76,
     "color": "white"
    }
   ],
-  "sub": "kaunsa order bana?<br>pata nahi.",
-  "subAt": "hain.",
-  "minisAt": "DMs",
+  "sub": "ek raasta band,<br>toh sab band.",
+  "subAt": 11,
+  "minisAt": 7,
   "subSize": 58
  },
  "builds": [
   {
-   "title": "DIGITAL MENU",
-   "titleAt": "digital",
+   "title": "UPWORK",
+   "titleAt": 1,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "MENU",
+    "header": "UPWORK",
     "rows": [
      {
-      "title": "Chicken Biryani",
-      "sub": "Rs. 450",
-      "chip": "ADD",
-      "at": "menu",
-      "chip2": "ADDED \u2713",
-      "chip2At": "seedha"
+      "title": "Fresh job",
+      "sub": "Posted 1 hour ago",
+      "chip": "NEW",
+      "at": 2
      },
      {
-      "title": "Karahi (half)",
-      "sub": "Rs. 900",
-      "chip": "ADD",
-      "at": "Customer"
-     },
-     {
-      "title": "Garlic Naan",
-      "sub": "Rs. 80",
-      "chip": "ADD",
-      "at": "scan",
-      "chip2": "ADDED \u2713",
-      "chip2At": "order"
-     }
-    ]
-   }
-  },
-  {
-   "title": "TABLE BOOKING",
-   "titleAt": "table",
-   "bg": "white",
-   "demo": {
-    "type": "form",
-    "header": "Table booking",
-    "fields": [
-     {
-      "label": "DATE",
-      "value": "Friday",
-      "at": "Date,"
-     },
-     {
-      "label": "TIME",
-      "value": "8:00 PM",
-      "at": "time"
-     },
-     {
-      "label": "GUESTS",
-      "value": "4 people",
-      "at": "guests,"
+      "title": "Your proposal",
+      "sub": "Sent early",
+      "chip": "SEND",
+      "at": 6,
+      "chip2": "SENT \u2713",
+      "chip2At": 7
      }
     ],
-    "button": {
-     "text": "BOOK TABLE",
-     "at": "bas",
-     "done": "BOOKED \u2713",
-     "doneAt": "tap."
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        5,
+        8
+       ],
+       "size": 36,
+       "color": "ink"
+      }
+     ]
     }
    }
   },
   {
-   "title": "KITCHEN SCREEN",
-   "titleAt": "kitchen",
-   "bg": "cream",
+   "title": "LINKEDIN",
+   "titleAt": 1,
+   "bg": "dark",
    "demo": {
-    "type": "board",
-    "appear": "har",
-    "cols": [
+    "type": "chat",
+    "msgs": [
      {
-      "name": "NEW",
-      "bg": "#ffd166",
-      "fg": "#0b0d09",
-      "at": "kitchen"
+      "who": "r",
+      "text": "Hi Sara, aapki site dekhi",
+      "at": 4,
+      "y": 300
      },
      {
-      "name": "COOKING",
-      "bg": "#c6ff35",
-      "fg": "#0b0d09",
-      "at": "order"
+      "who": "r",
+      "text": "Ek chhota idea hai, share?",
+      "at": 7,
+      "y": 425
      },
      {
-      "name": "READY",
-      "bg": "#0b0d09",
-      "fg": "#c6ff35",
-      "at": "live"
+      "who": "c",
+      "text": "Sure, bhejiye!",
+      "at": 8,
+      "y": 550
      }
     ],
-    "cards": [
+    "caption": {
+     "top": 900,
+     "rows": [
+      {
+       "r": [
+        2,
+        4
+       ],
+       "size": 69,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "CONTRA",
+   "titleAt": 1,
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "CONTRA",
+    "rows": [
      {
-      "id": "#21",
-      "name": "Table 4",
-      "item": "2 Biryani",
-      "row": 0,
-      "moves": [
-       {
-        "at": "live",
-        "to": 1
-       },
-       {
-        "at": "dikhta",
-        "to": 2
-       }
-      ]
+      "title": "Portfolio page",
+      "sub": "Your best work",
+      "chip": "LIVE",
+      "at": 2
      },
      {
-      "id": "#22",
-      "name": "Delivery",
-      "item": "1 Karahi",
-      "row": 1,
-      "moves": [
-       {
-        "at": "dikhta",
-        "to": 1
-       }
-      ]
-     },
-     {
-      "id": "#23",
-      "name": "Table 7",
-      "item": "3 Naan",
-      "row": 2
+      "title": "Commission",
+      "sub": "Contra: none",
+      "chip": "NONE",
+      "at": 6
      }
-    ]
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        6,
+        9
+       ],
+       "size": 34,
+       "color": "ink"
+      }
+     ]
+    }
    }
   }
  ],
@@ -276,34 +325,35 @@
      1,
      4
     ],
-    "size": 72,
+    "size": 59,
     "color": "white",
-    "mt": 66
+    "mt": 60
    },
    {
     "r": [
      4,
      6
     ],
-    "size": 90,
+    "size": 64,
     "color": "lime",
     "mt": 24
    },
    {
     "r": [
      6,
-     9
+     11
     ],
-    "size": 58,
+    "size": 34,
     "color": "white",
     "mt": 28
    }
   ],
-  "chip": "&#10003; ORDER READY",
-  "chipAt": "sahi,"
+  "chip": "&#10003; THREE ROUTES",
+  "chipAt": 5
  },
  "cta": {
-  "noun": "restaurant",
-  "keyword": "MENU"
+  "thing": "list",
+  "noun": "list",
+  "keyword": "SITES"
  }
 }

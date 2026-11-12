@@ -59,7 +59,7 @@ function wordsDraw(sc,t){sc.el.querySelectorAll('.w').forEach(w=>{const l=w.data
   (sc.strikes||[]).forEach(s=>{const e=L[s.l].words[s.i].e+.1;s.k.style.width=(prog(t,e,e+.35)*112)+'%'})}
 function fitScene(sc){sc.el.querySelectorAll('.title').forEach(r=>{let fs=60,g=0;r.style.fontSize='60px';while(r.scrollWidth>(r.dataset.max||480)&&fs>26&&g++<40){fs-=3;r.style.fontSize=fs+'px'}});sc.el.querySelectorAll('.row').forEach(r=>{let fs=+r.dataset.size,g=0;r.style.fontSize=fs+'px';while(r.scrollWidth>640&&fs>24&&g++<60){fs-=3;r.style.fontSize=fs+'px'}})}
 
-function hubEl(n,dark){const h=mk('div','hub'+(dark?' hubd':''),'',`<small>STEP</small><b>${n}/3</b>`);return h}
+function hubEl(n,dark){const h=mk('div','hub'+(dark?' hubd':''),'',`<small>${EP.hub||'STEP'}</small><b>${n}/3</b>`);return h}
 function titleEl(txt,color){const e=mk('div','title h',`color:${color};white-space:nowrap`);const s=mk('span','w','',txt);e.appendChild(s);return {e,s}}
 
 // ---------- demos ----------
@@ -95,6 +95,7 @@ function demoBoard(sc,d){
 }
 function demoList(sc,d){
   if(d.header)sc.el.appendChild(mk('div','lhd','',d.header));
+  if(d.caption)sc.el.appendChild(rowsEl(sc.line,d.caption.rows,d.caption.top||880));
   const rs=d.rows.map((r,i)=>{const e=mk('div','lrow',`top:${(d.header?350:310)+i*128}px;opacity:0`,`<div class="tg">${r.tag||''}</div><div class="t1">${r.title}</div><div class="t2">${r.sub||''}</div><div class="ch" style="background:${r.bg||'#c6ff35'};color:${r.fg||'#0b0d09'}">${r.chip||''}</div>`);if(!r.tag)e.querySelector('.tg').style.display='none';if(!r.tag){e.querySelector('.t1').style.left='24px';e.querySelector('.t2').style.left='24px'}sc.el.appendChild(e);return e});
   return t=>{d.rows.forEach((r,i)=>{const s=wt(sc.line,r.at);rise(rs[i],t,s,40,.3);
     if(r.chip2){const ch=rs[i].querySelector('.ch');if(t>=wt(sc.line,r.chip2At)){ch.textContent=r.chip2;ch.style.background=r.bg2||'#0b0d09';ch.style.color=r.fg2||'#c6ff35'}else{ch.textContent=r.chip||'';ch.style.background=r.bg||'#c6ff35';ch.style.color=r.fg||'#0b0d09'}}
@@ -125,8 +126,8 @@ const scenes=[];
   const rep=mk('div','bub rep','right:50px;top:850px;opacity:0',`<span style="display:block;font-size:15px;letter-spacing:3px;color:#3d4a12;margin-bottom:4px">${p.reply.label}</span>${p.reply.text}`);sc.el.appendChild(rep);
   const st=mk('div','h',`position:absolute;left:70px;top:455px;width:580px;text-align:center;font-size:${p.stamp.size||70}px;color:var(--red);border:9px solid var(--red);border-radius:18px;padding:16px 0 12px;white-space:nowrap;background:rgba(255,255,255,.9);opacity:0`,p.stamp.text);sc.el.appendChild(st);
   sc.draw=function(t){wordsDraw(this,t);pop(bub,t,wt(1,p.bubble.at),1.15,.26);
-    const cs=wt(1,p.clock.from),ce=we(1,p.clock.to);clock.style.opacity=t>=cs?1:0;const q=eIO(prog(t,cs+.1,ce));
-    clock.querySelector('#mm').setAttribute('transform',`rotate(${720*q} 150 150)`);clock.querySelector('#hm').setAttribute('transform',`rotate(${60*q} 150 150)`);setT(clock,{sc:1-.3*(1-eBack(prog(t,cs,cs+.3)))});
+    if(p.clock){const cs=wt(1,p.clock.from),ce=we(1,p.clock.to);clock.style.opacity=t>=cs?1:0;const q=eIO(prog(t,cs+.1,ce));
+    clock.querySelector('#mm').setAttribute('transform',`rotate(${720*q} 150 150)`);clock.querySelector('#hm').setAttribute('transform',`rotate(${60*q} 150 150)`);setT(clock,{sc:1-.3*(1-eBack(prog(t,cs,cs+.3)))});}else clock.style.display='none';
     pop(rep,t,wt(1,p.reply.at),1.15,.26);
     const ss=wt(1,p.stamp.at),sp=prog(t,ss,ss+.22);st.style.opacity=t>=ss?1:0;setT(st,{sc:2.4-1.4*eBack(sp),rot:-8})};
   scenes.push(sc)})();
@@ -144,14 +145,13 @@ const scenes=[];
     pop(sub,t,wt(2,m.subAt),1.32,.22)};
   scenes.push(sc)})();
 
-// 3 bridge (identical in every episode)
+// 3 bridge (configurable via EP.bridge; default = business-series wording)
 (function(){const sc=newScene(3,'limebg','#0b0d09');
-  const mkc=(top,size,html,ls)=>{const d=mk('div','ctr h',`top:${top}px;font-size:${size}px;color:var(--ink);white-space:nowrap;line-height:1`);d.innerHTML=html;sc.el.appendChild(d)};
-  const w=(i,t)=>`<span class="w" data-i="${i}">${t}</span>`;
-  mkc(215,40,w(0,'ISILIYE')+' '+w(1,'HUM')+' '+w(2,'APNE')+'<br>'+w(3,'CLIENTS')+' '+w(4,'KE')+' '+w(5,'LIYE'));
-  mkc(330,230,w(6,'3'));mkc(578,100,w(7,'CHEEZEIN'));mkc(715,72,w(8,'BANATE')+' '+w(9,'HAIN.'));
+  const B=EP.bridge||{items:[{top:215,size:40,toks:[[0,'ISILIYE'],[1,'HUM'],[2,'APNE'],'br',[3,'CLIENTS'],[4,'KE'],[5,'LIYE']]},{top:330,size:230,toks:[[6,'3']]},{top:578,size:100,toks:[[7,'CHEEZEIN']]},{top:715,size:72,toks:[[8,'BANATE'],[9,'HAIN.']]}],dots:[6,7,9]};
+  B.items.forEach(it=>{const d=mk('div','ctr h',`top:${it.top}px;font-size:${it.size}px;color:var(--ink);white-space:nowrap;line-height:1`);
+    d.innerHTML=it.toks.map(k=>k==='br'?'<br>':`<span class="w" data-i="${k[0]}">${k[1]}</span>`).join(' ').replace(/ <br> /g,'<br>');sc.el.appendChild(d)});
   const dots=[];for(let i=0;i<3;i++){const d=mk('div','',`position:absolute;left:${300+i*66}px;top:930px;width:44px;height:44px;border-radius:50%;border:6px solid #0b0d09`);sc.el.appendChild(d);dots.push(d)}
-  sc.draw=function(t){wordsDraw(this,t);[6,7,9].forEach((wi_,i)=>{dots[i].style.background=t>=wt(3,wi_)?'#0b0d09':'transparent'})};
+  sc.draw=function(t){wordsDraw(this,t);B.dots.forEach((wi_,i)=>{dots[i].style.background=t>=wt(3,wi_)?'#0b0d09':'transparent'})};
   scenes.push(sc)})();
 
 // 4-6 builds
@@ -172,25 +172,25 @@ EP.builds.forEach((b,k)=>{const line=4+k;const bg=b.bg||'white';const dark=bg=='
 (function(){const c=EP.cta;const sc=newScene(8,'dark','#fff');
   const logo=mk('img','', 'position:absolute;left:285px;top:130px;width:150px;height:150px;border-radius:34px;opacity:0');logo.src='logo.png';sc.el.appendChild(logo);
   const w=(i,t,extra)=>`<span class="w" data-i="${i}" ${extra||''}>${t}</span>`;
-  const long_=c.noun.length>6;
+  const v2=c.thing!=null;const long_=!v2&&c.noun.length>6;const A=v2?{comp:3,kw:4,post:5,handle:8}:{comp:5,kw:6,post:7,handle:11};
   const head=mk('div','ctr h',`top:${long_?300:330}px;font-size:68px;color:#fff;line-height:.98`,
-    `<div class="row" data-size="68" style="white-space:nowrap">${w(0,'WANT')} ${w(1,'THIS')}${long_?'':'<br>'+w(2,'FOR')+' '+w(3,'YOUR')+' '+w(4,c.noun.toUpperCase()+'?','style="color:var(--lime)"')}</div>`+
-    (long_?`<div class="row" data-size="68" style="white-space:nowrap">${w(2,'FOR')} ${w(3,'YOUR')}</div><div class="row" data-size="68" style="white-space:nowrap">${w(4,c.noun.toUpperCase()+'?','style="color:var(--lime)"')}</div>`:''));sc.el.appendChild(head);
+    (v2?`<div class="row" data-size="68" style="white-space:nowrap">${w(0,'WANT')} ${w(1,'THE')}</div><div class="row" data-size="${Math.min(120,Math.floor(540/(.78*(c.thing.length+1))))}" style="white-space:nowrap;margin-top:8px">${w(2,c.thing.toUpperCase()+'?','style="color:var(--lime)"')}</div>`:`<div class="row" data-size="68" style="white-space:nowrap">${w(0,'WANT')} ${w(1,'THIS')}${long_?'':'<br>'+w(2,'FOR')+' '+w(3,'YOUR')+' '+w(4,c.noun.toUpperCase()+'?','style="color:var(--lime)"')}</div>`+
+    (long_?`<div class="row" data-size="68" style="white-space:nowrap">${w(2,'FOR')} ${w(3,'YOUR')}</div><div class="row" data-size="68" style="white-space:nowrap">${w(4,c.noun.toUpperCase()+'?','style="color:var(--lime)"')}</div>`:'')));sc.el.appendChild(head);
   const comp=mk('div','','position:absolute;left:50px;top:600px;width:620px;height:100px;border-radius:50px;background:#fff;opacity:0','<div style="position:absolute;left:14px;top:14px;width:72px;height:72px;border-radius:50%;background:var(--lime);overflow:hidden"><img src="logo.png" style="width:72px;height:72px"></div><div class="typed" style="position:absolute;left:106px;top:0;line-height:100px;font-weight:800;font-size:40px;color:var(--ink)"></div><div class="post" style="position:absolute;right:16px;top:20px;height:60px;padding:0 28px;border-radius:30px;background:var(--lime);color:var(--ink);font-weight:800;font-size:28px;line-height:60px">Post</div>');sc.el.appendChild(comp);
-  const sub=mk('div','ctr','top:760px;font-weight:800;font-size:46px;line-height:1.25;color:var(--lime)',w(7,'hum')+' '+w(8,'aap')+' '+w(9,'ko')+' '+w(10,'details')+'<br>'+w(11,'bhej')+' '+w(12,'denge.'));sc.el.appendChild(sub);
+  const sub=mk('div','ctr','top:760px;font-weight:800;font-size:46px;line-height:1.25;color:var(--lime)',(v2?w(5,'hum')+' '+w(6,'aapko')+' '+w(7,'DM')+'<br>'+w(8,'kar')+' '+w(9,'denge.'):w(7,'hum')+' '+w(8,'aap')+' '+w(9,'ko')+' '+w(10,'details')+'<br>'+w(11,'bhej')+' '+w(12,'denge.')));sc.el.appendChild(sub);
   const handle=mk('div','ctr','top:930px;font-weight:700;font-size:30px;color:rgba(255,255,255,.75);opacity:0','@thetotalforgeofficial');sc.el.appendChild(handle);
   sc.draw=function(t){wordsDraw(this,t);pop(logo,t,this.t0+.05,1.4,.35);
-    const cs=wt(8,5)-.1;comp.style.opacity=t>=cs?1:0;setT(comp,{dy:30*(1-eOut(prog(t,cs,cs+.3)))});
-    typeTxt(comp.querySelector('.typed'),c.keyword,t,wt(8,6)-.05,10);
-    const post=comp.querySelector('.post'),pt=wt(8,7)-.05;post.style.transform=(t>=pt&&t<pt+.18)?'scale(.92)':'scale(1)';
-    handle.style.opacity=t>=wt(8,11)?1:0};
+    const cs=wt(8,A.comp)-.1;comp.style.opacity=t>=cs?1:0;setT(comp,{dy:30*(1-eOut(prog(t,cs,cs+.3)))});
+    typeTxt(comp.querySelector('.typed'),c.keyword,t,wt(8,A.kw)-.05,10);
+    const post=comp.querySelector('.post'),pt=wt(8,A.post)-.05;post.style.transform=(t>=pt&&t<pt+.18)?'scale(.92)':'scale(1)';
+    handle.style.opacity=t>=wt(8,A.handle)?1:0};
   scenes.push(sc)})();
 
 // timings per scene, demo wiring, draw
 scenes.sort((a,b)=>a.line-b.line);
 scenes.forEach((s,i)=>{s.t0=i==0?0:L[s.line].start-.1;s.t1=i==scenes.length-1?T.total+1:L[scenes[i+1].line].start-.1});
 scenes.forEach(s=>{if(s._b){const b=s._b;const dd=DEMOS[b.demo.type](s,b.demo);s.draw=function(t){wordsDraw(this,t);dd(t)}}});
-const TAGGED=[0,1,2,4,5,6];
+const TAGGED=EP.tagged||[0,1,2,4,5,6];$('tag').textContent=EP.tag||'EXAMPLE SCENARIO';
 function draw(t){let si=scenes.findIndex(s=>t>=s.t0&&t<s.t1);if(si<0)si=t<0?0:scenes.length-1;
   scenes.forEach((s,i)=>{s.el.style.display=i===si?'block':'none'});
   const sc=scenes[si];if(!sc.fitted){fitScene(sc);sc.fitted=true}

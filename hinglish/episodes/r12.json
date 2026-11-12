@@ -1,188 +1,300 @@
 {
  "id": "r12",
- "business": "Builders and contractors",
- "keyword": "BUILD",
+ "business": "Scope creep",
+ "keyword": "SCOPE",
  "lines": [
-  "Site par kya hua, raat ko WhatsApp se pata chalta hai.",
-  "Owner ne poocha, kaam kahan tak pahuncha? You replied that night. Tab tak, delay ho chuka tha.",
-  "Updates, bills aur photos WhatsApp mein bikhre hain.",
-  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
-  "One. A project tracker, jahan har stage ka status dikhta hai.",
-  "Two. A site-update log, jahan photos aur notes daily jaate hain.",
-  "Three. A material and payment record, jahan har kharcha dikhta hai.",
-  "Result? Site par kaam, aur screen par hisaab.",
-  "Want this for your projects? Comment BUILD, hum aap ko details bhej denge."
+  "Bas ek chhota sa change. Aur phir chhe baar.",
+  "Ek freelancer ne logo banaya. Client ne chhe baar change mangwaya, aur paisa wahi raha.",
+  "Scope likhit mein nahi tha, toh kaam khatam hi nahi hua.",
+  "Toh yeh teen cheezein pehle likho.",
+  "One. Kaam mein kya kya milega, yeh likhit mein batao.",
+  "Two. Revisions ki limit rakho, jaise do rounds.",
+  "Three. Shuru karne se pehle aadha advance lo.",
+  "Result? Kaam khatam hota hai, aur payment bhi.",
+  "Want the checklist? Comment SCOPE, hum aapko DM kar denge."
+ ],
+ "bridge": {
+  "items": [
+   {
+    "top": 235,
+    "size": 56,
+    "toks": [
+     [
+      0,
+      "TOH"
+     ],
+     [
+      1,
+      "YEH"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      2,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      3,
+      "CHEEZEIN"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 68,
+    "toks": [
+     [
+      4,
+      "PEHLE"
+     ],
+     [
+      5,
+      "LIKHO."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   2,
+   3,
+   5
+  ]
+ },
+ "hub": "TIP",
+ "tag": "EXAMPLE SCENARIO",
+ "tagged": [
+  1,
+  2
  ],
  "hook": {
   "rows": [
    {
     "r": [
      0,
-     4
+     2
     ],
     "size": 56,
     "color": "white"
    },
    {
     "r": [
-     4,
-     6
+     2,
+     3
     ],
-    "size": 130,
+    "size": 110,
     "color": "lime",
-    "mt": 8
+    "mt": 6
    },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 76,
+    "color": "white"
+   },
+   {
+    "r": [
+     5,
+     7
+    ],
+    "size": 66,
+    "color": "red",
+    "mt": 22
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 66,
+    "color": "red"
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "CLIENT",
+   "text": "Ek chhota change aur?",
+   "at": 5
+  },
+  "rows": [
+   {
+    "r": [
+     7,
+     10
+    ],
+    "size": 48,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "FREELANCER",
+   "text": "Theek hai... \u2713",
+   "at": 9
+  },
+  "stamp": {
+   "text": "PAISA WAHI.",
+   "at": 13,
+   "size": 63
+  },
+  "clock": null
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Scope",
+    "at": 0
+   },
+   {
+    "text": "likhit",
+    "at": 1
+   },
+   {
+    "text": "nahi",
+    "at": 3
+   }
+  ],
+  "rows": [
    {
     "r": [
      6,
      8
     ],
-    "size": 52,
-    "color": "red",
-    "mt": 22
+    "size": 69,
+    "color": "white"
    },
    {
     "r": [
      8,
      11
     ],
-    "size": 52,
-    "color": "red",
-    "mt": 4
-   }
-  ]
- },
- "pain": {
-  "bubble": {
-   "label": "OWNER",
-   "text": "kaam kahan tak pahuncha?",
-   "at": "kaam"
-  },
-  "clock": {
-   "to": "night.",
-   "from": "You"
-  },
-  "rows": [
-   {
-    "r": [
-     9,
-     11
-    ],
-    "size": 66,
-    "color": "ink"
-   }
-  ],
-  "reply": {
-   "label": "SITE",
-   "text": "Material nahi aaya &#9888;",
-   "at": "Tab"
-  },
-  "stamp": {
-   "text": "DELAY HO GAYA.",
-   "at": "delay",
-   "size": 50
-  }
- },
- "mess": {
-  "chips": [
-   {
-    "text": "Updates",
-    "at": "Updates,"
-   },
-   {
-    "text": "Bills",
-    "at": "bills"
-   },
-   {
-    "text": "Photos",
-    "at": "photos"
-   }
-  ],
-  "rows": [
-   {
-    "r": [
-     6,
-     7
-    ],
-    "size": 120,
-    "color": "white"
-   },
-   {
-    "r": [
-     7,
-     8
-    ],
-    "size": 120,
+    "size": 64,
     "color": "white"
    }
   ],
-  "sub": "kaam kitna hua?<br>pata nahi.",
-  "subAt": "hain.",
-  "minisAt": "photos",
+  "sub": "ek change,<br>phir ek aur.",
+  "subAt": 10,
+  "minisAt": 3,
   "subSize": 58
  },
  "builds": [
   {
-   "title": "SITE TRACKER",
-   "titleAt": "project",
+   "title": "WRITE SCOPE",
+   "titleAt": 1,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "VILLA 12 (EXAMPLE)",
+    "header": "SCOPE",
     "rows": [
      {
-      "title": "Foundation",
-      "sub": "Stage 1",
-      "chip": "DONE",
-      "at": "har"
+      "title": "3 logo options",
+      "sub": "Included",
+      "chip": "IN",
+      "at": 3
      },
      {
-      "title": "Structure",
-      "sub": "Stage 2",
-      "chip": "IN PROGRESS",
-      "at": "stage",
-      "chip2": "DONE \u2713",
-      "chip2At": "dikhta",
-      "bg": "#ffd166",
-      "fg": "#0b0d09",
-      "bg2": "#c6ff35",
-      "fg2": "#0b0d09"
+      "title": "Final files",
+      "sub": "Included",
+      "chip": "IN",
+      "at": 4
      },
      {
-      "title": "Finishing",
-      "sub": "Stage 3",
-      "chip": "PENDING",
-      "at": "status",
-      "bg": "#ffd166",
-      "fg": "#0b0d09"
+      "title": "Extra work",
+      "sub": "Not included",
+      "chip": "OUT",
+      "at": 5,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      }
-    ]
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        7,
+        10
+       ],
+       "size": 42,
+       "color": "ink"
+      }
+     ]
+    }
    }
   },
   {
-   "title": "SITE-UPDATE LOG",
-   "titleAt": "site-update",
+   "title": "REVISIONS",
+   "titleAt": 1,
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "REVISIONS",
+    "rows": [
+     {
+      "title": "Round 1",
+      "sub": "Included",
+      "chip": "FREE",
+      "at": 5
+     },
+     {
+      "title": "Round 2",
+      "sub": "Included",
+      "chip": "FREE",
+      "at": 6
+     },
+     {
+      "title": "Round 3",
+      "sub": "Extra charge",
+      "chip": "PAID",
+      "at": 7,
+      "bg": "#ffd166",
+      "fg": "#0b0d09"
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        5,
+        8
+       ],
+       "size": 48,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "ADVANCE",
+   "titleAt": 6,
    "bg": "dark",
    "demo": {
     "type": "chat",
     "msgs": [
      {
       "who": "r",
-      "text": "Day 14: slab complete &#10003;",
-      "at": "photos",
+      "text": "Shuru: 50% advance pehle",
+      "at": 5,
       "y": 300
      },
      {
-      "who": "r",
-      "text": "Photos uploaded &#10003;",
-      "at": "notes",
-      "y": 425
-     },
-     {
       "who": "c",
-      "text": "Great, payment bhej raha hoon",
-      "at": "daily",
-      "y": 550
+      "text": "Done, bhej diya \u2713",
+      "at": 7,
+      "y": 425
      }
     ],
     "caption": {
@@ -190,45 +302,14 @@
      "rows": [
       {
        "r": [
-        8,
-        11
+        5,
+        7
        ],
-       "size": 66,
+       "size": 59,
        "color": "lime"
       }
      ]
     }
-   }
-  },
-  {
-   "title": "PAYMENT RECORD",
-   "titleAt": "payment",
-   "bg": "cream",
-   "demo": {
-    "type": "list",
-    "header": "THIS WEEK",
-    "rows": [
-     {
-      "title": "Cement",
-      "sub": "Delivered",
-      "chip": "PAID",
-      "at": "material"
-     },
-     {
-      "title": "Steel",
-      "sub": "Ordered",
-      "chip": "DUE",
-      "at": "payment",
-      "bg": "#ffd166",
-      "fg": "#0b0d09"
-     },
-     {
-      "title": "Labour",
-      "sub": "Weekly",
-      "chip": "PAID",
-      "at": "kharcha"
-     }
-    ]
    }
   }
  ],
@@ -246,35 +327,46 @@
    {
     "r": [
      1,
-     4
+     3
     ],
-    "size": 80,
+    "size": 69,
     "color": "white",
-    "mt": 70
+    "mt": 60
    },
    {
     "r": [
-     4,
-     7
+     3,
+     5
+    ],
+    "size": 85,
+    "color": "lime",
+    "mt": 10
+   },
+   {
+    "r": [
+     5,
+     6
     ],
     "size": 72,
-    "color": "lime",
-    "mt": 18
+    "color": "white",
+    "mt": 10
    },
    {
     "r": [
-     7,
+     6,
      8
     ],
-    "size": 110,
-    "color": "lime"
+    "size": 64,
+    "color": "lime",
+    "mt": 10
    }
   ],
-  "chip": "&#10003; ALL UPDATED",
-  "chipAt": "hisaab."
+  "chip": "&#10003; DONE + PAID",
+  "chipAt": 6
  },
  "cta": {
-  "noun": "projects",
-  "keyword": "BUILD"
+  "thing": "checklist",
+  "noun": "checklist",
+  "keyword": "SCOPE"
  }
 }

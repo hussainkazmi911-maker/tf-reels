@@ -1,17 +1,76 @@
 {
  "id": "r09",
- "business": "Auto repair shops",
- "keyword": "GARAGE",
+ "business": "Portfolio: 3 projects beat 20",
+ "keyword": "PORTFOLIO",
  "lines": [
-  "Gaadi ready hai? Yeh sawaal din mein chaar baar.",
-  "Customer ne poocha, gaadi ready hai? You called back after lunch. Tab tak, kaam ruk gaya.",
-  "Jobs diary, WhatsApp aur phone mein bikhri hain.",
-  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
-  "One. A job card, jismein gaadi ka kaam likha hota hai.",
-  "Two. Status updates, jo customer ko khud mil jaate hain.",
-  "Three. A workshop board, jahan har bay ka kaam dikhta hai.",
-  "Result? Kam calls, zyada gaadiyan.",
-  "Want this for your garage? Comment GARAGE, hum aap ko details bhej denge."
+  "Bees projects ka portfolio, aur ek bhi client nahi.",
+  "Ek freelancer ne har chhota bada kaam portfolio mein daal diya. Client scroll karta raha, aur kuch samajh nahi aaya.",
+  "Zyada projects ka matlab, saaf message nahi.",
+  "Toh yeh teen cheezein karo.",
+  "One. Sirf apne teen best projects rakho.",
+  "Two. Har project mein likho, problem kya thi aur aapne kya kiya.",
+  "Three. Ek link rakho, aur mobile par kholkar check karo.",
+  "Result? Client ko ek minute mein samajh aata hai, aap kya kar sakte ho.",
+  "Want the template? Comment PORTFOLIO, hum aapko DM kar denge."
+ ],
+ "bridge": {
+  "items": [
+   {
+    "top": 235,
+    "size": 56,
+    "toks": [
+     [
+      0,
+      "TOH"
+     ],
+     [
+      1,
+      "YEH"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      2,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      3,
+      "CHEEZEIN"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      4,
+      "KARO."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   2,
+   3,
+   4
+  ]
+ },
+ "hub": "TIP",
+ "tag": "EXAMPLE SCENARIO",
+ "tagged": [
+  1,
+  2
  ],
  "hook": {
   "rows": [
@@ -20,244 +79,229 @@
      0,
      1
     ],
-    "size": 56,
-    "color": "white"
+    "size": 130,
+    "color": "lime"
    },
    {
     "r": [
      1,
      3
     ],
-    "size": 120,
-    "color": "lime",
-    "mt": 8
+    "size": 66,
+    "color": "white",
+    "mt": 6
    },
    {
     "r": [
      3,
+     4
+    ],
+    "size": 76,
+    "color": "white"
+   },
+   {
+    "r": [
+     4,
      7
     ],
-    "size": 52,
-    "color": "white",
-    "mt": 12
+    "size": 46,
+    "color": "red",
+    "mt": 22
    },
    {
     "r": [
      7,
      9
     ],
-    "size": 60,
-    "color": "red",
-    "mt": 10
+    "size": 64,
+    "color": "red"
    }
   ]
  },
  "pain": {
   "bubble": {
-   "label": "CUSTOMER",
-   "text": "gaadi ready hai?",
-   "at": "gaadi"
-  },
-  "clock": {
-   "to": "lunch.",
-   "from": "You"
+   "label": "PORTFOLIO",
+   "text": "20 projects",
+   "at": 7
   },
   "rows": [
    {
     "r": [
-     9,
-     11
+     17,
+     20
     ],
-    "size": 66,
+    "size": 45,
     "color": "ink"
    }
   ],
   "reply": {
-   "label": "MECHANIC",
-   "text": "Phone pe busy hoon&#8230;",
-   "at": "Tab"
+   "label": "CLIENT",
+   "text": "Samajh nahi aaya",
+   "at": 16
   },
   "stamp": {
-   "text": "KAAM RUKA.",
-   "at": "kaam",
-   "size": 70
+   "text": "CLIENT GAYA.",
+   "at": 19,
+   "size": 58
+  },
+  "clock": {
+   "from": 12,
+   "to": 14
   }
  },
  "mess": {
   "chips": [
    {
-    "text": "Diary",
-    "at": "diary,"
+    "text": "Zyada",
+    "at": 0
    },
    {
-    "text": "WhatsApp",
-    "at": "WhatsApp"
+    "text": "projects",
+    "at": 1
    },
    {
-    "text": "Phone",
-    "at": "phone"
+    "text": "matlab,",
+    "at": 3
    }
   ],
   "rows": [
    {
     "r": [
-     6,
-     7
+     4,
+     5
     ],
     "size": 120,
     "color": "white"
    },
    {
     "r": [
-     7,
-     8
+     5,
+     7
     ],
-    "size": 120,
+    "size": 59,
     "color": "white"
    }
   ],
-  "sub": "kaunsi gaadi ready?<br>pata nahi.",
-  "subAt": "hain.",
-  "minisAt": "phone",
+  "sub": "kya dekhein?<br>pata nahi.",
+  "subAt": 6,
+  "minisAt": 1,
   "subSize": 58
  },
  "builds": [
   {
-   "title": "JOB CARD",
-   "titleAt": "job",
-   "bg": "white",
+   "title": "ONLY THREE",
+   "titleAt": 3,
+   "bg": "cream",
    "demo": {
-    "type": "form",
-    "header": "New job card",
-    "fields": [
+    "type": "list",
+    "header": "PORTFOLIO",
+    "rows": [
      {
-      "label": "CAR",
-      "value": "Honda City",
-      "at": "gaadi"
+      "title": "Project one",
+      "sub": "Your best",
+      "chip": "KEEP",
+      "at": 3
      },
      {
-      "label": "PROBLEM",
-      "value": "Brake check",
-      "at": "kaam"
+      "title": "Project two",
+      "sub": "Your best",
+      "chip": "KEEP",
+      "at": 4
      },
      {
-      "label": "OWNER",
-      "value": "Bilal A.",
-      "at": "likha"
-     }
-    ],
-    "button": {
-     "text": "OPEN JOB",
-     "at": "hota",
-     "done": "JOB OPENED \u2713",
-     "doneAt": "hai."
-    }
-   }
-  },
-  {
-   "title": "STATUS UPDATES",
-   "titleAt": "updates,",
-   "bg": "dark",
-   "demo": {
-    "type": "chat",
-    "msgs": [
-     {
-      "who": "r",
-      "text": "Gaadi service mein hai",
-      "at": "updates,",
-      "y": 300
-     },
-     {
-      "who": "r",
-      "text": "Update: kaam complete &#10003;",
-      "at": "khud",
-      "y": 425
-     },
-     {
-      "who": "r",
-      "text": "Gaadi ready, pickup kar lein",
-      "at": "hain.",
-      "y": 550
+      "title": "Project three",
+      "sub": "Your best",
+      "chip": "KEEP",
+      "at": 5
      }
     ],
     "caption": {
-     "top": 900,
+     "top": 880,
      "rows": [
       {
        "r": [
-        6,
-        10
+        4,
+        7
        ],
-       "size": 56,
-       "color": "lime"
+       "size": 38,
+       "color": "ink"
       }
      ]
     }
    }
   },
   {
-   "title": "WORKSHOP BOARD",
-   "titleAt": "workshop",
+   "title": "PROBLEM + FIX",
+   "titleAt": 5,
    "bg": "cream",
    "demo": {
-    "type": "board",
-    "appear": "har",
-    "cols": [
+    "type": "list",
+    "header": "EACH PROJECT",
+    "rows": [
      {
-      "name": "WAITING",
-      "bg": "#ffd166",
-      "fg": "#0b0d09",
-      "at": "jahan"
+      "title": "Problem",
+      "sub": "What was wrong",
+      "chip": "WHY",
+      "at": 5
      },
      {
-      "name": "IN BAY",
-      "bg": "#c6ff35",
-      "fg": "#0b0d09",
-      "at": "bay"
-     },
-     {
-      "name": "READY",
-      "bg": "#0b0d09",
-      "fg": "#c6ff35",
-      "at": "kaam"
+      "title": "What you did",
+      "sub": "In two lines",
+      "chip": "HOW",
+      "at": 9
      }
     ],
-    "cards": [
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        9,
+        12
+       ],
+       "size": 51,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "ONE LINK",
+   "titleAt": 2,
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "YOUR LINK",
+    "rows": [
      {
-      "id": "#41",
-      "name": "Honda City",
-      "item": "Brake check",
-      "row": 0,
-      "moves": [
-       {
-        "at": "kaam",
-        "to": 1
-       },
-       {
-        "at": "dikhta",
-        "to": 2
-       }
-      ]
+      "title": "One link",
+      "sub": "All projects inside",
+      "chip": "LINK",
+      "at": 2
      },
      {
-      "id": "#42",
-      "name": "Alto",
-      "item": "Oil change",
-      "row": 1,
-      "moves": [
-       {
-        "at": "dikhta",
-        "to": 1
-       }
-      ]
-     },
-     {
-      "id": "#43",
-      "name": "Corolla",
-      "item": "AC service",
-      "row": 2
+      "title": "Mobile check",
+      "sub": "Opens fast, reads easy",
+      "chip": "TEST",
+      "at": 5,
+      "chip2": "OK \u2713",
+      "chip2At": 9
      }
-    ]
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        7,
+        10
+       ],
+       "size": 40,
+       "color": "ink"
+      }
+     ]
+    }
    }
   }
  ],
@@ -277,25 +321,53 @@
      1,
      3
     ],
-    "size": 110,
+    "size": 64,
     "color": "white",
-    "mt": 70
+    "mt": 60
    },
    {
     "r": [
      3,
      5
     ],
-    "size": 96,
+    "size": 85,
     "color": "lime",
+    "mt": 10
+   },
+   {
+    "r": [
+     5,
+     7
+    ],
+    "size": 64,
+    "color": "white",
+    "mt": 10
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 64,
+    "color": "white",
+    "mt": 6
+   },
+   {
+    "r": [
+     9,
+     14
+    ],
+    "size": 36,
+    "color": "white",
     "mt": 20
    }
   ],
-  "chip": "&#10003; JOB READY",
-  "chipAt": "zyada"
+  "chip": "&#10003; ONE MINUTE",
+  "chipAt": 4
  },
  "cta": {
-  "noun": "garage",
-  "keyword": "GARAGE"
+  "thing": "template",
+  "noun": "template",
+  "keyword": "PORTFOLIO"
  }
 }

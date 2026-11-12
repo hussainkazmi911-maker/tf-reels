@@ -1,224 +1,309 @@
 {
  "id": "r13",
- "business": "Courier and delivery",
- "keyword": "DISPATCH",
+ "business": "Client red flags",
+ "keyword": "FLAGS",
  "lines": [
-  "Parcel kahan hai? Din mein bees baar yahi sawaal.",
-  "Customer ne poocha, parcel kahan hai? You checked after lunch. Tab tak, woh complaint kar chuka tha.",
-  "Riders, bookings aur updates, sab calls mein bikhre hain.",
-  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
-  "One. A booking form, jismein pickup aur drop address hota hai.",
-  "Two. Rider assignment, jahan har parcel ka rider set hota hai.",
-  "Three. A tracking link, jo customer ko khud mil jaata hai.",
-  "Result? Customer ko jawab, aapko sukoon.",
-  "Want this for your business? Comment DISPATCH, hum aap ko details bhej denge."
+  "Client mein yeh red flags dikhein, toh ruk jao.",
+  "Ek freelancer ne free test project kiya. Client ne kaam le liya, aur payment kabhi nahi bheji.",
+  "Signs pehle hi dikh gaye the.",
+  "Toh yeh teen flags yaad rakho.",
+  "One. Free test project, ya pehle poora kaam dikhao.",
+  "Two. Advance se inkaar, ya payment baad mein dene ki baat.",
+  "Three. Budget saaf nahi, aur har cheez urgent.",
+  "Result? Aap sahi client choose karte hain, aur time bachta hai.",
+  "Want the checklist? Comment FLAGS, hum aapko DM kar denge."
+ ],
+ "bridge": {
+  "items": [
+   {
+    "top": 235,
+    "size": 56,
+    "toks": [
+     [
+      0,
+      "TOH"
+     ],
+     [
+      1,
+      "YEH"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      2,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      3,
+      "FLAGS"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      4,
+      "YAAD"
+     ],
+     [
+      5,
+      "RAKHO."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   2,
+   3,
+   5
+  ]
+ },
+ "hub": "TIP",
+ "tag": "EXAMPLE SCENARIO",
+ "tagged": [
+  1,
+  2
  ],
  "hook": {
   "rows": [
    {
     "r": [
      0,
-     1
+     3
     ],
-    "size": 56,
+    "size": 51,
     "color": "white"
    },
    {
     "r": [
-     1,
-     3
-    ],
-    "size": 120,
-    "color": "lime",
-    "mt": 8
-   },
-   {
-    "r": [
      3,
-     7
+     5
     ],
-    "size": 52,
-    "color": "white",
-    "mt": 12
+    "size": 85,
+    "color": "lime",
+    "mt": 6
    },
    {
     "r": [
-     7,
+     5,
+     6
+    ],
+    "size": 78,
+    "color": "white"
+   },
+   {
+    "r": [
+     6,
      9
     ],
-    "size": 60,
+    "size": 56,
     "color": "red",
-    "mt": 10
+    "mt": 22
    }
   ]
  },
  "pain": {
   "bubble": {
-   "label": "CUSTOMER",
-   "text": "parcel kahan hai?",
-   "at": "parcel"
-  },
-  "clock": {
-   "to": "lunch.",
-   "from": "You"
+   "label": "CLIENT",
+   "text": "Pehle ek free test karo",
+   "at": 3
   },
   "rows": [
    {
     "r": [
-     8,
-     10
+     13,
+     15
     ],
-    "size": 66,
+    "size": 59,
+    "color": "ink"
+   },
+   {
+    "r": [
+     15,
+     17
+    ],
+    "size": 60,
     "color": "ink"
    }
   ],
   "reply": {
-   "label": "NEW REVIEW",
-   "text": "&#9733; Parcel late aaya",
-   "at": "Tab"
+   "label": "FREELANCER",
+   "text": "Test bhej diya \u2713",
+   "at": 7
   },
   "stamp": {
-   "text": "COMPLAINT AAYI.",
-   "at": "complaint",
-   "size": 46
-  }
+   "text": "PAYMENT NAHI.",
+   "at": 15,
+   "size": 54
+  },
+  "clock": null
  },
  "mess": {
   "chips": [
    {
-    "text": "Riders",
-    "at": "Riders,"
+    "text": "Signs",
+    "at": 0
    },
    {
-    "text": "Bookings",
-    "at": "bookings"
+    "text": "pehle",
+    "at": 1
    },
    {
-    "text": "Updates",
-    "at": "updates,"
+    "text": "dikh",
+    "at": 3
    }
   ],
   "rows": [
    {
     "r": [
-     7,
-     8
+     3,
+     5
     ],
-    "size": 120,
+    "size": 85,
     "color": "white"
    },
    {
     "r": [
-     8,
-     9
+     5,
+     6
     ],
     "size": 120,
     "color": "white"
    }
   ],
-  "sub": "parcel kahan hai?<br>pata nahi.",
-  "subAt": "hain.",
-  "minisAt": "calls",
+  "sub": "ignore kiya,<br>nuksan hua.",
+  "subAt": 5,
+  "minisAt": 3,
   "subSize": 58
  },
  "builds": [
   {
-   "title": "BOOKING FORM",
-   "titleAt": "booking",
-   "bg": "white",
+   "title": "FREE TEST",
+   "titleAt": 1,
+   "bg": "cream",
    "demo": {
-    "type": "form",
-    "header": "New booking",
-    "fields": [
+    "type": "list",
+    "header": "RED FLAG 1",
+    "rows": [
      {
-      "label": "NAME",
-      "value": "Ayesha K.",
-      "at": "booking"
+      "title": "Free test project",
+      "sub": "Unpaid trial work",
+      "chip": "FLAG",
+      "at": 3,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      },
      {
-      "label": "PICKUP",
-      "value": "Gulshan, Karachi",
-      "at": "pickup"
-     },
-     {
-      "label": "DROP",
-      "value": "DHA, Karachi",
-      "at": "drop"
+      "title": "Show work first",
+      "sub": "Before any payment",
+      "chip": "FLAG",
+      "at": 7,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      }
     ],
-    "button": {
-     "text": "BOOK PARCEL",
-     "at": "hota",
-     "done": "BOOKED \u2713",
-     "doneAt": "hai."
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        6,
+        9
+       ],
+       "size": 42,
+       "color": "ink"
+      }
+     ]
     }
    }
   },
   {
-   "title": "ASSIGN RIDERS",
-   "titleAt": "assignment,",
+   "title": "NO ADVANCE",
+   "titleAt": 1,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "TODAY'S RIDERS",
+    "header": "RED FLAG 2",
     "rows": [
      {
-      "title": "Parcel #1042",
-      "sub": "Rider: Imran",
-      "chip": "ASSIGNED",
-      "at": "Rider"
+      "title": "No advance",
+      "sub": "Refuses upfront pay",
+      "chip": "FLAG",
+      "at": 3,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      },
      {
-      "title": "Parcel #1043",
-      "sub": "Rider: Kamran",
-      "chip": "ASSIGNED",
-      "at": "parcel"
-     },
-     {
-      "title": "Parcel #1044",
-      "sub": "Rider: Sajid",
-      "chip": "ASSIGNED",
-      "at": "set"
-     }
-    ]
-   }
-  },
-  {
-   "title": "TRACKING LINK",
-   "titleAt": "tracking",
-   "bg": "dark",
-   "demo": {
-    "type": "chat",
-    "msgs": [
-     {
-      "who": "r",
-      "text": "Parcel dispatched &#10003;",
-      "at": "link,",
-      "y": 300
-     },
-     {
-      "who": "r",
-      "text": "Track: link.xyz/1042 &#8599;",
-      "at": "customer",
-      "y": 425
-     },
-     {
-      "who": "r",
-      "text": "Delivered &#10003;",
-      "at": "jaata",
-      "y": 550
+      "title": "Pay later",
+      "sub": "After delivery only",
+      "chip": "FLAG",
+      "at": 6,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      }
     ],
     "caption": {
-     "top": 900,
+     "top": 880,
      "rows": [
       {
        "r": [
-        7,
+        8,
         11
        ],
-       "size": 66,
-       "color": "lime"
+       "size": 59,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "UNCLEAR",
+   "titleAt": 1,
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "RED FLAG 3",
+    "rows": [
+     {
+      "title": "Budget",
+      "sub": "Not clear",
+      "chip": "FLAG",
+      "at": 2,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
+     },
+     {
+      "title": "Everything",
+      "sub": "Marked urgent",
+      "chip": "FLAG",
+      "at": 7,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        5,
+        8
+       ],
+       "size": 45,
+       "color": "ink"
       }
      ]
     }
@@ -243,31 +328,42 @@
     ],
     "size": 72,
     "color": "white",
-    "mt": 70
+    "mt": 60
    },
    {
     "r": [
      3,
      4
     ],
-    "size": 120,
-    "color": "lime"
+    "size": 110,
+    "color": "lime",
+    "mt": 10
    },
    {
     "r": [
      4,
-     6
+     7
     ],
-    "size": 84,
+    "size": 42,
     "color": "white",
-    "mt": 16
+    "mt": 10
+   },
+   {
+    "r": [
+     7,
+     11
+    ],
+    "size": 38,
+    "color": "white",
+    "mt": 18
    }
   ],
-  "chip": "&#10003; DELIVERED",
-  "chipAt": "aapko"
+  "chip": "&#10003; RIGHT CLIENT",
+  "chipAt": 3
  },
  "cta": {
-  "noun": "business",
-  "keyword": "DISPATCH"
+  "thing": "checklist",
+  "noun": "checklist",
+  "keyword": "FLAGS"
  }
 }

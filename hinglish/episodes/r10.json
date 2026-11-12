@@ -1,250 +1,294 @@
 {
  "id": "r10",
- "business": "Online stores",
- "keyword": "STORE",
+ "business": "A cold email to a US business",
+ "keyword": "EMAIL",
  "lines": [
-  "Instagram par sab like karte hain, order koi nahi.",
-  "Customer ne poocha, website ka link? You sent it next morning. Tab tak, woh bhool gaya.",
-  "Products DMs, Instagram aur Drive mein bikhre hain.",
-  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
-  "One. A product website, jahan har cheez ek jagah hoti hai.",
-  "Two. A secure checkout, jahan payment seedha hoti hai.",
-  "Three. An order tracking page, jahan customer khud status dekhta hai.",
-  "Result? Likes se orders tak, ek hi raasta.",
-  "Want this for your store? Comment STORE, hum aap ko details bhej denge."
+  "Chaar line ki email, aur US client ka reply. Kaise?",
+  "Ek freelancer ne dus businesses ko lambi email bheji, apne baare mein. Reply ek bhi nahi aaya.",
+  "Kisi ke paas aapki poori kahani padhne ka time nahi hota.",
+  "Toh yeh teen line likho.",
+  "One. Pehli line mein unki website ki ek specific cheez batao.",
+  "Two. Doosri line mein ek problem aur uska chhota hal batao.",
+  "Three. Aakhri line mein ek sawaal, kya main chhota plan bhej doon?",
+  "Result? Email chhoti hai, aur jawab dena aasaan.",
+  "Want the template? Comment EMAIL, hum aapko DM kar denge."
+ ],
+ "bridge": {
+  "items": [
+   {
+    "top": 235,
+    "size": 56,
+    "toks": [
+     [
+      0,
+      "TOH"
+     ],
+     [
+      1,
+      "YEH"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      2,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      3,
+      "LINE"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      4,
+      "LIKHO."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   2,
+   3,
+   4
+  ]
+ },
+ "hub": "TIP",
+ "tag": "EXAMPLE SCENARIO",
+ "tagged": [
+  1,
+  2
  ],
  "hook": {
   "rows": [
    {
     "r": [
      0,
-     2
+     1
+    ],
+    "size": 130,
+    "color": "lime"
+   },
+   {
+    "r": [
+     1,
+     4
+    ],
+    "size": 54,
+    "color": "white",
+    "mt": 6
+   },
+   {
+    "r": [
+     4,
+     7
+    ],
+    "size": 56,
+    "color": "white",
+    "mt": 8
+   },
+   {
+    "r": [
+     7,
+     9
     ],
     "size": 56,
     "color": "white"
    },
    {
     "r": [
-     2,
-     4
-    ],
-    "size": 130,
-    "color": "lime",
-    "mt": 8
-   },
-   {
-    "r": [
-     4,
-     6
+     9,
+     10
     ],
     "size": 78,
-    "color": "white"
-   },
-   {
-    "r": [
-     6,
-     9
-    ],
-    "size": 54,
     "color": "red",
-    "mt": 22
+    "mt": 18
    }
   ]
  },
  "pain": {
   "bubble": {
-   "label": "CUSTOMER",
-   "text": "website ka link?",
-   "at": "website"
-  },
-  "clock": {
-   "to": "morning.",
-   "from": "You"
+   "label": "EMAIL",
+   "text": "Main ek expert hoon...",
+   "at": 6
   },
   "rows": [
    {
     "r": [
      9,
-     11
+     12
     ],
-    "size": 66,
+    "size": 48,
     "color": "ink"
    }
   ],
   "reply": {
-   "label": "DOOSRA STORE",
-   "text": "Checkout done &#10003;",
-   "at": "Tab"
+   "label": "INBOX",
+   "text": "0 replies",
+   "at": 12
   },
   "stamp": {
-   "text": "ORDER GAYA.",
-   "at": "bhool",
+   "text": "REPLY ZERO.",
+   "at": 15,
    "size": 63
-  }
+  },
+  "clock": null
  },
  "mess": {
   "chips": [
    {
-    "text": "DMs",
-    "at": "DMs,"
+    "text": "Kisi",
+    "at": 0
    },
    {
-    "text": "Instagram",
-    "at": "Instagram"
+    "text": "kahani",
+    "at": 5
    },
    {
-    "text": "Drive",
-    "at": "Drive"
+    "text": "time",
+    "at": 8
    }
   ],
   "rows": [
    {
     "r": [
-     6,
-     7
+     8,
+     9
     ],
     "size": 120,
     "color": "white"
    },
    {
     "r": [
-     7,
-     8
+     9,
+     11
     ],
-    "size": 120,
+    "size": 76,
     "color": "white"
    }
   ],
-  "sub": "kya available hai?<br>pata nahi.",
-  "subAt": "hain.",
-  "minisAt": "Drive",
+  "sub": "lambi email?<br>delete.",
+  "subAt": 10,
+  "minisAt": 6,
   "subSize": 58
  },
  "builds": [
   {
-   "title": "PRODUCT PAGE",
-   "titleAt": "product",
-   "bg": "cream",
+   "title": "LINE 1",
+   "titleAt": 1,
+   "bg": "dark",
    "demo": {
-    "type": "list",
-    "header": "PRODUCTS",
-    "rows": [
+    "type": "chat",
+    "msgs": [
      {
-      "title": "Black kurta",
-      "sub": "Rs. 3,500",
-      "chip": "IN STOCK",
-      "at": "website,"
+      "who": "r",
+      "text": "Aapki site dekhi, nice design",
+      "at": 5,
+      "y": 300
      },
      {
-      "title": "Sneakers",
-      "sub": "Rs. 6,000",
-      "chip": "IN STOCK",
-      "at": "har"
-     },
-     {
-      "title": "Lawn suit",
-      "sub": "Rs. 4,200",
-      "chip": "IN STOCK",
-      "at": "ek"
-     }
-    ]
-   }
-  },
-  {
-   "title": "SECURE CHECKOUT",
-   "titleAt": "secure",
-   "bg": "white",
-   "demo": {
-    "type": "form",
-    "header": "Checkout",
-    "fields": [
-     {
-      "label": "NAME",
-      "value": "Ayesha K.",
-      "at": "secure"
-     },
-     {
-      "label": "ADDRESS",
-      "value": "House 12, Block 5",
-      "at": "jahan"
-     },
-     {
-      "label": "PAYMENT",
-      "value": "Card or COD",
-      "at": "payment"
+      "who": "r",
+      "text": "Checkout page slow lagta hai",
+      "at": 9,
+      "y": 425
      }
     ],
-    "button": {
-     "text": "PAY NOW",
-     "at": "seedha",
-     "done": "PAID \u2713",
-     "doneAt": "hai."
+    "caption": {
+     "top": 900,
+     "rows": [
+      {
+       "r": [
+        7,
+        10
+       ],
+       "size": 45,
+       "color": "lime"
+      }
+     ]
     }
    }
   },
   {
-   "title": "ORDER TRACKING",
-   "titleAt": "tracking",
-   "bg": "cream",
+   "title": "LINE 2",
+   "titleAt": 1,
+   "bg": "dark",
    "demo": {
-    "type": "board",
-    "appear": "jahan",
-    "cols": [
+    "type": "chat",
+    "msgs": [
      {
-      "name": "PACKED",
-      "bg": "#ffd166",
-      "fg": "#0b0d09",
-      "at": "tracking"
+      "who": "r",
+      "text": "Slow checkout = lost orders",
+      "at": 5,
+      "y": 300
      },
      {
-      "name": "SHIPPED",
-      "bg": "#c6ff35",
-      "fg": "#0b0d09",
-      "at": "status"
-     },
-     {
-      "name": "DELIVERED",
-      "bg": "#0b0d09",
-      "fg": "#c6ff35",
-      "at": "dekhta"
+      "who": "r",
+      "text": "Ek chhota fix mere paas hai",
+      "at": 9,
+      "y": 425
      }
     ],
-    "cards": [
+    "caption": {
+     "top": 900,
+     "rows": [
+      {
+       "r": [
+        8,
+        10
+       ],
+       "size": 66,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "LINE 3",
+   "titleAt": 1,
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
      {
-      "id": "#301",
-      "name": "Ayesha",
-      "item": "Black kurta",
-      "row": 0,
-      "moves": [
-       {
-        "at": "khud",
-        "to": 1
-       },
-       {
-        "at": "dekhta",
-        "to": 2
-       }
-      ]
+      "who": "r",
+      "text": "Chhota plan bhej doon?",
+      "at": 5,
+      "y": 300
      },
      {
-      "id": "#302",
-      "name": "Bilal",
-      "item": "Sneakers",
-      "row": 1,
-      "moves": [
-       {
-        "at": "status",
-        "to": 1
-       }
-      ]
-     },
-     {
-      "id": "#303",
-      "name": "Sara",
-      "item": "Lawn suit",
-      "row": 2
+      "who": "c",
+      "text": "Haan, bhej dijiye",
+      "at": 11,
+      "y": 425
      }
-    ]
+    ],
+    "caption": {
+     "top": 900,
+     "rows": [
+      {
+       "r": [
+        4,
+        6
+       ],
+       "size": 72,
+       "color": "lime"
+      }
+     ]
+    }
    }
   }
  ],
@@ -262,27 +306,46 @@
    {
     "r": [
      1,
-     5
+     2
     ],
-    "size": 64,
+    "size": 110,
     "color": "white",
-    "mt": 70
+    "mt": 60
    },
    {
     "r": [
-     5,
+     2,
+     4
+    ],
+    "size": 69,
+    "color": "lime",
+    "mt": 10
+   },
+   {
+    "r": [
+     4,
+     7
+    ],
+    "size": 54,
+    "color": "white",
+    "mt": 10
+   },
+   {
+    "r": [
+     7,
      8
     ],
-    "size": 96,
+    "size": 100,
     "color": "lime",
-    "mt": 24
+    "mt": 10
    }
   ],
-  "chip": "&#10003; ORDER PLACED",
-  "chipAt": "ek"
+  "chip": "&#10003; EASY REPLY",
+  "chipAt": 5
  },
  "cta": {
-  "noun": "store",
-  "keyword": "STORE"
+  "thing": "template",
+  "noun": "template",
+  "keyword": "EMAIL"
  }
 }
