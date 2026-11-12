@@ -76,6 +76,17 @@
   1,
   2
  ],
+ "emo": {
+  "hook": "\ud83d\udea9",
+  "pain": "\ud83d\ude2c",
+  "mess": "\ud83d\udeab",
+  "tips": [
+   "\ud83c\udd93",
+   "\ud83d\udcb8",
+   "\u23f0"
+  ],
+  "res": "\u2705"
+ },
  "hook": {
   "rows": [
    {

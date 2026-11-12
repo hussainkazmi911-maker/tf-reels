@@ -11,5 +11,5 @@ python3 render.py run 2 0 > r0.log 2>&1 &
 python3 render.py run 2 1 > r1.log 2>&1 &
 wait
 cat r0.log r1.log
-ffmpeg -y -hide_banner -loglevel error -framerate 30 -i frames/f_%05d.png -i voice.mp3 -filter_complex "[1:a]adelay=200|200[a]" -map 0:v -map "[a]" -c:v libx264 -preset veryfast -crf 19 -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart $H/../reels/hinglish_${ID}_${SLUG}.mp4
+ffmpeg -y -hide_banner -loglevel error -framerate 30 -i frames/f_%05d.png -i voice.mp3 -filter_complex "[1:a]adelay=200|200[a]" -map 0:v -map "[a]" -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart $H/../reels/hinglish_${ID}_${SLUG}.mp4
 ls -la $H/../reels/hinglish_${ID}_${SLUG}.mp4

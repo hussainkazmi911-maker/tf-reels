@@ -78,6 +78,7 @@ html,body{width:720px;height:1280px;overflow:hidden;background:#000}
 </div>
 <script src="timing.js"></script>
 <script src="ep.js"></script>
+<script src="../../engine/fx.js"></script>
 <script>
 const T=window.TIMING, L=T.lines, EP=window.EP;
 const W=EP.lines.map(s=>s.trim().split(/\s+/));
@@ -109,7 +110,7 @@ function rowsEl(l,rows,top,extra){
     row.dataset.size=r.size;
     const a=r.r[0],b=r.r[1];
     for(let i=a;i<b;i++){
-      const s=mk('span','w');s.dataset.i=i;s.dataset.l=l;s.textContent=(r.text&&r.text[i-a]!=null?r.text[i-a]:W[l][i].toUpperCase());
+      const s=mk('span','w');s.dataset.i=i;s.dataset.l=l;if(r.color==='lime'||r.color==='red')s.dataset.glow=r.color;s.textContent=(r.text&&r.text[i-a]!=null?r.text[i-a]:W[l][i].toUpperCase());
       if(r.strike&&norm(W[l][i])===norm(r.strike)){s.style.position='relative';const k=mk('i','',`position:absolute;left:-6px;top:50%;height:10px;width:0;background:var(--red);border-radius:5px`);s.appendChild(k);strikes.push({k,l,i})}
       row.appendChild(s);if(i<b-1)row.appendChild(document.createTextNode(' '));
     }
@@ -117,7 +118,12 @@ function rowsEl(l,rows,top,extra){
   });
   d._strikes=strikes;return d;
 }
-function wordsDraw(sc,t){sc.el.querySelectorAll('.w').forEach(w=>{const l=w.dataset.l!=null?+w.dataset.l:sc.line,i=+w.dataset.i;const f=w.dataset.from?+w.dataset.from:1.32;pop(w,t,L[l].words[i].s,f,.22)});
+function wordsDraw(sc,t){sc.el.querySelectorAll('.w').forEach(w=>{const l=w.dataset.l!=null?+w.dataset.l:sc.line,i=+w.dataset.i;const s0=L[l].words[i].s;
+    if(w.dataset.from){pop(w,t,s0,+w.dataset.from,.22)}
+    else{const m=(i+l)%3,p=prog(t,s0,s0+.26),eb=eBack(p);w.style.opacity=t>=s0?1:0;
+      if(m===0)setT(w,{sc:1.32-.32*eb});else if(m===1)setT(w,{dy:38*(1-eOut(p)),rot:-5*(1-eOut(p)),sc:.9+.1*eb});else setT(w,{sc:.55+.45*eb,rot:7*(1-eb)});
+      if(w.dataset.glow&&t>=s0){const d=t-s0;if(d<.6)w.style.transform+=` rotate(${(3.2*Math.exp(-d*7)*Math.sin(d*26)).toFixed(2)}deg)`}}
+    if(sc.glitch){const d=t-s0;if(d>=0&&d<.26){const a=3+3*Math.abs(Math.sin(t*120));w.style.textShadow=`${a}px 0 rgba(255,75,58,.9),${-a}px 0 rgba(0,229,255,.85)`}else w.style.textShadow=''}});
   (sc.strikes||[]).forEach(s=>{const e=L[s.l].words[s.i].e+.1;s.k.style.width=(prog(t,e,e+.35)*112)+'%'})}
 function fitScene(sc){sc.el.querySelectorAll('.title').forEach(r=>{let fs=60,g=0;r.style.fontSize='60px';while(r.scrollWidth>(r.dataset.max||480)&&fs>26&&g++<40){fs-=3;r.style.fontSize=fs+'px'}});sc.el.querySelectorAll('.row').forEach(r=>{let fs=+r.dataset.size,g=0;r.style.fontSize=fs+'px';while(r.scrollWidth>640&&fs>24&&g++<60){fs-=3;r.style.fontSize=fs+'px'}})}
 
@@ -252,13 +258,14 @@ EP.builds.forEach((b,k)=>{const line=4+k;const bg=b.bg||'white';const dark=bg=='
 scenes.sort((a,b)=>a.line-b.line);
 scenes.forEach((s,i)=>{s.t0=i==0?0:L[s.line].start-.1;s.t1=i==scenes.length-1?T.total+1:L[scenes[i+1].line].start-.1});
 scenes.forEach(s=>{if(s._b){const b=s._b;const dd=DEMOS[b.demo.type](s,b.demo);s.draw=function(t){wordsDraw(this,t);dd(t)}}});
+FX.init(scenes,{W,L,T,EP,wt,we,wi});
 const TAGGED=EP.tagged||[0,1,2,4,5,6];$('tag').textContent=EP.tag||'EXAMPLE SCENARIO';
 function draw(t){let si=scenes.findIndex(s=>t>=s.t0&&t<s.t1);if(si<0)si=t<0?0:scenes.length-1;
   scenes.forEach((s,i)=>{s.el.style.display=i===si?'block':'none'});
   const sc=scenes[si];if(!sc.fitted){fitScene(sc);sc.fitted=true}
   document.documentElement.style.setProperty('--fg',sc.fg);
   $('tag').style.display=TAGGED.includes(si)?'block':'none';
-  sc.draw(t)}
+  sc.draw(t);FX.frame(t,scenes,si)}
 window.draw=draw;window.SCENES=scenes;window.refit=function(){scenes.forEach(s=>{s.fitted=false})};
 draw(0);
 </script></body></html>

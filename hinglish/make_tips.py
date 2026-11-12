@@ -7,6 +7,29 @@ H = os.path.dirname(os.path.abspath(__file__))
 X = {x['id']: x for x in TC.TIPS}
 EPS = {}
 
+# emoji stickers per reel (hook, pain-bubble reaction, mess, three tips, result); must exist in engine/make_emoji_font.py EMOJI
+EMO = {
+    'r02': dict(hook='🥲', pain='😬', mess='💀', tips=['⏳', '🎯', '🌍'], res='🚀'),
+    'r03': dict(hook='🔎', pain='😬', mess='💀', tips=['🧵', '🏢', '📋'], res='🎉'),
+    'r04': dict(hook='😬', pain='😮‍💨', mess='🤦', tips=['🎯', '📎', '❓'], res='🎉'),
+    'r05': dict(hook='💸', pain='😬', mess='🤦', tips=['🏦', '⏱️', '🚫'], res='💰'),
+    'r06': dict(hook='🏷️', pain='🥲', mess='💀', tips=['📦', '🧾', '🤝'], res='💰'),
+    'r07': dict(hook='⏰', pain='😬', mess='💀', tips=['⚡', '🕒', '✍️'], res='🤝'),
+    'r08': dict(hook='👀', pain='😬', mess='🤦', tips=['📝', '⭐', '🤝'], res='🚀'),
+    'r09': dict(hook='🤯', pain='😮‍💨', mess='😵', tips=['🏆', '🧩', '📱'], res='🎉'),
+    'r10': dict(hook='📩', pain='😬', mess='💀', tips=['🔍', '💡', '❓'], res='🎉'),
+    'r11': dict(hook='💼', pain='😬', mess='🤦', tips=['💰', '🧰', '🫡'], res='🚀'),
+    'r12': dict(hook='😮‍💨', pain='😤', mess='💀', tips=['📝', '🔁', '💵'], res='🎉'),
+    'r13': dict(hook='🚩', pain='😬', mess='🚫', tips=['🆓', '💸', '⏰'], res='✅'),
+    'r14': dict(hook='🎯', pain='🥲', mess='🤦', tips=['👥', '🔧', '📌'], res='🏆'),
+    'r15': dict(hook='⏱️', pain='😮‍💨', mess='💀', tips=['📨', '🛠️', '📊'], res='🥳'),
+}
+import sys as _s; _s.path.insert(0, os.path.join(H, 'engine'))
+from make_emoji_font import chars as _EC
+for _id, _e in EMO.items():
+    for _v in ([_e['hook'], _e['pain'], _e['mess'], _e['res']] + _e['tips']):
+        assert all(c in _EC() for c in _v), (_id, _v)
+
 def ep(id, hook, pain, mess, builds, res, chip, chipAt, hub='TIP'):
     x = X[id]; L = x['lines']; p = pain
     for b in builds:
@@ -19,7 +42,7 @@ def ep(id, hook, pain, mess, builds, res, chip, chipAt, hub='TIP'):
               stamp=dict(text=p['st'], at=p['sat'], size=min(70, int(520 / (0.74 * len(p['st']))))))
     pn['clock'] = dict(**{'from': p['cf'], 'to': p['ct']}) if p.get('cf') is not None else None
     E = dict(id=id, business=x['topic'], keyword=x['kw'], lines=L, bridge=bridge_for(L[3]), hub=hub,
-             tag='EXAMPLE SCENARIO', tagged=[1, 2],
+             tag='EXAMPLE SCENARIO', tagged=[1, 2], emo=EMO.get(id, {}),
              hook=dict(rows=rr(L[0], hook)), pain=pn,
              mess=dict(chips=[dict(text=t, at=a) for t, a in mess['chips']], rows=rr(L[2], mess['big']), sub=mess['sub'],
                        subAt=mess['subAt'], minisAt=mess['minisAt'], subSize=mess.get('subSize', 58)),
