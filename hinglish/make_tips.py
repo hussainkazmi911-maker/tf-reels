@@ -7,7 +7,7 @@ H = os.path.dirname(os.path.abspath(__file__))
 X = {x['id']: x for x in TC.TIPS}
 EPS = {}
 
-def ep(id, hook, pain, mess, builds, res, chip, chipAt):
+def ep(id, hook, pain, mess, builds, res, chip, chipAt, hub='TIP'):
     x = X[id]; L = x['lines']; p = pain
     for b in builds:
         for mm in b['demo'].get('msgs', []):
@@ -18,7 +18,7 @@ def ep(id, hook, pain, mess, builds, res, chip, chipAt):
               rows=rr(L[1], p['cap']), reply=dict(label=p['rl'], text=p['rt'], at=p['rat']),
               stamp=dict(text=p['st'], at=p['sat'], size=min(70, int(520 / (0.74 * len(p['st']))))))
     pn['clock'] = dict(**{'from': p['cf'], 'to': p['ct']}) if p.get('cf') is not None else None
-    E = dict(id=id, business=x['topic'], keyword=x['kw'], lines=L, bridge=bridge_for(L[3]), hub='TIP',
+    E = dict(id=id, business=x['topic'], keyword=x['kw'], lines=L, bridge=bridge_for(L[3]), hub=hub,
              tag='EXAMPLE SCENARIO', tagged=[1, 2],
              hook=dict(rows=rr(L[0], hook)), pain=pn,
              mess=dict(chips=[dict(text=t, at=a) for t, a in mess['chips']], rows=rr(L[2], mess['big']), sub=mess['sub'],
@@ -29,23 +29,36 @@ def ep(id, hook, pain, mess, builds, res, chip, chipAt):
     for k, bd in enumerate(builds):   # list demos get a punchy caption (last words of the tip) to fill the lower half
         dm = bd['demo']
         if dm['type'] == 'list' and 'caption' not in dm:
-            ws = L[4 + k].split(); n = 3 if len(' '.join(ws[-3:])) <= 22 else 2
+            ws = L[4 + k].split(); n = 4 if (id, k) in CAPN4 else (3 if len(' '.join(ws[-3:])) <= 22 else 2)
             dm['caption'] = dict(top=880, rows=rr(L[4 + k], [(len(ws) - n, len(ws), 'ink', 64)]))
     EPS[id] = E
 
+CAPN4 = {('r03', 0), ('r03', 1)}
 W, LI, RD = 'white', 'lime', 'red'
 
-# ------------------------------------------------------------ r03 SITES
+# ------------------------------------------------------------ r02 CLIENTS (problem)
+ep('r02',
+   [(0, 3, W, 56), (3, 4, LI, 110, dict(mt=6)), (4, 6, W, 66, dict(mt=8)), (6, 7, W, 66), (7, 9, RD, 78, dict(mt=18))],
+   dict(bl='AGENCY', bt='Website ready ✓', bat=4, cf=11, ct=13, cap=[(14, 15, 'ink', 66), (15, 18, 'ink', 66)],
+        rl='INBOX', rt='0 inquiries', rat=14, st='ZERO INQUIRY.', sat=17),
+   dict(chips=[('Client', 0), ('dhoondta', 2), ('nahi,', 3)], big=[(6, 7, W, 120), (7, 9, W, 120)],
+        sub='intezaar?<br>nahi, outreach.', subAt=8, minisAt=5),
+   [build('WAITING', 2, lst('REASON 1', [R('Waiting', 'Profile up, hope on', 'OLD', 2, **RED), R('Outreach', 'Message them first', 'NEW', 6)])),
+    build('SKILLS VS RESULT', 2, lst('REASON 2', [R('Skills', 'React, design, SEO', 'OLD', 2, **RED), R('Result', 'A problem solved', 'NEW', 4)])),
+    build('ONE PLACE', 2, lst('REASON 3', [R('One platform', 'Only here you exist', 'OLD', 3, **RED), R('Many places', 'Seen where clients look', 'NEW', 7)]))],
+   [(1, 3, W, 72, dict(mt=60)), (3, 5, W, 72, dict(mt=10)), (5, 7, LI, 80, dict(mt=10)), (7, 9, LI, 80, dict(mt=6))], 'BAAT SHURU', 5, hub='WAJAH')
+
+# ------------------------------------------------------------ r03 HIDDEN places
 ep('r03',
-   [(0, 2, W, 56), (2, 3, LI, 130, dict(mt=6)), (3, 5, W, 66, dict(mt=8)), (5, 7, W, 78), (7, 8, RD, 46, dict(mt=22))],
-   dict(bl='FREELANCER', bt='Proposals bhej diye', bat=6, cf=9, ct=11, cap=[(12, 15, 'ink', 66)],
-        rl='INBOX', rt='No replies yet', rat=12, st='ZERO KAAM.', sat=13),
-   dict(chips=[('Ek', 0), ('jagah', 2), ('daav', 5)], big=[(9, 10, W, 120), (10, 12, W, 120)],
-        sub='ek raasta band,<br>toh sab band.', subAt=11, minisAt=7),
-   [build('UPWORK', 1, lst('UPWORK', [R('Fresh job', 'Posted 1 hour ago', 'NEW', 2), R('Your proposal', 'Sent early', 'SEND', 6, chip2='SENT ✓', chip2At=7)])),
-    build('LINKEDIN', 1, chat([('r', 'Hi Sara, aapki site dekhi', 4), ('r', 'Ek chhota idea hai, share?', 7), ('c', 'Sure, bhejiye!', 8)], rr(X['r03']['lines'][5], [(2, 4, LI, 72)]))),
-    build('CONTRA', 1, lst('CONTRA', [R('Portfolio page', 'Your best work', 'LIVE', 2), R('Commission', 'Contra: none', 'NONE', 6)]))],
-   [(1, 4, W, 72, dict(mt=60)), (4, 6, LI, 90, dict(mt=24)), (6, 11, W, 52, dict(mt=28))], 'THREE ROUTES', 5)
+   [(0, 2, W, 56), (2, 3, LI, 130, dict(mt=6)), (3, 4, W, 78), (4, 7, W, 56, dict(mt=14)), (7, 9, RD, 46, dict(mt=20)), (9, 11, RD, 46)],
+   dict(bl='AGENCY OWNER', bt='Proposal bheja ✓', bat=6, cf=6, ct=8, cap=[(11, 14, 'ink', 66)],
+        rl='UPWORK', rt='Bahut proposals', rat=9, st='BHEED ZYADA.', sat=12),
+   dict(chips=[('Jahan', 0), ('sab', 1), ('jaate', 2)], big=[(7, 8, W, 120), (8, 10, W, 120)],
+        sub='sab wahi,<br>toh bheed wahi.', subAt=9, minisAt=5),
+   [build('HACKER NEWS', 1, lst('MONTHLY THREAD', [R('Companies post', 'They seek freelancers', 'GIGS', 6), R('You reply or post', 'Seeking work, remote', 'YOU', 9)])),
+    build('CLUTCH', 1, lst('CLUTCH', [R('Buyers search', 'Agencies by service', 'FIND', 3), R('Free profile', 'Create it once', 'FREE', 9)])),
+    build('SORTLIST', 1, lst('SORTLIST', [R('Free listing', 'Agency profile banao', 'FREE', 3), R('Buyers search', 'Agency dhoondte hain', 'LEADS', 5)]))],
+   [(1, 2, W, 100, dict(mt=60)), (2, 3, LI, 130, dict(mt=6)), (3, 6, W, 64, dict(mt=10)), (6, 8, LI, 80, dict(mt=10))], 'LESS CROWDED', 2)
 
 # ------------------------------------------------------------ r04 PROPOSAL
 ep('r04',

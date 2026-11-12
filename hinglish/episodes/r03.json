@@ -1,17 +1,17 @@
 {
  "id": "r03",
- "business": "3 places to find US clients",
- "keyword": "SITES",
+ "business": "3 lesser-known places to find US clients",
+ "keyword": "HIDDEN",
  "lines": [
-  "US client chahiye? Pehle yeh teen jagah dekho.",
-  "Ek freelancer sirf ek website par proposals bhejta raha. Mahina nikal gaya, kaam nahi mila.",
-  "Ek hi jagah par sab daav lagana, yahi sabse badi galti hai.",
+  "Upwork par bheed hai. Yeh teen jagah kam log jaante hain.",
+  "Ek agency owner roz Upwork par proposals bhejta raha. Competition bahut, reply bahut kam.",
+  "Jahan sab jaate hain, wahan sabse zyada bheed hoti hai.",
   "Toh yeh teen jagah try karo.",
-  "One. Upwork. Fresh jobs par jaldi proposal bhejo.",
-  "Two. LinkedIn. Founders ko seedha ek chhota message karo.",
-  "Three. Contra. Portfolio banao, aur wahan commission nahi lagta.",
-  "Result? Ek hafte mein teen raaste, aur clients ke saamne aap.",
-  "Want the list? Comment SITES, hum aapko DM kar denge."
+  "One. Hacker News ka freelancer thread. Companies wahan seedha hire karti hain.",
+  "Two. Clutch. Wahan buyers agencies dhoondte hain, aur profile free hai.",
+  "Three. Sortlist. Free registration, aur buyers agency dhoondte hain.",
+  "Result? Kam bheed, aur buyers se seedhi baat.",
+  "Want the list? Comment HIDDEN, hum aapko DM kar denge."
  ],
  "bridge": {
   "items": [
@@ -91,129 +91,135 @@
      2,
      3
     ],
-    "size": 96,
+    "size": 130,
     "color": "lime",
     "mt": 6
    },
    {
     "r": [
      3,
-     5
+     4
     ],
-    "size": 66,
-    "color": "white",
-    "mt": 8
-   },
-   {
-    "r": [
-     5,
-     7
-    ],
-    "size": 76,
+    "size": 78,
     "color": "white"
    },
    {
     "r": [
+     4,
+     7
+    ],
+    "size": 54,
+    "color": "white",
+    "mt": 14
+   },
+   {
+    "r": [
      7,
-     8
+     9
     ],
     "size": 46,
     "color": "red",
-    "mt": 22
+    "mt": 20
+   },
+   {
+    "r": [
+     9,
+     11
+    ],
+    "size": 46,
+    "color": "red"
    }
   ]
  },
  "pain": {
   "bubble": {
-   "label": "FREELANCER",
-   "text": "Proposals bhej diye",
+   "label": "AGENCY OWNER",
+   "text": "Proposal bheja \u2713",
    "at": 6
   },
   "rows": [
    {
     "r": [
-     12,
-     15
+     11,
+     14
     ],
-    "size": 51,
+    "size": 48,
     "color": "ink"
    }
   ],
   "reply": {
-   "label": "INBOX",
-   "text": "No replies yet",
-   "at": 12
+   "label": "UPWORK",
+   "text": "Bahut proposals",
+   "at": 9
   },
   "stamp": {
-   "text": "ZERO KAAM.",
-   "at": 13,
-   "size": 70
+   "text": "BHEED ZYADA.",
+   "at": 12,
+   "size": 58
   },
   "clock": {
-   "from": 9,
-   "to": 11
+   "from": 6,
+   "to": 8
   }
  },
  "mess": {
   "chips": [
    {
-    "text": "Ek",
+    "text": "Jahan",
     "at": 0
    },
    {
-    "text": "jagah",
-    "at": 2
+    "text": "sab",
+    "at": 1
    },
    {
-    "text": "daav",
-    "at": 5
+    "text": "jaate",
+    "at": 2
    }
   ],
   "rows": [
    {
     "r": [
-     9,
-     10
+     7,
+     8
     ],
     "size": 120,
     "color": "white"
    },
    {
     "r": [
-     10,
-     12
+     8,
+     10
     ],
-    "size": 76,
+    "size": 85,
     "color": "white"
    }
   ],
-  "sub": "ek raasta band,<br>toh sab band.",
-  "subAt": 11,
-  "minisAt": 7,
+  "sub": "sab wahi,<br>toh bheed wahi.",
+  "subAt": 9,
+  "minisAt": 5,
   "subSize": 58
  },
  "builds": [
   {
-   "title": "UPWORK",
+   "title": "HACKER NEWS",
    "titleAt": 1,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "UPWORK",
+    "header": "MONTHLY THREAD",
     "rows": [
      {
-      "title": "Fresh job",
-      "sub": "Posted 1 hour ago",
-      "chip": "NEW",
-      "at": 2
+      "title": "Companies post",
+      "sub": "They seek freelancers",
+      "chip": "GIGS",
+      "at": 6
      },
      {
-      "title": "Your proposal",
-      "sub": "Sent early",
-      "chip": "SEND",
-      "at": 6,
-      "chip2": "SENT \u2713",
-      "chip2At": 7
+      "title": "You reply or post",
+      "sub": "Seeking work, remote",
+      "chip": "YOU",
+      "at": 9
      }
     ],
     "caption": {
@@ -221,8 +227,44 @@
      "rows": [
       {
        "r": [
-        5,
-        8
+        8,
+        12
+       ],
+       "size": 34,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "CLUTCH",
+   "titleAt": 1,
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "CLUTCH",
+    "rows": [
+     {
+      "title": "Buyers search",
+      "sub": "Agencies by service",
+      "chip": "FIND",
+      "at": 3
+     },
+     {
+      "title": "Free profile",
+      "sub": "Create it once",
+      "chip": "FREE",
+      "at": 9
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        7,
+        11
        ],
        "size": 36,
        "color": "ink"
@@ -232,65 +274,24 @@
    }
   },
   {
-   "title": "LINKEDIN",
-   "titleAt": 1,
-   "bg": "dark",
-   "demo": {
-    "type": "chat",
-    "msgs": [
-     {
-      "who": "r",
-      "text": "Hi Sara, aapki site dekhi",
-      "at": 4,
-      "y": 300
-     },
-     {
-      "who": "r",
-      "text": "Ek chhota idea hai, share?",
-      "at": 7,
-      "y": 425
-     },
-     {
-      "who": "c",
-      "text": "Sure, bhejiye!",
-      "at": 8,
-      "y": 550
-     }
-    ],
-    "caption": {
-     "top": 900,
-     "rows": [
-      {
-       "r": [
-        2,
-        4
-       ],
-       "size": 69,
-       "color": "lime"
-      }
-     ]
-    }
-   }
-  },
-  {
-   "title": "CONTRA",
+   "title": "SORTLIST",
    "titleAt": 1,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "CONTRA",
+    "header": "SORTLIST",
     "rows": [
      {
-      "title": "Portfolio page",
-      "sub": "Your best work",
-      "chip": "LIVE",
-      "at": 2
+      "title": "Free listing",
+      "sub": "Agency profile banao",
+      "chip": "FREE",
+      "at": 3
      },
      {
-      "title": "Commission",
-      "sub": "Contra: none",
-      "chip": "NONE",
-      "at": 6
+      "title": "Buyers search",
+      "sub": "Agency dhoondte hain",
+      "chip": "LEADS",
+      "at": 5
      }
     ],
     "caption": {
@@ -301,7 +302,7 @@
         6,
         9
        ],
-       "size": 34,
+       "size": 36,
        "color": "ink"
       }
      ]
@@ -323,37 +324,46 @@
    {
     "r": [
      1,
-     4
+     2
     ],
-    "size": 59,
+    "size": 100,
     "color": "white",
     "mt": 60
    },
    {
     "r": [
-     4,
+     2,
+     3
+    ],
+    "size": 128,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     3,
      6
     ],
-    "size": 64,
-    "color": "lime",
-    "mt": 24
+    "size": 59,
+    "color": "white",
+    "mt": 10
    },
    {
     "r": [
      6,
-     11
+     8
     ],
-    "size": 34,
-    "color": "white",
-    "mt": 28
+    "size": 64,
+    "color": "lime",
+    "mt": 10
    }
   ],
-  "chip": "&#10003; THREE ROUTES",
-  "chipAt": 5
+  "chip": "&#10003; LESS CROWDED",
+  "chipAt": 2
  },
  "cta": {
   "thing": "list",
   "noun": "list",
-  "keyword": "SITES"
+  "keyword": "HIDDEN"
  }
 }

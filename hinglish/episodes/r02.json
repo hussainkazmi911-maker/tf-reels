@@ -1,108 +1,180 @@
 {
  "id": "r02",
- "business": "Salons",
- "keyword": "CHAIR",
+ "business": "Why freelancers and agencies get no clients",
+ "keyword": "CLIENTS",
  "lines": [
-  "Aapki chair khaali hai, aur customer ka message unread.",
-  "Customer ne poocha, kal ka slot hai? You replied next morning. Tab tak, booking gayi.",
-  "Bookings DMs, WhatsApp aur calls mein bikhri hain.",
-  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
-  "One. An online booking calendar. Customer apna time khud chunta hai.",
-  "Two. Reminder messages, taaki koi apna slot miss na kare.",
-  "Three. A daily schedule, jahan har chair ka kaam dikhta hai.",
-  "Result? Aap chair bharte hain, messages nahi.",
-  "Want this for your salon? Comment CHAIR, hum aap ko details bhej denge."
+  "Freelancer ho ya agency, skills hain par client nahi.",
+  "Ek small agency ne website banayi, portfolio banaya, aur intezaar kiya. Mahine nikal gaye, inquiry ek bhi nahi.",
+  "Client aapko dhoondta nahi, aapko client dhoondna padta hai.",
+  "Toh yeh teen wajah hoti hain.",
+  "One. Aap intezaar karte ho, aur outreach nahi karte.",
+  "Two. Client skills nahi, result khareedta hai.",
+  "Three. Aap sirf ek jagah par ho, baaki jagah invisible.",
+  "Result? Teeno badlo, aur baat shuru hone lagti hai.",
+  "Want the plan? Comment CLIENTS, hum aapko DM kar denge."
+ ],
+ "bridge": {
+  "items": [
+   {
+    "top": 235,
+    "size": 56,
+    "toks": [
+     [
+      0,
+      "TOH"
+     ],
+     [
+      1,
+      "YEH"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      2,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      3,
+      "WAJAH"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      4,
+      "HOTI"
+     ],
+     [
+      5,
+      "HAIN."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   2,
+   3,
+   5
+  ]
+ },
+ "hub": "WAJAH",
+ "tag": "EXAMPLE SCENARIO",
+ "tagged": [
+  1,
+  2
  ],
  "hook": {
   "rows": [
    {
     "r": [
      0,
-     2
-    ],
-    "size": 56,
-    "color": "white"
-   },
-   {
-    "r": [
-     2,
      3
     ],
-    "size": 150,
-    "color": "lime",
-    "mt": 8
+    "size": 48,
+    "color": "white"
    },
    {
     "r": [
      3,
      4
     ],
-    "size": 78,
-    "color": "white"
+    "size": 109,
+    "color": "lime",
+    "mt": 6
    },
    {
     "r": [
      4,
+     6
+    ],
+    "size": 66,
+    "color": "white",
+    "mt": 8
+   },
+   {
+    "r": [
+     6,
      7
     ],
-    "size": 46,
-    "color": "red",
-    "mt": 22
+    "size": 66,
+    "color": "white"
    },
    {
     "r": [
      7,
      9
     ],
-    "size": 46,
-    "color": "red"
+    "size": 64,
+    "color": "red",
+    "mt": 18
    }
   ]
  },
  "pain": {
   "bubble": {
-   "label": "CUSTOMER",
-   "text": "kal ka slot hai?",
-   "at": "kal"
-  },
-  "clock": {
-   "to": "morning.",
-   "from": "You"
+   "label": "AGENCY",
+   "text": "Website ready \u2713",
+   "at": 4
   },
   "rows": [
    {
     "r": [
-     9,
-     11
+     14,
+     15
     ],
     "size": 66,
+    "color": "ink"
+   },
+   {
+    "r": [
+     15,
+     18
+    ],
+    "size": 64,
     "color": "ink"
    }
   ],
   "reply": {
-   "label": "DOOSRA SALON",
-   "text": "Booking confirmed &#10003;",
-   "at": "Tab"
+   "label": "INBOX",
+   "text": "0 inquiries",
+   "at": 14
   },
   "stamp": {
-   "text": "BOOKING GAYI.",
-   "at": "booking",
+   "text": "ZERO INQUIRY.",
+   "at": 17,
    "size": 54
+  },
+  "clock": {
+   "from": 11,
+   "to": 13
   }
  },
  "mess": {
   "chips": [
    {
-    "text": "DMs",
-    "at": "DMs,"
+    "text": "Client",
+    "at": 0
    },
    {
-    "text": "WhatsApp",
-    "at": "WhatsApp"
+    "text": "dhoondta",
+    "at": 2
    },
    {
-    "text": "Calls",
-    "at": "calls"
+    "text": "nahi,",
+    "at": 3
    }
   ],
   "rows": [
@@ -111,161 +183,136 @@
      6,
      7
     ],
-    "size": 120,
+    "size": 96,
     "color": "white"
    },
    {
     "r": [
      7,
-     8
+     9
     ],
-    "size": 120,
+    "size": 76,
     "color": "white"
    }
   ],
-  "sub": "kaun aa raha hai?<br>pata nahi.",
-  "subAt": "hain.",
-  "minisAt": "calls",
+  "sub": "intezaar?<br>nahi, outreach.",
+  "subAt": 8,
+  "minisAt": 5,
   "subSize": 58
  },
  "builds": [
   {
-   "title": "BOOKING CALENDAR",
-   "titleAt": "booking",
+   "title": "WAITING",
+   "titleAt": 2,
    "bg": "cream",
    "demo": {
     "type": "list",
-    "header": "TOMORROW",
+    "header": "REASON 1",
     "rows": [
      {
-      "title": "Ayesha K.",
-      "sub": "Haircut",
-      "chip": "BOOKED",
-      "at": "calendar.",
-      "tag": "10:00"
+      "title": "Waiting",
+      "sub": "Profile up, hope on",
+      "chip": "OLD",
+      "at": 2,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      },
      {
-      "title": "Bilal A.",
-      "sub": "Beard trim",
-      "chip": "BOOKED",
-      "at": "apna",
-      "tag": "11:30"
-     },
-     {
-      "title": "Sara M.",
-      "sub": "Facial",
-      "chip": "BOOKED",
-      "at": "khud",
-      "tag": "13:00"
-     },
-     {
-      "title": "Free slot",
-      "sub": "Open for booking",
-      "chip": "OPEN",
-      "at": "chunta",
-      "tag": "15:00",
-      "bg": "#ffd166",
-      "fg": "#0b0d09"
-     }
-    ]
-   }
-  },
-  {
-   "title": "REMINDERS",
-   "titleAt": "Reminder",
-   "bg": "dark",
-   "demo": {
-    "type": "chat",
-    "msgs": [
-     {
-      "who": "r",
-      "text": "Reminder: kal 10:00 baje &#10003;",
-      "at": "messages,",
-      "y": 300
-     },
-     {
-      "who": "c",
-      "text": "Confirmed, aa rahi hoon",
-      "at": "koi",
-      "y": 425
-     },
-     {
-      "who": "r",
-      "text": "Slot reserved &#10003;",
-      "at": "miss",
-      "y": 550
+      "title": "Outreach",
+      "sub": "Message them first",
+      "chip": "NEW",
+      "at": 6
      }
     ],
     "caption": {
-     "top": 900,
+     "top": 880,
      "rows": [
       {
        "r": [
-        7,
-        10
+        6,
+        9
        ],
-       "size": 70,
-       "color": "lime"
+       "size": 38,
+       "color": "ink"
       }
      ]
     }
    }
   },
   {
-   "title": "DAILY SCHEDULE",
-   "titleAt": "daily",
+   "title": "SKILLS VS RESULT",
+   "titleAt": 2,
    "bg": "cream",
    "demo": {
-    "type": "board",
-    "appear": "jahan",
-    "cols": [
+    "type": "list",
+    "header": "REASON 2",
+    "rows": [
      {
-      "name": "CHAIR 1",
-      "bg": "#ffd166",
-      "fg": "#0b0d09",
-      "at": "har"
+      "title": "Skills",
+      "sub": "React, design, SEO",
+      "chip": "OLD",
+      "at": 2,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      },
      {
-      "name": "CHAIR 2",
-      "bg": "#c6ff35",
-      "fg": "#0b0d09",
-      "at": "chair"
-     },
-     {
-      "name": "CHAIR 3",
-      "bg": "#0b0d09",
-      "fg": "#c6ff35",
-      "at": "kaam"
+      "title": "Result",
+      "sub": "A problem solved",
+      "chip": "NEW",
+      "at": 4
      }
     ],
-    "cards": [
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        4,
+        7
+       ],
+       "size": 36,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "ONE PLACE",
+   "titleAt": 2,
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "REASON 3",
+    "rows": [
      {
-      "id": "10:00",
-      "name": "Ayesha",
-      "item": "Haircut",
-      "row": 0
+      "title": "One platform",
+      "sub": "Only here you exist",
+      "chip": "OLD",
+      "at": 3,
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
      },
      {
-      "id": "10:30",
-      "name": "Bilal",
-      "item": "Beard trim",
-      "row": 0,
-      "col": 1
-     },
-     {
-      "id": "11:00",
-      "name": "Sara",
-      "item": "Facial",
-      "row": 0,
-      "col": 2
-     },
-     {
-      "id": "11:30",
-      "name": "Hamza",
-      "item": "Colour",
-      "row": 1
+      "title": "Many places",
+      "sub": "Seen where clients look",
+      "chip": "NEW",
+      "at": 7
      }
-    ]
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        7,
+        10
+       ],
+       "size": 34,
+       "color": "ink"
+      }
+     ]
+    }
    }
   }
  ],
@@ -285,35 +332,44 @@
      1,
      3
     ],
-    "size": 88,
+    "size": 64,
     "color": "white",
-    "mt": 70
+    "mt": 60
    },
    {
     "r": [
      3,
      5
     ],
-    "size": 78,
-    "color": "lime",
-    "mt": 30
+    "size": 72,
+    "color": "white",
+    "mt": 10
    },
    {
     "r": [
      5,
      7
     ],
-    "size": 64,
-    "color": "white",
-    "mt": 30,
-    "strike": "messages"
+    "size": 76,
+    "color": "lime",
+    "mt": 10
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 76,
+    "color": "lime",
+    "mt": 6
    }
   ],
-  "chip": "&#10003; FULL SCHEDULE",
-  "chipAt": "bharte"
+  "chip": "&#10003; BAAT SHURU",
+  "chipAt": 5
  },
  "cta": {
-  "noun": "salon",
-  "keyword": "CHAIR"
+  "thing": "plan",
+  "noun": "plan",
+  "keyword": "CLIENTS"
  }
 }

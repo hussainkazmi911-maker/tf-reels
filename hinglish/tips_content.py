@@ -15,18 +15,30 @@ def T(id, date, label, fmt, topic, kw, thing, L, hashtags, dm, note=''):
     TIPS.append(dict(id=id, date=date, label=label, fmt=fmt, topic=topic, kw=kw, thing=thing, lines=L,
                      hashtags=hashtags, dm=dm, note=note, chars=chars))
 
-T('r03', '2026-11-14', 'Sat 14 Nov', 'Where to find', '3 places to find US clients', 'SITES', 'list',
-  ["US client chahiye? Pehle yeh teen jagah dekho.",
-   "Ek freelancer sirf ek website par proposals bhejta raha. Mahina nikal gaya, kaam nahi mila.",
-   "Ek hi jagah par sab daav lagana, yahi sabse badi galti hai.",
+T('r02', '2026-11-13', 'Fri 13 Nov', 'Problem', 'Why freelancers and agencies get no clients', 'CLIENTS', 'plan',
+  ["Freelancer ho ya agency, skills hain par client nahi.",
+   "Ek small agency ne website banayi, portfolio banaya, aur intezaar kiya. Mahine nikal gaye, inquiry ek bhi nahi.",
+   "Client aapko dhoondta nahi, aapko client dhoondna padta hai.",
+   "Toh yeh teen wajah hoti hain.",
+   "One. Aap intezaar karte ho, aur outreach nahi karte.",
+   "Two. Client skills nahi, result khareedta hai.",
+   "Three. Aap sirf ek jagah par ho, baaki jagah invisible.",
+   "Result? Teeno badlo, aur baat shuru hone lagti hai."],
+  '#freelancer #smallagency #findclients #freelancingtips #thetotalforge',
+  "Client dhoondne ka plan:\n1. Roz 5 logon ko pehle message karo. Intezaar nahi.\n2. Skill nahi, unka problem aur result likho: [problem] ko [result] mein badlo.\n3. Ek nahi, teen jagah par raho: LinkedIn, ek marketplace, aur ek chhota community thread.\n\nPehle hafte sirf step 1 karo, aur likho kitne reply aaye.")
+
+T('r03', '2026-11-14', 'Sat 14 Nov', 'Hidden places', '3 lesser-known places to find US clients', 'HIDDEN', 'list',
+  ["Upwork par bheed hai. Yeh teen jagah kam log jaante hain.",
+   "Ek agency owner roz Upwork par proposals bhejta raha. Competition bahut, reply bahut kam.",
+   "Jahan sab jaate hain, wahan sabse zyada bheed hoti hai.",
    "Toh yeh teen jagah try karo.",
-   "One. Upwork. Fresh jobs par jaldi proposal bhejo.",
-   "Two. LinkedIn. Founders ko seedha ek chhota message karo.",
-   "Three. Contra. Portfolio banao, aur wahan commission nahi lagta.",
-   "Result? Ek hafte mein teen raaste, aur clients ke saamne aap."],
-  '#freelancing #usclients #upwork #freelancepakistan #thetotalforge',
-  "US clients dhoondne ki list:\n1. Upwork: fresh jobs par jaldi proposal bhejo. Client ki payment verified ho, yeh check karo.\n2. LinkedIn: founders aur managers ko ek chhota, specific message karo.\n3. Contra: portfolio banao. Contra ke mutabiq wahan commission nahi lagta.\n\nPehle hafte mein teeno par ek ek kaam karo: ek proposal, paanch messages, ek portfolio.\nRules aur fees badalte rehte hain, platform par ek baar check kar lein.",
-  'Contra: no commission (its own pricing page). Upwork: fresh jobs advice.')
+   "One. Hacker News ka freelancer thread. Companies wahan seedha hire karti hain.",
+   "Two. Clutch. Wahan buyers agencies dhoondte hain, aur profile free hai.",
+   "Three. Sortlist. Free registration, aur buyers agency dhoondte hain.",
+   "Result? Kam bheed, aur buyers se seedhi baat."],
+  '#freelancing #findclients #usclients #smallagency #thetotalforge',
+  "Kam jaani jaane wali jagah, US clients ke liye:\n1. Hacker News: har mahine Ask HN: Freelancer? Seeking freelancer? thread aata hai. SEEKING FREELANCER posts padho, aur SEEKING WORK se apna post karo (location aur remote ka zikr likho).\n2. Clutch: agency profile banao (free basic profile). Buyers wahan service ke hisaab se agencies dhoondte hain.\n3. Sortlist: free registration aur listing. Buyers wahan agencies dhoondne aate hain.\n\nHar jagah ke rules alag hain, post karne se pehle unhe padh lein. Clutch aur Sortlist agencies ke liye hain, toh solo freelancer apni chhoti team ke naam se list kar sakta hai.",
+  'Sources checked 13 Nov 2026: HN Ask HN Nov 2026 thread exists (jon_north, SEEKING FREELANCER/SEEKING WORK format); Clutch help centre: free company profile; Sortlist how-it-works/pricing: free registration and free listing. Contra and Product Hunt dropped (Contra reviews mixed for new clients, PH not hidden).')
 
 T('r04', '2026-11-15', 'Sun 15 Nov', 'Story and tips', 'A proposal that gets replies', 'PROPOSAL', 'template',
   ["Chalis proposals bheje, reply zero. Galti kahan thi?",
