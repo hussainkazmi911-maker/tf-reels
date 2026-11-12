@@ -40,6 +40,7 @@ def ep(id, hook, pain, mess, builds, res, chip, chipAt, hub='TIP'):
     pn = dict(bubble=dict(label=p['bl'], text=p['bt'], at=p['bat']),
               rows=rr(L[1], p['cap']), reply=dict(label=p['rl'], text=p['rt'], at=p['rat']),
               stamp=dict(text=p['st'], at=p['sat'], size=min(70, int(520 / (0.74 * len(p['st']))))))
+    if p.get('pile'): pn['pile'] = p['pile']
     pn['clock'] = dict(**{'from': p['cf'], 'to': p['ct']}) if p.get('cf') is not None else None
     E = dict(id=id, business=x['topic'], keyword=x['kw'], lines=L, bridge=bridge_for(L[3]), hub=hub,
              tag='EXAMPLE SCENARIO', tagged=[1, 2], emo=EMO.get(id, {}),
@@ -87,7 +88,7 @@ ep('r03',
 ep('r04',
    [(0, 2, W, 56), (2, 3, W, 78), (3, 4, LI, 130, dict(mt=6)), (4, 5, W, 66), (5, 8, RD, 56, dict(mt=22))],
    dict(bl='PROPOSAL', bt='Hello sir, I am an expert', bat=1, cf=None, ct=None, cap=[(4, 7, 'ink', 66)],
-        rl='INBOX', rt='0 replies', rat=15, st='COPY PASTE.', sat=17),
+        rl='INBOX', rt='0 replies', rat=15, st='COPY PASTE.', sat=17, pile=dict(at=[5, 6, 7, 8], hlAt=12, secAt=21, closeAt=24, sec='2 SEC')),
    dict(chips=[('Client', 0), ('copy', 2), ('paste', 3)], big=[(4, 6, W, 110), (6, 10, W, 100)],
         sub='cringe.<br>sab same.', subAt=10, minisAt=2),
    [build('FIRST LINE', 2, lst('PROPOSAL', [R('Site slow hai', 'About their problem', 'GOOD', 4), R('Hello sir', 'About yourself', 'SKIP', 8, **RED)])),

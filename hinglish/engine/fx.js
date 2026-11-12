@@ -175,9 +175,35 @@ window.FX = (function () {
     const p = H.EP.pain, ss = H.wt(1, p.stamp.at);
     sc.punches.push(ss); sc.shakes.push(ss);
     ring(sc, { x: 360, y: 520, r0: 120, r1: 420, at: ss, col: COL.red, w: 8, dur: .5 });
+    const pl = p.pile;   // optional: {at:[word idx..], closeAt, hlAt, secAt, sec} -> pile of copies, first-line highlight, timer chip, "tab closed" vanish
     sc.lazy.push(() => {
       const b = sc.el.querySelector('.bub.cust'); if (!b) return;
-      sticker(sc, { e: E.pain, x: b.offsetLeft + b.offsetWidth - 10, y: b.offsetTop + b.offsetHeight + 2, s: 46, r: 12, at: H.wt(1, p.bubble.at) + .55 });
+      sticker(sc, { e: E.pain, x: b.offsetLeft + b.offsetWidth - 10, y: b.offsetTop + b.offsetHeight + 2, s: 46, r: 12, at: H.wt(1, p.bubble.at) + .55, out: pl ? H.wt(1, pl.closeAt) + .05 : undefined });
+      if (!pl) return;
+      const rots = [-2, 1.8, -1.4, 2.2, -1.8, 1.4], dxs = [26, -12, 34, 4, -18, 22], gap = Math.round(b.offsetHeight * .8);
+      const clones0 = [];
+      const clones = pl.at.map((w, k) => {
+        const c = b.cloneNode(true); c.dataset.clone = 1;
+        c.style.left = (b.offsetLeft + dxs[k % 6]) + 'px'; c.style.top = (b.offsetTop + gap * (k + 1)) + 'px'; c.style.zIndex = '';
+        (clones0.length ? clones0[clones0.length - 1] : b).after(c); clones0.push(c); return c;
+      });
+      const cs = H.wt(1, pl.closeAt), hs = H.wt(1, pl.hlAt), ts = H.wt(1, pl.secAt);
+      const chip = mk('div', 'h', 'position:absolute;left:60px;top:850px;opacity:0;background:#0b0d09;color:#c6ff35;border-radius:30px;padding:14px 28px;font-size:36px;display:flex;gap:14px;align-items:center;z-index:3',
+        `<span class="emo" style="font-size:38px">⏱️</span><span>${pl.sec || '2 SEC'}</span>`);
+      sc.el.appendChild(chip);
+      sticker(sc, { e: '❌', x: 360, y: b.offsetTop + gap * 2, s: 92, r: -8, at: cs + .05, out: cs + 1.3 });
+      sc.fxu.push(t => {
+        clones.forEach((c, k) => {
+          const s = H.wt(1, pl.at[k]), q = prog(t, s, s + .26), qo = prog(t, cs + (k + 1) * .05, cs + (k + 1) * .05 + .3);
+          c.style.opacity = t >= s ? 1 - qo : 0;
+          c.style.transform = `rotate(${rots[k % 6]}deg) scale(${(1.3 - .3 * eBack(q)) * (1 - .35 * eIn(qo))})`;
+        });
+        const qo = prog(t, cs, cs + .3);
+        if (qo > 0) { b.style.opacity = 1 - qo; b.style.transform = `scale(${1 - .35 * eIn(qo)})`; }
+        const hq = prog(t, hs, hs + .18) * (1 - prog(t, hs + .8, hs + 1.1));
+        b.style.boxShadow = hq > 0 ? `0 0 0 ${3 * hq}px #0b0d09, 0 0 0 ${10 * hq}px #c6ff35` : '';
+        chip.style.opacity = t >= ts ? 1 : 0; chip.style.transform = `scale(${1.3 - .3 * eBack(prog(t, ts, ts + .26))}) rotate(${-3 * (1 - prog(t, ts, ts + .3))}deg)`;
+      });
     });
   }
 
