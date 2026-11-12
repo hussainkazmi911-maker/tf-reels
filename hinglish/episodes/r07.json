@@ -1,0 +1,304 @@
+{
+ "id": "r07",
+ "business": "Real estate agents",
+ "keyword": "LEADS",
+ "lines": [
+  "Client ne enquiry ki, aur aapne kal reply kiya.",
+  "Buyer ne poocha, flat available hai? You replied next day. Tab tak, deal kisi aur ke paas.",
+  "Leads portals, WhatsApp aur calls mein bikhri hain.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. An enquiry form. Har lead apni details khud bhejta hai.",
+  "Two. An instant reply, jismein listings aur viewing link hain.",
+  "Three. A pipeline screen, jahan har lead ka stage dikhta hai.",
+  "Result? Har lead ka jawab, aur har deal ka hisaab.",
+  "Want this for your agency? Comment LEADS, hum aap ko details bhej denge."
+ ],
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     2
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     2,
+     3
+    ],
+    "size": 120,
+    "color": "lime",
+    "mt": 8
+   },
+   {
+    "r": [
+     3,
+     4
+    ],
+    "size": 78,
+    "color": "white"
+   },
+   {
+    "r": [
+     4,
+     6
+    ],
+    "size": 52,
+    "color": "red",
+    "mt": 22
+   },
+   {
+    "r": [
+     6,
+     9
+    ],
+    "size": 52,
+    "color": "red",
+    "mt": 4
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "BUYER",
+   "text": "flat available hai?",
+   "at": "flat"
+  },
+  "clock": {
+   "to": "day.",
+   "from": "You"
+  },
+  "rows": [
+   {
+    "r": [
+     8,
+     10
+    ],
+    "size": 66,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "DOOSRA AGENT",
+   "text": "Viewing booked &#10003;",
+   "at": "Tab"
+  },
+  "stamp": {
+   "text": "DEAL GAYI.",
+   "at": "deal",
+   "size": 70
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Portals",
+    "at": "portals,"
+   },
+   {
+    "text": "WhatsApp",
+    "at": "WhatsApp"
+   },
+   {
+    "text": "Calls",
+    "at": "calls"
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     6,
+     7
+    ],
+    "size": 120,
+    "color": "white"
+   },
+   {
+    "r": [
+     7,
+     8
+    ],
+    "size": 120,
+    "color": "white"
+   }
+  ],
+  "sub": "kaunsa lead hot hai?<br>pata nahi.",
+  "subAt": "hain.",
+  "minisAt": "calls",
+  "subSize": 54
+ },
+ "builds": [
+  {
+   "title": "ENQUIRY FORM",
+   "titleAt": "enquiry",
+   "bg": "white",
+   "demo": {
+    "type": "form",
+    "header": "New enquiry",
+    "fields": [
+     {
+      "label": "NAME",
+      "value": "Bilal A.",
+      "at": "lead"
+     },
+     {
+      "label": "PHONE",
+      "value": "03XX XXXXXXX",
+      "at": "apni"
+     },
+     {
+      "label": "LOOKING FOR",
+      "value": "2-bed flat",
+      "at": "details"
+     }
+    ],
+    "button": {
+     "text": "SEND ENQUIRY",
+     "at": "khud",
+     "done": "SENT \u2713",
+     "doneAt": "hai."
+    }
+   }
+  },
+  {
+   "title": "INSTANT REPLY",
+   "titleAt": "instant",
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
+     {
+      "who": "c",
+      "text": "flat available hai?",
+      "at": "An",
+      "y": 300
+     },
+     {
+      "who": "r",
+      "text": "Ji! Listings + viewing link &#8599;",
+      "at": "jismein",
+      "y": 425
+     },
+     {
+      "who": "c",
+      "text": "Saturday ko dekh sakta hoon",
+      "at": "viewing",
+      "y": 550
+     }
+    ]
+   }
+  },
+  {
+   "title": "LEAD PIPELINE",
+   "titleAt": "pipeline",
+   "bg": "cream",
+   "demo": {
+    "type": "board",
+    "appear": "har",
+    "cols": [
+     {
+      "name": "NEW",
+      "bg": "#ffd166",
+      "fg": "#0b0d09",
+      "at": "jahan"
+     },
+     {
+      "name": "VIEWING",
+      "bg": "#c6ff35",
+      "fg": "#0b0d09",
+      "at": "lead"
+     },
+     {
+      "name": "CLOSED",
+      "bg": "#0b0d09",
+      "fg": "#c6ff35",
+      "at": "stage"
+     }
+    ],
+    "cards": [
+     {
+      "id": "Bilal A.",
+      "name": "2-bed flat",
+      "item": "DHA",
+      "row": 0,
+      "moves": [
+       {
+        "at": "stage",
+        "to": 1
+       },
+       {
+        "at": "dikhta",
+        "to": 2
+       }
+      ]
+     },
+     {
+      "id": "Sara M.",
+      "name": "3-bed house",
+      "item": "Clifton",
+      "row": 1,
+      "moves": [
+       {
+        "at": "dikhta",
+        "to": 1
+       }
+      ]
+     },
+     {
+      "id": "Hamza R.",
+      "name": "Plot",
+      "item": "Bahria",
+      "row": 2
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     3
+    ],
+    "size": 88,
+    "color": "white",
+    "mt": 70
+   },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 88,
+    "color": "lime"
+   },
+   {
+    "r": [
+     5,
+     10
+    ],
+    "size": 44,
+    "color": "white",
+    "mt": 26
+   }
+  ],
+  "chip": "&#10003; LEAD REPLIED",
+  "chipAt": "jawab,"
+ },
+ "cta": {
+  "noun": "agency",
+  "keyword": "LEADS"
+ }
+}

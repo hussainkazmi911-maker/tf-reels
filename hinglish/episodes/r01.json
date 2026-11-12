@@ -1,0 +1,24 @@
+{
+ "id":"r01","business":"Online sellers","keyword":"ORDERS",
+ "lines":[
+  "Aap ke DMs mein paisa pada hai, aur aapko pata nahi.",
+  "Customer ne poocha, price kya hai? You replied two hours later. Tab tak, sale gayi.",
+  "Orders DMs, WhatsApp aur calls mein bikhre hain.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. An order form. Customer apna naam, address aur item khud bharta hai.",
+  "Two. An auto-reply, so every message gets an answer in seconds.",
+  "Three. One screen jahan har order dikhta hai: pending, paid, delivered.",
+  "Result? Aap orders dhundte nahi, bas deliver karte hain.",
+  "Want this for your shop? Comment ORDERS, hum aap ko details bhej denge."
+ ],
+ "hook":{"rows":[{"r":[0,4],"size":56,"color":"white"},{"r":[4,5],"size":150,"color":"lime","mt":8},{"r":[5,7],"size":78,"color":"white"},{"r":[7,11],"size":46,"color":"red","mt":22}]},
+ "pain":{"bubble":{"label":"CUSTOMER","text":"price kya hai?","at":"price"},"clock":{"from":"You","to":"later."},"rows":[{"r":[8,11],"size":66,"color":"ink"}],"reply":{"label":"DOOSRI SHOP","text":"Order confirmed &#10003;","at":"Tab"},"stamp":{"text":"SALE GAYI.","at":"sale"}},
+ "mess":{"chips":[{"text":"DMs","at":"DMs,"},{"text":"WhatsApp","at":"WhatsApp"},{"text":"Calls","at":"calls"}],"rows":[{"r":[6,7],"size":120,"color":"white"},{"r":[7,8],"size":120,"color":"white"}],"sub":"paid? pending?<br>pata nahi.","subAt":"hain.","minisAt":"calls"},
+ "builds":[
+  {"title":"ORDER FORM","titleAt":"order","bg":"white","demo":{"type":"form","header":"New order","fields":[{"label":"NAME","value":"Ayesha K.","at":"naam,"},{"label":"ADDRESS","value":"House 12, Block 5","at":"address"},{"label":"ITEM","value":"Black kurta (M)","at":"item"}],"button":{"text":"PLACE ORDER","at":"khud","done":"ORDER PLACED ✓","doneAt":"hai."}}},
+  {"title":"AUTO-REPLY","titleAt":"auto-reply,","bg":"dark","demo":{"type":"chat","msgs":[{"who":"c","text":"price kya hai?","at":"so","y":300},{"who":"r","text":"Yeh raha price list + order form &#8599;","at":"message","y":410},{"who":"c","text":"available hai?","at":"an","y":610,"pre":0.05},{"who":"r","text":"Ji, available hai! Order form &#8599;","at":"answer","y":720,"pre":0.02}],"caption":{"top":900,"rows":[{"r":[9,11],"size":80,"color":"lime"}]}}},
+  {"title":"ONE SCREEN","titleAt":"One","bg":"cream","demo":{"type":"board","appear":"har","cols":[{"name":"PENDING","bg":"#ffd166","fg":"#0b0d09","at":"pending,"},{"name":"PAID","bg":"#c6ff35","fg":"#0b0d09","at":"paid,"},{"name":"DELIVERED","bg":"#0b0d09","fg":"#c6ff35","at":"delivered."}],"cards":[{"id":"#101","name":"Ayesha","item":"Black kurta","row":0,"moves":[{"at":"paid,","to":1},{"at":"delivered.","to":2}]},{"id":"#102","name":"Bilal","item":"Sneakers","row":1,"moves":[{"at":"delivered.","to":1}]},{"id":"#103","name":"Sara","item":"Lawn suit","row":2},{"id":"#104","name":"Hamza","item":"Watch strap","row":3}]}}
+ ],
+ "result":{"rows":[{"r":[0,1],"size":44,"color":"lime","ls":6},{"r":[1,3],"size":88,"color":"white","mt":72},{"r":[3,5],"size":64,"color":"white","mt":34,"strike":"dhundte"},{"r":[5,7],"size":78,"color":"lime","mt":47},{"r":[7,9],"size":78,"color":"lime","mt":29}],"chip":"&#10003; DELIVERED","chipAt":"hain."},
+ "cta":{"noun":"shop","keyword":"ORDERS"}
+}

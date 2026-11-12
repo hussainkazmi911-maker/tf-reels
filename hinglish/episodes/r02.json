@@ -1,0 +1,319 @@
+{
+ "id": "r02",
+ "business": "Salons",
+ "keyword": "CHAIR",
+ "lines": [
+  "Aapki chair khaali hai, aur customer ka message unread.",
+  "Customer ne poocha, kal ka slot hai? You replied next morning. Tab tak, booking gayi.",
+  "Bookings DMs, WhatsApp aur calls mein bikhri hain.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. An online booking calendar. Customer apna time khud chunta hai.",
+  "Two. Reminder messages, taaki koi apna slot miss na kare.",
+  "Three. A daily schedule, jahan har chair ka kaam dikhta hai.",
+  "Result? Aap chair bharte hain, messages nahi.",
+  "Want this for your salon? Comment CHAIR, hum aap ko details bhej denge."
+ ],
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     2
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     2,
+     3
+    ],
+    "size": 150,
+    "color": "lime",
+    "mt": 8
+   },
+   {
+    "r": [
+     3,
+     4
+    ],
+    "size": 78,
+    "color": "white"
+   },
+   {
+    "r": [
+     4,
+     7
+    ],
+    "size": 46,
+    "color": "red",
+    "mt": 22
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 46,
+    "color": "red"
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "CUSTOMER",
+   "text": "kal ka slot hai?",
+   "at": "kal"
+  },
+  "clock": {
+   "to": "morning.",
+   "from": "You"
+  },
+  "rows": [
+   {
+    "r": [
+     9,
+     11
+    ],
+    "size": 66,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "DOOSRA SALON",
+   "text": "Booking confirmed &#10003;",
+   "at": "Tab"
+  },
+  "stamp": {
+   "text": "BOOKING GAYI.",
+   "at": "booking",
+   "size": 54
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "DMs",
+    "at": "DMs,"
+   },
+   {
+    "text": "WhatsApp",
+    "at": "WhatsApp"
+   },
+   {
+    "text": "Calls",
+    "at": "calls"
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     6,
+     7
+    ],
+    "size": 120,
+    "color": "white"
+   },
+   {
+    "r": [
+     7,
+     8
+    ],
+    "size": 120,
+    "color": "white"
+   }
+  ],
+  "sub": "kaun aa raha hai?<br>pata nahi.",
+  "subAt": "hain.",
+  "minisAt": "calls",
+  "subSize": 58
+ },
+ "builds": [
+  {
+   "title": "BOOKING CALENDAR",
+   "titleAt": "booking",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "TOMORROW",
+    "rows": [
+     {
+      "title": "Ayesha K.",
+      "sub": "Haircut",
+      "chip": "BOOKED",
+      "at": "calendar.",
+      "tag": "10:00"
+     },
+     {
+      "title": "Bilal A.",
+      "sub": "Beard trim",
+      "chip": "BOOKED",
+      "at": "apna",
+      "tag": "11:30"
+     },
+     {
+      "title": "Sara M.",
+      "sub": "Facial",
+      "chip": "BOOKED",
+      "at": "khud",
+      "tag": "13:00"
+     },
+     {
+      "title": "Free slot",
+      "sub": "Open for booking",
+      "chip": "OPEN",
+      "at": "chunta",
+      "tag": "15:00",
+      "bg": "#ffd166",
+      "fg": "#0b0d09"
+     }
+    ]
+   }
+  },
+  {
+   "title": "REMINDERS",
+   "titleAt": "Reminder",
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
+     {
+      "who": "r",
+      "text": "Reminder: kal 10:00 baje &#10003;",
+      "at": "messages,",
+      "y": 300
+     },
+     {
+      "who": "c",
+      "text": "Confirmed, aa rahi hoon",
+      "at": "koi",
+      "y": 425
+     },
+     {
+      "who": "r",
+      "text": "Slot reserved &#10003;",
+      "at": "miss",
+      "y": 550
+     }
+    ],
+    "caption": {
+     "top": 900,
+     "rows": [
+      {
+       "r": [
+        7,
+        10
+       ],
+       "size": 70,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "DAILY SCHEDULE",
+   "titleAt": "daily",
+   "bg": "cream",
+   "demo": {
+    "type": "board",
+    "appear": "jahan",
+    "cols": [
+     {
+      "name": "CHAIR 1",
+      "bg": "#ffd166",
+      "fg": "#0b0d09",
+      "at": "har"
+     },
+     {
+      "name": "CHAIR 2",
+      "bg": "#c6ff35",
+      "fg": "#0b0d09",
+      "at": "chair"
+     },
+     {
+      "name": "CHAIR 3",
+      "bg": "#0b0d09",
+      "fg": "#c6ff35",
+      "at": "kaam"
+     }
+    ],
+    "cards": [
+     {
+      "id": "10:00",
+      "name": "Ayesha",
+      "item": "Haircut",
+      "row": 0
+     },
+     {
+      "id": "10:30",
+      "name": "Bilal",
+      "item": "Beard trim",
+      "row": 0,
+      "col": 1
+     },
+     {
+      "id": "11:00",
+      "name": "Sara",
+      "item": "Facial",
+      "row": 0,
+      "col": 2
+     },
+     {
+      "id": "11:30",
+      "name": "Hamza",
+      "item": "Colour",
+      "row": 1
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     3
+    ],
+    "size": 88,
+    "color": "white",
+    "mt": 70
+   },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 78,
+    "color": "lime",
+    "mt": 30
+   },
+   {
+    "r": [
+     5,
+     7
+    ],
+    "size": 64,
+    "color": "white",
+    "mt": 30,
+    "strike": "messages"
+   }
+  ],
+  "chip": "&#10003; FULL SCHEDULE",
+  "chipAt": "bharte"
+ },
+ "cta": {
+  "noun": "salon",
+  "keyword": "CHAIR"
+ }
+}

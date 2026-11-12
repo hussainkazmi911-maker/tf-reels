@@ -1,0 +1,114 @@
+[
+ {
+  "id": "r02",
+  "date": "2026-11-13",
+  "business": "Salons",
+  "keyword": "CHAIR",
+  "text": "Aapki chair khaali hai, aur customer ka message unread.\n\nCustomer ne poocha, kal ka slot hai? You replied next morning. Tab tak, booking gayi.\n\nBookings DMs, WhatsApp aur calls mein bikhri hain.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. An online booking calendar. Customer apna time khud chunta hai.\n\nTwo. Reminder messages, taaki koi apna slot miss na kare.\n\nThree. A daily schedule, jahan har chair ka kaam dikhta hai.\n\nResult? Aap chair bharte hain, messages nahi.\n\nWant this for your salon? Comment CHAIR, hum aap ko details bhej denge.",
+  "chars": 558
+ },
+ {
+  "id": "r03",
+  "date": "2026-11-14",
+  "business": "Restaurants",
+  "keyword": "MENU",
+  "text": "Rush ke time phone uthane wala koi nahi, aur order gaya.\n\nCustomer ne poocha, aaj table milegi? You replied after an hour. Tab tak, woh chala gaya.\n\nOrders phone, WhatsApp aur DMs mein bikhre hain.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. A digital menu. Customer scan karta hai aur seedha order karta hai.\n\nTwo. A table booking form. Date, time aur guests, bas teen tap.\n\nThree. A kitchen screen, jahan har order live dikhta hai.\n\nResult? Rush mein bhi order sahi, aur customer khush.\n\nWant this for your restaurant? Comment MENU, hum aap ko details bhej denge.",
+  "chars": 580
+ },
+ {
+  "id": "r04",
+  "date": "2026-11-15",
+  "business": "Retail shops",
+  "keyword": "STOCK",
+  "text": "Shop mein suit bik gaya, website par abhi bhi available hai.\n\nCustomer ne order kiya, stock nahi tha. You apologised two days later. Tab tak, review kharab.\n\nStock shop, website aur diary mein alag alag hai.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. Shop aur website ka stock, ek hi jagah sync.\n\nTwo. A low-stock alert, taaki item khatam hone se pehle pata chale.\n\nThree. A daily sales screen, jahan har cheez ka hisaab dikhta hai.\n\nResult? Jo shop mein hai, wahi website par hai.\n\nWant this for your shop? Comment STOCK, hum aap ko details bhej denge.",
+  "chars": 569
+ },
+ {
+  "id": "r05",
+  "date": "2026-11-16",
+  "business": "Tutors and academies",
+  "keyword": "LEARN",
+  "text": "Fees ka hisaab chats mein hai, aur mahine ke end mein pata chalta hai.\n\nParent ne poocha, fees jama hui? You checked after two days. Tab tak, student chala gaya.\n\nFees, attendance aur marks alag alag jagah bikhre hain.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. A fee tracker. Har student ki fee, due date ke saath.\n\nTwo. Automatic reminders, taaki koi parent bhoole nahi.\n\nThree. A parent portal, jahan attendance aur marks dikhte hain.\n\nResult? Parents ko jawab milta hai, aapko time.\n\nWant this for your academy? Comment LEARN, hum aap ko details bhej denge.",
+  "chars": 577
+ },
+ {
+  "id": "r06",
+  "date": "2026-11-17",
+  "business": "Clinics and dentists",
+  "keyword": "CLINIC",
+  "text": "Aaj teen patients nahi aaye, aur slot khaali gaye.\n\nPatient ne appointment li, phir bhool gaya. You noticed that evening. Tab tak, slot khaali.\n\nAppointments calls, WhatsApp aur diary mein bikhri hain.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. An online appointment booking. Patient khud slot chunta hai.\n\nTwo. SMS aur WhatsApp reminders, appointment se pehle.\n\nThree. A patient record, jahan har visit ka note dikhta hai.\n\nResult? Slots bharte hain, patients bhoolte nahi.\n\nWant this for your clinic? Comment CLINIC, hum aap ko details bhej denge.",
+  "chars": 565
+ },
+ {
+  "id": "r07",
+  "date": "2026-11-18",
+  "business": "Real estate agents",
+  "keyword": "LEADS",
+  "text": "Client ne enquiry ki, aur aapne kal reply kiya.\n\nBuyer ne poocha, flat available hai? You replied next day. Tab tak, deal kisi aur ke paas.\n\nLeads portals, WhatsApp aur calls mein bikhri hain.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. An enquiry form. Har lead apni details khud bhejta hai.\n\nTwo. An instant reply, jismein listings aur viewing link hain.\n\nThree. A pipeline screen, jahan har lead ka stage dikhta hai.\n\nResult? Har lead ka jawab, aur har deal ka hisaab.\n\nWant this for your agency? Comment LEADS, hum aap ko details bhej denge.",
+  "chars": 560
+ },
+ {
+  "id": "r08",
+  "date": "2026-11-19",
+  "business": "Gyms",
+  "keyword": "MEMBERS",
+  "text": "Member ki fee due hai, lekin kisi ko pata nahi.\n\nMember ne poocha, plan renew kaise karun? You replied after three days. Tab tak, membership gayi.\n\nFees, attendance aur plans alag alag diary mein hain.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. A member signup, jismein fee due date set hoti hai.\n\nTwo. Renewal reminders, taaki koi membership expire na ho.\n\nThree. A check-in log, jahan har member ki attendance dikhti hai.\n\nResult? Sab members ka hisaab, ek hi screen par.\n\nWant this for your gym? Comment MEMBERS, hum aap ko details bhej denge.",
+  "chars": 562
+ },
+ {
+  "id": "r09",
+  "date": "2026-11-20",
+  "business": "Auto repair shops",
+  "keyword": "GARAGE",
+  "text": "Gaadi ready hai? Yeh sawaal din mein chaar baar.\n\nCustomer ne poocha, gaadi ready hai? You called back after lunch. Tab tak, kaam ruk gaya.\n\nJobs diary, WhatsApp aur phone mein bikhri hain.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. A job card, jismein gaadi ka kaam likha hota hai.\n\nTwo. Status updates, jo customer ko khud mil jaate hain.\n\nThree. A workshop board, jahan har bay ka kaam dikhta hai.\n\nResult? Kam calls, zyada gaadiyan.\n\nWant this for your garage? Comment GARAGE, hum aap ko details bhej denge.",
+  "chars": 527
+ },
+ {
+  "id": "r10",
+  "date": "2026-11-21",
+  "business": "Online stores",
+  "keyword": "STORE",
+  "text": "Instagram par sab like karte hain, order koi nahi.\n\nCustomer ne poocha, website ka link? You sent it next morning. Tab tak, woh bhool gaya.\n\nProducts DMs, Instagram aur Drive mein bikhre hain.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. A product website, jahan har cheez ek jagah hoti hai.\n\nTwo. A secure checkout, jahan payment seedha hoti hai.\n\nThree. An order tracking page, jahan customer khud status dekhta hai.\n\nResult? Likes se orders tak, ek hi raasta.\n\nWant this for your store? Comment STORE, hum aap ko details bhej denge.",
+  "chars": 549
+ },
+ {
+  "id": "r11",
+  "date": "2026-11-22",
+  "business": "Wholesalers",
+  "keyword": "WHOLESALE",
+  "text": "Udhaar ka hisaab diary mein hai, aur diary kho gayi.\n\nRetailer ne poocha, mera balance kitna hai? You found it after an hour. Tab tak, order gaya.\n\nOrders, payments aur prices diary aur WhatsApp mein bikhre hain.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. A price list page, jo retailer khud dekh sakta hai.\n\nTwo. A bulk order form, jismein retailer quantity khud bharta hai.\n\nThree. A payments ledger, jahan har retailer ka hisaab dikhta hai.\n\nResult? Udhaar ka hisaab, ek click par.\n\nWant this for your business? Comment WHOLESALE, hum aap ko details bhej denge.",
+  "chars": 580
+ },
+ {
+  "id": "r12",
+  "date": "2026-11-23",
+  "business": "Builders and contractors",
+  "keyword": "BUILD",
+  "text": "Site par kya hua, raat ko WhatsApp se pata chalta hai.\n\nOwner ne poocha, kaam kahan tak pahuncha? You replied that night. Tab tak, delay ho chuka tha.\n\nUpdates, bills aur photos WhatsApp mein bikhre hain.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. A project tracker, jahan har stage ka status dikhta hai.\n\nTwo. A site-update log, jahan photos aur notes daily jaate hain.\n\nThree. A material and payment record, jahan har kharcha dikhta hai.\n\nResult? Site par kaam, aur screen par hisaab.\n\nWant this for your projects? Comment BUILD, hum aap ko details bhej denge.",
+  "chars": 578
+ },
+ {
+  "id": "r13",
+  "date": "2026-11-24",
+  "business": "Courier and delivery",
+  "keyword": "DISPATCH",
+  "text": "Parcel kahan hai? Din mein bees baar yahi sawaal.\n\nCustomer ne poocha, parcel kahan hai? You checked after lunch. Tab tak, woh complaint kar chuka tha.\n\nRiders, bookings aur updates, sab calls mein bikhre hain.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. A booking form, jismein pickup aur drop address hota hai.\n\nTwo. Rider assignment, jahan har parcel ka rider set hota hai.\n\nThree. A tracking link, jo customer ko khud mil jaata hai.\n\nResult? Customer ko jawab, aapko sukoon.\n\nWant this for your business? Comment DISPATCH, hum aap ko details bhej denge.",
+  "chars": 572
+ },
+ {
+  "id": "r14",
+  "date": "2026-11-25",
+  "business": "Property managers",
+  "keyword": "TENANT",
+  "text": "Rent kisne diya, kisne nahi? Kisi ko yaad nahi.\n\nTenant ne poocha, geyser kab theek hoga? You replied after two weeks. Tab tak, tenant naraaz.\n\nRent, requests aur repairs chats mein bikhre hain.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. A tenant request form, jismein problem aur photo hoti hai.\n\nTwo. A rent due tracker, jahan har tenant ka status dikhta hai.\n\nThree. A maintenance board, jahan har repair ka task dikhta hai.\n\nResult? Har request ka jawab, har rent ka hisaab.\n\nWant this for your rentals? Comment TENANT, hum aap ko details bhej denge.",
+  "chars": 570
+ },
+ {
+  "id": "r15",
+  "date": "2026-11-26",
+  "business": "Travel agents",
+  "keyword": "TRIP",
+  "text": "Ek trip ka quote banane mein ghanta lag jaata hai.\n\nCustomer ne poocha, Dubai ka package? You sent the quote next day. Tab tak, usne book kar liya.\n\nQuotes, payments aur plans, sab chats mein bikhre hain.\n\nIsiliye hum apne clients ke liye teen cheezein banate hain.\n\nOne. An enquiry form, jismein trip ki details hoti hain.\n\nTwo. A quote template, jo minutes mein ready hota hai.\n\nThree. A booking tracker, jahan har payment ka status dikhta hai.\n\nResult? Quote jaldi, booking confirm.\n\nWant this for your agency? Comment TRIP, hum aap ko details bhej denge.",
+  "chars": 550
+ }
+]

@@ -1,0 +1,280 @@
+{
+ "id": "r12",
+ "business": "Builders and contractors",
+ "keyword": "BUILD",
+ "lines": [
+  "Site par kya hua, raat ko WhatsApp se pata chalta hai.",
+  "Owner ne poocha, kaam kahan tak pahuncha? You replied that night. Tab tak, delay ho chuka tha.",
+  "Updates, bills aur photos WhatsApp mein bikhre hain.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. A project tracker, jahan har stage ka status dikhta hai.",
+  "Two. A site-update log, jahan photos aur notes daily jaate hain.",
+  "Three. A material and payment record, jahan har kharcha dikhta hai.",
+  "Result? Site par kaam, aur screen par hisaab.",
+  "Want this for your projects? Comment BUILD, hum aap ko details bhej denge."
+ ],
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     4
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     4,
+     6
+    ],
+    "size": 130,
+    "color": "lime",
+    "mt": 8
+   },
+   {
+    "r": [
+     6,
+     8
+    ],
+    "size": 52,
+    "color": "red",
+    "mt": 22
+   },
+   {
+    "r": [
+     8,
+     11
+    ],
+    "size": 52,
+    "color": "red",
+    "mt": 4
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "OWNER",
+   "text": "kaam kahan tak pahuncha?",
+   "at": "kaam"
+  },
+  "clock": {
+   "to": "night.",
+   "from": "You"
+  },
+  "rows": [
+   {
+    "r": [
+     9,
+     11
+    ],
+    "size": 66,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "SITE",
+   "text": "Material nahi aaya &#9888;",
+   "at": "Tab"
+  },
+  "stamp": {
+   "text": "DELAY HO GAYA.",
+   "at": "delay",
+   "size": 50
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Updates",
+    "at": "Updates,"
+   },
+   {
+    "text": "Bills",
+    "at": "bills"
+   },
+   {
+    "text": "Photos",
+    "at": "photos"
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     6,
+     7
+    ],
+    "size": 120,
+    "color": "white"
+   },
+   {
+    "r": [
+     7,
+     8
+    ],
+    "size": 120,
+    "color": "white"
+   }
+  ],
+  "sub": "kaam kitna hua?<br>pata nahi.",
+  "subAt": "hain.",
+  "minisAt": "photos",
+  "subSize": 58
+ },
+ "builds": [
+  {
+   "title": "SITE TRACKER",
+   "titleAt": "project",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "VILLA 12 (EXAMPLE)",
+    "rows": [
+     {
+      "title": "Foundation",
+      "sub": "Stage 1",
+      "chip": "DONE",
+      "at": "har"
+     },
+     {
+      "title": "Structure",
+      "sub": "Stage 2",
+      "chip": "IN PROGRESS",
+      "at": "stage",
+      "chip2": "DONE \u2713",
+      "chip2At": "dikhta",
+      "bg": "#ffd166",
+      "fg": "#0b0d09",
+      "bg2": "#c6ff35",
+      "fg2": "#0b0d09"
+     },
+     {
+      "title": "Finishing",
+      "sub": "Stage 3",
+      "chip": "PENDING",
+      "at": "status",
+      "bg": "#ffd166",
+      "fg": "#0b0d09"
+     }
+    ]
+   }
+  },
+  {
+   "title": "SITE-UPDATE LOG",
+   "titleAt": "site-update",
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
+     {
+      "who": "r",
+      "text": "Day 14: slab complete &#10003;",
+      "at": "photos",
+      "y": 300
+     },
+     {
+      "who": "r",
+      "text": "Photos uploaded &#10003;",
+      "at": "notes",
+      "y": 425
+     },
+     {
+      "who": "c",
+      "text": "Great, payment bhej raha hoon",
+      "at": "daily",
+      "y": 550
+     }
+    ],
+    "caption": {
+     "top": 900,
+     "rows": [
+      {
+       "r": [
+        8,
+        11
+       ],
+       "size": 66,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "PAYMENT RECORD",
+   "titleAt": "payment",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "THIS WEEK",
+    "rows": [
+     {
+      "title": "Cement",
+      "sub": "Delivered",
+      "chip": "PAID",
+      "at": "material"
+     },
+     {
+      "title": "Steel",
+      "sub": "Ordered",
+      "chip": "DUE",
+      "at": "payment",
+      "bg": "#ffd166",
+      "fg": "#0b0d09"
+     },
+     {
+      "title": "Labour",
+      "sub": "Weekly",
+      "chip": "PAID",
+      "at": "kharcha"
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     4
+    ],
+    "size": 80,
+    "color": "white",
+    "mt": 70
+   },
+   {
+    "r": [
+     4,
+     7
+    ],
+    "size": 72,
+    "color": "lime",
+    "mt": 18
+   },
+   {
+    "r": [
+     7,
+     8
+    ],
+    "size": 110,
+    "color": "lime"
+   }
+  ],
+  "chip": "&#10003; ALL UPDATED",
+  "chipAt": "hisaab."
+ },
+ "cta": {
+  "noun": "projects",
+  "keyword": "BUILD"
+ }
+}

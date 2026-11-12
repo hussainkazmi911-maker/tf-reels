@@ -1,0 +1,301 @@
+{
+ "id": "r09",
+ "business": "Auto repair shops",
+ "keyword": "GARAGE",
+ "lines": [
+  "Gaadi ready hai? Yeh sawaal din mein chaar baar.",
+  "Customer ne poocha, gaadi ready hai? You called back after lunch. Tab tak, kaam ruk gaya.",
+  "Jobs diary, WhatsApp aur phone mein bikhri hain.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. A job card, jismein gaadi ka kaam likha hota hai.",
+  "Two. Status updates, jo customer ko khud mil jaate hain.",
+  "Three. A workshop board, jahan har bay ka kaam dikhta hai.",
+  "Result? Kam calls, zyada gaadiyan.",
+  "Want this for your garage? Comment GARAGE, hum aap ko details bhej denge."
+ ],
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     1,
+     3
+    ],
+    "size": 120,
+    "color": "lime",
+    "mt": 8
+   },
+   {
+    "r": [
+     3,
+     7
+    ],
+    "size": 52,
+    "color": "white",
+    "mt": 12
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 60,
+    "color": "red",
+    "mt": 10
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "CUSTOMER",
+   "text": "gaadi ready hai?",
+   "at": "gaadi"
+  },
+  "clock": {
+   "to": "lunch.",
+   "from": "You"
+  },
+  "rows": [
+   {
+    "r": [
+     9,
+     11
+    ],
+    "size": 66,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "MECHANIC",
+   "text": "Phone pe busy hoon&#8230;",
+   "at": "Tab"
+  },
+  "stamp": {
+   "text": "KAAM RUKA.",
+   "at": "kaam",
+   "size": 70
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Diary",
+    "at": "diary,"
+   },
+   {
+    "text": "WhatsApp",
+    "at": "WhatsApp"
+   },
+   {
+    "text": "Phone",
+    "at": "phone"
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     6,
+     7
+    ],
+    "size": 120,
+    "color": "white"
+   },
+   {
+    "r": [
+     7,
+     8
+    ],
+    "size": 120,
+    "color": "white"
+   }
+  ],
+  "sub": "kaunsi gaadi ready?<br>pata nahi.",
+  "subAt": "hain.",
+  "minisAt": "phone",
+  "subSize": 58
+ },
+ "builds": [
+  {
+   "title": "JOB CARD",
+   "titleAt": "job",
+   "bg": "white",
+   "demo": {
+    "type": "form",
+    "header": "New job card",
+    "fields": [
+     {
+      "label": "CAR",
+      "value": "Honda City",
+      "at": "gaadi"
+     },
+     {
+      "label": "PROBLEM",
+      "value": "Brake check",
+      "at": "kaam"
+     },
+     {
+      "label": "OWNER",
+      "value": "Bilal A.",
+      "at": "likha"
+     }
+    ],
+    "button": {
+     "text": "OPEN JOB",
+     "at": "hota",
+     "done": "JOB OPENED \u2713",
+     "doneAt": "hai."
+    }
+   }
+  },
+  {
+   "title": "STATUS UPDATES",
+   "titleAt": "updates,",
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
+     {
+      "who": "r",
+      "text": "Gaadi service mein hai",
+      "at": "updates,",
+      "y": 300
+     },
+     {
+      "who": "r",
+      "text": "Update: kaam complete &#10003;",
+      "at": "khud",
+      "y": 425
+     },
+     {
+      "who": "r",
+      "text": "Gaadi ready, pickup kar lein",
+      "at": "hain.",
+      "y": 550
+     }
+    ],
+    "caption": {
+     "top": 900,
+     "rows": [
+      {
+       "r": [
+        6,
+        10
+       ],
+       "size": 56,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "WORKSHOP BOARD",
+   "titleAt": "workshop",
+   "bg": "cream",
+   "demo": {
+    "type": "board",
+    "appear": "har",
+    "cols": [
+     {
+      "name": "WAITING",
+      "bg": "#ffd166",
+      "fg": "#0b0d09",
+      "at": "jahan"
+     },
+     {
+      "name": "IN BAY",
+      "bg": "#c6ff35",
+      "fg": "#0b0d09",
+      "at": "bay"
+     },
+     {
+      "name": "READY",
+      "bg": "#0b0d09",
+      "fg": "#c6ff35",
+      "at": "kaam"
+     }
+    ],
+    "cards": [
+     {
+      "id": "#41",
+      "name": "Honda City",
+      "item": "Brake check",
+      "row": 0,
+      "moves": [
+       {
+        "at": "kaam",
+        "to": 1
+       },
+       {
+        "at": "dikhta",
+        "to": 2
+       }
+      ]
+     },
+     {
+      "id": "#42",
+      "name": "Alto",
+      "item": "Oil change",
+      "row": 1,
+      "moves": [
+       {
+        "at": "dikhta",
+        "to": 1
+       }
+      ]
+     },
+     {
+      "id": "#43",
+      "name": "Corolla",
+      "item": "AC service",
+      "row": 2
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     3
+    ],
+    "size": 110,
+    "color": "white",
+    "mt": 70
+   },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 96,
+    "color": "lime",
+    "mt": 20
+   }
+  ],
+  "chip": "&#10003; JOB READY",
+  "chipAt": "zyada"
+ },
+ "cta": {
+  "noun": "garage",
+  "keyword": "GARAGE"
+ }
+}

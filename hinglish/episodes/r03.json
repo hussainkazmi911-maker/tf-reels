@@ -1,0 +1,309 @@
+{
+ "id": "r03",
+ "business": "Restaurants",
+ "keyword": "MENU",
+ "lines": [
+  "Rush ke time phone uthane wala koi nahi, aur order gaya.",
+  "Customer ne poocha, aaj table milegi? You replied after an hour. Tab tak, woh chala gaya.",
+  "Orders phone, WhatsApp aur DMs mein bikhre hain.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. A digital menu. Customer scan karta hai aur seedha order karta hai.",
+  "Two. A table booking form. Date, time aur guests, bas teen tap.",
+  "Three. A kitchen screen, jahan har order live dikhta hai.",
+  "Result? Rush mein bhi order sahi, aur customer khush.",
+  "Want this for your restaurant? Comment MENU, hum aap ko details bhej denge."
+ ],
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     3
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     3,
+     4
+    ],
+    "size": 150,
+    "color": "lime",
+    "mt": 8
+   },
+   {
+    "r": [
+     4,
+     6
+    ],
+    "size": 78,
+    "color": "white"
+   },
+   {
+    "r": [
+     6,
+     8
+    ],
+    "size": 78,
+    "color": "white"
+   },
+   {
+    "r": [
+     8,
+     11
+    ],
+    "size": 52,
+    "color": "red",
+    "mt": 22
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "CUSTOMER",
+   "text": "aaj table milegi?",
+   "at": "aaj"
+  },
+  "clock": {
+   "to": "hour.",
+   "from": "You"
+  },
+  "rows": [
+   {
+    "r": [
+     8,
+     11
+    ],
+    "size": 66,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "DOOSRA RESTAURANT",
+   "text": "Table booked &#10003;",
+   "at": "Tab"
+  },
+  "stamp": {
+   "text": "CUSTOMER GAYA.",
+   "at": "woh",
+   "size": 50
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Phone",
+    "at": "phone,"
+   },
+   {
+    "text": "WhatsApp",
+    "at": "WhatsApp"
+   },
+   {
+    "text": "DMs",
+    "at": "DMs"
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     6,
+     7
+    ],
+    "size": 120,
+    "color": "white"
+   },
+   {
+    "r": [
+     7,
+     8
+    ],
+    "size": 120,
+    "color": "white"
+   }
+  ],
+  "sub": "kaunsa order bana?<br>pata nahi.",
+  "subAt": "hain.",
+  "minisAt": "DMs",
+  "subSize": 58
+ },
+ "builds": [
+  {
+   "title": "DIGITAL MENU",
+   "titleAt": "digital",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "MENU",
+    "rows": [
+     {
+      "title": "Chicken Biryani",
+      "sub": "Rs. 450",
+      "chip": "ADD",
+      "at": "menu",
+      "chip2": "ADDED \u2713",
+      "chip2At": "seedha"
+     },
+     {
+      "title": "Karahi (half)",
+      "sub": "Rs. 900",
+      "chip": "ADD",
+      "at": "Customer"
+     },
+     {
+      "title": "Garlic Naan",
+      "sub": "Rs. 80",
+      "chip": "ADD",
+      "at": "scan",
+      "chip2": "ADDED \u2713",
+      "chip2At": "order"
+     }
+    ]
+   }
+  },
+  {
+   "title": "TABLE BOOKING",
+   "titleAt": "table",
+   "bg": "white",
+   "demo": {
+    "type": "form",
+    "header": "Table booking",
+    "fields": [
+     {
+      "label": "DATE",
+      "value": "Friday",
+      "at": "Date,"
+     },
+     {
+      "label": "TIME",
+      "value": "8:00 PM",
+      "at": "time"
+     },
+     {
+      "label": "GUESTS",
+      "value": "4 people",
+      "at": "guests,"
+     }
+    ],
+    "button": {
+     "text": "BOOK TABLE",
+     "at": "bas",
+     "done": "BOOKED \u2713",
+     "doneAt": "tap."
+    }
+   }
+  },
+  {
+   "title": "KITCHEN SCREEN",
+   "titleAt": "kitchen",
+   "bg": "cream",
+   "demo": {
+    "type": "board",
+    "appear": "har",
+    "cols": [
+     {
+      "name": "NEW",
+      "bg": "#ffd166",
+      "fg": "#0b0d09",
+      "at": "kitchen"
+     },
+     {
+      "name": "COOKING",
+      "bg": "#c6ff35",
+      "fg": "#0b0d09",
+      "at": "order"
+     },
+     {
+      "name": "READY",
+      "bg": "#0b0d09",
+      "fg": "#c6ff35",
+      "at": "live"
+     }
+    ],
+    "cards": [
+     {
+      "id": "#21",
+      "name": "Table 4",
+      "item": "2 Biryani",
+      "row": 0,
+      "moves": [
+       {
+        "at": "live",
+        "to": 1
+       },
+       {
+        "at": "dikhta",
+        "to": 2
+       }
+      ]
+     },
+     {
+      "id": "#22",
+      "name": "Delivery",
+      "item": "1 Karahi",
+      "row": 1,
+      "moves": [
+       {
+        "at": "dikhta",
+        "to": 1
+       }
+      ]
+     },
+     {
+      "id": "#23",
+      "name": "Table 7",
+      "item": "3 Naan",
+      "row": 2
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     4
+    ],
+    "size": 72,
+    "color": "white",
+    "mt": 66
+   },
+   {
+    "r": [
+     4,
+     6
+    ],
+    "size": 90,
+    "color": "lime",
+    "mt": 24
+   },
+   {
+    "r": [
+     6,
+     9
+    ],
+    "size": 58,
+    "color": "white",
+    "mt": 28
+   }
+  ],
+  "chip": "&#10003; ORDER READY",
+  "chipAt": "sahi,"
+ },
+ "cta": {
+  "noun": "restaurant",
+  "keyword": "MENU"
+ }
+}

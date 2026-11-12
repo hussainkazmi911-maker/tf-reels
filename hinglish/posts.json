@@ -1,0 +1,142 @@
+[
+ {
+  "id": "r02",
+  "date": "2026-11-13",
+  "keyword": "CHAIR",
+  "business": "Salons",
+  "caption": "Aapki chair khaali hai, aur customer ka message unread.\n\nCustomer ne poocha, kal ka slot hai? Aapne reply kiya next morning. Tab tak, booking gayi.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. An online booking calendar. Customer apna time khud chunta hai.\n2. Reminder messages, taaki koi apna slot miss na kare.\n3. A daily schedule, jahan har chair ka kaam dikhta hai.\n\nSalon owner hain? Comment \"CHAIR\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#salonowner #salonbusiness #beautysalon #bookingsystem #thetotalforge",
+  "firstComment": "Salon owner? Comment \"CHAIR\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for salons: Aapki chair khaali hai, aur customer ka message unread. The Total Forge shows three things it builds.",
+  "chars": 558
+ },
+ {
+  "id": "r03",
+  "date": "2026-11-14",
+  "keyword": "MENU",
+  "business": "Restaurants",
+  "caption": "Rush ke time phone uthane wala koi nahi, aur order gaya.\n\nCustomer ne poocha, aaj table milegi? Aapne reply kiya after an hour. Tab tak, woh chala gaya.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. A digital menu. Customer scan karta hai aur seedha order karta hai.\n2. A table booking form. Date, time aur guests, bas teen tap.\n3. A kitchen screen, jahan har order live dikhta hai.\n\nRestaurant owner hain? Comment \"MENU\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#restaurantowner #restaurantbusiness #foodbusiness #digitalmenu #thetotalforge",
+  "firstComment": "Restaurant owner? Comment \"MENU\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for restaurants: Rush ke time phone uthane wala koi nahi, aur order gaya. The Total Forge shows three things it builds.",
+  "chars": 580
+ },
+ {
+  "id": "r04",
+  "date": "2026-11-15",
+  "keyword": "STOCK",
+  "business": "Retail shops",
+  "caption": "Shop mein suit bik gaya, website par abhi bhi available hai.\n\nCustomer ne order kiya, stock nahi tha. Aapne apologise kiya two days later. Tab tak, review kharab.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. Shop aur website ka stock, ek hi jagah sync.\n2. A low-stock alert, taaki item khatam hone se pehle pata chale.\n3. A daily sales screen, jahan har cheez ka hisaab dikhta hai.\n\nShop owner hain? Comment \"STOCK\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#retailbusiness #shopowner #inventorymanagement #smallbusinesspakistan #thetotalforge",
+  "firstComment": "Shop owner? Comment \"STOCK\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for retail shops: Shop mein suit bik gaya, website par abhi bhi available hai. The Total Forge shows three things it builds.",
+  "chars": 569
+ },
+ {
+  "id": "r05",
+  "date": "2026-11-16",
+  "keyword": "LEARN",
+  "business": "Tutors and academies",
+  "caption": "Fees ka hisaab chats mein hai, aur mahine ke end mein pata chalta hai.\n\nParent ne poocha, fees jama hui? Aapne check kiya after two days. Tab tak, student chala gaya.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. A fee tracker. Har student ki fee, due date ke saath.\n2. Automatic reminders, taaki koi parent bhoole nahi.\n3. A parent portal, jahan attendance aur marks dikhte hain.\n\nAcademy owner hain? Comment \"LEARN\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#academyowner #tutoring #educationbusiness #feemanagement #thetotalforge",
+  "firstComment": "Academy owner? Comment \"LEARN\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for tutors and academies: Fees ka hisaab chats mein hai, aur mahine ke end mein pata chalta hai. The Total Forge shows three things it builds.",
+  "chars": 577
+ },
+ {
+  "id": "r06",
+  "date": "2026-11-17",
+  "keyword": "CLINIC",
+  "business": "Clinics and dentists",
+  "caption": "Aaj teen patients nahi aaye, aur slot khaali gaye.\n\nPatient ne appointment li, phir bhool gaya. Aapne notice kiya that evening. Tab tak, slot khaali.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. An online appointment booking. Patient khud slot chunta hai.\n2. SMS aur WhatsApp reminders, appointment se pehle.\n3. A patient record, jahan har visit ka note dikhta hai.\n\nClinic owner hain? Comment \"CLINIC\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#clinicowner #healthcarebusiness #appointmentbooking #clinicmanagement #thetotalforge",
+  "firstComment": "Clinic owner? Comment \"CLINIC\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for clinics and dentists: Aaj teen patients nahi aaye, aur slot khaali gaye. The Total Forge shows three things it builds.",
+  "chars": 565
+ },
+ {
+  "id": "r07",
+  "date": "2026-11-18",
+  "keyword": "LEADS",
+  "business": "Real estate agents",
+  "caption": "Client ne enquiry ki, aur aapne kal reply kiya.\n\nBuyer ne poocha, flat available hai? Aapne reply kiya next day. Tab tak, deal kisi aur ke paas.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. An enquiry form. Har lead apni details khud bhejta hai.\n2. An instant reply, jismein listings aur viewing link hain.\n3. A pipeline screen, jahan har lead ka stage dikhta hai.\n\nReal estate agent hain? Comment \"LEADS\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#realestateagent #propertybusiness #leadgeneration #realestatepakistan #thetotalforge",
+  "firstComment": "Real estate agent? Comment \"LEADS\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for real estate agents: Client ne enquiry ki, aur aapne kal reply kiya. The Total Forge shows three things it builds.",
+  "chars": 560
+ },
+ {
+  "id": "r08",
+  "date": "2026-11-19",
+  "keyword": "MEMBERS",
+  "business": "Gyms",
+  "caption": "Member ki fee due hai, lekin kisi ko pata nahi.\n\nMember ne poocha, plan renew kaise karun? Aapne reply kiya after three days. Tab tak, membership gayi.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. A member signup, jismein fee due date set hoti hai.\n2. Renewal reminders, taaki koi membership expire na ho.\n3. A check-in log, jahan har member ki attendance dikhti hai.\n\nGym owner hain? Comment \"MEMBERS\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#gymowner #fitnessbusiness #gymmanagement #membershipmanagement #thetotalforge",
+  "firstComment": "Gym owner? Comment \"MEMBERS\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for gyms: Member ki fee due hai, lekin kisi ko pata nahi. The Total Forge shows three things it builds.",
+  "chars": 562
+ },
+ {
+  "id": "r09",
+  "date": "2026-11-20",
+  "keyword": "GARAGE",
+  "business": "Auto repair shops",
+  "caption": "Gaadi ready hai? Yeh sawaal din mein chaar baar.\n\nCustomer ne poocha, gaadi ready hai? Aapne call back kiya after lunch. Tab tak, kaam ruk gaya.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. A job card, jismein gaadi ka kaam likha hota hai.\n2. Status updates, jo customer ko khud mil jaate hain.\n3. A workshop board, jahan har bay ka kaam dikhta hai.\n\nGarage owner hain? Comment \"GARAGE\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#autorepair #garageowner #workshopmanagement #carservice #thetotalforge",
+  "firstComment": "Garage owner? Comment \"GARAGE\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for auto repair shops: Gaadi ready hai? Yeh sawaal din mein chaar baar. The Total Forge shows three things it builds.",
+  "chars": 527
+ },
+ {
+  "id": "r10",
+  "date": "2026-11-21",
+  "keyword": "STORE",
+  "business": "Online stores",
+  "caption": "Instagram par sab like karte hain, order koi nahi.\n\nCustomer ne poocha, website ka link? Aap sent it next morning. Tab tak, woh bhool gaya.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. A product website, jahan har cheez ek jagah hoti hai.\n2. A secure checkout, jahan payment seedha hoti hai.\n3. An order tracking page, jahan customer khud status dekhta hai.\n\nStore owner hain? Comment \"STORE\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#ecommerce #onlinestore #ecommercebusiness #onlineshoppingpakistan #thetotalforge",
+  "firstComment": "Store owner? Comment \"STORE\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for online stores: Instagram par sab like karte hain, order koi nahi. The Total Forge shows three things it builds.",
+  "chars": 549
+ },
+ {
+  "id": "r11",
+  "date": "2026-11-22",
+  "keyword": "WHOLESALE",
+  "business": "Wholesalers",
+  "caption": "Udhaar ka hisaab diary mein hai, aur diary kho gayi.\n\nRetailer ne poocha, mera balance kitna hai? Aapne dhoondha after an hour. Tab tak, order gaya.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. A price list page, jo retailer khud dekh sakta hai.\n2. A bulk order form, jismein retailer quantity khud bharta hai.\n3. A payments ledger, jahan har retailer ka hisaab dikhta hai.\n\nWholesaler hain? Comment \"WHOLESALE\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#wholesalebusiness #distributor #businessledger #tradingbusiness #thetotalforge",
+  "firstComment": "Wholesaler? Comment \"WHOLESALE\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for wholesalers: Udhaar ka hisaab diary mein hai, aur diary kho gayi. The Total Forge shows three things it builds.",
+  "chars": 580
+ },
+ {
+  "id": "r12",
+  "date": "2026-11-23",
+  "keyword": "BUILD",
+  "business": "Builders and contractors",
+  "caption": "Site par kya hua, raat ko WhatsApp se pata chalta hai.\n\nOwner ne poocha, kaam kahan tak pahuncha? Aapne reply kiya that night. Tab tak, delay ho chuka tha.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. A project tracker, jahan har stage ka status dikhta hai.\n2. A site-update log, jahan photos aur notes daily jaate hain.\n3. A material and payment record, jahan har kharcha dikhta hai.\n\nBuilder or contractor hain? Comment \"BUILD\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#construction #contractor #constructionmanagement #builderslife #thetotalforge",
+  "firstComment": "Builder or contractor? Comment \"BUILD\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for builders and contractors: Site par kya hua, raat ko WhatsApp se pata chalta hai. The Total Forge shows three things it builds.",
+  "chars": 578
+ },
+ {
+  "id": "r13",
+  "date": "2026-11-24",
+  "keyword": "DISPATCH",
+  "business": "Courier and delivery",
+  "caption": "Parcel kahan hai? Din mein bees baar yahi sawaal.\n\nCustomer ne poocha, parcel kahan hai? Aapne check kiya after lunch. Tab tak, woh complaint kar chuka tha.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. A booking form, jismein pickup aur drop address hota hai.\n2. Rider assignment, jahan har parcel ka rider set hota hai.\n3. A tracking link, jo customer ko khud mil jaata hai.\n\nCourier owner hain? Comment \"DISPATCH\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#courierservice #logistics #deliverybusiness #parceltracking #thetotalforge",
+  "firstComment": "Courier owner? Comment \"DISPATCH\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for courier and delivery: Parcel kahan hai? Din mein bees baar yahi sawaal. The Total Forge shows three things it builds.",
+  "chars": 572
+ },
+ {
+  "id": "r14",
+  "date": "2026-11-25",
+  "keyword": "TENANT",
+  "business": "Property managers",
+  "caption": "Rent kisne diya, kisne nahi? Kisi ko yaad nahi.\n\nTenant ne poocha, geyser kab theek hoga? Aapne reply kiya after two weeks. Tab tak, tenant naraaz.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. A tenant request form, jismein problem aur photo hoti hai.\n2. A rent due tracker, jahan har tenant ka status dikhta hai.\n3. A maintenance board, jahan har repair ka task dikhta hai.\n\nLandlord or property manager hain? Comment \"TENANT\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#propertymanagement #landlord #rentalproperty #tenantmanagement #thetotalforge",
+  "firstComment": "Landlord or property manager? Comment \"TENANT\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for property managers: Rent kisne diya, kisne nahi? Kisi ko yaad nahi. The Total Forge shows three things it builds.",
+  "chars": 570
+ },
+ {
+  "id": "r15",
+  "date": "2026-11-26",
+  "keyword": "TRIP",
+  "business": "Travel agents",
+  "caption": "Ek trip ka quote banane mein ghanta lag jaata hai.\n\nCustomer ne poocha, Dubai ka package? Aapne quote bheja next day. Tab tak, usne book kar liya.\n\nHum apne clients ke liye teen cheezein banate hain:\n1. An enquiry form, jismein trip ki details hoti hain.\n2. A quote template, jo minutes mein ready hota hai.\n3. A booking tracker, jahan har payment ka status dikhta hai.\n\nTravel agent hain? Comment \"TRIP\" karein, hum aapko details bhej denge.\n\nExample scenario: yeh ek misaal hai, real client nahi.\n\n#travelagency #travelagent #tourismbusiness #tripplanning #thetotalforge",
+  "firstComment": "Travel agent? Comment \"TRIP\" aur hum DM mein details bhej denge.",
+  "alt": "Animated Hinglish reel for travel agents: Ek trip ka quote banane mein ghanta lag jaata hai. The Total Forge shows three things it builds.",
+  "chars": 550
+ }
+]

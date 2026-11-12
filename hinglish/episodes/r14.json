@@ -1,0 +1,304 @@
+{
+ "id": "r14",
+ "business": "Property managers",
+ "keyword": "TENANT",
+ "lines": [
+  "Rent kisne diya, kisne nahi? Kisi ko yaad nahi.",
+  "Tenant ne poocha, geyser kab theek hoga? You replied after two weeks. Tab tak, tenant naraaz.",
+  "Rent, requests aur repairs chats mein bikhre hain.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. A tenant request form, jismein problem aur photo hoti hai.",
+  "Two. A rent due tracker, jahan har tenant ka status dikhta hai.",
+  "Three. A maintenance board, jahan har repair ka task dikhta hai.",
+  "Result? Har request ka jawab, har rent ka hisaab.",
+  "Want this for your rentals? Comment TENANT, hum aap ko details bhej denge."
+ ],
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     1,
+     3
+    ],
+    "size": 110,
+    "color": "lime",
+    "mt": 8
+   },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 78,
+    "color": "white"
+   },
+   {
+    "r": [
+     5,
+     9
+    ],
+    "size": 52,
+    "color": "red",
+    "mt": 22
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "TENANT",
+   "text": "geyser kab theek hoga?",
+   "at": "geyser"
+  },
+  "clock": {
+   "to": "weeks.",
+   "from": "You"
+  },
+  "rows": [
+   {
+    "r": [
+     9,
+     12
+    ],
+    "size": 62,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "DOOSRA FLAT",
+   "text": "Lease signed &#10003;",
+   "at": "Tab"
+  },
+  "stamp": {
+   "text": "TENANT GAYA.",
+   "at": "tenant",
+   "size": 58
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Rent",
+    "at": "Rent,"
+   },
+   {
+    "text": "Requests",
+    "at": "requests"
+   },
+   {
+    "text": "Repairs",
+    "at": "repairs"
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     6,
+     7
+    ],
+    "size": 120,
+    "color": "white"
+   },
+   {
+    "r": [
+     7,
+     8
+    ],
+    "size": 120,
+    "color": "white"
+   }
+  ],
+  "sub": "kaunsa kaam baaki?<br>pata nahi.",
+  "subAt": "hain.",
+  "minisAt": "repairs",
+  "subSize": 58
+ },
+ "builds": [
+  {
+   "title": "REQUEST FORM",
+   "titleAt": "request",
+   "bg": "white",
+   "demo": {
+    "type": "form",
+    "header": "Repair request",
+    "fields": [
+     {
+      "label": "FLAT",
+      "value": "B-12",
+      "at": "tenant"
+     },
+     {
+      "label": "ISSUE",
+      "value": "Geyser not heating",
+      "at": "problem"
+     },
+     {
+      "label": "PHOTO",
+      "value": "geyser.jpg",
+      "at": "photo"
+     }
+    ],
+    "button": {
+     "text": "SEND REQUEST",
+     "at": "hoti",
+     "done": "SENT \u2713",
+     "doneAt": "hai."
+    }
+   }
+  },
+  {
+   "title": "RENT TRACKER",
+   "titleAt": "rent",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "NOVEMBER",
+    "rows": [
+     {
+      "title": "Flat B-12",
+      "sub": "Ayesha K.",
+      "chip": "PAID",
+      "at": "har"
+     },
+     {
+      "title": "Flat C-04",
+      "sub": "Bilal A.",
+      "chip": "DUE",
+      "at": "tenant",
+      "chip2": "PAID \u2713",
+      "chip2At": "dikhta",
+      "bg": "#ffd166",
+      "fg": "#0b0d09",
+      "bg2": "#c6ff35",
+      "fg2": "#0b0d09"
+     },
+     {
+      "title": "Flat A-07",
+      "sub": "Sara M.",
+      "chip": "OVERDUE",
+      "at": "status",
+      "bg": "#ff4b3a",
+      "fg": "#ffffff"
+     }
+    ]
+   }
+  },
+  {
+   "title": "REPAIR BOARD",
+   "titleAt": "maintenance",
+   "bg": "cream",
+   "demo": {
+    "type": "board",
+    "appear": "har",
+    "cols": [
+     {
+      "name": "NEW",
+      "bg": "#ffd166",
+      "fg": "#0b0d09",
+      "at": "jahan"
+     },
+     {
+      "name": "FIXING",
+      "bg": "#c6ff35",
+      "fg": "#0b0d09",
+      "at": "repair"
+     },
+     {
+      "name": "DONE",
+      "bg": "#0b0d09",
+      "fg": "#c6ff35",
+      "at": "task"
+     }
+    ],
+    "cards": [
+     {
+      "id": "B-12",
+      "name": "Geyser",
+      "item": "Plumber",
+      "row": 0,
+      "moves": [
+       {
+        "at": "task",
+        "to": 1
+       },
+       {
+        "at": "dikhta",
+        "to": 2
+       }
+      ]
+     },
+     {
+      "id": "C-04",
+      "name": "Light",
+      "item": "Electrician",
+      "row": 1,
+      "moves": [
+       {
+        "at": "dikhta",
+        "to": 1
+       }
+      ]
+     },
+     {
+      "id": "A-07",
+      "name": "AC",
+      "item": "Vendor",
+      "row": 2
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     3
+    ],
+    "size": 80,
+    "color": "white",
+    "mt": 70
+   },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 100,
+    "color": "lime"
+   },
+   {
+    "r": [
+     5,
+     9
+    ],
+    "size": 56,
+    "color": "white",
+    "mt": 20
+   }
+  ],
+  "chip": "&#10003; NOTHING MISSED",
+  "chipAt": "jawab,"
+ },
+ "cta": {
+  "noun": "rentals",
+  "keyword": "TENANT"
+ }
+}

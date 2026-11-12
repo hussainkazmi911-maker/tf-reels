@@ -1,0 +1,288 @@
+{
+ "id": "r10",
+ "business": "Online stores",
+ "keyword": "STORE",
+ "lines": [
+  "Instagram par sab like karte hain, order koi nahi.",
+  "Customer ne poocha, website ka link? You sent it next morning. Tab tak, woh bhool gaya.",
+  "Products DMs, Instagram aur Drive mein bikhre hain.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. A product website, jahan har cheez ek jagah hoti hai.",
+  "Two. A secure checkout, jahan payment seedha hoti hai.",
+  "Three. An order tracking page, jahan customer khud status dekhta hai.",
+  "Result? Likes se orders tak, ek hi raasta.",
+  "Want this for your store? Comment STORE, hum aap ko details bhej denge."
+ ],
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     2
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     2,
+     4
+    ],
+    "size": 130,
+    "color": "lime",
+    "mt": 8
+   },
+   {
+    "r": [
+     4,
+     6
+    ],
+    "size": 78,
+    "color": "white"
+   },
+   {
+    "r": [
+     6,
+     9
+    ],
+    "size": 54,
+    "color": "red",
+    "mt": 22
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "CUSTOMER",
+   "text": "website ka link?",
+   "at": "website"
+  },
+  "clock": {
+   "to": "morning.",
+   "from": "You"
+  },
+  "rows": [
+   {
+    "r": [
+     9,
+     11
+    ],
+    "size": 66,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "DOOSRA STORE",
+   "text": "Checkout done &#10003;",
+   "at": "Tab"
+  },
+  "stamp": {
+   "text": "ORDER GAYA.",
+   "at": "bhool",
+   "size": 63
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "DMs",
+    "at": "DMs,"
+   },
+   {
+    "text": "Instagram",
+    "at": "Instagram"
+   },
+   {
+    "text": "Drive",
+    "at": "Drive"
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     6,
+     7
+    ],
+    "size": 120,
+    "color": "white"
+   },
+   {
+    "r": [
+     7,
+     8
+    ],
+    "size": 120,
+    "color": "white"
+   }
+  ],
+  "sub": "kya available hai?<br>pata nahi.",
+  "subAt": "hain.",
+  "minisAt": "Drive",
+  "subSize": 58
+ },
+ "builds": [
+  {
+   "title": "PRODUCT PAGE",
+   "titleAt": "product",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "PRODUCTS",
+    "rows": [
+     {
+      "title": "Black kurta",
+      "sub": "Rs. 3,500",
+      "chip": "IN STOCK",
+      "at": "website,"
+     },
+     {
+      "title": "Sneakers",
+      "sub": "Rs. 6,000",
+      "chip": "IN STOCK",
+      "at": "har"
+     },
+     {
+      "title": "Lawn suit",
+      "sub": "Rs. 4,200",
+      "chip": "IN STOCK",
+      "at": "ek"
+     }
+    ]
+   }
+  },
+  {
+   "title": "SECURE CHECKOUT",
+   "titleAt": "secure",
+   "bg": "white",
+   "demo": {
+    "type": "form",
+    "header": "Checkout",
+    "fields": [
+     {
+      "label": "NAME",
+      "value": "Ayesha K.",
+      "at": "secure"
+     },
+     {
+      "label": "ADDRESS",
+      "value": "House 12, Block 5",
+      "at": "jahan"
+     },
+     {
+      "label": "PAYMENT",
+      "value": "Card or COD",
+      "at": "payment"
+     }
+    ],
+    "button": {
+     "text": "PAY NOW",
+     "at": "seedha",
+     "done": "PAID \u2713",
+     "doneAt": "hai."
+    }
+   }
+  },
+  {
+   "title": "ORDER TRACKING",
+   "titleAt": "tracking",
+   "bg": "cream",
+   "demo": {
+    "type": "board",
+    "appear": "jahan",
+    "cols": [
+     {
+      "name": "PACKED",
+      "bg": "#ffd166",
+      "fg": "#0b0d09",
+      "at": "tracking"
+     },
+     {
+      "name": "SHIPPED",
+      "bg": "#c6ff35",
+      "fg": "#0b0d09",
+      "at": "status"
+     },
+     {
+      "name": "DELIVERED",
+      "bg": "#0b0d09",
+      "fg": "#c6ff35",
+      "at": "dekhta"
+     }
+    ],
+    "cards": [
+     {
+      "id": "#301",
+      "name": "Ayesha",
+      "item": "Black kurta",
+      "row": 0,
+      "moves": [
+       {
+        "at": "khud",
+        "to": 1
+       },
+       {
+        "at": "dekhta",
+        "to": 2
+       }
+      ]
+     },
+     {
+      "id": "#302",
+      "name": "Bilal",
+      "item": "Sneakers",
+      "row": 1,
+      "moves": [
+       {
+        "at": "status",
+        "to": 1
+       }
+      ]
+     },
+     {
+      "id": "#303",
+      "name": "Sara",
+      "item": "Lawn suit",
+      "row": 2
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     5
+    ],
+    "size": 64,
+    "color": "white",
+    "mt": 70
+   },
+   {
+    "r": [
+     5,
+     8
+    ],
+    "size": 96,
+    "color": "lime",
+    "mt": 24
+   }
+  ],
+  "chip": "&#10003; ORDER PLACED",
+  "chipAt": "ek"
+ },
+ "cta": {
+  "noun": "store",
+  "keyword": "STORE"
+ }
+}

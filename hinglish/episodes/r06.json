@@ -1,0 +1,281 @@
+{
+ "id": "r06",
+ "business": "Clinics and dentists",
+ "keyword": "CLINIC",
+ "lines": [
+  "Aaj teen patients nahi aaye, aur slot khaali gaye.",
+  "Patient ne appointment li, phir bhool gaya. You noticed that evening. Tab tak, slot khaali.",
+  "Appointments calls, WhatsApp aur diary mein bikhri hain.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. An online appointment booking. Patient khud slot chunta hai.",
+  "Two. SMS aur WhatsApp reminders, appointment se pehle.",
+  "Three. A patient record, jahan har visit ka note dikhta hai.",
+  "Result? Slots bharte hain, patients bhoolte nahi.",
+  "Want this for your clinic? Comment CLINIC, hum aap ko details bhej denge."
+ ],
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     2
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     2,
+     3
+    ],
+    "size": 110,
+    "color": "lime",
+    "mt": 8
+   },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 78,
+    "color": "white"
+   },
+   {
+    "r": [
+     5,
+     7
+    ],
+    "size": 52,
+    "color": "red",
+    "mt": 22
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 52,
+    "color": "red",
+    "mt": 4
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "PATIENT",
+   "text": "kal 10 baje &#10003;",
+   "at": "appointment"
+  },
+  "clock": {
+   "to": "evening.",
+   "from": "You"
+  },
+  "rows": [
+   {
+    "r": [
+     9,
+     11
+    ],
+    "size": 66,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "10:00 SLOT",
+   "text": "Koi nahi aaya",
+   "at": "Tab"
+  },
+  "stamp": {
+   "text": "SLOT KHAALI.",
+   "at": "slot",
+   "size": 58
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Calls",
+    "at": "calls,"
+   },
+   {
+    "text": "WhatsApp",
+    "at": "WhatsApp"
+   },
+   {
+    "text": "Diary",
+    "at": "diary"
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     6,
+     7
+    ],
+    "size": 120,
+    "color": "white"
+   },
+   {
+    "r": [
+     7,
+     8
+    ],
+    "size": 120,
+    "color": "white"
+   }
+  ],
+  "sub": "aaj kaun aa raha hai?<br>pata nahi.",
+  "subAt": "hain.",
+  "minisAt": "diary",
+  "subSize": 52
+ },
+ "builds": [
+  {
+   "title": "ONLINE BOOKING",
+   "titleAt": "online",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "TODAY",
+    "rows": [
+     {
+      "title": "Ayesha K.",
+      "sub": "Check-up",
+      "chip": "BOOKED",
+      "at": "online",
+      "tag": "09:00"
+     },
+     {
+      "title": "Bilal A.",
+      "sub": "Follow-up",
+      "chip": "BOOKED",
+      "at": "Patient",
+      "tag": "09:30"
+     },
+     {
+      "title": "Sara M.",
+      "sub": "Check-up",
+      "chip": "BOOKED",
+      "at": "slot",
+      "tag": "10:00"
+     }
+    ]
+   }
+  },
+  {
+   "title": "REMINDERS",
+   "titleAt": "SMS",
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
+     {
+      "who": "r",
+      "text": "Reminder: kal 9:00 baje",
+      "at": "reminders,",
+      "y": 300
+     },
+     {
+      "who": "c",
+      "text": "Confirmed, aa raha hoon",
+      "at": "appointment",
+      "y": 425
+     },
+     {
+      "who": "r",
+      "text": "See you tomorrow &#10003;",
+      "at": "pehle",
+      "y": 550
+     }
+    ],
+    "caption": {
+     "top": 900,
+     "rows": [
+      {
+       "r": [
+        5,
+        8
+       ],
+       "size": 60,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "PATIENT RECORD",
+   "titleAt": "patient",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "AYESHA K.",
+    "rows": [
+     {
+      "title": "Visit: 12 Oct",
+      "sub": "Follow-up in 2 weeks",
+      "chip": "SAVED",
+      "at": "jahan"
+     },
+     {
+      "title": "Visit: 28 Oct",
+      "sub": "Reminder set",
+      "chip": "SAVED",
+      "at": "har"
+     },
+     {
+      "title": "Next: 15 Nov",
+      "sub": "Booked online",
+      "chip": "BOOKED",
+      "at": "note"
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     4
+    ],
+    "size": 70,
+    "color": "white",
+    "mt": 66
+   },
+   {
+    "r": [
+     4,
+     5
+    ],
+    "size": 96,
+    "color": "lime",
+    "mt": 20
+   },
+   {
+    "r": [
+     5,
+     7
+    ],
+    "size": 78,
+    "color": "lime"
+   }
+  ],
+  "chip": "&#10003; SLOT FULL",
+  "chipAt": "Slots"
+ },
+ "cta": {
+  "noun": "clinic",
+  "keyword": "CLINIC"
+ }
+}

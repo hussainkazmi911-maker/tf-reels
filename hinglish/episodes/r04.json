@@ -1,0 +1,266 @@
+{
+ "id": "r04",
+ "business": "Retail shops",
+ "keyword": "STOCK",
+ "lines": [
+  "Shop mein suit bik gaya, website par abhi bhi available hai.",
+  "Customer ne order kiya, stock nahi tha. You apologised two days later. Tab tak, review kharab.",
+  "Stock shop, website aur diary mein alag alag hai.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. Shop aur website ka stock, ek hi jagah sync.",
+  "Two. A low-stock alert, taaki item khatam hone se pehle pata chale.",
+  "Three. A daily sales screen, jahan har cheez ka hisaab dikhta hai.",
+  "Result? Jo shop mein hai, wahi website par hai.",
+  "Want this for your shop? Comment STOCK, hum aap ko details bhej denge."
+ ],
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     3
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 120,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     5,
+     9
+    ],
+    "size": 50,
+    "color": "white",
+    "mt": 14
+   },
+   {
+    "r": [
+     9,
+     11
+    ],
+    "size": 58,
+    "color": "red",
+    "mt": 16
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "CUSTOMER",
+   "text": "Order kar diya!",
+   "at": "order"
+  },
+  "clock": {
+   "to": "later.",
+   "from": "You"
+  },
+  "rows": [
+   {
+    "r": [
+     9,
+     12
+    ],
+    "size": 66,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "NEW REVIEW",
+   "text": "&#9733; Item nahi mila",
+   "at": "Tab"
+  },
+  "stamp": {
+   "text": "REVIEW KHARAB.",
+   "at": "review",
+   "size": 50
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Shop",
+    "at": "shop,"
+   },
+   {
+    "text": "Website",
+    "at": "website"
+   },
+   {
+    "text": "Diary",
+    "at": "diary"
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     6,
+     7
+    ],
+    "size": 120,
+    "color": "white"
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 120,
+    "color": "white"
+   }
+  ],
+  "sub": "kitna bacha hai?<br>pata nahi.",
+  "subAt": "hai.",
+  "minisAt": "diary",
+  "subSize": 58
+ },
+ "builds": [
+  {
+   "title": "STOCK SYNC",
+   "titleAt": "stock,",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "STOCK",
+    "rows": [
+     {
+      "title": "Black suit (M)",
+      "sub": "Shop + website",
+      "chip": "3 LEFT",
+      "at": "Shop",
+      "chip2": "2 LEFT",
+      "chip2At": "jagah"
+     },
+     {
+      "title": "Lawn suit",
+      "sub": "Shop + website",
+      "chip": "5 LEFT",
+      "at": "website"
+     },
+     {
+      "title": "Watch strap",
+      "sub": "Shop + website",
+      "chip": "8 LEFT",
+      "at": "stock,"
+     }
+    ]
+   }
+  },
+  {
+   "title": "LOW-STOCK ALERT",
+   "titleAt": "low-stock",
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
+     {
+      "who": "r",
+      "text": "&#9888; Black suit (M): sirf 2 bache",
+      "at": "alert,",
+      "y": 300
+     },
+     {
+      "who": "r",
+      "text": "Reorder reminder bhej diya &#10003;",
+      "at": "pehle",
+      "y": 425
+     }
+    ],
+    "caption": {
+     "top": 900,
+     "rows": [
+      {
+       "r": [
+        10,
+        12
+       ],
+       "size": 80,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "SALES SCREEN",
+   "titleAt": "daily",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "SALES TODAY",
+    "rows": [
+     {
+      "title": "Suits",
+      "sub": "Sold today",
+      "chip": "12",
+      "at": "jahan"
+     },
+     {
+      "title": "Shoes",
+      "sub": "Sold today",
+      "chip": "8",
+      "at": "har"
+     },
+     {
+      "title": "Accessories",
+      "sub": "Sold today",
+      "chip": "21",
+      "at": "cheez"
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     5
+    ],
+    "size": 64,
+    "color": "white",
+    "mt": 66
+   },
+   {
+    "r": [
+     5,
+     7
+    ],
+    "size": 88,
+    "color": "lime",
+    "mt": 24
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 88,
+    "color": "lime"
+   }
+  ],
+  "chip": "&#10003; STOCK MATCHED",
+  "chipAt": "wahi"
+ },
+ "cta": {
+  "noun": "shop",
+  "keyword": "STOCK"
+ }
+}

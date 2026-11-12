@@ -1,0 +1,273 @@
+{
+ "id": "r13",
+ "business": "Courier and delivery",
+ "keyword": "DISPATCH",
+ "lines": [
+  "Parcel kahan hai? Din mein bees baar yahi sawaal.",
+  "Customer ne poocha, parcel kahan hai? You checked after lunch. Tab tak, woh complaint kar chuka tha.",
+  "Riders, bookings aur updates, sab calls mein bikhre hain.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. A booking form, jismein pickup aur drop address hota hai.",
+  "Two. Rider assignment, jahan har parcel ka rider set hota hai.",
+  "Three. A tracking link, jo customer ko khud mil jaata hai.",
+  "Result? Customer ko jawab, aapko sukoon.",
+  "Want this for your business? Comment DISPATCH, hum aap ko details bhej denge."
+ ],
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     1,
+     3
+    ],
+    "size": 120,
+    "color": "lime",
+    "mt": 8
+   },
+   {
+    "r": [
+     3,
+     7
+    ],
+    "size": 52,
+    "color": "white",
+    "mt": 12
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 60,
+    "color": "red",
+    "mt": 10
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "CUSTOMER",
+   "text": "parcel kahan hai?",
+   "at": "parcel"
+  },
+  "clock": {
+   "to": "lunch.",
+   "from": "You"
+  },
+  "rows": [
+   {
+    "r": [
+     8,
+     10
+    ],
+    "size": 66,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "NEW REVIEW",
+   "text": "&#9733; Parcel late aaya",
+   "at": "Tab"
+  },
+  "stamp": {
+   "text": "COMPLAINT AAYI.",
+   "at": "complaint",
+   "size": 46
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Riders",
+    "at": "Riders,"
+   },
+   {
+    "text": "Bookings",
+    "at": "bookings"
+   },
+   {
+    "text": "Updates",
+    "at": "updates,"
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     7,
+     8
+    ],
+    "size": 120,
+    "color": "white"
+   },
+   {
+    "r": [
+     8,
+     9
+    ],
+    "size": 120,
+    "color": "white"
+   }
+  ],
+  "sub": "parcel kahan hai?<br>pata nahi.",
+  "subAt": "hain.",
+  "minisAt": "calls",
+  "subSize": 58
+ },
+ "builds": [
+  {
+   "title": "BOOKING FORM",
+   "titleAt": "booking",
+   "bg": "white",
+   "demo": {
+    "type": "form",
+    "header": "New booking",
+    "fields": [
+     {
+      "label": "NAME",
+      "value": "Ayesha K.",
+      "at": "booking"
+     },
+     {
+      "label": "PICKUP",
+      "value": "Gulshan, Karachi",
+      "at": "pickup"
+     },
+     {
+      "label": "DROP",
+      "value": "DHA, Karachi",
+      "at": "drop"
+     }
+    ],
+    "button": {
+     "text": "BOOK PARCEL",
+     "at": "hota",
+     "done": "BOOKED \u2713",
+     "doneAt": "hai."
+    }
+   }
+  },
+  {
+   "title": "ASSIGN RIDERS",
+   "titleAt": "assignment,",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "TODAY'S RIDERS",
+    "rows": [
+     {
+      "title": "Parcel #1042",
+      "sub": "Rider: Imran",
+      "chip": "ASSIGNED",
+      "at": "Rider"
+     },
+     {
+      "title": "Parcel #1043",
+      "sub": "Rider: Kamran",
+      "chip": "ASSIGNED",
+      "at": "parcel"
+     },
+     {
+      "title": "Parcel #1044",
+      "sub": "Rider: Sajid",
+      "chip": "ASSIGNED",
+      "at": "set"
+     }
+    ]
+   }
+  },
+  {
+   "title": "TRACKING LINK",
+   "titleAt": "tracking",
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
+     {
+      "who": "r",
+      "text": "Parcel dispatched &#10003;",
+      "at": "link,",
+      "y": 300
+     },
+     {
+      "who": "r",
+      "text": "Track: link.xyz/1042 &#8599;",
+      "at": "customer",
+      "y": 425
+     },
+     {
+      "who": "r",
+      "text": "Delivered &#10003;",
+      "at": "jaata",
+      "y": 550
+     }
+    ],
+    "caption": {
+     "top": 900,
+     "rows": [
+      {
+       "r": [
+        7,
+        11
+       ],
+       "size": 66,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     3
+    ],
+    "size": 72,
+    "color": "white",
+    "mt": 70
+   },
+   {
+    "r": [
+     3,
+     4
+    ],
+    "size": 120,
+    "color": "lime"
+   },
+   {
+    "r": [
+     4,
+     6
+    ],
+    "size": 84,
+    "color": "white",
+    "mt": 16
+   }
+  ],
+  "chip": "&#10003; DELIVERED",
+  "chipAt": "aapko"
+ },
+ "cta": {
+  "noun": "business",
+  "keyword": "DISPATCH"
+ }
+}

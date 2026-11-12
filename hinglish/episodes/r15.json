@@ -1,0 +1,305 @@
+{
+ "id": "r15",
+ "business": "Travel agents",
+ "keyword": "TRIP",
+ "lines": [
+  "Ek trip ka quote banane mein ghanta lag jaata hai.",
+  "Customer ne poocha, Dubai ka package? You sent the quote next day. Tab tak, usne book kar liya.",
+  "Quotes, payments aur plans, sab chats mein bikhre hain.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. An enquiry form, jismein trip ki details hoti hain.",
+  "Two. A quote template, jo minutes mein ready hota hai.",
+  "Three. A booking tracker, jahan har payment ka status dikhta hai.",
+  "Result? Quote jaldi, booking confirm.",
+  "Want this for your agency? Comment TRIP, hum aap ko details bhej denge."
+ ],
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     3
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     3,
+     4
+    ],
+    "size": 150,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     4,
+     6
+    ],
+    "size": 78,
+    "color": "white"
+   },
+   {
+    "r": [
+     6,
+     8
+    ],
+    "size": 52,
+    "color": "red",
+    "mt": 22
+   },
+   {
+    "r": [
+     8,
+     10
+    ],
+    "size": 52,
+    "color": "red",
+    "mt": 4
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "CUSTOMER",
+   "text": "Dubai ka package?",
+   "at": "Dubai"
+  },
+  "clock": {
+   "to": "day.",
+   "from": "You"
+  },
+  "rows": [
+   {
+    "r": [
+     10,
+     12
+    ],
+    "size": 66,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "DOOSRA AGENT",
+   "text": "Package booked &#10003;",
+   "at": "Tab"
+  },
+  "stamp": {
+   "text": "CLIENT GAYA.",
+   "at": "usne",
+   "size": 58
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Quotes",
+    "at": "Quotes,"
+   },
+   {
+    "text": "Payments",
+    "at": "payments"
+   },
+   {
+    "text": "Plans",
+    "at": "plans,"
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     7,
+     8
+    ],
+    "size": 120,
+    "color": "white"
+   },
+   {
+    "r": [
+     8,
+     9
+    ],
+    "size": 120,
+    "color": "white"
+   }
+  ],
+  "sub": "kaunsa trip confirm?<br>pata nahi.",
+  "subAt": "hain.",
+  "minisAt": "chats",
+  "subSize": 58
+ },
+ "builds": [
+  {
+   "title": "ENQUIRY FORM",
+   "titleAt": "enquiry",
+   "bg": "white",
+   "demo": {
+    "type": "form",
+    "header": "Trip enquiry",
+    "fields": [
+     {
+      "label": "NAME",
+      "value": "Ayesha K.",
+      "at": "enquiry"
+     },
+     {
+      "label": "DESTINATION",
+      "value": "Dubai",
+      "at": "trip"
+     },
+     {
+      "label": "DATES",
+      "value": "15 to 20 Dec",
+      "at": "details"
+     }
+    ],
+    "button": {
+     "text": "REQUEST QUOTE",
+     "at": "hoti",
+     "done": "SENT \u2713",
+     "doneAt": "hain."
+    }
+   }
+  },
+  {
+   "title": "QUOTE TEMPLATE",
+   "titleAt": "quote",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "QUOTE",
+    "rows": [
+     {
+      "title": "Flights",
+      "sub": "Return",
+      "chip": "ADDED",
+      "at": "quote"
+     },
+     {
+      "title": "Hotel",
+      "sub": "4 nights",
+      "chip": "ADDED",
+      "at": "template,"
+     },
+     {
+      "title": "Airport transfer",
+      "sub": "Both ways",
+      "chip": "ADDED",
+      "at": "minutes"
+     }
+    ]
+   }
+  },
+  {
+   "title": "BOOKING TRACKER",
+   "titleAt": "booking",
+   "bg": "cream",
+   "demo": {
+    "type": "board",
+    "appear": "har",
+    "cols": [
+     {
+      "name": "ENQUIRY",
+      "bg": "#ffd166",
+      "fg": "#0b0d09",
+      "at": "jahan"
+     },
+     {
+      "name": "QUOTED",
+      "bg": "#c6ff35",
+      "fg": "#0b0d09",
+      "at": "payment"
+     },
+     {
+      "name": "BOOKED",
+      "bg": "#0b0d09",
+      "fg": "#c6ff35",
+      "at": "status"
+     }
+    ],
+    "cards": [
+     {
+      "id": "Dubai",
+      "name": "Ayesha K.",
+      "item": "15 to 20 Dec",
+      "row": 0,
+      "moves": [
+       {
+        "at": "status",
+        "to": 1
+       },
+       {
+        "at": "dikhta",
+        "to": 2
+       }
+      ]
+     },
+     {
+      "id": "Istanbul",
+      "name": "Bilal A.",
+      "item": "3 Jan",
+      "row": 1,
+      "moves": [
+       {
+        "at": "dikhta",
+        "to": 1
+       }
+      ]
+     },
+     {
+      "id": "Skardu",
+      "name": "Sara M.",
+      "item": "June",
+      "row": 2
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     2
+    ],
+    "size": 110,
+    "color": "white",
+    "mt": 70
+   },
+   {
+    "r": [
+     2,
+     3
+    ],
+    "size": 110,
+    "color": "lime"
+   },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 76,
+    "color": "white",
+    "mt": 18
+   }
+  ],
+  "chip": "&#10003; BOOKED",
+  "chipAt": "booking"
+ },
+ "cta": {
+  "noun": "agency",
+  "keyword": "TRIP"
+ }
+}

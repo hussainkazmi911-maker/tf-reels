@@ -1,0 +1,283 @@
+{
+ "id": "r08",
+ "business": "Gyms",
+ "keyword": "MEMBERS",
+ "lines": [
+  "Member ki fee due hai, lekin kisi ko pata nahi.",
+  "Member ne poocha, plan renew kaise karun? You replied after three days. Tab tak, membership gayi.",
+  "Fees, attendance aur plans alag alag diary mein hain.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. A member signup, jismein fee due date set hoti hai.",
+  "Two. Renewal reminders, taaki koi membership expire na ho.",
+  "Three. A check-in log, jahan har member ki attendance dikhti hai.",
+  "Result? Sab members ka hisaab, ek hi screen par.",
+  "Want this for your gym? Comment MEMBERS, hum aap ko details bhej denge."
+ ],
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     2
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     2,
+     4
+    ],
+    "size": 130,
+    "color": "lime",
+    "mt": 8
+   },
+   {
+    "r": [
+     4,
+     5
+    ],
+    "size": 78,
+    "color": "white"
+   },
+   {
+    "r": [
+     5,
+     8
+    ],
+    "size": 52,
+    "color": "red",
+    "mt": 22
+   },
+   {
+    "r": [
+     8,
+     10
+    ],
+    "size": 52,
+    "color": "red",
+    "mt": 4
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "MEMBER",
+   "text": "renew kaise karun?",
+   "at": "plan"
+  },
+  "clock": {
+   "to": "days.",
+   "from": "You"
+  },
+  "rows": [
+   {
+    "r": [
+     9,
+     12
+    ],
+    "size": 62,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "DOOSRA GYM",
+   "text": "Membership joined &#10003;",
+   "at": "Tab"
+  },
+  "stamp": {
+   "text": "MEMBER GAYA.",
+   "at": "membership",
+   "size": 58
+  }
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Fees",
+    "at": "Fees,"
+   },
+   {
+    "text": "Attendance",
+    "at": "attendance"
+   },
+   {
+    "text": "Plans",
+    "at": "plans"
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     4,
+     6
+    ],
+    "size": 110,
+    "color": "white"
+   },
+   {
+    "r": [
+     6,
+     9
+    ],
+    "size": 66,
+    "color": "white"
+   }
+  ],
+  "sub": "kaun active hai?<br>pata nahi.",
+  "subAt": "hain.",
+  "minisAt": "plans",
+  "subSize": 58
+ },
+ "builds": [
+  {
+   "title": "MEMBER SIGNUP",
+   "titleAt": "member",
+   "bg": "white",
+   "demo": {
+    "type": "form",
+    "header": "New member",
+    "fields": [
+     {
+      "label": "NAME",
+      "value": "Hamza R.",
+      "at": "member"
+     },
+     {
+      "label": "PLAN",
+      "value": "Monthly",
+      "at": "fee"
+     },
+     {
+      "label": "DUE DATE",
+      "value": "1 Dec",
+      "at": "date"
+     }
+    ],
+    "button": {
+     "text": "JOIN GYM",
+     "at": "set",
+     "done": "JOINED \u2713",
+     "doneAt": "hai."
+    }
+   }
+  },
+  {
+   "title": "REMINDERS",
+   "titleAt": "Renewal",
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
+     {
+      "who": "r",
+      "text": "Membership kal expire hogi &#9888;",
+      "at": "reminders,",
+      "y": 300
+     },
+     {
+      "who": "c",
+      "text": "Renew kar do",
+      "at": "koi",
+      "y": 425
+     },
+     {
+      "who": "r",
+      "text": "Renewed &#10003; See you at the gym",
+      "at": "expire",
+      "y": 550
+     }
+    ],
+    "caption": {
+     "top": 900,
+     "rows": [
+      {
+       "r": [
+        6,
+        9
+       ],
+       "size": 70,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "CHECK-IN LOG",
+   "titleAt": "check-in",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "TODAY",
+    "rows": [
+     {
+      "title": "Hamza R.",
+      "sub": "Checked in 6:15 AM",
+      "chip": "IN",
+      "at": "har"
+     },
+     {
+      "title": "Sara K.",
+      "sub": "Checked in 7:00 AM",
+      "chip": "IN",
+      "at": "member"
+     },
+     {
+      "title": "Bilal A.",
+      "sub": "Fee due",
+      "chip": "DUE",
+      "at": "attendance",
+      "bg": "#ffd166",
+      "fg": "#0b0d09"
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     4
+    ],
+    "size": 68,
+    "color": "white",
+    "mt": 66
+   },
+   {
+    "r": [
+     4,
+     5
+    ],
+    "size": 110,
+    "color": "lime"
+   },
+   {
+    "r": [
+     5,
+     9
+    ],
+    "size": 70,
+    "color": "white",
+    "mt": 20
+   }
+  ],
+  "chip": "&#10003; ALL TRACKED",
+  "chipAt": "hisaab,"
+ },
+ "cta": {
+  "noun": "gym",
+  "keyword": "MEMBERS"
+ }
+}
