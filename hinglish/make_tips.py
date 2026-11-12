@@ -74,7 +74,7 @@ ep('r02',
 # ------------------------------------------------------------ r03 HIDDEN places
 ep('r03',
    [(0, 2, W, 56), (2, 3, LI, 130, dict(mt=6)), (3, 5, W, 66), (5, 8, W, 56, dict(mt=14)), (8, 10, RD, 56, dict(mt=20)), (10, 13, RD, 56)],
-   dict(bl='AGENCY OWNER', bt='Proposal bheja ✓', bat=7, cf=7, ct=9, cap=[(13, 15, 'ink', 66)],
+   dict(bl='AGENCY OWNER', bt='Proposal bheja ✓', bat=3, cf=7, ct=9, cap=[(13, 15, 'ink', 66)],
         rl='UPWORK', rt='Bahut proposals', rat=10, st='BHEED ZYADA.', sat=11),
    dict(chips=[('Jahan', 0), ('sab', 1), ('jaate', 2)], big=[(5, 6, W, 120), (6, 8, W, 120)],
         sub='sab wahi,<br>toh bheed wahi.', subAt=8, minisAt=3),
