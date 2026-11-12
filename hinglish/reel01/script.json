@@ -1,0 +1,16 @@
+{
+  "title": "Reel 1 - Orders getting lost in DMs (Advisory)",
+  "voice": "hussain voice (LbBx53ZULhAo1x5hAgtQ), eleven_v4",
+  "tts_text": "Aap ke DMs mein orders kho rahe hain. [short pause] Customer ne poocha, price kya hai? You replied two hours later. Tab tak, sale gayi. [short pause] Orders DMs, WhatsApp aur calls mein bikhre hain. Nobody knows what's paid, what's pending. [short pause] Fix it in three steps. [short pause] One. An order form. Customer apna naam, address aur item khud bharta hai. [short pause] Two. An auto-reply, so every message gets an answer in seconds. [short pause] Three. One screen jahan har order dikhta hai: pending, paid, delivered. [short pause] Result? No more copy-pasting addresses at midnight. [short pause] Want this for your shop? Comment ORDERS, hum aap ko details bhej denge.",
+  "lines": [
+    {"words": ["Aap","ke","DMs","mein","orders","kho","rahe","hain."]},
+    {"words": ["Customer","ne","poocha,","price","kya","hai?","You","replied","two","hours","later.","Tab","tak,","sale","gayi."]},
+    {"words": ["Orders","DMs,","WhatsApp","aur","calls","mein","bikhre","hain.","Nobody","knows","what's","paid,","what's","pending."]},
+    {"words": ["Fix","it","in","three","steps."]},
+    {"words": ["One.","An","order","form.","Customer","apna","naam,","address","aur","item","khud","bharta","hai."]},
+    {"words": ["Two.","An","auto-reply,","so","every","message","gets","an","answer","in","seconds."]},
+    {"words": ["Three.","One","screen","jahan","har","order","dikhta","hai:","pending,","paid,","delivered."]},
+    {"words": ["Result?","No","more","copy-pasting","addresses","at","midnight."]},
+    {"words": ["Want","this","for","your","shop?","Comment","ORDERS,","hum","aap","ko","details","bhej","denge."]}
+  ]
+}

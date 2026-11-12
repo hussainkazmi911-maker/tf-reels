@@ -1,0 +1,247 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"Archivo Black";src:url(fonts/archivo-black-latin-400-normal.woff2)}
+@font-face{font-family:Inter;font-weight:500;src:url(fonts/inter-latin-500-normal.woff2)}
+@font-face{font-family:Inter;font-weight:700;src:url(fonts/inter-latin-700-normal.woff2)}
+@font-face{font-family:Inter;font-weight:800;src:url(fonts/inter-latin-800-normal.woff2)}
+:root{--lime:#c6ff35;--ink:#0b0d09;--red:#ff4b3a;--fg:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:720px;height:1280px;overflow:hidden;background:#000}
+#root{position:absolute;left:0;top:0;width:720px;height:1280px;overflow:hidden;font-family:Inter,Arial,sans-serif;color:#fff}
+.scene{position:absolute;left:0;top:0;width:720px;height:1280px;overflow:hidden;display:none}
+.abs{position:absolute}
+.h{font-family:"Archivo Black",Inter,sans-serif;line-height:.98;letter-spacing:-.5px}
+.w{display:inline-block;opacity:0;transform-origin:50% 70%}
+.ctr{position:absolute;left:40px;width:640px;text-align:center}
+/* backgrounds */
+.dark{background:radial-gradient(520px 560px at 50% 45%,#17230a 0%,#0b0d09 72%),#0b0d09}
+.dark:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(198,255,53,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(198,255,53,.07) 1px,transparent 1px);background-size:60px 60px}
+.white{background:radial-gradient(ellipse 640px 700px at 50% 45%,#fff 0%,#efefe9 62%,#d8d8cf 100%)}
+.red{background:radial-gradient(ellipse 600px 700px at 50% 45%,#dc3d27 0%,#aa2816 100%)}
+.cream{background:radial-gradient(ellipse 620px 700px at 50% 45%,#f4eedc 0%,#dbd1b6 100%)}
+.red:before,.cream:before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0'/></filter><rect width='260' height='260' filter='url(%23n)'/></svg>");mix-blend-mode:multiply;opacity:.5}
+.limebg{background:#c6ff35}
+.limebg:before{content:"";position:absolute;left:-100px;top:760px;width:940px;height:150px;background:#0b0d09;transform:rotate(-8deg);opacity:.0}
+/* brand */
+#brand{position:absolute;left:34px;top:36px;display:flex;align-items:center;gap:12px;z-index:50;color:var(--fg);font-weight:800;font-size:19px;letter-spacing:2.5px}
+#brand img{width:42px;height:42px;border-radius:10px}
+/* hub */
+.hub{position:absolute;left:40px;top:122px;width:118px;height:118px;border-radius:50%;background:var(--ink);color:var(--lime);text-align:center;box-shadow:0 0 0 10px rgba(198,255,53,.28)}
+.hub small{display:block;margin-top:23px;font-weight:800;font-size:15px;letter-spacing:3px}
+.hub b{display:block;margin-top:-1px;font-family:"Archivo Black";font-size:48px;line-height:1}
+.hubd{background:var(--lime);color:var(--ink);box-shadow:0 0 0 10px rgba(198,255,53,.25)}
+.title{position:absolute;left:182px;top:142px;font-size:60px}
+/* chat */
+.bub{position:absolute;padding:20px 28px;border-radius:30px;font-weight:700;font-size:34px;line-height:1.2}
+.cust{left:44px;background:#e6e6df;color:var(--ink);border-bottom-left-radius:8px}
+.cust.d{background:#262d1b;color:#fff}
+.rep{right:44px;background:var(--lime);color:var(--ink);border-bottom-right-radius:8px}
+/* cards */
+.ocard{position:absolute;width:190px;height:104px;border-radius:16px;background:#fff;box-shadow:0 10px 24px rgba(0,0,0,.16);padding:14px 16px}
+.ocard b{display:block;font-family:"Archivo Black";font-size:26px;color:var(--ink)}
+.ocard span{display:block;margin-top:6px;font-weight:700;font-size:20px;color:#6c6c62}
+.ocard i{position:absolute;right:14px;top:16px;width:14px;height:14px;border-radius:50%;background:#ffb020}
+.mini{position:absolute;width:150px;height:84px;border-radius:14px;background:#fff;box-shadow:0 8px 20px rgba(0,0,0,.28)}
+.mini:before,.mini:after{content:"";position:absolute;left:14px;height:10px;border-radius:5px;background:#cfcfc6}
+.mini:before{top:20px;width:92px}.mini:after{top:42px;width:62px;background:#e6e6df}
+.mini i{position:absolute;right:12px;top:14px;width:14px;height:14px;border-radius:50%;background:#ffb020}
+.chip{position:absolute;padding:14px 30px;border-radius:40px;background:#fff;color:var(--ink);font-weight:800;font-size:38px;box-shadow:0 10px 26px rgba(0,0,0,.3)}
+/* form */
+.card{position:absolute;left:60px;top:300px;width:600px;height:620px;background:#fff;border-radius:32px;box-shadow:0 30px 60px rgba(0,0,0,.2);border:2px solid #e4e4dc}
+.card .hd{position:absolute;left:34px;top:30px;font-weight:800;font-size:27px;color:var(--ink)}
+.card .hd:before{content:"";display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--lime);margin-right:12px;box-shadow:0 0 0 2px var(--ink)}
+.fld{position:absolute;left:34px;width:532px}
+.fld label{display:block;font-weight:800;font-size:17px;letter-spacing:3px;color:#8d8d82;margin-bottom:10px}
+.fld div{height:74px;border:3px solid #d8d8d0;border-radius:18px;padding:0 22px;line-height:68px;font-weight:700;font-size:34px;color:var(--ink);white-space:nowrap;overflow:hidden}
+.btn{position:absolute;left:34px;top:500px;width:532px;height:90px;border-radius:22px;background:var(--lime);color:var(--ink);font-family:"Archivo Black";font-size:34px;text-align:center;line-height:90px;box-shadow:0 8px 0 var(--ink)}
+/* kanban */
+.col{position:absolute;top:340px;width:206px;height:600px;border-radius:20px;background:rgba(11,13,9,.07)}
+.colh{position:absolute;top:340px;width:206px;height:58px;border-radius:16px;font-family:"Archivo Black";font-size:21px;text-align:center;line-height:58px;letter-spacing:.5px}
+</style></head>
+<body>
+<div id="root">
+ <div id="brand"><img src="logo.png"><span>THE TOTAL FORGE</span></div>
+
+ <!-- S0 -->
+ <div class="scene dark" id="s0">
+  <div id="falls"></div>
+  <div class="ctr" style="top:400px">
+   <div class="h" style="font-size:56px;white-space:nowrap"><span class="w" data-i="0">AAP</span> <span class="w" data-i="1">KE</span> <span class="w" data-i="2">DMs</span> <span class="w" data-i="3">MEIN</span></div>
+   <div class="h" style="font-size:128px;color:var(--lime);margin:10px 0 12px;white-space:nowrap"><span class="w" data-i="4" data-from="1.5">ORDERS</span></div>
+   <div class="h" style="font-size:64px;color:var(--red);white-space:nowrap"><span class="w" data-i="5">KHO</span> <span class="w" data-i="6">RAHE</span> <span class="w" data-i="7">HAIN.</span></div>
+  </div>
+ </div>
+
+ <!-- S1 -->
+ <div class="scene white" id="s1">
+  <div id="c1" class="bub cust" style="left:60px;top:170px;font-size:40px;opacity:0"><span style="display:block;font-size:15px;letter-spacing:3px;color:#8d8d82;margin-bottom:4px">CUSTOMER</span>price kya hai?</div>
+  <svg id="clock" width="300" height="300" viewBox="0 0 300 300" style="position:absolute;left:210px;top:350px;opacity:0">
+   <circle cx="150" cy="150" r="138" fill="#fff" stroke="#0b0d09" stroke-width="12"/>
+   <g id="ticks"></g>
+   <line id="hm" x1="150" y1="150" x2="150" y2="88" stroke="#0b0d09" stroke-width="13" stroke-linecap="round"/>
+   <line id="mm" x1="150" y1="150" x2="150" y2="50" stroke="#ff4b3a" stroke-width="9" stroke-linecap="round"/>
+   <circle cx="150" cy="150" r="13" fill="#0b0d09"/>
+  </svg>
+  <div class="ctr h" style="top:700px;font-size:66px;color:var(--ink)"><span class="w" data-i="8">2</span> <span class="w" data-i="9">HOURS</span> <span class="w" data-i="10">LATER.</span></div>
+  <div id="c2" class="bub rep" style="right:50px;top:850px;opacity:0"><span style="display:block;font-size:15px;letter-spacing:3px;color:#3d4a12;margin-bottom:4px">DOOSRI SHOP</span>Order confirmed &#10003;</div>
+  <div id="stamp" class="h" style="position:absolute;left:90px;top:455px;width:540px;text-align:center;font-size:74px;color:var(--red);border:9px solid var(--red);border-radius:18px;padding:16px 0 12px;white-space:nowrap;background:rgba(255,255,255,.9);opacity:0">SALE GAYI.</div>
+ </div>
+
+ <!-- S2 -->
+ <div class="scene red" id="s2">
+  <div id="mc"></div>
+  <div class="chip" id="k1" style="left:60px;top:190px;opacity:0">DMs</div>
+  <div class="chip" id="k2" style="left:250px;top:150px;opacity:0">WhatsApp</div>
+  <div class="chip" id="k3" style="left:500px;top:260px;opacity:0">Calls</div>
+  <div class="ctr h" style="top:560px;font-size:112px;color:#fff"><span class="w" data-i="8">NOBODY</span><br><span class="w" data-i="9">KNOWS</span></div>
+  <div class="ctr" style="top:830px;font-weight:800;font-size:58px;color:var(--ink);line-height:1.2"><span class="w" data-i="10">what's</span> <span class="w" data-i="11">paid?</span><br><span class="w" data-i="12">what's</span> <span class="w" data-i="13">pending?</span></div>
+ </div>
+
+ <!-- S3 -->
+ <div class="scene limebg" id="s3">
+  <div class="ctr h" style="top:310px;font-size:150px;color:var(--ink);line-height:.97;white-space:nowrap"><span class="w" data-i="0">FIX</span> <span class="w" data-i="1">IT</span><br><span class="w" data-i="2">IN</span> <span class="w" data-i="3">3</span><br><span class="w" data-i="4">STEPS.</span></div>
+  <div id="dots"></div>
+ </div>
+
+ <!-- S4 -->
+ <div class="scene white" id="s4">
+  <div class="hub"><small>STEP</small><b>1/3</b></div>
+  <div class="title h" style="color:var(--ink)"><span class="w" data-i="2">ORDER</span> <span class="w" data-i="3">FORM</span></div>
+  <div class="card" id="card">
+   <div class="hd">New order</div>
+   <div class="fld" style="top:105px"><label>NAME</label><div id="f1"></div></div>
+   <div class="fld" style="top:235px"><label>ADDRESS</label><div id="f2"></div></div>
+   <div class="fld" style="top:365px"><label>ITEM</label><div id="f3"></div></div>
+   <div class="btn" id="btn" style="opacity:0">PLACE ORDER</div>
+  </div>
+ </div>
+
+ <!-- S5 -->
+ <div class="scene dark" id="s5">
+  <div class="hub hubd"><small>STEP</small><b>2/3</b></div>
+  <div class="title h" style="color:#fff"><span class="w" data-i="2">AUTO-REPLY</span></div>
+  <div class="bub cust d" id="q1" style="top:300px;opacity:0">price kya hai?</div>
+  <div class="bub rep" id="a1" style="top:410px;opacity:0">Yeh raha price list + order form &#8599;</div>
+  <div class="bub cust d" id="q2" style="top:610px;opacity:0">available hai?</div>
+  <div class="bub rep" id="a2" style="top:720px;opacity:0">Ji, available hai! Order form &#8599;</div>
+  <div class="ctr h" style="top:900px;font-size:80px;color:var(--lime);white-space:nowrap"><span class="w" data-i="9">IN</span> <span class="w" data-i="10">SECONDS.</span></div>
+ </div>
+
+ <!-- S6 -->
+ <div class="scene cream" id="s6">
+  <div class="hub"><small>STEP</small><b>3/3</b></div>
+  <div class="title h" style="color:var(--ink)"><span class="w" data-i="1">ONE</span> <span class="w" data-i="2">SCREEN</span></div>
+  <div class="col" style="left:30px"></div><div class="col" style="left:252px"></div><div class="col" style="left:474px"></div>
+  <div class="colh" id="h0" style="left:30px;background:#ffd166;color:var(--ink)">PENDING</div>
+  <div class="colh" id="h1" style="left:252px;background:var(--lime);color:var(--ink)">PAID</div>
+  <div class="colh" id="h2" style="left:474px;background:var(--ink);color:var(--lime)">DELIVERED</div>
+  <div class="ocard" id="o1"><i></i><b>#101</b><span>Ayesha</span><span style="margin-top:2px">Black kurta</span></div>
+  <div class="ocard" id="o2"><i></i><b>#102</b><span>Bilal</span><span style="margin-top:2px">Sneakers</span></div>
+  <div class="ocard" id="o3"><i></i><b>#103</b><span>Sara</span><span style="margin-top:2px">Lawn suit</span></div>
+  <div class="ocard" id="o4"><i></i><b>#104</b><span>Hamza</span><span style="margin-top:2px">Watch strap</span></div>
+ </div>
+
+ <!-- S7 -->
+ <div class="scene dark" id="s7">
+  <div class="ctr h" style="top:190px;font-size:44px;letter-spacing:6px;color:var(--lime)"><span class="w" data-i="0">RESULT?</span></div>
+  <div class="ctr h" style="top:330px;font-size:120px;color:#fff"><span class="w" data-i="1">NO</span> <span class="w" data-i="2">MORE</span></div>
+  <div class="ctr h" style="top:470px;font-size:78px;color:#fff"><span class="w" data-i="3" style="position:relative">COPY-PASTING<i id="strike" style="position:absolute;left:-6px;top:50%;height:10px;width:0;background:var(--red);border-radius:5px"></i></span></div>
+  <div class="ctr h" style="top:566px;font-size:84px;color:#fff"><span class="w" data-i="4">ADDRESSES</span></div>
+  <div class="ctr h" style="top:662px;font-size:80px;color:var(--lime)"><span class="w" data-i="5">AT</span> <span class="w" data-i="6">MIDNIGHT.</span></div>
+  <div id="clk" style="position:absolute;left:110px;top:870px;width:520px;height:130px;opacity:0">
+   <div style="position:absolute;left:0;top:18px;width:90px;height:90px;border-radius:50%;background:#f6f0c8;overflow:hidden"><div style="position:absolute;left:30px;top:-8px;width:90px;height:90px;border-radius:50%;background:#0b0d09"></div></div>
+   <div class="h" style="position:absolute;left:112px;top:22px;font-size:72px;color:var(--lime);white-space:nowrap">12:00 AM</div>
+  </div>
+ </div>
+
+ <!-- S8 -->
+ <div class="scene dark" id="s8">
+  <img id="bigLogo" src="logo.png" style="position:absolute;left:285px;top:130px;width:150px;height:150px;border-radius:34px;opacity:0">
+  <div class="ctr h" style="top:330px;font-size:68px;color:#fff"><span class="w" data-i="0">WANT</span> <span class="w" data-i="1">THIS</span><br><span class="w" data-i="2">FOR</span> <span class="w" data-i="3">YOUR</span> <span class="w" data-i="4" style="color:var(--lime)">SHOP?</span></div>
+  <div id="comp" style="position:absolute;left:50px;top:600px;width:620px;height:100px;border-radius:50px;background:#fff;opacity:0">
+   <div style="position:absolute;left:14px;top:14px;width:72px;height:72px;border-radius:50%;background:var(--lime);overflow:hidden"><img src="logo.png" style="width:72px;height:72px"></div>
+   <div id="typed" style="position:absolute;left:106px;top:0;line-height:100px;font-weight:800;font-size:40px;color:var(--ink)"></div>
+   <div id="post" style="position:absolute;right:16px;top:20px;height:60px;padding:0 28px;border-radius:30px;background:var(--lime);color:var(--ink);font-weight:800;font-size:28px;line-height:60px">Post</div>
+  </div>
+  <div class="ctr" style="top:760px;font-weight:800;font-size:46px;line-height:1.25;color:var(--lime)"><span class="w" data-i="7">hum</span> <span class="w" data-i="8">aap</span> <span class="w" data-i="9">ko</span> <span class="w" data-i="10">details</span><br><span class="w" data-i="11">bhej</span> <span class="w" data-i="12">denge.</span></div>
+  <div class="ctr" id="handle" style="top:930px;font-weight:700;font-size:30px;color:rgba(255,255,255,.75);opacity:0">@thetotalforgeofficial</div>
+ </div>
+</div>
+<script src="timing.js"></script>
+<script>
+const T=window.TIMING, L=T.lines;
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const prog=(t,a,b)=>clamp((t-a)/(b-a));
+const eOut=x=>1-Math.pow(1-x,3);
+const eIO=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eBack=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const wt=(l,i)=>L[l].words[Math.min(i,L[l].words.length-1)].s;
+const we=(l,i)=>L[l].words[Math.min(i,L[l].words.length-1)].e;
+function setT(el,o){const r=o.rot||0,s=o.sc==null?1:o.sc,dx=o.dx||0,dy=o.dy||0;el.style.transform=`translate(${dx}px,${dy}px) rotate(${r}deg) scale(${s})`}
+function pop(el,t,s,from=1.3,dur=.24,rot=0){const p=prog(t,s,s+dur);el.style.opacity=t>=s?1:0;setT(el,{sc:from-(from-1)*eBack(p),rot})}
+function rise(el,t,s,dy=36,dur=.3){const p=prog(t,s,s+dur);el.style.opacity=t>=s?eOut(prog(t,s,s+.12)):0;setT(el,{dy:dy*(1-eOut(p))})}
+function typeTxt(el,full,t,s,cps=14){const n=Math.floor(clamp((t-s)*cps,0,full.length));el.textContent=full.slice(0,n)+((n<full.length&&n>0&&t>=s&&Math.floor(t*4)%2)?'▏':'')}
+function words(sc,t){sc.el.querySelectorAll('.w').forEach(w=>{const i=+w.dataset.i,f=w.dataset.from?+w.dataset.from:1.32;pop(w,t,wt(sc.line,i),f,.22)})}
+
+// init dynamic bits
+const falls=[];(function(){const c=$('falls');for(let i=0;i<11;i++){const d=document.createElement('div');const w=150+((i*37)%90);d.style.cssText=`position:absolute;left:${20+(i*67)%560}px;top:0;width:${w}px;height:64px;border-radius:22px;border:2px solid ${i%3==0?'rgba(198,255,53,.55)':'rgba(255,255,255,.3)'};`;d.innerHTML=`<i style="position:absolute;left:16px;top:16px;width:${w*.55}px;height:9px;border-radius:5px;background:rgba(255,255,255,.25)"></i><i style="position:absolute;left:16px;top:36px;width:${w*.34}px;height:9px;border-radius:5px;background:rgba(255,255,255,.14)"></i>`;c.appendChild(d);falls.push({d,x:20+(i*67)%560,y0:(i*173)%1500-150,v:120+(i*53)%150,r:(i%3-1)*7})}})();
+(function(){const g=$('ticks');for(let i=0;i<12;i++){const a=i*30*Math.PI/180,x1=150+Math.sin(a)*118,y1=150-Math.cos(a)*118,x2=150+Math.sin(a)*130,y2=150-Math.cos(a)*130;g.innerHTML+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#0b0d09" stroke-width="${i%3==0?8:4}" stroke-linecap="round"/>`}})();
+(function(){const g=$('dots');for(let i=0;i<3;i++){const d=document.createElement('div');d.style.cssText=`position:absolute;left:${300+i*66}px;top:930px;width:44px;height:44px;border-radius:50%;border:6px solid #0b0d09;`;g.appendChild(d)}})();
+const mini=[];(function(){const c=$('mc');const pos=[[40,420,-8],[210,380,5],[400,430,-4],[560,360,7],[300,470,-10]];pos.forEach((p,i)=>{const d=document.createElement('div');d.className='mini';d.innerHTML='<i></i>';d.style.left=p[0]+'px';d.style.top=p[1]+'px';c.appendChild(d);mini.push({d,r:p[2],i})})})();
+
+// kanban positions
+const colL=[30,252,474], rowT=r=>418+r*124;
+function lerp(a,b,p){return a+(b-a)*p}
+function cardPos(id,t){ // returns [col,row float]
+  const l=6;
+  const m1a=wt(l,9), m1b=wt(l,10);
+  if(id==1){ if(t<m1a)return[0,0]; if(t<m1a+.38){const p=eIO(prog(t,m1a,m1a+.38));return[lerp(0,1,p),0]} if(t<m1b)return[1,0]; const p=eIO(prog(t,m1b,m1b+.38));return[lerp(1,2,p),0]}
+  if(id==2){ if(t<m1b)return[0,1]; const p=eIO(prog(t,m1b,m1b+.4));return[lerp(0,1,p),lerp(1,0,p)]}
+  if(id==3){ if(t<m1b)return[0,2]; const p=eIO(prog(t,m1b,m1b+.4));return[0,lerp(2,0,p)]}
+  if(id==4){ if(t<m1b)return[0,3]; const p=eIO(prog(t,m1b,m1b+.4));return[0,lerp(3,1,p)]}
+}
+
+const scenes=[
+ {line:0,fg:'#fff',draw(t){words(this,t);falls.forEach(f=>{const y=((f.y0+f.v*t)%1700)-250;f.d.style.transform=`translateY(${y}px) rotate(${f.r}deg)`;f.d.style.opacity=.85*clamp(1-(y-450)/800)*clamp((y+200)/200)})}},
+ {line:1,fg:'#0b0d09',draw(t){words(this,t);const ws=wt(1,3);pop($('c1'),t,ws,1.15,.26);
+   const cs=wt(1,6),ce=we(1,10);const ck=$('clock');ck.style.opacity=t>=cs?1:0;const p=eIO(prog(t,cs+.1,ce));
+   $('mm').setAttribute('transform',`rotate(${720*p} 150 150)`);$('hm').setAttribute('transform',`rotate(${60*p} 150 150)`);
+   setT(ck,{sc:1-.3*(1-eBack(prog(t,cs,cs+.3)))});
+   pop($('c2'),t,wt(1,11),1.15,.26);
+   const ss=wt(1,13);const sp=prog(t,ss,ss+.22);const st=$('stamp');st.style.opacity=t>=ss?1:0;setT(st,{sc:2.4-1.4*eBack(sp),rot:-8});}},
+ {line:2,fg:'#fff',draw(t){words(this,t);
+   [['k1',1,-6],['k2',2,4],['k3',4,-3]].forEach(([id,wi,r],i)=>{const e=$(id);const s=wt(2,wi);const p=prog(t,s,s+.26);e.style.opacity=t>=s?1:0;const fy=Math.sin(t*1.6+i*2)*8;setT(e,{sc:1.5-.5*eBack(p),rot:r,dy:fy})});
+   mini.forEach((m,i)=>{const s=wt(2,4+Math.min(i,3)*.0+ (i>=3?2:0))+i*.06;const p=prog(t,s,s+.3);m.d.style.opacity=t>=s?1:0;setT(m.d,{sc:1.3-.3*eBack(p),rot:m.r+Math.sin(t*1.3+i)*3,dy:Math.sin(t*1.4+i*1.7)*10})});}},
+ {line:3,fg:'#0b0d09',draw(t){words(this,t);const d=$('dots').children;for(let i=0;i<3;i++){d[i].style.background=t>=wt(3,2+(i==0?0:i==1?1:2))+ (i==0?0:.0)?'#0b0d09':'transparent'}}},
+ {line:4,fg:'#0b0d09',draw(t){words(this,t);
+   const hub=this.el.querySelector('.hub');pop(hub,t,this.t0+.05,1.3,.3);
+   const f=[['f1','Ayesha K.',6],['f2','House 12, Block 5',7],['f3','Black kurta (M)',9]];
+   f.forEach(([id,txt,wi],i)=>{const e=$(id);typeTxt(e,txt,t,wt(4,wi)+.05,i==1?16:13);e.style.borderColor=(t>=wt(4,wi)&&t<(i<2?wt(4,wi+1+(i==0?1:1)):wt(4,10)))?'#0b0d09':'#d8d8d0'});
+   rise($('card'),t,this.t0+.05,50,.35);
+   const b=$('btn'),bs=wt(4,10),bp=wt(4,12)+.05;b.style.opacity=t>=bs?1:0;setT(b,{dy:30*(1-eOut(prog(t,bs,bs+.3)))});
+   if(t>=bp){b.textContent='ORDER PLACED ✓';b.style.background='#0b0d09';b.style.color='#c6ff35';b.style.boxShadow='0 8px 0 #c6ff35'}else{b.textContent='PLACE ORDER';b.style.background='#c6ff35';b.style.color='#0b0d09';b.style.boxShadow='0 8px 0 #0b0d09'}
+   if(t>=bp&&t<bp+.15){setT(b,{sc:.96,dy:6})}}},
+ {line:5,fg:'#fff',draw(t){words(this,t);const hub=this.el.querySelector('.hub');pop(hub,t,this.t0+.05,1.3,.3);
+   pop($('q1'),t,wt(5,3),1.12,.24);pop($('a1'),t,wt(5,5),1.12,.24);pop($('q2'),t,wt(5,7)-.05,1.12,.24);pop($('a2'),t,wt(5,8)-.02,1.12,.24);}},
+ {line:6,fg:'#0b0d09',draw(t){words(this,t);const hub=this.el.querySelector('.hub');pop(hub,t,this.t0+.05,1.3,.3);
+   [1,2,3,4].forEach((id,i)=>{const e=$('o'+id);const s=wt(6,4)+i*.14;const [c,r]=cardPos(id,t);e.style.left=(colL[0]+lerp(0,colL[1]-colL[0],Math.min(c,1))+(c>1?(c-1)*(colL[2]-colL[1]):0)+8)+'px';e.style.top=rowT(r)+'px';e.style.opacity=t>=s?1:0;
+     const dot=e.querySelector('i');dot.style.background=c<.5?'#ffb020':(c<1.5?'#7cc700':'#0b0d09');setT(e,{sc:1.25-.25*eBack(prog(t,s,s+.24))})});
+   ['h0','h1','h2'].forEach((id,i)=>{const s=[wt(6,8),wt(6,9),wt(6,10)][i];const p=prog(t,s,s+.3);setT($(id),{sc:1+.07*Math.sin(Math.PI*p)})})}},
+ {line:7,fg:'#fff',draw(t){words(this,t);const ss=we(7,3)+.1;$('strike').style.width=(t>=wt(7,3)?(prog(t,ss,ss+.35)*112):0)+'%';
+   const c=$('clk'),cs=wt(7,5);c.style.opacity=t>=cs?1:0;setT(c,{sc:1.3-.3*eBack(prog(t,cs,cs+.3))})}},
+ {line:8,fg:'#fff',draw(t){words(this,t);const lg=$('bigLogo');pop(lg,t,this.t0+.05,1.4,.35);
+   const cp=$('comp'),cs=wt(8,5)-.1;cp.style.opacity=t>=cs?1:0;setT(cp,{dy:30*(1-eOut(prog(t,cs,cs+.3)))});
+   typeTxt($('typed'),'ORDERS',t,wt(8,6)-.05,10);
+   const post=$('post'),pt=wt(8,7)-.05;post.style.transform=(t>=pt&&t<pt+.18)?'scale(.92)':'scale(1)';
+   const hd=$('handle');hd.style.opacity=t>=wt(8,11)?1:0}}
+];
+scenes.forEach((s,i)=>{s.el=$('s'+i);s.t0=i==0?0:L[s.line].start-.1;s.t1=i==scenes.length-1?T.total+1:L[scenes[i+1]?scenes[i+1].line:s.line].start-.1});
+function draw(t){let si=scenes.findIndex(s=>t>=s.t0&&t<s.t1);if(si<0)si=t<0?0:scenes.length-1;
+  scenes.forEach((s,i)=>{s.el.style.display=i===si?'block':'none'});
+  document.documentElement.style.setProperty('--fg',scenes[si].fg);
+  scenes[si].draw(t)}
+window.draw=draw;window.SCENES=scenes;
+draw(0);
+</script></body></html>

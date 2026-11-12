@@ -1,0 +1,6 @@
+test/
+frames/
+*.wav
+*.mp3
+*.mp4
+timing.js
