@@ -23,17 +23,13 @@
 | r04 PROPOSAL | Sun 15 Nov | Mon 16 Nov | Fri 20 Nov |
 Built by hinglish/make_social.py into social/tips/rNN/. Reused the old Forge Fix draft slots in Metricool (stories 14/15/16 Nov, carousels 17/18/20 Nov). Unused old drafts left alone: story 13 Nov, reel drafts at 20:00. Old Forge Fix drafts cannot be deleted from here.
 
-## Business-only mode (from Fri 13 Nov 2026, per Hussain): freelancer/platform reels paused, business reels only
+## Business-only mode (from Fri 13 Nov 2026, per Hussain): Forge Fix series dropped, freelancer reels paused, Hinglish business reels only
 | Reel | Slot (Asia/Karachi) | Status |
 |---|---|---|
 | b01 MENU (food) | Fri 13 Nov 21:00 | scheduled |
-| Forge Fix #9 DOCS | Fri 13 Nov 20:00 | restored, scheduled |
-| Forge Fix #10 GARAGE | Sat 14 Nov 20:00 | restored, scheduled |
-| Forge Fix #11 HEALTH | Sun 15 Nov 20:00 | restored, scheduled |
-| Forge Fix #12 LEARN | Mon 16 Nov 20:00 | restored, scheduled |
-| Forge Fix #13 STORE | Tue 17 Nov 20:00 | restored, scheduled |
-| Forge Fix #14 STOCK | Wed 18 Nov 20:00 | restored, scheduled |
-| b02 BOOKING (salon) | awaiting approval, proposed Sat 14 Nov 10:00 | rendered |
+| b02 BOOKING (salon) | Sat 14 Nov 20:00 | scheduled (approved 13 Nov) |
+| b03-b07 | next days, 20:00 | waiting for mp3s |
+| Forge Fix #9-#14 | was 13-18 Nov 20:00 | set back to drafts (Metricool has no delete tool; delete in the planner) |
 | r03 HIDDEN | was Sat 14 Nov 10:00 | paused (draft) |
 | r04 PROPOSAL | was Sun 15 Nov 10:00 | paused (draft) |
-Freelancer stories (14/15/16 Nov 20:20) and carousels (17/18/20 Nov 22:00) still scheduled, they promote the paused reels. b03-b07 wait for audio.
+Freelancer stories (14/15/16 Nov 20:20) and carousels (17/18/20 Nov 22:00) still scheduled; the 15 and 16 Nov stories point to paused reels.
