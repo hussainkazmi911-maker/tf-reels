@@ -28,7 +28,8 @@ Built by hinglish/make_social.py into social/tips/rNN/. Reused the old Forge Fix
 |---|---|---|
 | b01 MENU (food) | Fri 13 Nov 21:00 | scheduled |
 | b02 BOOKING (salon) | Sat 14 Nov 20:00 | scheduled (approved 13 Nov) |
-| b03-b07 | next days, 20:00 | waiting for mp3s |
+| b03 CLINIC | Sun 15 Nov 20:00 | scheduled (approved 13 Nov) |
+| b04-b07 | next days, 20:00 | waiting for mp3s |
 | Forge Fix #9-#14 | was 13-18 Nov 20:00 | set back to drafts (Metricool has no delete tool; delete in the planner) |
 | r03 HIDDEN | was Sat 14 Nov 10:00 | paused (draft) |
 | r04 PROPOSAL | was Sun 15 Nov 10:00 | paused (draft) |
