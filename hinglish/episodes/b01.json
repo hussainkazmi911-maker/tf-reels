@@ -1,0 +1,478 @@
+{
+ "id": "b01",
+ "business": "Food business",
+ "keyword": "MENU",
+ "lines": [
+  "Order WhatsApp pe aaya, par kitchen ko pata hi nahi chala.",
+  "Ek home baker ko WhatsApp pe das orders aaye. Do miss ho gaye, aur ek customer ko wrong cake mila.",
+  "Chats mein orders dhoondna, lowkey sabse bada stress hai.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. A menu page. Customer item chunta hai, aur order seedha aata hai.",
+  "Two. An auto-confirmation, so every order gets a reply in seconds.",
+  "Three. One kitchen screen: new, cooking, ready.",
+  "Result? Orders chats mein nahi khote, aur kitchen sorted rehta hai.",
+  "Want this for your kitchen? Comment MENU, hum aapko DM kar denge."
+ ],
+ "bands": [
+  "FOOD BUSINESS",
+  "WHAT WE BUILD ★ 3 THINGS"
+ ],
+ "emo": {
+  "hook": "😵",
+  "pain": "🤦",
+  "mess": "💀",
+  "tips": [
+   "📋",
+   "✅",
+   "🔔"
+  ],
+  "res": "🎉"
+ },
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     2
+    ],
+    "size": 52,
+    "color": "white"
+   },
+   {
+    "r": [
+     2,
+     5
+    ],
+    "size": 60,
+    "color": "white",
+    "mt": 4
+   },
+   {
+    "r": [
+     5,
+     6
+    ],
+    "size": 112,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     6,
+     9
+    ],
+    "size": 76,
+    "color": "white"
+   },
+   {
+    "r": [
+     9,
+     11
+    ],
+    "size": 70,
+    "color": "red",
+    "mt": 18
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "WHATSAPP ORDER",
+   "text": "1 kg cake, kal 5 baje",
+   "at": "WhatsApp"
+  },
+  "rows": [
+   {
+    "r": [
+     9,
+     13
+    ],
+    "size": 56,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "CUSTOMER",
+   "text": "Yeh kya bheja?",
+   "at": "customer"
+  },
+  "stamp": {
+   "text": "WRONG CAKE.",
+   "at": "wrong",
+   "size": 63
+  },
+  "pile": {
+   "at": [
+    6,
+    7,
+    8
+   ],
+   "hlAt": "Do",
+   "secAt": "miss",
+   "closeAt": "gaye,",
+   "sec": "2 MISS",
+   "emo": "🚫"
+  },
+  "clock": null
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Chats",
+    "at": "Chats"
+   },
+   {
+    "text": "Orders",
+    "at": "orders"
+   },
+   {
+    "text": "Scroll",
+    "at": "dhoondna,"
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     4,
+     5
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     5,
+     7
+    ],
+    "size": 100,
+    "color": "white"
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 100,
+    "color": "white"
+   }
+  ],
+  "sub": "order kahan hai?<br>pata nahi.",
+  "subAt": "hai.",
+  "minisAt": "dhoondna,",
+  "subSize": 58,
+  "top": 600
+ },
+ "bridge": {
+  "items": [
+   {
+    "top": 215,
+    "size": 40,
+    "toks": [
+     [
+      0,
+      "ISILIYE"
+     ],
+     [
+      1,
+      "HUM"
+     ],
+     [
+      2,
+      "APNE"
+     ],
+     "br",
+     [
+      3,
+      "CLIENTS"
+     ],
+     [
+      4,
+      "KE"
+     ],
+     [
+      5,
+      "LIYE"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      6,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      7,
+      "CHEEZEIN"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      8,
+      "BANATE"
+     ],
+     [
+      9,
+      "HAIN."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   6,
+   7,
+   9
+  ]
+ },
+ "builds": [
+  {
+   "title": "MENU PAGE",
+   "titleAt": "menu",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "MENU",
+    "rows": [
+     {
+      "title": "Chocolate Cake",
+      "sub": "1 kg · Rs. 2,800",
+      "chip": "ADD",
+      "at": "page.",
+      "chip2": "ADDED ✓",
+      "chip2At": "chunta"
+     },
+     {
+      "title": "Cupcakes (6)",
+      "sub": "Red velvet · Rs. 1,500",
+      "chip": "ADD",
+      "at": "Customer"
+     },
+     {
+      "title": "Brownie Box",
+      "sub": "12 pcs · Rs. 1,800",
+      "chip": "ADD",
+      "at": "item"
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        9,
+        11
+       ],
+       "size": 84,
+       "color": "ink"
+      },
+      {
+       "r": [
+        11,
+        13
+       ],
+       "size": 84,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "CONFIRMATION",
+   "titleAt": "auto-confirmation,",
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
+     {
+      "who": "c",
+      "text": "Chocolate cake, kal 5 baje",
+      "at": "so",
+      "y": 320
+     },
+     {
+      "who": "r",
+      "text": "Order #21 confirmed &#10003;",
+      "at": "reply",
+      "y": 470
+     },
+     {
+      "who": "r",
+      "text": "Kal 5 baje tak ready",
+      "at": "seconds.",
+      "y": 620
+     }
+    ],
+    "caption": {
+     "top": 860,
+     "rows": [
+      {
+       "r": [
+        8,
+        9
+       ],
+       "size": 64,
+       "color": "lime"
+      },
+      {
+       "r": [
+        9,
+        11
+       ],
+       "size": 96,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "KITCHEN SCREEN",
+   "titleAt": "kitchen",
+   "bg": "cream",
+   "demo": {
+    "type": "board",
+    "appear": "screen:",
+    "cols": [
+     {
+      "name": "NEW",
+      "bg": "#ffd166",
+      "fg": "#0b0d09",
+      "at": "new,"
+     },
+     {
+      "name": "COOKING",
+      "bg": "#c6ff35",
+      "fg": "#0b0d09",
+      "at": "cooking,"
+     },
+     {
+      "name": "READY",
+      "bg": "#0b0d09",
+      "fg": "#c6ff35",
+      "at": "ready."
+     }
+    ],
+    "cards": [
+     {
+      "id": "#21",
+      "name": "Ayesha",
+      "item": "Choc cake 1kg",
+      "row": 0,
+      "moves": [
+       {
+        "at": "cooking,",
+        "to": 1
+       },
+       {
+        "at": "ready.",
+        "to": 2
+       }
+      ]
+     },
+     {
+      "id": "#22",
+      "name": "Bilal",
+      "item": "Cupcakes (6)",
+      "row": 1,
+      "moves": [
+       {
+        "at": "ready.",
+        "to": 1
+       }
+      ]
+     },
+     {
+      "id": "#23",
+      "name": "Sara",
+      "item": "Brownie box",
+      "row": 2
+     },
+     {
+      "id": "#24",
+      "name": "Hamza",
+      "item": "Choc cake 2kg",
+      "row": 3
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     3
+    ],
+    "size": 72,
+    "color": "white",
+    "mt": 40
+   },
+   {
+    "r": [
+     3,
+     6
+    ],
+    "size": 52,
+    "color": "lime",
+    "mt": 22
+   },
+   {
+    "r": [
+     6,
+     8
+    ],
+    "size": 66,
+    "color": "white",
+    "mt": 30
+   },
+   {
+    "r": [
+     8,
+     9
+    ],
+    "size": 120,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     9,
+     11
+    ],
+    "size": 78,
+    "color": "white",
+    "mt": 4
+   }
+  ],
+  "chip": "&#10003; KITCHEN SORTED",
+  "chipAt": "hai."
+ },
+ "cta": {
+  "noun": "kitchen",
+  "keyword": "MENU",
+  "dm": true
+ }
+}

@@ -189,7 +189,7 @@ window.FX = (function () {
       });
       const cs = H.wt(1, pl.closeAt), hs = H.wt(1, pl.hlAt), ts = H.wt(1, pl.secAt);
       const chip = mk('div', 'h', 'position:absolute;left:60px;top:850px;opacity:0;background:#0b0d09;color:#c6ff35;border-radius:30px;padding:14px 28px;font-size:36px;display:flex;gap:14px;align-items:center;z-index:3',
-        `<span class="emo" style="font-size:38px">⏱️</span><span>${pl.sec || '2 SEC'}</span>`);
+        `<span class="emo" style="font-size:38px">${pl.emo || '⏱️'}</span><span>${pl.sec || '2 SEC'}</span>`);
       sc.el.appendChild(chip);
       sticker(sc, { e: '❌', x: 360, y: b.offsetTop + gap * 2, s: 92, r: -8, at: cs + .05, out: cs + 1.3 });
       sc.fxu.push(t => {
@@ -222,8 +222,8 @@ window.FX = (function () {
     sc.punches.push(tk); sc.shakes.push(tk);
     sticker(sc, { e: '⚡', x: 612, y: 330, s: 84, r: 12, at: tk + .08 });
     sticker(sc, { e: '👇', x: 124, y: 430, s: 64, r: -10, at: H.wt(3, k + 1) + .1, ph: 2 });
-    band(sc, { top: 812, rot: -3, text: 'SAVE THIS REEL', bg: COL.ink, fg: COL.lime, dir: 1, at: sc.t0 + .25 });
-    band(sc, { top: 1016, rot: 3, text: '3 TIPS ★ NO FLUFF', bg: '#fff', fg: COL.ink, dir: -1, at: sc.t0 + .35, h: 58, size: 34 });
+    band(sc, { top: 812, rot: -3, text: (H.EP.bands || [])[0] || 'SAVE THIS REEL', bg: COL.ink, fg: COL.lime, dir: 1, at: sc.t0 + .25 });
+    band(sc, { top: 1016, rot: 3, text: (H.EP.bands || [])[1] || '3 TIPS ★ NO FLUFF', bg: '#fff', fg: COL.ink, dir: -1, at: sc.t0 + .35, h: 58, size: 34 });
   }
 
   function decoTip(sc, H, E, k) {
