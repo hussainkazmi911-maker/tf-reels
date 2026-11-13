@@ -1,0 +1,493 @@
+{
+ "id": "b05",
+ "business": "Gym owner",
+ "keyword": "MEMBERS",
+ "lines": [
+  "Member ne fees nahi di, aur kisi ko yaad bhi nahi tha.",
+  "Ek gym owner fees notebook mein likhta tha. Teen members chup chaap chale gaye, aur usse mahine ke end mein pata chala.",
+  "Notebook yaad nahi dilata, bhai. Paisa chala jata hai.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. A member app jahan har member ka plan aur due date dikhta hai.",
+  "Two. An auto-reminder, so fees time pe yaad dila di jaye.",
+  "Three. One screen jahan har member dikhta hai: active, due, expired.",
+  "Result? Fees yaad rehti hain, aur members ka track rehta hai.",
+  "Want this for your gym? Comment MEMBERS, hum aapko DM kar denge."
+ ],
+ "bands": [
+  "GYM OWNERS",
+  "WHAT WE BUILD ★ 3 THINGS"
+ ],
+ "emo": {
+  "hook": "😵",
+  "pain": "🤦",
+  "mess": "💀",
+  "tips": [
+   "📋",
+   "🔔",
+   "✅"
+  ],
+  "res": "🎉"
+ },
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     3
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 64,
+    "color": "white",
+    "mt": 4
+   },
+   {
+    "r": [
+     5,
+     8
+    ],
+    "size": 60,
+    "color": "white",
+    "mt": 4
+   },
+   {
+    "r": [
+     8,
+     10
+    ],
+    "size": 104,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     10,
+     12
+    ],
+    "size": 76,
+    "color": "red",
+    "mt": 18
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "NOTEBOOK ENTRY",
+   "text": "Ali: fees baaki hai",
+   "at": 4
+  },
+  "rows": [
+   {
+    "r": [
+     16,
+     19
+    ],
+    "size": 70,
+    "color": "ink"
+   },
+   {
+    "r": [
+     19,
+     22
+    ],
+    "size": 60,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "OWNER",
+   "text": "Pata hi nahi!",
+   "at": 19
+  },
+  "stamp": {
+   "text": "FEES MISSED.",
+   "at": 13,
+   "size": 58
+  },
+  "pile": {
+   "at": [],
+   "hlAt": 9,
+   "secAt": 10,
+   "closeAt": 21,
+   "sec": "3 MEMBERS",
+   "emo": "🚫"
+  },
+  "clock": null,
+  "top": 670
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Notebook",
+    "at": 0
+   },
+   {
+    "text": "Yaad?",
+    "at": 1
+   },
+   {
+    "text": "Paisa",
+    "at": 3
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     4,
+     5
+    ],
+    "size": 50,
+    "color": "white"
+   },
+   {
+    "r": [
+     5,
+     6
+    ],
+    "size": 104,
+    "color": "white"
+   },
+   {
+    "r": [
+     6,
+     7
+    ],
+    "size": 96,
+    "color": "white"
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 84,
+    "color": "ink"
+   }
+  ],
+  "sub": "paisa kahan gaya?<br>pata nahi.",
+  "subAt": 8,
+  "subTop": 990,
+  "minisAt": 4,
+  "subSize": 54,
+  "top": 600
+ },
+ "bridge": {
+  "items": [
+   {
+    "top": 215,
+    "size": 40,
+    "toks": [
+     [
+      0,
+      "ISILIYE"
+     ],
+     [
+      1,
+      "HUM"
+     ],
+     [
+      2,
+      "APNE"
+     ],
+     "br",
+     [
+      3,
+      "CLIENTS"
+     ],
+     [
+      4,
+      "KE"
+     ],
+     [
+      5,
+      "LIYE"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      6,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      7,
+      "CHEEZEIN"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      8,
+      "BANATE"
+     ],
+     [
+      9,
+      "HAIN."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   6,
+   7,
+   9
+  ]
+ },
+ "builds": [
+  {
+   "title": "MEMBER APP",
+   "titleAt": "member",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "MEMBERS",
+    "rows": [
+     {
+      "title": "Ali · Monthly",
+      "sub": "Due 5 Dec",
+      "chip": "ACTIVE",
+      "at": "app",
+      "chip2": "PAID ✓",
+      "chip2At": "date"
+     },
+     {
+      "title": "Sara · Quarterly",
+      "sub": "Due 12 Dec",
+      "chip": "ACTIVE",
+      "at": "har"
+     },
+     {
+      "title": "Hamza · Yearly",
+      "sub": "Due 20 Dec",
+      "chip": "ACTIVE",
+      "at": "plan"
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        8,
+        11
+       ],
+       "size": 76,
+       "color": "ink"
+      },
+      {
+       "r": [
+        11,
+        14
+       ],
+       "size": 62,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "AUTO-REMINDER",
+   "titleAt": "auto-reminder,",
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
+     {
+      "who": "r",
+      "text": "Reminder: fees kal due hai",
+      "at": "auto-reminder,",
+      "y": 320
+     },
+     {
+      "who": "c",
+      "text": "Ji, aaj de deta hoon!",
+      "at": "yaad",
+      "y": 470
+     },
+     {
+      "who": "r",
+      "text": "Thanks Ali &#10003; Fees received",
+      "at": "jaye.",
+      "y": 620
+     }
+    ],
+    "caption": {
+     "top": 860,
+     "rows": [
+      {
+       "r": [
+        5,
+        8
+       ],
+       "size": 76,
+       "color": "lime"
+      },
+      {
+       "r": [
+        8,
+        11
+       ],
+       "size": 80,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "ONE SCREEN",
+   "titleAt": "One",
+   "bg": "cream",
+   "demo": {
+    "type": "board",
+    "appear": "har",
+    "cols": [
+     {
+      "name": "ACTIVE",
+      "bg": "#ffd166",
+      "fg": "#0b0d09",
+      "at": "active,"
+     },
+     {
+      "name": "DUE",
+      "bg": "#c6ff35",
+      "fg": "#0b0d09",
+      "at": "due,"
+     },
+     {
+      "name": "EXPIRED",
+      "bg": "#0b0d09",
+      "fg": "#c6ff35",
+      "at": "expired."
+     }
+    ],
+    "cards": [
+     {
+      "id": "#01",
+      "name": "Ali",
+      "item": "Monthly",
+      "row": 0,
+      "moves": [
+       {
+        "at": "due,",
+        "to": 1
+       },
+       {
+        "at": "expired.",
+        "to": 2
+       }
+      ]
+     },
+     {
+      "id": "#02",
+      "name": "Sara",
+      "item": "Quarterly",
+      "row": 1,
+      "moves": [
+       {
+        "at": "expired.",
+        "to": 1
+       }
+      ]
+     },
+     {
+      "id": "#03",
+      "name": "Hamza",
+      "item": "Yearly",
+      "row": 2
+     },
+     {
+      "id": "#04",
+      "name": "Zoya",
+      "item": "Monthly",
+      "row": 3
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     3
+    ],
+    "size": 84,
+    "color": "white",
+    "mt": 40
+   },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 90,
+    "color": "lime",
+    "mt": 16
+   },
+   {
+    "r": [
+     5,
+     7
+    ],
+    "size": 66,
+    "color": "white",
+    "mt": 30
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 110,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     9,
+     11
+    ],
+    "size": 78,
+    "color": "white",
+    "mt": 4
+   }
+  ],
+  "chip": "&#10003; FEES TRACKED",
+  "chipAt": 10
+ },
+ "cta": {
+  "noun": "gym",
+  "keyword": "MEMBERS",
+  "dm": true
+ }
+}

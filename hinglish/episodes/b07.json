@@ -1,0 +1,474 @@
+{
+ "id": "b07",
+ "business": "Shop owner",
+ "keyword": "STOCK",
+ "lines": [
+  "Shop mein cheez bik gayi, par online abhi bhi available hai.",
+  "Ek shop owner ne last piece counter pe bech diya. Online customer ne wahi order kar diya, aur refund dena pada.",
+  "Stock do jagah alag chale, toh scene bigadna hi hai.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. Ek stock screen jahan shop aur online ka stock saath dikhta hai.",
+  "Two. A low-stock alert, so you reorder before it runs out.",
+  "Three. A daily sales report, so you know what sold.",
+  "Result? Stock mismatch khatam, aur refund ki tension bhi.",
+  "Want this for your shop? Comment STOCK, hum aapko DM kar denge."
+ ],
+ "bands": [
+  "SHOP OWNERS",
+  "WHAT WE BUILD ★ 3 THINGS"
+ ],
+ "emo": {
+  "hook": "😵",
+  "pain": "🤦",
+  "mess": "💀",
+  "tips": [
+   "📋",
+   "🔔",
+   "✅"
+  ],
+  "res": "🎉"
+ },
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     3
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     3,
+     5
+    ],
+    "size": 66,
+    "color": "white",
+    "mt": 4
+   },
+   {
+    "r": [
+     5,
+     7
+    ],
+    "size": 64,
+    "color": "white",
+    "mt": 4
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 104,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     9,
+     11
+    ],
+    "size": 70,
+    "color": "red",
+    "mt": 18
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "ONLINE ORDER",
+   "text": "Blue jacket, size M",
+   "at": 10
+  },
+  "rows": [
+   {
+    "r": [
+     17,
+     19
+    ],
+    "size": 78,
+    "color": "ink"
+   },
+   {
+    "r": [
+     19,
+     21
+    ],
+    "size": 78,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "CUSTOMER",
+   "text": "Refund do!",
+   "at": 18
+  },
+  "stamp": {
+   "text": "SOLD TWICE.",
+   "at": 15,
+   "size": 63
+  },
+  "pile": {
+   "at": [],
+   "hlAt": 11,
+   "secAt": 13,
+   "closeAt": 20,
+   "sec": "SAME ITEM",
+   "emo": "🚫"
+  },
+  "clock": null,
+  "top": 670
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Shop",
+    "at": 0
+   },
+   {
+    "text": "Online",
+    "at": 2
+   },
+   {
+    "text": "Mismatch",
+    "at": 3
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     5,
+     6
+    ],
+    "size": 50,
+    "color": "white"
+   },
+   {
+    "r": [
+     6,
+     7
+    ],
+    "size": 110,
+    "color": "white"
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 96,
+    "color": "white"
+   },
+   {
+    "r": [
+     9,
+     10
+    ],
+    "size": 84,
+    "color": "ink"
+   }
+  ],
+  "sub": "kitna stock bacha?<br>pata nahi.",
+  "subAt": 9,
+  "subTop": 990,
+  "minisAt": 5,
+  "subSize": 54,
+  "top": 600
+ },
+ "bridge": {
+  "items": [
+   {
+    "top": 215,
+    "size": 40,
+    "toks": [
+     [
+      0,
+      "ISILIYE"
+     ],
+     [
+      1,
+      "HUM"
+     ],
+     [
+      2,
+      "APNE"
+     ],
+     "br",
+     [
+      3,
+      "CLIENTS"
+     ],
+     [
+      4,
+      "KE"
+     ],
+     [
+      5,
+      "LIYE"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      6,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      7,
+      "CHEEZEIN"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      8,
+      "BANATE"
+     ],
+     [
+      9,
+      "HAIN."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   6,
+   7,
+   9
+  ]
+ },
+ "builds": [
+  {
+   "title": "STOCK SCREEN",
+   "titleAt": "stock",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "STOCK",
+    "rows": [
+     {
+      "title": "Blue Jacket",
+      "sub": "Shop 3 · Online 2",
+      "chip": "SYNC",
+      "at": "screen",
+      "chip2": "SYNCED ✓",
+      "chip2At": "saath"
+     },
+     {
+      "title": "White Sneakers",
+      "sub": "Shop 5 · Online 1",
+      "chip": "SYNC",
+      "at": "shop"
+     },
+     {
+      "title": "Black Cap",
+      "sub": "Shop 2 · Online 4",
+      "chip": "SYNC",
+      "at": "online"
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        9,
+        11
+       ],
+       "size": 84,
+       "color": "ink"
+      },
+      {
+       "r": [
+        11,
+        13
+       ],
+       "size": 84,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "STOCK ALERT",
+   "titleAt": "low-stock",
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
+     {
+      "who": "r",
+      "text": "Low stock: Jacket, 2 left",
+      "at": "alert,",
+      "y": 320
+     },
+     {
+      "who": "c",
+      "text": "Reorder kar do!",
+      "at": "reorder",
+      "y": 470
+     },
+     {
+      "who": "r",
+      "text": "Reorder placed &#10003;",
+      "at": "out.",
+      "y": 620
+     }
+    ],
+    "caption": {
+     "top": 860,
+     "rows": [
+      {
+       "r": [
+        6,
+        8
+       ],
+       "size": 66,
+       "color": "lime"
+      },
+      {
+       "r": [
+        8,
+        11
+       ],
+       "size": 84,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "SALES REPORT",
+   "titleAt": "daily",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "TODAY'S SALES",
+    "rows": [
+     {
+      "title": "Blue Jacket",
+      "sub": "4 sold today",
+      "chip": "SOLD",
+      "at": "sales"
+     },
+     {
+      "title": "White Sneakers",
+      "sub": "2 sold today",
+      "chip": "SOLD",
+      "at": "report,"
+     },
+     {
+      "title": "Black Cap",
+      "sub": "6 sold today",
+      "chip": "SOLD",
+      "at": "know",
+      "chip2": "TOP ✓",
+      "chip2At": "sold."
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        7,
+        9
+       ],
+       "size": 84,
+       "color": "ink"
+      },
+      {
+       "r": [
+        9,
+        10
+       ],
+       "size": 110,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     3
+    ],
+    "size": 66,
+    "color": "white",
+    "mt": 40
+   },
+   {
+    "r": [
+     3,
+     4
+    ],
+    "size": 110,
+    "color": "lime",
+    "mt": 16
+   },
+   {
+    "r": [
+     4,
+     7
+    ],
+    "size": 66,
+    "color": "white",
+    "mt": 30
+   },
+   {
+    "r": [
+     7,
+     8
+    ],
+    "size": 104,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     8,
+     9
+    ],
+    "size": 78,
+    "color": "white",
+    "mt": 4
+   }
+  ],
+  "chip": "&#10003; STOCK SYNCED",
+  "chipAt": 8
+ },
+ "cta": {
+  "noun": "shop",
+  "keyword": "STOCK",
+  "dm": true
+ }
+}
