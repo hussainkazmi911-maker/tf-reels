@@ -29,8 +29,13 @@ Built by hinglish/make_social.py into social/tips/rNN/. Reused the old Forge Fix
 | b01 MENU (food) | Fri 13 Nov 21:00 | scheduled |
 | b02 BOOKING (salon) | Sat 14 Nov 20:00 | scheduled (approved 13 Nov) |
 | b03 CLINIC | Sun 15 Nov 20:00 | scheduled (approved 13 Nov) |
-| b04-b07 | next days, 20:00 | waiting for mp3s |
+| b04 LEADS (property dealers) | Mon 16 Nov 20:00 | scheduled (approved 13 Nov, id 426938481) |
+| b05 MEMBERS (gym) | Tue 17 Nov 20:00 | scheduled (approved 13 Nov, id 426938758) |
+| b06 ACADEMY | Wed 18 Nov 20:00 | scheduled (approved 13 Nov, id 426939163) |
+| b07 STOCK (shop) | Thu 19 Nov 20:00 | scheduled (approved 13 Nov, id 426939373) |
 | Forge Fix #9-#14 | was 13-18 Nov 20:00 | set back to drafts (Metricool has no delete tool; delete in the planner) |
 | r03 HIDDEN | was Sat 14 Nov 10:00 | paused (draft) |
 | r04 PROPOSAL | was Sun 15 Nov 10:00 | paused (draft) |
 All freelancer stories (14/15/16 Nov) and carousels (17/18/20 Nov) also paused as drafts on 13 Nov. r02 reel is already published (cannot be undone from here).
+
+b04-b07 voiceovers generated via ElevenLabs (voice 'hussain voice', eleven_v4), always generation 2 (Hussain's standing rule: pick generation 2, no voice re-approval; approve the video before scheduling). Cover ms: b04 4000, b05 3700, b06 4700, b07 3800. Next free slot: Fri 20 Nov 20:00 (no new business scripts queued; b08+ need new copy).
