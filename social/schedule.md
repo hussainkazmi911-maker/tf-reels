@@ -32,4 +32,4 @@ Built by hinglish/make_social.py into social/tips/rNN/. Reused the old Forge Fix
 | Forge Fix #9-#14 | was 13-18 Nov 20:00 | set back to drafts (Metricool has no delete tool; delete in the planner) |
 | r03 HIDDEN | was Sat 14 Nov 10:00 | paused (draft) |
 | r04 PROPOSAL | was Sun 15 Nov 10:00 | paused (draft) |
-Freelancer stories (14/15/16 Nov 20:20) and carousels (17/18/20 Nov 22:00) still scheduled; the 15 and 16 Nov stories point to paused reels.
+All freelancer stories (14/15/16 Nov) and carousels (17/18/20 Nov) also paused as drafts on 13 Nov. r02 reel is already published (cannot be undone from here).
