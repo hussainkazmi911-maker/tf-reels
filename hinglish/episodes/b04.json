@@ -1,0 +1,493 @@
+{
+ "id": "b04",
+ "business": "Property dealer",
+ "keyword": "LEADS",
+ "lines": [
+  "Lead ne raat ko inquiry bheji, aur aapne agle din reply kiya.",
+  "Ek property dealer ko raat ko ek inquiry aayi. Subah tak buyer kisi aur dealer se baat kar chuka tha.",
+  "Leads wait nahi karte, bhai. Speed hi game hai.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. An inquiry form jo har lead ko seedha save karta hai.",
+  "Two. An instant reply, so every lead hears back in seconds.",
+  "Three. One board jahan har lead dikhta hai: new, contacted, closed.",
+  "Result? Koi lead miss nahi hota, aur follow-up easy ho jata hai.",
+  "Want this for your office? Comment LEADS, hum aapko DM kar denge."
+ ],
+ "bands": [
+  "PROPERTY DEALERS",
+  "WHAT WE BUILD ★ 3 THINGS"
+ ],
+ "emo": {
+  "hook": "😵",
+  "pain": "🤦",
+  "mess": "💀",
+  "tips": [
+   "📋",
+   "🔔",
+   "✅"
+  ],
+  "res": "🎉"
+ },
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     4
+    ],
+    "size": 56,
+    "color": "white"
+   },
+   {
+    "r": [
+     4,
+     6
+    ],
+    "size": 60,
+    "color": "white",
+    "mt": 4
+   },
+   {
+    "r": [
+     6,
+     8
+    ],
+    "size": 60,
+    "color": "white",
+    "mt": 4
+   },
+   {
+    "r": [
+     8,
+     10
+    ],
+    "size": 112,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     10,
+     12
+    ],
+    "size": 76,
+    "color": "red",
+    "mt": 18
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "NEW INQUIRY",
+   "text": "Flat abhi available?",
+   "at": 7
+  },
+  "rows": [
+   {
+    "r": [
+     14,
+     17
+    ],
+    "size": 66,
+    "color": "ink"
+   },
+   {
+    "r": [
+     17,
+     20
+    ],
+    "size": 66,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "BUYER",
+   "text": "Too late!",
+   "at": 17
+  },
+  "stamp": {
+   "text": "LOST LEAD.",
+   "at": 14,
+   "size": 70
+  },
+  "pile": {
+   "at": [],
+   "hlAt": 9,
+   "secAt": 11,
+   "closeAt": 19,
+   "sec": "DEAL GONE",
+   "emo": "🚫"
+  },
+  "clock": null,
+  "top": 670
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "Leads",
+    "at": 0
+   },
+   {
+    "text": "Wait",
+    "at": 1
+   },
+   {
+    "text": "Gone",
+    "at": 3
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     4,
+     5
+    ],
+    "size": 50,
+    "color": "white"
+   },
+   {
+    "r": [
+     5,
+     6
+    ],
+    "size": 104,
+    "color": "white"
+   },
+   {
+    "r": [
+     6,
+     8
+    ],
+    "size": 96,
+    "color": "white"
+   },
+   {
+    "r": [
+     8,
+     9
+    ],
+    "size": 84,
+    "color": "ink"
+   }
+  ],
+  "sub": "lead kahan gaya?<br>pata nahi.",
+  "subAt": 8,
+  "subTop": 990,
+  "minisAt": 4,
+  "subSize": 54,
+  "top": 600
+ },
+ "bridge": {
+  "items": [
+   {
+    "top": 215,
+    "size": 40,
+    "toks": [
+     [
+      0,
+      "ISILIYE"
+     ],
+     [
+      1,
+      "HUM"
+     ],
+     [
+      2,
+      "APNE"
+     ],
+     "br",
+     [
+      3,
+      "CLIENTS"
+     ],
+     [
+      4,
+      "KE"
+     ],
+     [
+      5,
+      "LIYE"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      6,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      7,
+      "CHEEZEIN"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      8,
+      "BANATE"
+     ],
+     [
+      9,
+      "HAIN."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   6,
+   7,
+   9
+  ]
+ },
+ "builds": [
+  {
+   "title": "INQUIRY FORM",
+   "titleAt": "inquiry",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "NEW LEADS",
+    "rows": [
+     {
+      "title": "Ahmed: 3-Bed Flat",
+      "sub": "DHA Phase 6",
+      "chip": "SAVE",
+      "at": "form",
+      "chip2": "SAVED ✓",
+      "chip2At": "save"
+     },
+     {
+      "title": "Sana: 10 Marla",
+      "sub": "Bahria Town",
+      "chip": "SAVE",
+      "at": "har"
+     },
+     {
+      "title": "Bilal: Shop Rent",
+      "sub": "Gulshan",
+      "chip": "SAVE",
+      "at": "lead"
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        8,
+        10
+       ],
+       "size": 84,
+       "color": "ink"
+      },
+      {
+       "r": [
+        10,
+        12
+       ],
+       "size": 84,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "INSTANT REPLY",
+   "titleAt": "instant",
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
+     {
+      "who": "c",
+      "text": "Flat available hai?",
+      "at": "reply,",
+      "y": 320
+     },
+     {
+      "who": "r",
+      "text": "Ji! Details yeh rahi &#10003;",
+      "at": "every",
+      "y": 470
+     },
+     {
+      "who": "r",
+      "text": "Visit kal 4 PM? &#10003;",
+      "at": "seconds.",
+      "y": 620
+     }
+    ],
+    "caption": {
+     "top": 860,
+     "rows": [
+      {
+       "r": [
+        7,
+        9
+       ],
+       "size": 64,
+       "color": "lime"
+      },
+      {
+       "r": [
+        9,
+        11
+       ],
+       "size": 96,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "ONE BOARD",
+   "titleAt": "One",
+   "bg": "cream",
+   "demo": {
+    "type": "board",
+    "appear": "har",
+    "cols": [
+     {
+      "name": "NEW",
+      "bg": "#ffd166",
+      "fg": "#0b0d09",
+      "at": "new,"
+     },
+     {
+      "name": "CONTACTED",
+      "bg": "#c6ff35",
+      "fg": "#0b0d09",
+      "at": "contacted,"
+     },
+     {
+      "name": "CLOSED",
+      "bg": "#0b0d09",
+      "fg": "#c6ff35",
+      "at": "closed."
+     }
+    ],
+    "cards": [
+     {
+      "id": "#101",
+      "name": "Ahmed",
+      "item": "DHA Flat",
+      "row": 0,
+      "moves": [
+       {
+        "at": "contacted,",
+        "to": 1
+       },
+       {
+        "at": "closed.",
+        "to": 2
+       }
+      ]
+     },
+     {
+      "id": "#102",
+      "name": "Sana",
+      "item": "10 Marla",
+      "row": 1,
+      "moves": [
+       {
+        "at": "closed.",
+        "to": 1
+       }
+      ]
+     },
+     {
+      "id": "#103",
+      "name": "Bilal",
+      "item": "Shop Rent",
+      "row": 2
+     },
+     {
+      "id": "#104",
+      "name": "Hamza",
+      "item": "Villa",
+      "row": 3
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     4
+    ],
+    "size": 66,
+    "color": "white",
+    "mt": 40
+   },
+   {
+    "r": [
+     4,
+     6
+    ],
+    "size": 104,
+    "color": "lime",
+    "mt": 16
+   },
+   {
+    "r": [
+     6,
+     8
+    ],
+    "size": 66,
+    "color": "white",
+    "mt": 30
+   },
+   {
+    "r": [
+     8,
+     9
+    ],
+    "size": 120,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     9,
+     12
+    ],
+    "size": 78,
+    "color": "white",
+    "mt": 4
+   }
+  ],
+  "chip": "&#10003; NO LEAD LOST",
+  "chipAt": 11
+ },
+ "cta": {
+  "noun": "office",
+  "keyword": "LEADS",
+  "dm": true
+ }
+}
