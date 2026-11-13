@@ -1,0 +1,113 @@
+<title>Reel Voice Scripts</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: single narrow working column, one card per reel, sticky settings bar. Workshop look: paper-white / ink with a forge-lime marker. */
+:root{--bg:#f6f6f1;--card:#ffffff;--fg:#14160f;--mute:#62665a;--line:#dcdcd2;--accent:#a8e000;--accent-ink:#14160f;--warn:#b25a00;--code:#f0f0e8;--font:'Inter',system-ui,-apple-system,Segoe UI,sans-serif;--head:'Space Grotesk','Inter',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e100b;--card:#171a12;--fg:#eef0e6;--mute:#9aa08c;--line:#2a2e21;--accent:#c6ff35;--accent-ink:#0e100b;--warn:#ffb454;--code:#12150d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e100b;--card:#171a12;--fg:#eef0e6;--mute:#9aa08c;--line:#2a2e21;--accent:#c6ff35;--accent-ink:#0e100b;--warn:#ffb454;--code:#12150d;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.5;margin:0;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+h1{font-family:var(--head);font-size:28px;line-height:1.15;margin:0;text-wrap:balance}
+.sub{color:var(--mute);margin:4px 0 0}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.panel h2{font-family:var(--head);font-size:15px;letter-spacing:.06em;text-transform:uppercase;margin:0;color:var(--mute)}
+ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.set{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.tog{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.tog button{font:inherit;font-size:14px;font-weight:600;padding:8px 14px;border:0;background:transparent;color:var(--fg);cursor:pointer}
+.tog button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.note{font-size:14px;color:var(--mute);margin:0}
+.note b{color:var(--fg)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.top{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:baseline;justify-content:space-between}
+.top h3{font-family:var(--head);font-size:20px;margin:0}
+.meta{color:var(--mute);font-size:14px}
+.kw{font-family:var(--head);font-weight:700;font-size:13px;letter-spacing:.06em;background:var(--accent);color:var(--accent-ink);padding:2px 8px;border-radius:5px}
+pre.s{margin:0;background:var(--code);border:1px solid var(--line);border-radius:8px;padding:12px;font:15px/1.55 var(--font);white-space:pre-wrap;overflow-wrap:anywhere;min-width:0}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.cp{font:inherit;font-weight:700;font-size:15px;background:var(--accent);color:var(--accent-ink);border:0;border-radius:8px;padding:10px 18px;cursor:pointer}
+.cp:focus-visible,.tog button:focus-visible,summary:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
+.cnt{font-size:14px;color:var(--mute);font-variant-numeric:tabular-nums}
+details{border-top:1px solid var(--line);padding-top:10px}
+summary{cursor:pointer;font-weight:600;font-size:14px}
+.cap{white-space:pre-wrap;font-size:14px;color:var(--mute);margin:8px 0 0;overflow-wrap:anywhere}
+.cap b{color:var(--fg)}
+</style>
+<div class="wrap">
+  <header>
+    <h1>Reel voice scripts</h1>
+    <p class="sub">Two sets of scripts. Business reels follow Reel 1: a relatable pain for a Pakistani small business, then what we build, then a comment keyword. Freelancer tips are Reels 2 to 15, posting 13 to 26 Nov at 10:00 PKT. Gen Z Hinglish, one take each, about 40 seconds.</p>
+  </header>
+  <section class="panel">
+    <h2>How to use</h2>
+    <ol>
+      <li>On the ElevenLabs website, pick <b>hussain voice</b>, model <b>Eleven v4</b>, the same settings as Reel 1.</li>
+      <li>Press Copy on a reel below, paste the text, generate once, download the mp3.</li>
+      <li>Name the file with its reel number, for example <b>r03.mp3</b>, or <b>b01.mp3</b> for a business reel.</li>
+      <li>Attach the files to this chat. I merge each one with its animation and schedule it for its date. For a business reel, tell me the day.</li>
+    </ol>
+  </section>
+  <section class="panel">
+    <div class="set">
+      <h2>Series</h2>
+      <div class="tog" role="group" aria-label="Series">
+        <button id="s-biz" type="button" aria-pressed="true">Business reels</button>
+        <button id="s-tips" type="button" aria-pressed="false">Freelancer tips</button>
+      </div>
+    </div>
+    <p class="note" id="s-note"></p>
+  </section>
+  <section class="panel">
+    <div class="set">
+      <h2>Pause tags</h2>
+      <div class="tog" role="group" aria-label="Pause tags">
+        <button id="t-on" type="button" aria-pressed="true">With tags</button>
+        <button id="t-off" type="button" aria-pressed="false">No tags</button>
+      </div>
+    </div>
+    <p class="note"><b>With tags</b> adds [short pause] between lines, the format Reel 1 used, so the animation lines up cleanly. It costs about <b id="c-on"></b> credits for all <b id="c-n"></b> in this series. <b>No tags</b> uses about <b id="c-off"></b>. The free plan has 10,000 a month and Reels 1 and 2 used about 1,300, so with tags the last reels may not fit. Starter before Fri 27 Nov fixes that, and you can start with the earliest reels now.</p>
+  </section>
+  <div id="list" class="wrap"></div>
+</div>
+<script>
+/*DATA*/
+var tags=true;
+function text(d){return d.lines.join(tags?' [short pause] ':'\n\n')}
+function render(){
+  var list=document.getElementById('list');list.innerHTML='';
+  var son=0,soff=0;
+  D.forEach(function(d){
+    son+=d.lines.join(' [short pause] ').length;soff+=d.lines.join('\n\n').length;
+    var c=document.createElement('article');c.className='card';
+    var t=text(d);
+    c.innerHTML='<div class="top"><h3></h3><span class="meta"></span><span class="kw">'+d.kw+'</span></div>'
+      +'<pre class="s" id="s'+d.n+'"></pre>'
+      +'<div class="row"><span class="cnt">'+t.length+' characters</span><button class="cp" type="button" id="b'+d.n+'">Copy script</button></div>'
+      +'<details><summary>Caption, first comment and DM reply</summary><p class="cap"></p></details>';
+    c.querySelector('h3').textContent=d.title;c.querySelector('.meta').textContent=d.meta;c.querySelector('pre').textContent=t;
+    c.querySelector('.cap').innerHTML='';
+    var cap=c.querySelector('.cap');
+    var b1=document.createElement('b');b1.textContent='Caption';cap.appendChild(b1);cap.appendChild(document.createTextNode('\n'+d.caption+'\n\n'));
+    var b2=document.createElement('b');b2.textContent='First comment';cap.appendChild(b2);cap.appendChild(document.createTextNode('\n'+d.comment+'\n\n'));var b3=document.createElement('b');b3.textContent='DM reply (paste when someone comments the keyword)';cap.appendChild(b3);cap.appendChild(document.createTextNode('\n'+d.dm));
+    list.appendChild(c);
+    var btn=c.querySelector('.cp');
+    btn.addEventListener('click',function(){
+      var v=text(d);
+      function done(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy script'},1400)}
+      function fallback(){var r=document.createRange();r.selectNodeContents(c.querySelector('pre'));var s=window.getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selected, press copy'}
+      try{navigator.clipboard.writeText(v).then(done,fallback)}catch(e){fallback()}
+    });
+  });
+  document.getElementById('c-on').textContent=son.toLocaleString();
+  document.getElementById('c-off').textContent=soff.toLocaleString();document.getElementById('c-n').textContent=D.length;
+}
+function setTags(v){tags=v;document.getElementById('t-on').setAttribute('aria-pressed',v);document.getElementById('t-off').setAttribute('aria-pressed',!v);render()}
+document.getElementById('t-on').addEventListener('click',function(){setTags(true)});
+document.getElementById('t-off').addEventListener('click',function(){setTags(false)});
+function setSeries(s){series=s;D=s==='biz'?BIZ:TIPS;document.getElementById('s-biz').setAttribute('aria-pressed',s==='biz');document.getElementById('s-tips').setAttribute('aria-pressed',s!=='biz');
+  document.getElementById('s-note').innerHTML=s==='biz'?'<b>Business reels</b>: B1 to B7, no dates yet. Send the mp3 with the day you want and I schedule it for 10:00 PKT.':'<b>Freelancer tips</b>: Reels 2 to 15. Reels 2, 3 and 4 are done and scheduled.';render()}
+document.getElementById('s-biz').addEventListener('click',function(){setSeries('biz')});
+document.getElementById('s-tips').addEventListener('click',function(){setSeries('tips')});
+setSeries('biz');
+</script>
