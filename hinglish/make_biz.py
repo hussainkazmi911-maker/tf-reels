@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Animation specs for the business reels (Reel 1 style) -> episodes/<id>.json.
-Copy comes straight from business_content.BIZ (no new claims). Currently: b01 (MENU), b02 (BOOKING).
+Copy comes straight from business_content.BIZ (no new claims). Currently: b01 (MENU), b02 (BOOKING), b03 (CLINIC).
 usage: python3 make_biz.py b01     then: python3 engine/build_ep.py b01 ; bash engine/finish_ep.sh b01 <mp3> <slug>"""
 import json, os, re, sys
 H = os.path.dirname(os.path.abspath(__file__))
@@ -130,6 +130,47 @@ def b02(L):
         cta=dict(noun='salon', keyword='BOOKING', dm=True))
 
 SPECS['b02'] = b02
+
+def b03(L):
+    return dict(
+        bands=['CLINIC OWNERS', 'WHAT WE BUILD ★ 3 THINGS'],
+        emo=dict(hook='😵', pain='🤦', mess='💀', tips=['📋', '🔔', '✅'], res='🎉'),
+        hook=dict(rows=rows(L[0], [('Patient aaya,', 60, 'white'), ('par register mein', 52, 'white', dict(mt=4)),
+                                   ('uska', 76, 'white', dict(mt=6)), ('appointment', 100, 'lime', dict(mt=4)),
+                                   ('hi nahi tha.', 70, 'red', dict(mt=14))])),
+        pain=dict(bubble=dict(label='PHONE CALL', text='Kal 11 baje ka slot?', at='calls'),
+                  rows=rows(L[1], [15, ('ghanta bhar wait', 66, 'ink'), ('karta raha.', 66, 'ink')]),
+                  reply=dict(label='PATIENT', text='Ek ghanta!', at=18),
+                  stamp=dict(text='ONE HOUR WAIT.', at=15, size=min(70, int(520 / (0.74 * len('ONE HOUR WAIT.'))))),
+                  pile=dict(at=[], hlAt=9, secAt=10, closeAt=12, sec='NO ENTRY', emo='🚫'),
+                  clock=None, top=670),
+        mess=dict(chips=[dict(text='Calls', at=0), dict(text='Register', at=2), dict(text='Chaos', at=6)],
+                  rows=rows(L[2], [7, ('lowkey', 56, 'white'), ('risky', 120, 'white'), ('hai.', 120, 'ink')]),
+                  sub='next patient kaun?<br>pata nahi.', subAt=9, subTop=990, minisAt=4, subSize=54, top=600),
+        bridge=BRIDGE_DEFAULT,
+        builds=[
+            build('ONLINE BOOKING', 'online', lst('BOOK A VISIT', [
+                R('General Checkup', 'Dr. Ahmed · 30 min', 'BOOK', 'page.', chip2='11 AM ✓', chip2At='khud'),
+                R('Dental Cleaning', 'Dr. Sara · 45 min', 'BOOK', 'Patient'),
+                R('Eye Test', 'Dr. Bilal · 20 min', 'BOOK', 'apna')],
+                dict(top=880, rows=rows(L[4], [7, ('time khud', 84, 'ink'), ('book karta hai.', 72, 'ink')])))),
+            build('AUTO-REMINDER', 'auto-reminder', chat([
+                ('r', 'Reminder: kal 11 AM check-up', 'auto-reminder', 320),
+                ('c', 'Ji, main aa raha hoon!', 'before', 470),
+                ('r', 'See you at 11 AM &#10003;', 'appointment.', 620)],
+                dict(top=860, rows=rows(L[5], [3, ('before every', 64, 'lime'), ('appointment.', 88, 'lime')])))),
+            build('ONE SCREEN', 'One', board(COLS3('BOOKED', 'ARRIVED', 'DONE'), [
+                card('11 AM', 'Ayesha', 'Check-up', 0, [('arrived,', 1), ('done.', 2)]),
+                card('11:30', 'Bilal', 'Dental', 1, [('done.', 1)]),
+                card('12 PM', 'Sara', 'Eye test', 2),
+                card('12:30', 'Hamza', 'Follow-up', 3)], 'har', ['booked,', 'arrived,', 'done.']))],
+        result=dict(rows=rows(L[7], [('Result?', 44, 'lime', dict(ls=6)), ('Register ki', 72, 'white', dict(mt=40)),
+                                     ('tension', 104, 'lime', dict(mt=16)), ('khatam,', 84, 'white', dict(mt=16)),
+                                     ('aur front desk', 66, 'white', dict(mt=30)), ('relaxed.', 110, 'lime', dict(mt=6))]),
+                    chip='&#10003; NO WAITING', chipAt='relaxed.'),
+        cta=dict(noun='clinic', keyword='CLINIC', dm=True))
+
+SPECS['b03'] = b03
 
 def make(bid):
     b = next(x for x in BIZ if x['id'] == bid)
