@@ -71,7 +71,7 @@ def carousel(t):
 def story(t):
     thing = t['thing'].capitalize()
     return (f'<div class="sl st"><div class="top" style="top:60px"><img src="../logo.png"><div><b>THE TOTAL FORGE</b><span>{SUB}</span></div></div>'
-            f'<div class="bd"><div class="bigday">NAYA REEL · LIVE HAI</div><h1>{emph(t["lines"][0], EMPH.get(t["id"]))}</h1>'
+            f'<div class="bd"><div class="bigday">REEL MISS HUA?</div><h1>{emph(t["lines"][0], EMPH.get(t["id"]))}</h1>'
             f'<div class="sub">Profile pe dekho.</div><div class="arrow">↑</div>'
             f'<div class="share">{e(thing)} chahiye? Reel pe <span class="lime">{e(t["kw"])}</span> comment karo.</div></div></div>')
 
