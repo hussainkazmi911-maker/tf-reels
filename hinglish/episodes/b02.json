@@ -1,0 +1,495 @@
+{
+ "id": "b02",
+ "business": "Salon owner",
+ "keyword": "BOOKING",
+ "lines": [
+  "DMs mein appointments, aur do log ek hi slot pe. Scene kya hai?",
+  "Ek salon DMs mein bookings leta tha. Do clients ek hi time pe aa gaye, aur dono naraz hoke chale gaye.",
+  "DMs calendar nahi hote, bhai. Double booking pakki hai.",
+  "Isiliye hum apne clients ke liye teen cheezein banate hain.",
+  "One. A booking page. Customer service aur time khud chunta hai.",
+  "Two. An auto-reminder, so nobody forgets their slot.",
+  "Three. One calendar jahan har appointment dikhta hai: booked, confirmed, done.",
+  "Result? Double booking khatam, aur calendar saaf rehta hai.",
+  "Want this for your salon? Comment BOOKING, hum aapko DM kar denge."
+ ],
+ "bands": [
+  "SALON BUSINESS",
+  "WHAT WE BUILD ★ 3 THINGS"
+ ],
+ "emo": {
+  "hook": "😵",
+  "pain": "🤦",
+  "mess": "💀",
+  "tips": [
+   "📋",
+   "🔔",
+   "✅"
+  ],
+  "res": "🎉"
+ },
+ "hook": {
+  "rows": [
+   {
+    "r": [
+     0,
+     2
+    ],
+    "size": 52,
+    "color": "white"
+   },
+   {
+    "r": [
+     2,
+     3
+    ],
+    "size": 60,
+    "color": "white",
+    "mt": 4
+   },
+   {
+    "r": [
+     3,
+     8
+    ],
+    "size": 56,
+    "color": "white",
+    "mt": 4
+   },
+   {
+    "r": [
+     8,
+     10
+    ],
+    "size": 112,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     10,
+     13
+    ],
+    "size": 66,
+    "color": "red",
+    "mt": 18
+   }
+  ]
+ },
+ "pain": {
+  "bubble": {
+   "label": "INSTAGRAM DM",
+   "text": "Kal 4 baje ka slot?",
+   "at": "DMs"
+  },
+  "rows": [
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 70,
+    "color": "ink"
+   },
+   {
+    "r": [
+     9,
+     13
+    ],
+    "size": 70,
+    "color": "ink"
+   }
+  ],
+  "reply": {
+   "label": "CLIENT",
+   "text": "Mera slot tha!",
+   "at": 17
+  },
+  "stamp": {
+   "text": "DOUBLE BOOKED.",
+   "at": 13,
+   "size": 50
+  },
+  "pile": {
+   "at": [
+    8
+   ],
+   "hlAt": 7,
+   "secAt": 11,
+   "closeAt": 19,
+   "sec": "2 CLIENTS",
+   "emo": "😵"
+  },
+  "clock": null,
+  "top": 670
+ },
+ "mess": {
+  "chips": [
+   {
+    "text": "DMs",
+    "at": 0
+   },
+   {
+    "text": "Calendar",
+    "at": 1
+   },
+   {
+    "text": "Clash",
+    "at": 3
+   }
+  ],
+  "rows": [
+   {
+    "r": [
+     4,
+     5
+    ],
+    "size": 50,
+    "color": "white"
+   },
+   {
+    "r": [
+     5,
+     6
+    ],
+    "size": 96,
+    "color": "white"
+   },
+   {
+    "r": [
+     6,
+     7
+    ],
+    "size": 96,
+    "color": "white"
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 84,
+    "color": "ink"
+   }
+  ],
+  "sub": "kaun pehle aaya?<br>pata nahi.",
+  "subAt": 8,
+  "subTop": 990,
+  "minisAt": 4,
+  "subSize": 54,
+  "top": 600
+ },
+ "bridge": {
+  "items": [
+   {
+    "top": 215,
+    "size": 40,
+    "toks": [
+     [
+      0,
+      "ISILIYE"
+     ],
+     [
+      1,
+      "HUM"
+     ],
+     [
+      2,
+      "APNE"
+     ],
+     "br",
+     [
+      3,
+      "CLIENTS"
+     ],
+     [
+      4,
+      "KE"
+     ],
+     [
+      5,
+      "LIYE"
+     ]
+    ]
+   },
+   {
+    "top": 330,
+    "size": 230,
+    "toks": [
+     [
+      6,
+      "3"
+     ]
+    ]
+   },
+   {
+    "top": 578,
+    "size": 100,
+    "toks": [
+     [
+      7,
+      "CHEEZEIN"
+     ]
+    ]
+   },
+   {
+    "top": 715,
+    "size": 72,
+    "toks": [
+     [
+      8,
+      "BANATE"
+     ],
+     [
+      9,
+      "HAIN."
+     ]
+    ]
+   }
+  ],
+  "dots": [
+   6,
+   7,
+   9
+  ]
+ },
+ "builds": [
+  {
+   "title": "BOOKING PAGE",
+   "titleAt": "booking",
+   "bg": "cream",
+   "demo": {
+    "type": "list",
+    "header": "BOOK NOW",
+    "rows": [
+     {
+      "title": "Haircut",
+      "sub": "45 min · Rs. 1,500",
+      "chip": "BOOK",
+      "at": "page.",
+      "chip2": "4 PM ✓",
+      "chip2At": "chunta"
+     },
+     {
+      "title": "Facial",
+      "sub": "60 min · Rs. 3,000",
+      "chip": "BOOK",
+      "at": "Customer"
+     },
+     {
+      "title": "Hair Colour",
+      "sub": "90 min · Rs. 5,500",
+      "chip": "BOOK",
+      "at": "service"
+     }
+    ],
+    "caption": {
+     "top": 880,
+     "rows": [
+      {
+       "r": [
+        7,
+        9
+       ],
+       "size": 84,
+       "color": "ink"
+      },
+      {
+       "r": [
+        9,
+        11
+       ],
+       "size": 84,
+       "color": "ink"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "AUTO-REMINDER",
+   "titleAt": "auto-reminder,",
+   "bg": "dark",
+   "demo": {
+    "type": "chat",
+    "msgs": [
+     {
+      "who": "r",
+      "text": "Kal 4 PM, Haircut. Yaad hai?",
+      "at": "auto-reminder,",
+      "y": 320
+     },
+     {
+      "who": "c",
+      "text": "Haan, aa rahi hoon!",
+      "at": "nobody",
+      "y": 470
+     },
+     {
+      "who": "r",
+      "text": "See you at 4 PM &#10003;",
+      "at": "slot.",
+      "y": 620
+     }
+    ],
+    "caption": {
+     "top": 860,
+     "rows": [
+      {
+       "r": [
+        4,
+        6
+       ],
+       "size": 64,
+       "color": "lime"
+      },
+      {
+       "r": [
+        6,
+        8
+       ],
+       "size": 90,
+       "color": "lime"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "ONE CALENDAR",
+   "titleAt": "One",
+   "bg": "cream",
+   "demo": {
+    "type": "board",
+    "appear": "har",
+    "cols": [
+     {
+      "name": "BOOKED",
+      "bg": "#ffd166",
+      "fg": "#0b0d09",
+      "at": "booked,"
+     },
+     {
+      "name": "CONFIRMED",
+      "bg": "#c6ff35",
+      "fg": "#0b0d09",
+      "at": "confirmed,"
+     },
+     {
+      "name": "DONE",
+      "bg": "#0b0d09",
+      "fg": "#c6ff35",
+      "at": "done."
+     }
+    ],
+    "cards": [
+     {
+      "id": "4 PM",
+      "name": "Ayesha",
+      "item": "Haircut",
+      "row": 0,
+      "moves": [
+       {
+        "at": "confirmed,",
+        "to": 1
+       },
+       {
+        "at": "done.",
+        "to": 2
+       }
+      ]
+     },
+     {
+      "id": "5 PM",
+      "name": "Sana",
+      "item": "Facial",
+      "row": 1,
+      "moves": [
+       {
+        "at": "done.",
+        "to": 1
+       }
+      ]
+     },
+     {
+      "id": "6 PM",
+      "name": "Hira",
+      "item": "Colour",
+      "row": 2
+     },
+     {
+      "id": "7 PM",
+      "name": "Maham",
+      "item": "Manicure",
+      "row": 3
+     }
+    ]
+   }
+  }
+ ],
+ "result": {
+  "rows": [
+   {
+    "r": [
+     0,
+     1
+    ],
+    "size": 44,
+    "color": "lime",
+    "ls": 6
+   },
+   {
+    "r": [
+     1,
+     3
+    ],
+    "size": 70,
+    "color": "white",
+    "mt": 40
+   },
+   {
+    "r": [
+     3,
+     4
+    ],
+    "size": 104,
+    "color": "lime",
+    "mt": 16
+   },
+   {
+    "r": [
+     4,
+     6
+    ],
+    "size": 66,
+    "color": "white",
+    "mt": 30
+   },
+   {
+    "r": [
+     6,
+     7
+    ],
+    "size": 120,
+    "color": "lime",
+    "mt": 6
+   },
+   {
+    "r": [
+     7,
+     9
+    ],
+    "size": 78,
+    "color": "white",
+    "mt": 4
+   }
+  ],
+  "chip": "&#10003; NO CLASHES",
+  "chipAt": "hai."
+ },
+ "cta": {
+  "noun": "salon",
+  "keyword": "BOOKING",
+  "dm": true
+ }
+}

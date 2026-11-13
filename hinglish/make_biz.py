@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Animation specs for the business reels (Reel 1 style) -> episodes/<id>.json.
-Copy comes straight from business_content.BIZ (no new claims). Currently: b01 (MENU).
+Copy comes straight from business_content.BIZ (no new claims). Currently: b01 (MENU), b02 (BOOKING).
 usage: python3 make_biz.py b01     then: python3 engine/build_ep.py b01 ; bash engine/finish_ep.sh b01 <mp3> <slug>"""
 import json, os, re, sys
 H = os.path.dirname(os.path.abspath(__file__))
@@ -88,6 +88,48 @@ def b01(L):
         cta=dict(noun='kitchen', keyword='MENU', dm=True))
 
 SPECS['b01'] = b01
+
+def b02(L):
+    return dict(
+        bands=['SALON BUSINESS', 'WHAT WE BUILD ★ 3 THINGS'],
+        emo=dict(hook='😵', pain='🤦', mess='💀', tips=['📋', '🔔', '✅'], res='🎉'),
+        hook=dict(rows=rows(L[0], [('DMs mein', 52, 'white'), ('appointments,', 60, 'white', dict(mt=4)),
+                                   ('aur do log ek hi', 56, 'white', dict(mt=4)), ('slot pe.', 112, 'lime', dict(mt=6)),
+                                   ('Scene kya hai?', 66, 'red', dict(mt=18))])),
+        pain=dict(bubble=dict(label='INSTAGRAM DM', text='Kal 4 baje ka slot?', at='DMs'),
+                  rows=rows(L[1], [7, ('Do clients', 70, 'ink'), ('ek hi time pe', 70, 'ink')]),
+                  reply=dict(label='CLIENT', text='Mera slot tha!', at=17),
+                  stamp=dict(text='DOUBLE BOOKED.', at=13, size=min(70, int(520 / (0.74 * len('DOUBLE BOOKED.'))))),
+                  pile=dict(at=[8], hlAt=7, secAt=11, closeAt=19, sec='2 CLIENTS', emo='😵'),
+                  clock=None, top=670),
+        mess=dict(chips=[dict(text='DMs', at=0), dict(text='Calendar', at=1), dict(text='Clash', at=3)],
+                  rows=rows(L[2], [4, ('bhai.', 50, 'white'), ('Double', 96, 'white'), ('booking', 96, 'white'),
+                                   ('pakki hai.', 84, 'ink')]),
+                  sub='kaun pehle aaya?<br>pata nahi.', subAt=8, subTop=990, minisAt=4, subSize=54, top=600),
+        bridge=BRIDGE_DEFAULT,
+        builds=[
+            build('BOOKING PAGE', 'booking', lst('BOOK NOW', [
+                R('Haircut', '45 min · Rs. 1,500', 'BOOK', 'page.', chip2='4 PM ✓', chip2At='chunta'),
+                R('Facial', '60 min · Rs. 3,000', 'BOOK', 'Customer'),
+                R('Hair Colour', '90 min · Rs. 5,500', 'BOOK', 'service')],
+                dict(top=880, rows=rows(L[4], [7, ('time khud', 84, 'ink'), ('chunta hai.', 84, 'ink')])))),
+            build('AUTO-REMINDER', 'auto-reminder,', chat([
+                ('r', 'Kal 4 PM, Haircut. Yaad hai?', 'auto-reminder,', 320),
+                ('c', 'Haan, aa rahi hoon!', 'nobody', 470),
+                ('r', 'See you at 4 PM &#10003;', 'slot.', 620)],
+                dict(top=860, rows=rows(L[5], [4, ('nobody forgets', 64, 'lime'), ('their slot.', 90, 'lime')])))),
+            build('ONE CALENDAR', 'One', board(COLS3('BOOKED', 'CONFIRMED', 'DONE'), [
+                card('4 PM', 'Ayesha', 'Haircut', 0, [('confirmed,', 1), ('done.', 2)]),
+                card('5 PM', 'Sana', 'Facial', 1, [('done.', 1)]),
+                card('6 PM', 'Hira', 'Colour', 2),
+                card('7 PM', 'Maham', 'Manicure', 3)], 'har', ['booked,', 'confirmed,', 'done.']))],
+        result=dict(rows=rows(L[7], [('Result?', 44, 'lime', dict(ls=6)), ('Double booking', 70, 'white', dict(mt=40)),
+                                     ('khatam,', 104, 'lime', dict(mt=16)), ('aur calendar', 66, 'white', dict(mt=30)),
+                                     ('saaf', 120, 'lime', dict(mt=6)), ('rehta hai.', 78, 'white', dict(mt=4))]),
+                    chip='&#10003; NO CLASHES', chipAt='hai.'),
+        cta=dict(noun='salon', keyword='BOOKING', dm=True))
+
+SPECS['b02'] = b02
 
 def make(bid):
     b = next(x for x in BIZ if x['id'] == bid)
