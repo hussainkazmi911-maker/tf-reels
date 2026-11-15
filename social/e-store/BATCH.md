@@ -1,10 +1,10 @@
 # E-store batch (reels s02-s11) - Hinglish voice "hussains 3.0", English captions
 
-NOT scheduled. Awaiting approval of voices + captions.
+SCHEDULED in Metricool (brand 6632926, Asia/Karachi). Voices, captions, carousels and stories approved by Hussain on 16 Nov.
 Captions (short English: one-line hook + comment keyword + 5 hashtags): social/e-store/sNN_caption.txt
 Approval doc: "Reel Captions: Approval Sheet" (Claude Docs)
 
-Proposed schedule: one reel a day at 8 PM PKT (Asia/Karachi). If approval is late, every date shifts by the same number of days.
+Schedule: one reel a day at 8 PM PKT (Asia/Karachi). If approval is late, every date shifts by the same number of days.
 
 | Day | Date | File | Comment keyword |
 |-----|------|------|-----------------|
@@ -36,7 +36,7 @@ Reels (28-33 s, 1080x1920, money number in the first 3 s, direct "aap" address, 
 
 Examples are labelled "EXAMPLE SCENARIO / EXAMPLE MATH" on screen; s04 cites Baymard (~70% cart abandonment), s02 cites eGROW COD guide (return-rate range).
 
-## Carousels + stories (built, NOT scheduled; awaiting approval)
+## Carousels + stories (built, approved, SCHEDULED)
 Per reel: social/e-store/sNN/slide_1..6.png (1080x1350 carousel), story.png (1080x1920), sNN_carousel_caption.txt (stories carry no caption).
-Generator: hinglish/make_social_estore.py. Proposed times (PKT, same day as the reel): story 20:20, carousel 22:00.
+Generator: hinglish/make_social_estore.py. Live times (PKT, same day as each reel): reel 20:00, story 20:20, carousel 22:00, Nov 16-25.
 The older Metricool drafts (Forge Fix #12-14, freelancer carousels/story) stay stopped.
