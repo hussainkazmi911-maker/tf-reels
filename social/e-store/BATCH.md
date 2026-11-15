@@ -35,3 +35,8 @@ Reels (28-33 s, 1080x1920, money number in the first 3 s, direct "aap" address, 
 | 11 | MARKETING: store conversion | Bees hazaar rupay ke ads se hazaar log aaye, sirf do ne khareeda |
 
 Examples are labelled "EXAMPLE SCENARIO / EXAMPLE MATH" on screen; s04 cites Baymard (~70% cart abandonment), s02 cites eGROW COD guide (return-rate range).
+
+## Carousels + stories (built, NOT scheduled; awaiting approval)
+Per reel: social/e-store/sNN/slide_1..6.png (1080x1350 carousel), story.png (1080x1920), sNN_carousel_caption.txt (stories carry no caption).
+Generator: hinglish/make_social_estore.py. Proposed times (PKT, same day as the reel): story 20:20, carousel 22:00.
+The older Metricool drafts (Forge Fix #12-14, freelancer carousels/story) stay stopped.
