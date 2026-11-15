@@ -1,7 +1,7 @@
 # E-store batch (reels s02-s11) - Hinglish voice "hussains 3.0", English captions
 
 NOT scheduled. Awaiting approval of voices + captions.
-Captions (English, 5 hashtags max): social/e-store/sNN_caption.txt
+Captions (short English: one-line hook + comment keyword + 5 hashtags): social/e-store/sNN_caption.txt
 Approval doc: "Reel Captions: Approval Sheet" (Claude Docs)
 
 Proposed schedule: one reel a day at 8 PM PKT (Asia/Karachi). If approval is late, every date shifts by the same number of days.
