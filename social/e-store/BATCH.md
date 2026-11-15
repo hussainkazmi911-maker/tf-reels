@@ -40,3 +40,6 @@ Examples are labelled "EXAMPLE SCENARIO / EXAMPLE MATH" on screen; s04 cites Bay
 Per reel: social/e-store/sNN/slide_1..6.png (1080x1350 carousel), story.png (1080x1920), sNN_carousel_caption.txt (stories carry no caption).
 Generator: hinglish/make_social_estore.py. Live times (PKT, same day as each reel): carousel 13:00, reel 20:00, story 20:20, Nov 16-25 (carousel moved from 22:00 to 13:00 so it does not compete with the reel in its first 2 hours).
 The older Metricool drafts (Forge Fix #12-14, freelancer carousels/story) stay stopped.
+
+## Facebook cross-posting
+Facebook page connected in Metricool (16 Nov). All 30 scheduled posts also publish to Facebook at the same times: reels as Facebook Reels, carousels as photo posts, stories as Facebook Stories. Same captions.
