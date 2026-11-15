@@ -62,7 +62,7 @@ html,body{width:720px;height:1280px;overflow:hidden;background:#000}
     const sc = { i, line: sp.line, el, cap, pic, picin, t0, t1, u: [], words: [], punches: [], shakes: [] };
     // caption rows. Row text: plain words must match the spoken words; [Display|spoken words] shows Display for those spoken words.
     const ws = TM.lines[sp.line].words; let k = 0;
-    sp.rows.forEach(r => {
+    ((window.EP && EP.rows && EP.rows[sp.line]) || sp.rows).forEach(r => {
       const toks = []; r[0].replace(/\[([^\]|]+)\|([^\]]+)\]|\S+/g, (m, d, sw) => { toks.push(d ? { d, w: sw.trim().split(/\s+/) } : { d: m, w: [m] }); return m; });
       const size = r[1], col = COLS[r[2]] || r[2], o = r[3] || {};
       const row = H('div', 'row', `font-size:${size}px;color:${col};margin-top:${o.mt != null ? o.mt : 6}px`);

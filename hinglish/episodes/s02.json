@@ -4,13 +4,187 @@
  "keyword": "CONFIRM",
  "chip": "E-COMMERCE · COD",
  "lines": [
-  "Barah hazaar rupay parcel ban kar wapas aa rahe hain.",
-  "Lawn suit bheja, customer ne phone nahi uthaya.",
-  "Sau mein se paintees wapas, har parcel par teen sau pachaas rupay.",
-  "Fix: order aate hi WhatsApp par confirm karwao.",
-  "Haan bola to parcel nikalta hai, nahi bola to paise bache.",
-  "Guides ke mutabiq, wapsi aadhi reh sakti hai.",
-  "Yeh reel kisi seller ko bhejein.",
-  "Confirm bot chahiye? Comment CONFIRM."
- ]
+  "Barah hazaar rupay, yaar, har mahine parcel ban kar wapas aa rahe hain.",
+  "Lawn suit bheja, customer ne phone hi nahi uthaya... ab kya karein?",
+  "Sau mein se paintees wapas, aur har parcel par, teen sau pachaas rupay, seedha nuksaan.",
+  "Toh fix simple hai, order aate hi, customer ko WhatsApp par confirm karwa lo.",
+  "Haan bola, toh parcel nikalta hai, nahi bola, toh paise bache, simple.",
+  "Guides ke mutabiq, wapsi lagbhag aadhi reh sakti hai.",
+  "Koi seller dost hai? Yeh reel usko bhej do.",
+  "Confirm bot chahiye? Toh comment mein CONFIRM likh do, hum DM kar denge."
+ ],
+ "rows": {
+  "0": [
+   [
+    "[Rs. 12,000|Barah hazaar rupay,]",
+    80,
+    "amber"
+   ],
+   [
+    "yaar, har mahine,",
+    50,
+    "white"
+   ],
+   [
+    "parcel ban kar",
+    64,
+    "white"
+   ],
+   [
+    "wapas aa rahe hain.",
+    58,
+    "red"
+   ]
+  ],
+  "1": [
+   [
+    "Lawn suit bheja,",
+    50,
+    "white"
+   ],
+   [
+    "customer ne phone hi",
+    54,
+    "white"
+   ],
+   [
+    "nahi uthaya...",
+    80,
+    "red"
+   ],
+   [
+    "ab kya karein?",
+    60,
+    "amber"
+   ]
+  ],
+  "2": [
+   [
+    "Sau mein se",
+    50,
+    "white"
+   ],
+   [
+    "[35|paintees] wapas,",
+    70,
+    "red"
+   ],
+   [
+    "aur har parcel par,",
+    46,
+    "white"
+   ],
+   [
+    "[Rs. 350|teen sau pachaas rupay,]",
+    46,
+    "amber"
+   ],
+   [
+    "seedha nuksaan.",
+    46,
+    "red"
+   ]
+  ],
+  "3": [
+   [
+    "Toh fix simple hai,",
+    50,
+    "lime"
+   ],
+   [
+    "order aate hi,",
+    60,
+    "white"
+   ],
+   [
+    "customer ko WhatsApp par",
+    46,
+    "white"
+   ],
+   [
+    "confirm karwa lo.",
+    66,
+    "lime"
+   ]
+  ],
+  "4": [
+   [
+    "Haan bola,",
+    76,
+    "lime"
+   ],
+   [
+    "toh parcel nikalta hai,",
+    46,
+    "white"
+   ],
+   [
+    "nahi bola,",
+    76,
+    "red"
+   ],
+   [
+    "toh paise bache, simple.",
+    50,
+    "white"
+   ]
+  ],
+  "5": [
+   [
+    "Guides ke mutabiq,",
+    52,
+    "white"
+   ],
+   [
+    "wapsi",
+    84,
+    "white"
+   ],
+   [
+    "lagbhag aadhi reh sakti hai.",
+    48,
+    "lime"
+   ]
+  ],
+  "6": [
+   [
+    "Koi seller dost hai?",
+    58,
+    "white"
+   ],
+   [
+    "Yeh reel usko",
+    72,
+    "lime"
+   ],
+   [
+    "bhej do.",
+    90,
+    "white"
+   ]
+  ],
+  "7": [
+   [
+    "Confirm bot chahiye?",
+    54,
+    "white"
+   ],
+   [
+    "Toh comment mein",
+    54,
+    "white"
+   ],
+   [
+    "CONFIRM",
+    96,
+    "lime"
+   ],
+   [
+    "likh do, hum DM kar denge.",
+    40,
+    "white"
+   ]
+  ]
+ },
+ "v": 2
 }

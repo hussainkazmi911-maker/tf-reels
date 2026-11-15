@@ -4,13 +4,192 @@
  "keyword": "SALE",
  "chip": "E-COMMERCE · SALE",
  "lines": [
-  "Do lakh rupay ke ads lagaye, ab chaar sau messages kaun sambhalega?",
-  "Do log, ek phone, aur ek ghante mein chaar sau messages.",
-  "Jab tak pehle ko reply karoge, baaqi customers tab band kar denge.",
-  "Sale mein jawab ki raftaar paisa banati hai.",
-  "A I sabko ek saath jawab deta hai: price, stock, order link.",
-  "Aapki team sirf packing aur dispatch sambhale.",
-  "Yeh reel kisi seller ko bhejein.",
-  "Sale ke liye bot chahiye? Comment SALE."
- ]
+  "Do lakh rupay ke ads lagaye, aur ab chaar sau messages kaun sambhalega, yaar?",
+  "Do log, ek phone, aur ek ghante mein chaar sau messages... bhai, pagal ho jaoge.",
+  "Jab tak aap pehle ko reply karoge, baaqi customers intezaar karke, band kar denge.",
+  "Yaad rakhna, sale mein jawab ki raftaar hi paisa banati hai.",
+  "Yahan A I sabko ek saath jawab deta hai, price, stock, order link.",
+  "Aapki team bas packing aur dispatch sambhale, baaki tension hum le lenge.",
+  "Sale lagane wala koi seller dost hai? Yeh reel usko bhej do.",
+  "Sale ke liye bot chahiye? Toh comment mein SALE likh do, hum DM kar denge."
+ ],
+ "rows": {
+  "0": [
+   [
+    "[Rs. 2,00,000|Do lakh rupay]",
+    66,
+    "amber"
+   ],
+   [
+    "ke ads lagaye,",
+    58,
+    "white"
+   ],
+   [
+    "aur ab [400|chaar sau] messages",
+    44,
+    "white"
+   ],
+   [
+    "kaun sambhalega, yaar?",
+    58,
+    "red"
+   ]
+  ],
+  "1": [
+   [
+    "Do log, ek phone,",
+    58,
+    "white"
+   ],
+   [
+    "aur ek ghante mein",
+    52,
+    "white"
+   ],
+   [
+    "[400|chaar sau] messages...",
+    58,
+    "red"
+   ],
+   [
+    "bhai, pagal ho jaoge.",
+    52,
+    "amber"
+   ]
+  ],
+  "2": [
+   [
+    "Jab tak aap pehle ko",
+    50,
+    "white"
+   ],
+   [
+    "reply karoge,",
+    64,
+    "lime"
+   ],
+   [
+    "baaqi customers intezaar karke,",
+    44,
+    "white"
+   ],
+   [
+    "band kar denge.",
+    66,
+    "red"
+   ]
+  ],
+  "3": [
+   [
+    "Yaad rakhna,",
+    54,
+    "white"
+   ],
+   [
+    "sale mein jawab ki",
+    56,
+    "white"
+   ],
+   [
+    "raftaar hi",
+    76,
+    "lime"
+   ],
+   [
+    "paisa banati hai.",
+    66,
+    "amber"
+   ]
+  ],
+  "4": [
+   [
+    "Yahan A I sabko ek saath",
+    48,
+    "lime"
+   ],
+   [
+    "jawab deta hai,",
+    58,
+    "white"
+   ],
+   [
+    "price, stock,",
+    66,
+    "white"
+   ],
+   [
+    "order link.",
+    72,
+    "lime"
+   ]
+  ],
+  "5": [
+   [
+    "Aapki team bas",
+    54,
+    "white"
+   ],
+   [
+    "packing aur dispatch",
+    56,
+    "lime"
+   ],
+   [
+    "sambhale,",
+    68,
+    "white"
+   ],
+   [
+    "baaki tension hum le lenge.",
+    44,
+    "white"
+   ]
+  ],
+  "6": [
+   [
+    "Sale lagane wala",
+    52,
+    "white"
+   ],
+   [
+    "koi seller dost hai?",
+    52,
+    "white"
+   ],
+   [
+    "Yeh reel usko",
+    66,
+    "lime"
+   ],
+   [
+    "bhej do.",
+    84,
+    "white"
+   ]
+  ],
+  "7": [
+   [
+    "Sale ke liye bot chahiye?",
+    50,
+    "white"
+   ],
+   [
+    "Toh comment mein",
+    54,
+    "white"
+   ],
+   [
+    "SALE",
+    96,
+    "lime"
+   ],
+   [
+    "likh do, hum DM kar denge.",
+    40,
+    "white"
+   ]
+  ]
+ },
+ "v": 2
 }

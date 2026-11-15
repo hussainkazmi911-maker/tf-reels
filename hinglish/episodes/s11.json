@@ -4,13 +4,197 @@
  "keyword": "STORE",
  "chip": "MARKETING · STORE",
  "lines": [
-  "Bees hazaar rupay ke ads se hazaar log aaye, sirf do ne khareeda.",
-  "Kyunki page dheere khulta hai, aur order button dhoondna padta hai.",
-  "Customer bharosa dekhta hai: reviews, delivery details, WhatsApp par baat.",
-  "Hum store tez banate hain, aur order sirf do tap mein.",
-  "Reviews, return policy aur WhatsApp button, pehli screen par.",
+  "Bees hazaar rupay ke ads se, hazaar log aaye, par sirf do ne khareeda, yaar.",
+  "Kyunki page dheere khulta hai, aur order button dhoondna padta hai... kaun itna wait karega?",
+  "Aur customer bharosa dekhta hai, reviews, delivery ki details, aur WhatsApp par seedha baat.",
+  "Isliye hum store tez banate hain, aur order, sirf do tap mein.",
+  "Reviews, return policy, aur WhatsApp button, sab kuch, pehli screen par.",
   "Wahi traffic, wahi kharch, par orders zyada ho sakte hain.",
-  "Yeh reel kisi seller ko bhejein.",
-  "Store tez karwana hai? Comment STORE."
- ]
+  "Koi store chalane wala dost hai? Yeh reel usko bhej do.",
+  "Store tez karwana hai? Toh comment mein STORE likh do, hum DM kar denge."
+ ],
+ "rows": {
+  "0": [
+   [
+    "[Rs. 20,000|Bees hazaar rupay]",
+    60,
+    "amber"
+   ],
+   [
+    "ke ads se, [1,000|hazaar] log aaye,",
+    44,
+    "white"
+   ],
+   [
+    "par sirf [2|do] ne",
+    58,
+    "red"
+   ],
+   [
+    "khareeda, yaar.",
+    62,
+    "red"
+   ]
+  ],
+  "1": [
+   [
+    "Kyunki page dheere",
+    54,
+    "white"
+   ],
+   [
+    "khulta hai,",
+    66,
+    "red"
+   ],
+   [
+    "aur order button dhoondna",
+    42,
+    "white"
+   ],
+   [
+    "padta hai...",
+    58,
+    "white"
+   ],
+   [
+    "kaun itna wait karega?",
+    44,
+    "amber"
+   ]
+  ],
+  "2": [
+   [
+    "Aur customer bharosa",
+    54,
+    "white"
+   ],
+   [
+    "dekhta hai, reviews,",
+    52,
+    "lime"
+   ],
+   [
+    "delivery ki details,",
+    50,
+    "white"
+   ],
+   [
+    "aur WhatsApp par seedha baat.",
+    44,
+    "lime"
+   ]
+  ],
+  "3": [
+   [
+    "Isliye hum store",
+    56,
+    "white"
+   ],
+   [
+    "tez banate hain,",
+    62,
+    "lime"
+   ],
+   [
+    "aur order, sirf",
+    52,
+    "white"
+   ],
+   [
+    "[2|do] tap mein.",
+    78,
+    "lime"
+   ]
+  ],
+  "4": [
+   [
+    "Reviews, return policy,",
+    50,
+    "white"
+   ],
+   [
+    "aur WhatsApp button,",
+    52,
+    "white"
+   ],
+   [
+    "sab kuch,",
+    56,
+    "white"
+   ],
+   [
+    "pehli screen par.",
+    66,
+    "lime"
+   ]
+  ],
+  "5": [
+   [
+    "Wahi traffic,",
+    66,
+    "white"
+   ],
+   [
+    "wahi kharch,",
+    66,
+    "white"
+   ],
+   [
+    "par orders zyada",
+    58,
+    "lime"
+   ],
+   [
+    "ho sakte hain.",
+    58,
+    "lime"
+   ]
+  ],
+  "6": [
+   [
+    "Koi store chalane",
+    52,
+    "white"
+   ],
+   [
+    "wala dost hai?",
+    62,
+    "white"
+   ],
+   [
+    "Yeh reel usko",
+    66,
+    "lime"
+   ],
+   [
+    "bhej do.",
+    84,
+    "white"
+   ]
+  ],
+  "7": [
+   [
+    "Store tez karwana hai?",
+    52,
+    "white"
+   ],
+   [
+    "Toh comment mein",
+    54,
+    "white"
+   ],
+   [
+    "STORE",
+    96,
+    "lime"
+   ],
+   [
+    "likh do, hum DM kar denge.",
+    40,
+    "white"
+   ]
+  ]
+ },
+ "v": 2
 }

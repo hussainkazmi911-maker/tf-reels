@@ -4,13 +4,192 @@
  "keyword": "REPEAT",
  "chip": "E-COMMERCE · REPEAT",
  "lines": [
-  "Aath sau rupay ka ad lagaya, aur customer ne sirf ek baar khareeda.",
-  "Perfume tees din mein khatam, aur aapko pata hi nahi.",
-  "Usne dobara kisi aur se kharid liya.",
-  "Naya customer aath sau rupay ka, purane ko ek message, lagbhag muft.",
-  "Din satais par A I poochta hai: perfume khatam hone wala hai, repeat?",
-  "Ek tap, doosra order, ad ka ek rupay nahi laga.",
-  "Yeh reel kisi seller ko bhejein.",
-  "Repeat orders chahiye? Comment REPEAT."
- ]
+  "Aath sau rupay ka ad lagaya, aur customer ne sirf ek baar khareeda, phir gayab.",
+  "Perfume tees din mein khatam ho jaata hai, aur aapko pata hi nahi chalta.",
+  "Usne dobara, kisi aur se, kharid liya... aapse nahi.",
+  "Dekho, naya customer aath sau rupay ka, aur purane ko bas ek message, lagbhag muft.",
+  "Phir din satais par, A I khud poochta hai, perfume khatam hone wala hai, repeat karein?",
+  "Bas ek tap, doosra order, aur ad ka ek rupay bhi nahi laga.",
+  "Perfume ya attar bechne wala dost hai? Yeh reel usko bhej do.",
+  "Repeat orders chahiye? Toh comment mein REPEAT likh do, hum DM kar denge."
+ ],
+ "rows": {
+  "0": [
+   [
+    "[Rs. 800|Aath sau rupay]",
+    74,
+    "amber"
+   ],
+   [
+    "ka ad lagaya, aur",
+    52,
+    "white"
+   ],
+   [
+    "customer ne sirf ek baar",
+    50,
+    "red"
+   ],
+   [
+    "khareeda, phir gayab.",
+    54,
+    "red"
+   ]
+  ],
+  "1": [
+   [
+    "Perfume tees din",
+    60,
+    "white"
+   ],
+   [
+    "mein khatam ho jaata hai,",
+    48,
+    "lime"
+   ],
+   [
+    "aur aapko",
+    56,
+    "white"
+   ],
+   [
+    "pata hi nahi chalta.",
+    60,
+    "red"
+   ]
+  ],
+  "2": [
+   [
+    "Usne dobara,",
+    66,
+    "white"
+   ],
+   [
+    "kisi aur se,",
+    78,
+    "amber"
+   ],
+   [
+    "kharid liya...",
+    70,
+    "red"
+   ],
+   [
+    "aapse nahi.",
+    66,
+    "white"
+   ]
+  ],
+  "3": [
+   [
+    "Dekho, naya customer",
+    52,
+    "white"
+   ],
+   [
+    "[Rs. 800|aath sau rupay] ka,",
+    50,
+    "red"
+   ],
+   [
+    "aur purane ko bas ek message,",
+    44,
+    "white"
+   ],
+   [
+    "lagbhag muft.",
+    74,
+    "lime"
+   ]
+  ],
+  "4": [
+   [
+    "Phir din satais par,",
+    58,
+    "lime"
+   ],
+   [
+    "A I khud poochta hai,",
+    52,
+    "white"
+   ],
+   [
+    "perfume khatam hone",
+    50,
+    "white"
+   ],
+   [
+    "wala hai, repeat karein?",
+    50,
+    "white"
+   ]
+  ],
+  "5": [
+   [
+    "Bas ek tap,",
+    74,
+    "lime"
+   ],
+   [
+    "doosra order,",
+    62,
+    "white"
+   ],
+   [
+    "aur ad ka ek rupay",
+    52,
+    "white"
+   ],
+   [
+    "bhi nahi laga.",
+    70,
+    "lime"
+   ]
+  ],
+  "6": [
+   [
+    "Perfume ya attar",
+    52,
+    "white"
+   ],
+   [
+    "bechne wala dost hai?",
+    48,
+    "white"
+   ],
+   [
+    "Yeh reel usko",
+    66,
+    "lime"
+   ],
+   [
+    "bhej do.",
+    84,
+    "white"
+   ]
+  ],
+  "7": [
+   [
+    "Repeat orders chahiye?",
+    54,
+    "white"
+   ],
+   [
+    "Toh comment mein",
+    54,
+    "white"
+   ],
+   [
+    "REPEAT",
+    96,
+    "lime"
+   ],
+   [
+    "likh do, hum DM kar denge.",
+    40,
+    "white"
+   ]
+  ]
+ },
+ "v": 2
 }

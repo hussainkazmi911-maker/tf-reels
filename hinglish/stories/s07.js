@@ -45,7 +45,7 @@
     } });
 
   SP.push({ line: 6, bg: BG.purple, note: false, rows: [['Yeh reel', 74, 'white'], ['kisi seller ko', 66, 'lime'], ['bhejein.', 90, 'white']], build(sc, X) { K.share(sc, X, {}); } });
-  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Brand hume', 64, 'white'], ['dena hai?', 70, 'white'], ['Comment', 60, 'white'], ['BRAND.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'BRAND', kwIndex: 5 }); } });
+  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Brand hume', 64, 'white'], ['dena hai?', 70, 'white'], ['Comment', 60, 'white'], ['BRAND.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'BRAND' }); } });
 
   window.SCENE_SPECS = SP;
 })();

@@ -296,26 +296,26 @@ window.KIT = (function () {
 
   // ============================================================ share (send this reel to a seller)
   function share(sc, X, o) {
-    const g = svgRoot(sc.picin, 640, 600); const at = X.wt(0), at2 = X.wt(4);
+    const g = svgRoot(sc.picin, 640, 600); let fi = 4; try { fi = X.W('bhej'); } catch (e) {} const at = X.wt(0), at2 = X.wt(fi);
     const ph1 = S(g, 'g'); ICO.phone(ph1, { w: 150, h: 270 }); const pl = S(ph1, 'g'); ICO.play(pl, {}); pl.style.transform = 'scale(.8)'; T(ph1, 'REEL', 0, 98, 24, LIME);
     const st = S(g, 'g'); ICO.store(st, { name: o.name || 'SELLER' }); const trail = S(g, 'path', { d: 'M180 300 Q320 140 460 300', stroke: LIME, 'stroke-width': 6, fill: 'none', 'stroke-dasharray': '4 16', 'stroke-linecap': 'round', opacity: 0 });
     const plane = S(g, 'g'); ICO.plane(plane, {}); const hs = [0, 1, 2, 3, 4].map(i => { const h = heart(g, 0, 0, 1.6, RED); h.style.opacity = 0; return h; });
     const chip = H('div', 'h', `position:absolute;left:150px;top:30px;width:340px;text-align:center;background:${LIME};color:${INK};border-radius:18px;padding:12px 0;font-size:34px;opacity:0;box-shadow:0 7px 0 rgba(0,0,0,.35)`, 'SEND TO A SELLER'); sc.picin.appendChild(chip);
     const wow = H('div', 'h', `position:absolute;left:340px;top:370px;width:260px;text-align:center;color:#fff;font-size:26px;opacity:0`, 'Isko dekhna!'); sc.picin.appendChild(wow);
-    sc.u.push(t => { A0(ph1, 150, 300, at, t); const flyT0 = X.wt(4), p = eIO(P(t, flyT0, flyT0 + .9)), q = P(t, flyT0, flyT0 + .9);
+    sc.u.push(t => { A0(ph1, 150, 300, at, t); const flyT0 = X.wt(fi), p = eIO(P(t, flyT0, flyT0 + .9)), q = P(t, flyT0, flyT0 + .9);
       A0(st, 490, 320, at + .1, t); plane.style.opacity = q > 0 && q < 1 ? 1 : 0; const bx = lerp(190, 450, p), by = lerp(300, 300, p) - Math.sin(p * Math.PI) * 160; tf(plane, bx, by, lerp(-30, 25, p) * 1, .9 + .1 * Math.sin(p * 3));
       trail.setAttribute('opacity', q > 0 ? .5 * (1 - P(q, .85, 1)) : 0);
       const cp = P(t, at, at + .3); chip.style.opacity = cp > 0 ? 1 : 0; chip.style.transform = `scale(${Math.max(0, eBack(cp))}) rotate(${-2 + Math.sin(t * 4)}deg)`;
       const wp = P(t, flyT0 + .9, flyT0 + 1.2); wow.style.opacity = wp > 0 ? 1 : 0; wow.style.transform = `scale(${Math.max(0, eBack(wp))})`;
       hs.forEach((h, i) => { const d = t - (flyT0 + .95 + i * .15); if (d < 0) { h.style.opacity = 0; return; } const c = (d % 1.6) / 1.6; h.style.opacity = Math.sin(Math.PI * c); tf(h, 470 + Math.sin(d * 3 + i) * 40, 250 - c * 120, 0, 1 + c * .6); }); });
     function A0(el, x, y, a, t) { const p = P(t, a, a + .35); el.style.opacity = p > 0 ? 1 : 0; tf(el, x, y, 0, Math.max(0, eBack(p))); }
-    sparks(sc, g, { x: 460, y: 300, at: X.wt(4) + .9, n: 12, r: 100 }); X.sfx(at, 'pop'); X.sfx(X.wt(4), 'whoosh'); X.sfx(X.wt(4) + .9, 'success'); X.punch(X.wt(4) + .9);
+    sparks(sc, g, { x: 460, y: 300, at: X.wt(fi) + .9, n: 12, r: 100 }); X.sfx(at, 'pop'); X.sfx(X.wt(fi), 'whoosh'); X.sfx(X.wt(fi) + .9, 'success'); X.punch(X.wt(fi) + .9);
     return g;
   }
 
   // ============================================================ CTA: comment keyword
   function cta(sc, X, o) {
-    const g = svgRoot(sc.picin, 640, 600); const word = o.word, kwi = o.kwIndex, kws = X.wt(kwi);
+    const g = svgRoot(sc.picin, 640, 600); const word = o.word; let kwi = o.kwIndex; if (kwi == null) { for (let n = 0; ; n++) { try { kwi = X.W(word, n); } catch (e) { break; } } } const kws = X.wt(kwi);
     const kw = H('div', 'ui', `left:50px;top:70px;width:540px;height:112px;border-radius:28px;background:#fff;border:6px solid ${INK};box-shadow:0 10px 0 ${INK};padding:0 24px;opacity:0;transform-origin:50% 50%`,
       `<div style="position:absolute;left:24px;top:12px;font-weight:800;font-size:16px;letter-spacing:2px;color:#6b6b60">ADD A COMMENT</div><div class="h" id="kwt" style="position:absolute;left:24px;top:40px;font-size:52px;color:${INK}"></div>`);
     sc.picin.appendChild(kw); const kt = kw.querySelector('#kwt');

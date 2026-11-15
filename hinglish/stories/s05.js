@@ -84,7 +84,7 @@
     } });
 
   SP.push({ line: 6, bg: BG.purple, note: false, rows: [['Yeh reel', 74, 'white'], ['kisi seller ko', 66, 'lime'], ['bhejein.', 90, 'white']], build(sc, X) { K.share(sc, X, {}); } });
-  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Repeat orders', 64, 'white'], ['chahiye?', 70, 'white'], ['Comment', 60, 'white'], ['REPEAT.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'REPEAT', kwIndex: 4 }); } });
+  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Repeat orders', 64, 'white'], ['chahiye?', 70, 'white'], ['Comment', 60, 'white'], ['REPEAT.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'REPEAT' }); } });
 
   window.SCENE_SPECS = SP;
 })();

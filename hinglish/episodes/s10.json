@@ -4,13 +4,192 @@
  "keyword": "PLAN",
  "chip": "MARKETING · 30 DIN",
  "lines": [
-  "Aapke marketing ka har rupay, pehle tees din mein hum kahan lagate hain?",
-  "Din ek: store, page aur ads ka poora audit.",
-  "Din teen: profile, catalogue aur WhatsApp auto reply theek.",
-  "Din saat: pehli reels aur ads live.",
-  "Din chaudah: jo chala usme budget badhate hain, jo nahi chala, band.",
-  "Din tees: report, orders aur agle mahine ka plan.",
-  "Yeh reel kisi seller ko bhejein.",
-  "Tees din ka plan chahiye? Comment PLAN."
- ]
+  "Aapke marketing ka har ek rupay, pehle tees din mein, hum kahan lagate hain?",
+  "Din ek, pehle poora audit, store, page, aur ads, sab dekhte hain.",
+  "Din teen, profile, catalogue, aur WhatsApp auto reply, sab theek karte hain.",
+  "Din saat, pehli reels, aur ads, dono live ho jaate hain.",
+  "Din chaudah, jo chala, usme budget badhate hain, aur jo nahi chala, usse band.",
+  "Aur din tees, report, orders, aur agle mahine ka plan, aapke saamne.",
+  "Koi seller dost hai, jo marketing mein phansa hai? Yeh reel usko bhej do.",
+  "Tees din ka plan chahiye? Toh comment mein PLAN likh do, hum DM kar denge."
+ ],
+ "rows": {
+  "0": [
+   [
+    "Aapke marketing ka",
+    56,
+    "white"
+   ],
+   [
+    "har ek rupay,",
+    80,
+    "amber"
+   ],
+   [
+    "pehle [30|tees] din mein,",
+    56,
+    "lime"
+   ],
+   [
+    "hum kahan lagate hain?",
+    52,
+    "white"
+   ]
+  ],
+  "1": [
+   [
+    "[Din 1:|Din ek,]",
+    66,
+    "lime"
+   ],
+   [
+    "pehle poora audit,",
+    56,
+    "white"
+   ],
+   [
+    "store, page, aur ads,",
+    50,
+    "white"
+   ],
+   [
+    "sab dekhte hain.",
+    60,
+    "lime"
+   ]
+  ],
+  "2": [
+   [
+    "[Din 3:|Din teen,]",
+    66,
+    "lime"
+   ],
+   [
+    "profile, catalogue,",
+    54,
+    "white"
+   ],
+   [
+    "aur WhatsApp auto reply,",
+    50,
+    "white"
+   ],
+   [
+    "sab theek karte hain.",
+    54,
+    "lime"
+   ]
+  ],
+  "3": [
+   [
+    "[Din 7:|Din saat,]",
+    66,
+    "lime"
+   ],
+   [
+    "pehli reels, aur ads,",
+    60,
+    "white"
+   ],
+   [
+    "dono live",
+    72,
+    "white"
+   ],
+   [
+    "ho jaate hain.",
+    72,
+    "lime"
+   ]
+  ],
+  "4": [
+   [
+    "[Din 14:|Din chaudah,]",
+    62,
+    "lime"
+   ],
+   [
+    "jo chala, usme",
+    54,
+    "white"
+   ],
+   [
+    "budget badhate hain,",
+    54,
+    "lime"
+   ],
+   [
+    "aur jo nahi chala, usse band.",
+    44,
+    "red"
+   ]
+  ],
+  "5": [
+   [
+    "Aur [Din 30:|din tees,]",
+    60,
+    "lime"
+   ],
+   [
+    "report, orders,",
+    56,
+    "white"
+   ],
+   [
+    "aur agle mahine ka plan,",
+    50,
+    "white"
+   ],
+   [
+    "aapke saamne.",
+    60,
+    "lime"
+   ]
+  ],
+  "6": [
+   [
+    "Koi seller dost hai,",
+    52,
+    "white"
+   ],
+   [
+    "jo marketing mein phansa hai?",
+    44,
+    "white"
+   ],
+   [
+    "Yeh reel usko",
+    66,
+    "lime"
+   ],
+   [
+    "bhej do.",
+    84,
+    "white"
+   ]
+  ],
+  "7": [
+   [
+    "Tees din ka plan chahiye?",
+    50,
+    "white"
+   ],
+   [
+    "Toh comment mein",
+    54,
+    "white"
+   ],
+   [
+    "PLAN",
+    96,
+    "lime"
+   ],
+   [
+    "likh do, hum DM kar denge.",
+    40,
+    "white"
+   ]
+  ]
+ },
+ "v": 2
 }

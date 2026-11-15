@@ -95,7 +95,7 @@
     } });
 
   SP.push({ line: 6, bg: BG.purple, note: false, rows: [['Yeh reel', 74, 'white'], ['kisi seller ko', 66, 'lime'], ['bhejein.', 90, 'white']], build(sc, X) { K.share(sc, X, {}); } });
-  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Sale ke liye', 62, 'white'], ['bot chahiye?', 70, 'white'], ['Comment', 60, 'white'], ['SALE.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'SALE', kwIndex: 6 }); } });
+  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Sale ke liye', 62, 'white'], ['bot chahiye?', 70, 'white'], ['Comment', 60, 'white'], ['SALE.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'SALE' }); } });
 
   window.SCENE_SPECS = SP;
 })();

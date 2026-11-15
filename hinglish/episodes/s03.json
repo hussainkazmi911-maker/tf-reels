@@ -4,13 +4,202 @@
  "keyword": "REPLY",
  "chip": "E-COMMERCE · DMs",
  "lines": [
-  "Sath hazaar rupay aapke Instagram DMs mein pade hain.",
-  "Customer ne likha: jhumka ka price? Aapne agle din reply kiya.",
-  "Tab tak woh kisi aur se order kar chuki thi.",
-  "Roz paanch aise DMs, har order par chaar sau rupay, mahine ke sath hazaar.",
-  "Auto reply laga lo: price, catalogue, order link, teen second mein.",
-  "Aap sote raho, DMs sale banate rahein.",
-  "Yeh reel kisi seller ko bhejein.",
-  "DMs sale banana hai? Comment REPLY."
- ]
+  "Sath hazaar rupay, yaar, aapke Instagram DMs mein pade hain.",
+  "Customer ne likha, jhumka ka price? Aur aapne agle din reply kiya... sach bolo.",
+  "Tab tak woh kisi aur se order kar chuki thi. Aur aapki sale, gayi.",
+  "Roz paanch aise DMs, har order par chaar sau rupay ka munafa... matlab mahine ke sath hazaar.",
+  "Toh auto reply laga lo, price, catalogue, order link, teen second mein.",
+  "Aap araam se sote raho, aur DMs, sale banate rahein.",
+  "Koi jewellery seller dost hai? Yeh reel usko bhej do.",
+  "DMs se sale chahiye? Toh comment mein REPLY likh do, hum DM kar denge."
+ ],
+ "rows": {
+  "0": [
+   [
+    "[Rs. 60,000|Sath hazaar rupay,]",
+    80,
+    "amber"
+   ],
+   [
+    "yaar, aapke Instagram",
+    52,
+    "white"
+   ],
+   [
+    "DMs mein",
+    66,
+    "white"
+   ],
+   [
+    "pade hain.",
+    84,
+    "red"
+   ]
+  ],
+  "1": [
+   [
+    "Customer ne likha,",
+    46,
+    "white"
+   ],
+   [
+    "jhumka ka price?",
+    58,
+    "lime"
+   ],
+   [
+    "Aur aapne agle din",
+    48,
+    "white"
+   ],
+   [
+    "reply kiya...",
+    66,
+    "red"
+   ],
+   [
+    "sach bolo.",
+    44,
+    "white"
+   ]
+  ],
+  "2": [
+   [
+    "Tab tak woh",
+    56,
+    "white"
+   ],
+   [
+    "kisi aur se",
+    70,
+    "amber"
+   ],
+   [
+    "order kar chuki thi.",
+    54,
+    "white"
+   ],
+   [
+    "Aur aapki sale, gayi.",
+    58,
+    "red"
+   ]
+  ],
+  "3": [
+   [
+    "Roz paanch aise DMs,",
+    48,
+    "white"
+   ],
+   [
+    "har order par",
+    46,
+    "white"
+   ],
+   [
+    "[Rs. 400|chaar sau rupay] ka munafa...",
+    44,
+    "amber"
+   ],
+   [
+    "matlab mahine ke",
+    46,
+    "white"
+   ],
+   [
+    "[Rs. 60,000|sath hazaar.]",
+    64,
+    "red"
+   ]
+  ],
+  "4": [
+   [
+    "Toh auto reply laga lo,",
+    46,
+    "lime"
+   ],
+   [
+    "price, catalogue,",
+    60,
+    "white"
+   ],
+   [
+    "order link,",
+    60,
+    "white"
+   ],
+   [
+    "teen second mein.",
+    66,
+    "lime"
+   ]
+  ],
+  "5": [
+   [
+    "Aap araam se",
+    54,
+    "white"
+   ],
+   [
+    "sote raho,",
+    66,
+    "white"
+   ],
+   [
+    "aur DMs sale",
+    76,
+    "lime"
+   ],
+   [
+    "banate rahein.",
+    64,
+    "white"
+   ]
+  ],
+  "6": [
+   [
+    "Koi jewellery seller",
+    52,
+    "white"
+   ],
+   [
+    "dost hai?",
+    66,
+    "white"
+   ],
+   [
+    "Yeh reel usko",
+    66,
+    "lime"
+   ],
+   [
+    "bhej do.",
+    84,
+    "white"
+   ]
+  ],
+  "7": [
+   [
+    "DMs se sale chahiye?",
+    52,
+    "white"
+   ],
+   [
+    "Toh comment mein",
+    54,
+    "white"
+   ],
+   [
+    "REPLY",
+    96,
+    "lime"
+   ],
+   [
+    "likh do, hum DM kar denge.",
+    40,
+    "white"
+   ]
+  ]
+ },
+ "v": 2
 }

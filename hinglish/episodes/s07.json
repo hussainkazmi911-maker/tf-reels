@@ -4,13 +4,187 @@
  "keyword": "BRAND",
  "chip": "MARKETING",
  "lines": [
-  "Pachaas hazaar rupay ka marketing budget dein, hum yeh chaar kaam karte hain.",
-  "Ek: har hafte hook wali reels, jo bechne ke liye bani hon.",
-  "Do: ads, jahan har rupay ka hisaab ho.",
-  "Teen: WhatsApp aur DM automation, koi lead miss na ho.",
-  "Chaar: har hafte report, kitna kharch hua, kitna kamaya.",
-  "Aap maal sambhalo, marketing hum sambhalte hain.",
-  "Yeh reel kisi seller ko bhejein.",
-  "Brand hume dena hai? Comment BRAND."
- ]
+  "Pachaas hazaar rupay ka marketing budget, aap humein dein, toh hum yeh chaar kaam karte hain.",
+  "Number ek, har hafte hook wali reels, jo dekhne ke liye nahi, bechne ke liye bani hon.",
+  "Number do, ads, jahan har ek rupay ka hisaab ho.",
+  "Number teen, WhatsApp aur DM automation, taaki koi lead miss na ho.",
+  "Aur number chaar, har hafte report, kitna kharch hua, kitna kamaya.",
+  "Toh aap bas apna maal sambhalo, aur marketing, hum sambhalte hain.",
+  "Koi brand chalane wala dost hai? Yeh reel usko bhej do.",
+  "Brand humein dena hai? Toh comment mein BRAND likh do, hum DM kar denge."
+ ],
+ "rows": {
+  "0": [
+   [
+    "[Rs. 50,000|Pachaas hazaar rupay]",
+    56,
+    "amber"
+   ],
+   [
+    "ka marketing budget,",
+    50,
+    "white"
+   ],
+   [
+    "aap humein dein, toh hum",
+    46,
+    "white"
+   ],
+   [
+    "yeh [4|chaar] kaam karte hain.",
+    54,
+    "lime"
+   ]
+  ],
+  "1": [
+   [
+    "Number ek,",
+    66,
+    "lime"
+   ],
+   [
+    "har hafte hook wali reels,",
+    44,
+    "white"
+   ],
+   [
+    "jo dekhne ke liye nahi,",
+    48,
+    "white"
+   ],
+   [
+    "bechne ke liye bani hon.",
+    48,
+    "lime"
+   ]
+  ],
+  "2": [
+   [
+    "Number do,",
+    66,
+    "amber"
+   ],
+   [
+    "ads, jahan har ek rupay",
+    50,
+    "white"
+   ],
+   [
+    "ka hisaab ho.",
+    66,
+    "amber"
+   ]
+  ],
+  "3": [
+   [
+    "Number teen,",
+    66,
+    "cyan"
+   ],
+   [
+    "WhatsApp aur DM",
+    60,
+    "white"
+   ],
+   [
+    "automation, taaki koi",
+    52,
+    "white"
+   ],
+   [
+    "lead miss na ho.",
+    60,
+    "cyan"
+   ]
+  ],
+  "4": [
+   [
+    "Aur number chaar,",
+    60,
+    "lime"
+   ],
+   [
+    "har hafte report,",
+    56,
+    "white"
+   ],
+   [
+    "kitna kharch hua,",
+    56,
+    "white"
+   ],
+   [
+    "kitna kamaya.",
+    66,
+    "lime"
+   ]
+  ],
+  "5": [
+   [
+    "Toh aap bas apna",
+    50,
+    "white"
+   ],
+   [
+    "maal sambhalo,",
+    66,
+    "white"
+   ],
+   [
+    "aur marketing,",
+    66,
+    "lime"
+   ],
+   [
+    "hum sambhalte hain.",
+    62,
+    "lime"
+   ]
+  ],
+  "6": [
+   [
+    "Koi brand chalane",
+    52,
+    "white"
+   ],
+   [
+    "wala dost hai?",
+    62,
+    "white"
+   ],
+   [
+    "Yeh reel usko",
+    66,
+    "lime"
+   ],
+   [
+    "bhej do.",
+    84,
+    "white"
+   ]
+  ],
+  "7": [
+   [
+    "Brand humein dena hai?",
+    52,
+    "white"
+   ],
+   [
+    "Toh comment mein",
+    54,
+    "white"
+   ],
+   [
+    "BRAND",
+    96,
+    "lime"
+   ],
+   [
+    "likh do, hum DM kar denge.",
+    40,
+    "white"
+   ]
+  ]
+ },
+ "v": 2
 }

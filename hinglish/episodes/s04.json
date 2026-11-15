@@ -4,13 +4,192 @@
  "keyword": "CART",
  "chip": "E-COMMERCE · CART",
  "lines": [
-  "Ek lakh rupay ke sneakers aapke cart mein chhode hue hain.",
-  "Customer ne size chuna, cart mein dala, phir call aa gaya.",
-  "Research ke mutabiq, dus mein se saat log cart chhod dete hain.",
-  "Aap bhool gaye. Smart system nahi bhoolta.",
-  "Ek ghante baad WhatsApp: aapke sneakers wait kar rahe hain.",
-  "Customer wapas aaya, order complete, paise aapke account mein.",
-  "Yeh reel kisi seller ko bhejein.",
-  "Cart wapas lana hai? Comment CART."
- ]
+  "Ek lakh rupay ke sneakers, yaar, aapke cart mein chhode hue hain.",
+  "Customer ne size chuna, cart mein dala, aur tabhi... ek call aa gaya.",
+  "Research ke mutabiq, dus mein se saat log, cart chhod ke chale jaate hain.",
+  "Aap bhool gaye, ho jata hai. Par smart system, kabhi nahi bhoolta.",
+  "Bas ek ghante baad, WhatsApp par message jaata hai: aapke sneakers wait kar rahe hain.",
+  "Customer wapas aaya, order complete kiya, aur paise seedha, aapke account mein.",
+  "Sneakers ya kuch bhi bechne wala dost hai? Yeh reel usko bhej do.",
+  "Cart wapas lana hai? Toh comment mein CART likh do, hum DM kar denge."
+ ],
+ "rows": {
+  "0": [
+   [
+    "[Rs. 1,00,000|Ek lakh rupay]",
+    74,
+    "amber"
+   ],
+   [
+    "ke sneakers, yaar,",
+    60,
+    "white"
+   ],
+   [
+    "aapke cart mein",
+    62,
+    "white"
+   ],
+   [
+    "chhode hue hain.",
+    66,
+    "red"
+   ]
+  ],
+  "1": [
+   [
+    "Customer ne size chuna,",
+    48,
+    "white"
+   ],
+   [
+    "cart mein dala,",
+    62,
+    "lime"
+   ],
+   [
+    "aur tabhi... ek call",
+    54,
+    "white"
+   ],
+   [
+    "aa gaya.",
+    84,
+    "red"
+   ]
+  ],
+  "2": [
+   [
+    "Research ke mutabiq,",
+    50,
+    "white"
+   ],
+   [
+    "[7/10|dus mein se saat]",
+    80,
+    "red"
+   ],
+   [
+    "log, cart chhod ke",
+    52,
+    "white"
+   ],
+   [
+    "chale jaate hain.",
+    54,
+    "white"
+   ]
+  ],
+  "3": [
+   [
+    "Aap bhool gaye,",
+    64,
+    "red"
+   ],
+   [
+    "ho jata hai. Par",
+    46,
+    "white"
+   ],
+   [
+    "smart system,",
+    62,
+    "white"
+   ],
+   [
+    "kabhi nahi bhoolta.",
+    62,
+    "lime"
+   ]
+  ],
+  "4": [
+   [
+    "Bas ek ghante baad,",
+    54,
+    "white"
+   ],
+   [
+    "WhatsApp par message",
+    54,
+    "lime"
+   ],
+   [
+    "jaata hai: aapke sneakers",
+    46,
+    "white"
+   ],
+   [
+    "wait kar rahe hain.",
+    56,
+    "white"
+   ]
+  ],
+  "5": [
+   [
+    "Customer wapas aaya,",
+    52,
+    "white"
+   ],
+   [
+    "order complete kiya,",
+    58,
+    "lime"
+   ],
+   [
+    "aur paise seedha,",
+    58,
+    "white"
+   ],
+   [
+    "aapke account mein.",
+    60,
+    "white"
+   ]
+  ],
+  "6": [
+   [
+    "Sneakers ya kuch bhi",
+    48,
+    "white"
+   ],
+   [
+    "bechne wala dost hai?",
+    48,
+    "white"
+   ],
+   [
+    "Yeh reel usko",
+    66,
+    "lime"
+   ],
+   [
+    "bhej do.",
+    84,
+    "white"
+   ]
+  ],
+  "7": [
+   [
+    "Cart wapas lana hai?",
+    54,
+    "white"
+   ],
+   [
+    "Toh comment mein",
+    54,
+    "white"
+   ],
+   [
+    "CART",
+    96,
+    "lime"
+   ],
+   [
+    "likh do, hum DM kar denge.",
+    40,
+    "white"
+   ]
+  ]
+ },
+ "v": 2
 }

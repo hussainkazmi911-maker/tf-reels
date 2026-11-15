@@ -4,13 +4,182 @@
  "keyword": "ADS",
  "chip": "MARKETING · ADS",
  "lines": [
-  "Tees hazaar ke ads mein das hazaar rupay galat logon ko dikh rahe hain.",
-  "Earbuds ka ad, aur dekhne wale woh, jo shopping karte hi nahi.",
-  "Na test, na retargeting, bas boost dabaya aur dua ki.",
-  "Hum teen ads test karte hain, jo jeete, usi par budget.",
-  "Phir unhe dobara dikhate hain, jinhon ne dekha par khareeda nahi.",
-  "Har hafte report: kharch, sales aur munafa.",
-  "Yeh reel kisi seller ko bhejein.",
-  "Ads ka hisaab chahiye? Comment ADS."
- ]
+  "Tees hazaar ke ads mein, yaar, das hazaar rupay galat logon ko dikh rahe hain.",
+  "Earbuds ka ad chala, aur dekhne wale woh the, jo shopping karte hi nahi.",
+  "Na koi test, na retargeting, bas boost dabaya, aur dua ki.",
+  "Hum pehle teen ads test karte hain, aur jo jeete, usi par poora budget lagate hain.",
+  "Phir unhe dobara dikhate hain, jinhon ne dekha, par khareeda nahi.",
+  "Aur har hafte report, kharch, sales, aur munafa.",
+  "Ads chalane wala koi dost hai? Yeh reel usko bhej do.",
+  "Ads ka hisaab chahiye? Toh comment mein ADS likh do, hum DM kar denge."
+ ],
+ "rows": {
+  "0": [
+   [
+    "[Rs. 30,000|Tees hazaar]",
+    64,
+    "amber"
+   ],
+   [
+    "ke ads mein, yaar,",
+    52,
+    "white"
+   ],
+   [
+    "[Rs. 10,000|das hazaar rupay]",
+    52,
+    "red"
+   ],
+   [
+    "galat logon ko dikh rahe hain.",
+    42,
+    "white"
+   ]
+  ],
+  "1": [
+   [
+    "Earbuds ka ad chala,",
+    58,
+    "white"
+   ],
+   [
+    "aur dekhne wale woh the,",
+    46,
+    "white"
+   ],
+   [
+    "jo shopping",
+    66,
+    "red"
+   ],
+   [
+    "karte hi nahi.",
+    66,
+    "red"
+   ]
+  ],
+  "2": [
+   [
+    "Na koi test, na retargeting,",
+    44,
+    "white"
+   ],
+   [
+    "bas boost dabaya,",
+    62,
+    "amber"
+   ],
+   [
+    "aur dua ki.",
+    80,
+    "white"
+   ]
+  ],
+  "3": [
+   [
+    "Hum pehle [3|teen] ads",
+    54,
+    "white"
+   ],
+   [
+    "test karte hain,",
+    54,
+    "white"
+   ],
+   [
+    "aur jo jeete,",
+    66,
+    "lime"
+   ],
+   [
+    "usi par poora budget lagate hain.",
+    40,
+    "lime"
+   ]
+  ],
+  "4": [
+   [
+    "Phir unhe dobara",
+    62,
+    "lime"
+   ],
+   [
+    "dikhate hain,",
+    66,
+    "white"
+   ],
+   [
+    "jinhon ne dekha,",
+    56,
+    "white"
+   ],
+   [
+    "par khareeda nahi.",
+    56,
+    "red"
+   ]
+  ],
+  "5": [
+   [
+    "Aur har hafte report:",
+    52,
+    "white"
+   ],
+   [
+    "kharch, sales,",
+    66,
+    "lime"
+   ],
+   [
+    "aur munafa.",
+    80,
+    "amber"
+   ]
+  ],
+  "6": [
+   [
+    "Ads chalane wala",
+    52,
+    "white"
+   ],
+   [
+    "koi dost hai?",
+    62,
+    "white"
+   ],
+   [
+    "Yeh reel usko",
+    66,
+    "lime"
+   ],
+   [
+    "bhej do.",
+    84,
+    "white"
+   ]
+  ],
+  "7": [
+   [
+    "Ads ka hisaab chahiye?",
+    52,
+    "white"
+   ],
+   [
+    "Toh comment mein",
+    54,
+    "white"
+   ],
+   [
+    "ADS",
+    96,
+    "lime"
+   ],
+   [
+    "likh do, hum DM kar denge.",
+    40,
+    "white"
+   ]
+  ]
+ },
+ "v": 2
 }

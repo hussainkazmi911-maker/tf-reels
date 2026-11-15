@@ -4,13 +4,182 @@
  "keyword": "GROW",
  "chip": "MARKETING · REELS",
  "lines": [
-  "Paanch hazaar rupay mein das hazaar followers kharide, ek bhi order nahi aaya.",
-  "Kyunki followers ginti hain, customers kharidte hain.",
-  "Aapki serum ki reels mein product hai, hook nahi.",
-  "Log pehle teen second mein scroll kar jaate hain.",
-  "Hum hook, script, shoot aur edit sab karte hain.",
-  "Aur comment se DM aur order tak ka rasta banate hain.",
-  "Yeh reel kisi seller ko bhejein.",
-  "Page sale machine banana hai? Comment GROW."
- ]
+  "Paanch hazaar rupay mein, das hazaar followers kharide, aur ek bhi order nahi aaya.",
+  "Kyunki followers sirf ginti hain, aur customers hi kharidte hain.",
+  "Aapki serum ki reels mein, product toh hai, par hook nahi.",
+  "Sach bolun toh, log pehle teen second mein hi, scroll kar jaate hain.",
+  "Isliye hum hook, script, shoot, aur edit, sab kuch karte hain.",
+  "Aur comment se, DM aur order tak ka, poora rasta banate hain.",
+  "Koi page chalane wala dost hai? Yeh reel usko bhej do.",
+  "Page ko sale machine banana hai? Toh comment mein GROW likh do, hum DM kar denge."
+ ],
+ "rows": {
+  "0": [
+   [
+    "[Rs. 5,000|Paanch hazaar rupay]",
+    56,
+    "amber"
+   ],
+   [
+    "mein, [10,000|das hazaar] followers",
+    46,
+    "white"
+   ],
+   [
+    "kharide, aur ek bhi",
+    54,
+    "white"
+   ],
+   [
+    "order nahi aaya.",
+    66,
+    "red"
+   ]
+  ],
+  "1": [
+   [
+    "Kyunki followers",
+    60,
+    "white"
+   ],
+   [
+    "sirf ginti hain,",
+    66,
+    "red"
+   ],
+   [
+    "aur customers hi",
+    56,
+    "white"
+   ],
+   [
+    "kharidte hain.",
+    70,
+    "lime"
+   ]
+  ],
+  "2": [
+   [
+    "Aapki serum ki reels",
+    52,
+    "white"
+   ],
+   [
+    "mein, product toh hai,",
+    52,
+    "lime"
+   ],
+   [
+    "par hook nahi.",
+    80,
+    "red"
+   ]
+  ],
+  "3": [
+   [
+    "Sach bolun toh,",
+    50,
+    "white"
+   ],
+   [
+    "log pehle [3|teen] second",
+    54,
+    "amber"
+   ],
+   [
+    "mein hi, scroll",
+    54,
+    "white"
+   ],
+   [
+    "kar jaate hain.",
+    60,
+    "white"
+   ]
+  ],
+  "4": [
+   [
+    "Isliye hum hook, script,",
+    50,
+    "white"
+   ],
+   [
+    "shoot, aur edit,",
+    66,
+    "lime"
+   ],
+   [
+    "sab kuch karte hain.",
+    58,
+    "white"
+   ]
+  ],
+  "5": [
+   [
+    "Aur comment se,",
+    58,
+    "white"
+   ],
+   [
+    "DM aur order tak ka,",
+    58,
+    "lime"
+   ],
+   [
+    "poora rasta",
+    64,
+    "white"
+   ],
+   [
+    "banate hain.",
+    64,
+    "white"
+   ]
+  ],
+  "6": [
+   [
+    "Koi page chalane",
+    52,
+    "white"
+   ],
+   [
+    "wala dost hai?",
+    62,
+    "white"
+   ],
+   [
+    "Yeh reel usko",
+    66,
+    "lime"
+   ],
+   [
+    "bhej do.",
+    84,
+    "white"
+   ]
+  ],
+  "7": [
+   [
+    "Page ko sale machine",
+    50,
+    "white"
+   ],
+   [
+    "banana hai?",
+    62,
+    "white"
+   ],
+   [
+    "Toh comment mein GROW",
+    48,
+    "lime"
+   ],
+   [
+    "likh do, hum DM kar denge.",
+    40,
+    "white"
+   ]
+  ]
+ },
+ "v": 2
 }

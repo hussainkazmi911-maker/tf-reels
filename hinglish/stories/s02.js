@@ -82,7 +82,7 @@
 
   // 6 share, 7 CTA
   SP.push({ line: 6, bg: BG.purple, note: false, rows: [['Yeh reel', 74, 'white'], ['kisi seller ko', 66, 'lime'], ['bhejein.', 90, 'white']], build(sc, X) { K.share(sc, X, {}); } });
-  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Confirm bot', 64, 'white'], ['chahiye?', 70, 'white'], ['Comment', 60, 'white'], ['CONFIRM.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'CONFIRM', kwIndex: 4 }); } });
+  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Confirm bot', 64, 'white'], ['chahiye?', 70, 'white'], ['Comment', 60, 'white'], ['CONFIRM.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'CONFIRM' }); } });
 
   window.SCENE_SPECS = SP;
 })();

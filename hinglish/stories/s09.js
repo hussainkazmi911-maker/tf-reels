@@ -84,7 +84,7 @@
     } });
 
   SP.push({ line: 6, bg: BG.purple, note: false, rows: [['Yeh reel', 74, 'white'], ['kisi seller ko', 66, 'lime'], ['bhejein.', 90, 'white']], build(sc, X) { K.share(sc, X, {}); } });
-  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Page sale machine', 56, 'white'], ['banana hai?', 70, 'white'], ['Comment', 60, 'white'], ['GROW.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'GROW', kwIndex: 6 }); } });
+  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Page sale machine', 56, 'white'], ['banana hai?', 70, 'white'], ['Comment', 60, 'white'], ['GROW.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'GROW' }); } });
 
   window.SCENE_SPECS = SP;
 })();

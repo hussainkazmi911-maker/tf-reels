@@ -31,7 +31,7 @@
   SP.push(tl(5, 4, [['[Din 30:|Din tees]', 66, 'lime'], ['report, orders aur', 56, 'white'], ['agle mahine ka plan.', 52, 'white']]));
 
   SP.push({ line: 6, bg: BG.purple, note: false, rows: [['Yeh reel', 74, 'white'], ['kisi seller ko', 66, 'lime'], ['bhejein.', 90, 'white']], build(sc, X) { K.share(sc, X, {}); } });
-  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Tees din ka plan', 56, 'white'], ['chahiye?', 70, 'white'], ['Comment', 60, 'white'], ['PLAN.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'PLAN', kwIndex: 6 }); } });
+  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Tees din ka plan', 56, 'white'], ['chahiye?', 70, 'white'], ['Comment', 60, 'white'], ['PLAN.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'PLAN' }); } });
 
   window.SCENE_SPECS = SP;
 })();

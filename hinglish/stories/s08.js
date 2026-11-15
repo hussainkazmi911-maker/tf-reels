@@ -78,7 +78,7 @@
     } });
 
   SP.push({ line: 6, bg: BG.purple, note: false, rows: [['Yeh reel', 74, 'white'], ['kisi seller ko', 66, 'lime'], ['bhejein.', 90, 'white']], build(sc, X) { K.share(sc, X, {}); } });
-  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Ads ka hisaab', 62, 'white'], ['chahiye?', 70, 'white'], ['Comment', 60, 'white'], ['ADS.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'ADS', kwIndex: 5 }); } });
+  SP.push({ line: 7, bg: BG.dark, note: false, rows: [['Ads ka hisaab', 62, 'white'], ['chahiye?', 70, 'white'], ['Comment', 60, 'white'], ['ADS.', 96, 'lime']], build(sc, X) { K.cta(sc, X, { word: 'ADS' }); } });
 
   window.SCENE_SPECS = SP;
 })();
