@@ -32,7 +32,7 @@ if a[1] == 'test':
     ts = []
     for t0, t1 in sc:
         d = t1 - t0
-        ts += [t0 + d * .3, t0 + d * .65, t1 - .08]
+        ts += [t0 + d * .3, t0 + d * .65, t1 - .38]
     run([int(x * 30) for x in ts], 'test', 1)
     print(len(ts), 'test frames', [round(x, 2) for x in ts])
 elif a[1] == 'dense':   # 6 frames per scene incl. mid-transition frames -> dense/ (for motion review)

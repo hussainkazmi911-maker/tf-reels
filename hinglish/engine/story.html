@@ -38,10 +38,12 @@ html,body{width:720px;height:1280px;overflow:hidden;background:#000}
 <script src="ep.js"></script>
 <script src="timing.js"></script>
 <script src="lib.js"></script>
+<script src="kit.js"></script>
 <script src="scenes.js"></script>
 <script>
 (function () {
   const SL = window.SL, { clamp, P, eOut, eBack, eIn, H } = SL;
+  if (window.EP && EP.chip) document.getElementById('chip').textContent = EP.chip;
   const TM = window.TIMING, SPECS = window.SCENE_SPECS, root = document.getElementById('root');
   const wt = (l, i) => TM.lines[l].words[i].s, we = (l, i) => TM.lines[l].words[i].e;
   const N = s => s.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -55,22 +57,28 @@ html,body{width:720px;height:1280px;overflow:hidden;background:#000}
     const el = H('div', 'scene'), cap = H('div', 'cap'), pic = H('div', 'pic'), picin = H('div', 'picin');
     pic.style.background = sp.bg || '#111'; pic.appendChild(picin);
     el.appendChild(cap); el.appendChild(pic);
-    if (sp.note !== false) el.appendChild(H('div', 'note', '', 'EXAMPLE SCENARIO · MISAAL HAI'));
+    if (sp.note !== false) el.appendChild(H('div', 'note', '', typeof sp.note === 'string' ? sp.note : ((window.EP && EP.note) || 'EXAMPLE SCENARIO · MISAAL HAI')));
     root.insertBefore(el, document.getElementById('tr'));
     const sc = { i, line: sp.line, el, cap, pic, picin, t0, t1, u: [], words: [], punches: [], shakes: [] };
-    // caption rows
+    // caption rows. Row text: plain words must match the spoken words; [Display|spoken words] shows Display for those spoken words.
     const ws = TM.lines[sp.line].words; let k = 0;
     sp.rows.forEach(r => {
-      const seg = r[0].split(' '), size = r[1], col = COLS[r[2]] || r[2], o = r[3] || {};
-      seg.forEach((w, j) => { if (N(w) !== N(ws[k + j].w)) throw new Error('caption mismatch line ' + sp.line + ': ' + w + ' vs ' + ws[k + j].w); });
+      const toks = []; r[0].replace(/\[([^\]|]+)\|([^\]]+)\]|\S+/g, (m, d, sw) => { toks.push(d ? { d, w: sw.trim().split(/\s+/) } : { d: m, w: [m] }); return m; });
+      const size = r[1], col = COLS[r[2]] || r[2], o = r[3] || {};
       const row = H('div', 'row', `font-size:${size}px;color:${col};margin-top:${o.mt != null ? o.mt : 6}px`);
       row.dataset.size = size;
-      seg.forEach((w, j) => { const s = H('span', 'w', '', w + (j < seg.length - 1 ? ' ' : '')); row.appendChild(s); sc.words.push({ e: s, s: ws[k + j].s }); });
-      cap.appendChild(row); k += seg.length;
+      toks.forEach((tk, j) => {
+        const first = k;
+        tk.w.forEach(w => { if (!ws[k] || N(w) !== N(ws[k].w)) throw new Error('caption mismatch line ' + sp.line + ': ' + w + ' vs ' + (ws[k] && ws[k].w)); k++; });
+        const s = H('span', 'w', '', tk.d + (j < toks.length - 1 ? ' ' : '')); row.appendChild(s); sc.words.push({ e: s, s: ws[first].s });
+      });
+      cap.appendChild(row);
     });
     if (k !== ws.length) throw new Error('caption does not cover all words of line ' + sp.line + ': ' + k + '/' + ws.length);
     const X = {
       wt: i2 => wt(sp.line, i2), we: i2 => we(sp.line, i2), L: l => ({ wt: i2 => wt(l, i2), we: i2 => we(l, i2) }),
+      W: (w, n) => { let c = 0; for (let q = 0; q < ws.length; q++) if (N(ws[q].w) === N(w) && c++ === (n || 0)) return q; throw new Error('word not found ' + w + ' in line ' + sp.line); },
+      ts: (w, n) => ws[X.W(w, n)].s, te: (w, n) => ws[X.W(w, n)].e,
       t0, t1, sfx: (t, kind, v) => window.SFX.push({ t, k: kind, v: v == null ? 1 : v }),
       punch: t => sc.punches.push(t), shake: t => sc.shakes.push(t), SL
     };

@@ -5,7 +5,7 @@ H = os.path.abspath(os.path.dirname(os.path.abspath(__file__)) + '/..')
 EP = json.load(open(f'{H}/episodes/{ep_id}.json'))
 wd = f'{H}/work/{ep_id}'
 os.makedirs(wd, exist_ok=True)
-links = {'engine.html': f'{H}/engine/story.html', 'lib.js': f'{H}/engine/story_lib.js', 'scenes.js': f'{H}/stories/{ep_id}.js',
+links = {'engine.html': f'{H}/engine/story.html', 'lib.js': f'{H}/engine/story_lib.js', 'kit.js': f'{H}/stories/kit.js', 'scenes.js': f'{H}/stories/{ep_id}.js',
          'fonts': f'{H}/engine/fonts', 'logo.png': f'{H}/engine/logo.png', 'render.py': f'{H}/engine/render.py'}
 for n, src in links.items():
     dst = f'{wd}/{n}'
