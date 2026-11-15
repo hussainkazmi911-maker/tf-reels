@@ -43,3 +43,5 @@ The older Metricool drafts (Forge Fix #12-14, freelancer carousels/story) stay s
 
 ## Facebook cross-posting
 Facebook page connected in Metricool (16 Nov). All 30 scheduled posts also publish to Facebook at the same times: reels as Facebook Reels, carousels as photo posts, stories as Facebook Stories. Same captions.
+
+Reel captions now include a niche-specific "Know a ...? Send them this reel." share line (added 16 Nov after the Nov 12 reel outperformed on shares/saves). Applied to the scheduled Instagram + Facebook reels.
