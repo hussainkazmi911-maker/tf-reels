@@ -1,0 +1,140 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"Archivo Black";src:url(fonts/archivo-black-latin-400-normal.woff2)}
+@font-face{font-family:Inter;font-weight:500;src:url(fonts/inter-latin-500-normal.woff2)}
+@font-face{font-family:Inter;font-weight:700;src:url(fonts/inter-latin-700-normal.woff2)}
+@font-face{font-family:Inter;font-weight:800;src:url(fonts/inter-latin-800-normal.woff2)}
+:root{--lime:#c6ff35;--ink:#0b0d09;--red:#ff4b3a;--fg:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:720px;height:1280px;overflow:hidden;background:#000}
+#root{position:absolute;left:0;top:0;width:720px;height:1280px;overflow:hidden;font-family:Inter,Arial,sans-serif;color:#fff;background:radial-gradient(520px 560px at 50% 40%,#17230a 0%,#0b0d09 72%),#0b0d09}
+#grid{position:absolute;inset:-60px;background-image:linear-gradient(rgba(198,255,53,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(198,255,53,.035) 1px,transparent 1px);background-size:60px 60px}
+.h{font-family:"Archivo Black",Inter,sans-serif;line-height:.98;letter-spacing:-.5px}
+.scene{position:absolute;left:0;top:0;width:720px;height:1280px;overflow:hidden;display:none}
+.cap{position:absolute;left:30px;width:660px;top:104px;height:330px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.row{font-family:"Archivo Black",Inter,sans-serif;line-height:1.02;letter-spacing:-.4px;white-space:nowrap;text-shadow:0 2px 22px rgba(0,0,0,.55)}
+.w{display:inline-block;opacity:0;transform-origin:50% 70%;white-space:pre}
+.pic{position:absolute;left:40px;top:446px;width:640px;height:600px;border-radius:34px;overflow:hidden;box-shadow:0 0 0 1.5px rgba(198,255,53,.38),0 0 46px rgba(198,255,53,.10),0 24px 60px rgba(0,0,0,.55)}
+.picin{position:absolute;left:0;top:0;width:640px;height:600px;transform-origin:50% 55%}
+.note{position:absolute;left:0;width:720px;top:1072px;text-align:center;font-weight:700;font-size:17px;letter-spacing:2.4px;color:rgba(255,255,255,.42)}
+#brand{position:absolute;left:34px;top:34px;display:flex;align-items:center;gap:12px;z-index:50;color:#fff;font-weight:800;font-size:18px;letter-spacing:2.5px}
+#brand img{width:40px;height:40px;border-radius:50%}
+#chip{position:absolute;right:34px;top:38px;z-index:50;background:transparent;color:var(--lime);border:1.5px solid rgba(198,255,53,.55);font-family:"Archivo Black";font-size:14px;letter-spacing:1.6px;border-radius:20px;padding:6px 14px}
+#pb{position:absolute;left:34px;top:16px;width:652px;height:3px;border-radius:2px;background:rgba(255,255,255,.14);z-index:49;overflow:hidden}
+#pbf{height:3px;width:0;background:var(--lime);border-radius:2px}
+#tr{position:absolute;inset:0;z-index:40;pointer-events:none;overflow:hidden;display:none}
+.slat{position:absolute;top:-10px;height:1300px;width:300px;transform:skewX(-10deg)}
+.ui{position:absolute;font-family:Inter,Arial,sans-serif}
+.bub{position:absolute;border-radius:20px;padding:12px 16px;font-weight:700;font-size:21px;line-height:1.2;color:#0b0d09;box-shadow:0 4px 0 rgba(0,0,0,.18)}
+</style></head><body>
+<div id="root">
+  <div id="grid"></div>
+  <div id="pb"><div id="pbf"></div></div>
+  <div id="brand"><img src="logo.png"><span>THE TOTAL FORGE</span></div>
+  <div id="chip">CASE STUDY</div>
+  <div id="tr"></div>
+</div>
+<script src="ep.js"></script>
+<script src="timing.js"></script>
+<script src="lib.js"></script>
+<script src="kit.js"></script>
+<script src="kit2.js"></script>
+<script src="scenes.js"></script>
+<script>
+(function () {
+  const SL = window.SL, { clamp, P, eOut, eBack, eIn, H } = SL;
+  if (window.EP && EP.chip) document.getElementById('chip').textContent = EP.chip;
+  const TM = window.TIMING, SPECS = window.SCENE_SPECS, root = document.getElementById('root');
+  const wt = (l, i) => TM.lines[l].words[i].s, we = (l, i) => TM.lines[l].words[i].e;
+  const N = s => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const COLS = { white: '#fff', lime: '#c6ff35', red: '#ff4b3a', amber: '#ffb020', ink: '#0b0d09', cyan: '#33d6ff' };
+  window.SFX = [];
+  const SC = window.SCENES = [];
+
+  SPECS.forEach((sp, i) => {
+    const t0 = i === 0 ? 0 : TM.lines[sp.line].start - .14;
+    const t1 = i < SPECS.length - 1 ? TM.lines[SPECS[i + 1].line].start - .14 : TM.total + 1;
+    const el = H('div', 'scene'), cap = H('div', 'cap'), pic = H('div', 'pic'), picin = H('div', 'picin');
+    pic.style.background = sp.bg || '#111'; pic.appendChild(picin);
+    el.appendChild(cap); el.appendChild(pic);
+    if (sp.note !== false) el.appendChild(H('div', 'note', '', typeof sp.note === 'string' ? sp.note : ((window.EP && EP.note) || 'EXAMPLE SCENARIO · MISAAL HAI')));
+    root.insertBefore(el, document.getElementById('tr'));
+    const sc = { i, line: sp.line, el, cap, pic, picin, t0, t1, u: [], words: [], punches: [], shakes: [] };
+    // caption rows. Row text: plain words must match the spoken words; [Display|spoken words] shows Display for those spoken words.
+    const ws = TM.lines[sp.line].words; let k = 0;
+    ((window.EP && EP.rows && EP.rows[sp.line]) || sp.rows).forEach(r => {
+      const toks = []; r[0].replace(/\[([^\]|]+)\|([^\]]+)\]|\S+/g, (m, d, sw) => { toks.push(d ? { d, w: sw.trim().split(/\s+/) } : { d: m, w: [m] }); return m; });
+      const size = r[1], col = COLS[r[2]] || r[2], o = r[3] || {};
+      const row = H('div', 'row', `font-size:${size}px;color:${col};margin-top:${o.mt != null ? o.mt : 6}px`);
+      row.dataset.size = size;
+      toks.forEach((tk, j) => {
+        const first = k;
+        tk.w.forEach(w => { if (!ws[k] || N(w) !== N(ws[k].w)) throw new Error('caption mismatch line ' + sp.line + ': ' + w + ' vs ' + (ws[k] && ws[k].w)); k++; });
+        const s = H('span', 'w', '', tk.d + (j < toks.length - 1 ? ' ' : '')); row.appendChild(s); sc.words.push({ e: s, s: ws[first].s });
+      });
+      cap.appendChild(row);
+    });
+    if (k !== ws.length) throw new Error('caption does not cover all words of line ' + sp.line + ': ' + k + '/' + ws.length);
+    const X = {
+      wt: i2 => wt(sp.line, i2), we: i2 => we(sp.line, i2), L: l => ({ wt: i2 => wt(l, i2), we: i2 => we(l, i2) }),
+      W: (w, n) => { let c = 0; for (let q = 0; q < ws.length; q++) if (N(ws[q].w) === N(w) && c++ === (n || 0)) return q; throw new Error('word not found ' + w + ' in line ' + sp.line); },
+      ts: (w, n) => ws[X.W(w, n)].s, te: (w, n) => ws[X.W(w, n)].e,
+      t0, t1, sfx: (t, kind, v) => window.SFX.push({ t, k: kind, v: v == null ? 1 : v }),
+      punch: t => sc.punches.push(t), shake: t => sc.shakes.push(t), SL
+    };
+    if (sp.build) sp.build(sc, X);
+    SC.push(sc);
+    if (i > 0) window.SFX.push({ t: t0 - .06, k: 'whoosh', v: .55 });
+  });
+
+  // transition slats
+  const tr = document.getElementById('tr'), slats = [];
+  const TC = ['#c6ff35', '#ffffff', '#c6ff35', '#ffffff'];
+  for (let i = 0; i < 4; i++) { const s = H('div', 'slat', `left:${-60 + i * 190}px;background:${TC[i]}`); tr.appendChild(s); slats.push(s); }
+  const pbf = document.getElementById('pbf'), grid = document.getElementById('grid');
+
+  window.refit = function () {
+    SC.forEach(sc => {
+      sc.el.style.display = 'block'; sc.el.style.visibility = 'hidden';
+      sc.cap.querySelectorAll('.row').forEach(r => {
+        let s = +r.dataset.size; r.style.fontSize = s + 'px';
+        const maxW = 640; let guard = 0;
+        while (r.scrollWidth > maxW && s > 20 && guard++ < 60) { s -= 2; r.style.fontSize = s + 'px'; }
+      });
+      sc.el.style.display = 'none'; sc.el.style.visibility = '';
+    });
+  };
+
+  window.getSfx = () => window.SFX;
+
+  window.draw = function (t) {
+    let si = SC.findIndex(s => t >= s.t0 && t < s.t1); if (si < 0) si = t < 0 ? 0 : SC.length - 1;
+    const XF = .26, sc = SC[si], prev = si > 0 && t < sc.t0 + XF ? SC[si - 1] : null;
+    SC.forEach((s, i) => { s.el.style.display = (i === si || s === prev) ? 'block' : 'none'; s.el.style.opacity = 1; s.el.style.transform = ''; });
+    if (prev) { const q = eOut(P(t, sc.t0, sc.t0 + XF)); prev.el.style.opacity = 1 - q; prev.el.style.transform = `translateY(${-22 * q}px)`; prev.u.forEach(f => f(t)); sc.el.style.opacity = Math.min(1, q * 1.4 + .05); sc.el.style.zIndex = 2; prev.el.style.zIndex = 1; }
+    // intro
+    const pin = P(t, sc.t0, sc.t0 + .42), eb = Math.max(0, eBack(pin));
+    // camera: slow push, beat punches, impact shake
+    let pu = 0, sx = 0, sy = 0;
+    sc.punches.forEach(p => { const d = t - p; if (d >= 0 && d < .3) pu = Math.max(pu, .016 * Math.pow(1 - d / .3, 2)); });
+    
+    sc.pic.style.transform = `translate(${sx}px,${sy}px) scale(${si === 0 && sc.t0 === 0 ? 1 : .965 + .035 * eOut(pin)})`;
+    sc.pic.style.opacity = si === 0 && t < .05 ? 0 : 1;
+    sc.picin.style.transform = `scale(${1 + .03 * P(t, sc.t0, sc.t1) + pu})`;
+    sc.cap.style.transform = `translateY(${(1 - eOut(P(t, sc.t0, sc.t0 + .36))) * 18}px)`;
+    sc.words.forEach(w => {
+      const p = P(t, w.s - .02, w.s + .2);
+      w.e.style.opacity = Math.min(1, p * 2.2);
+      w.e.style.transform = `translateY(${(1 - eOut(p)) * 18}px) scale(${.9 + .1 * eOut(p)})`;
+    });
+    sc.u.forEach(f => f(t));
+    // global bits
+    pbf.style.width = (clamp(t / TM.total) * 100) + '%';
+    grid.style.transform = `translate(${(t * 9) % 60}px,${(t * 16) % 60}px)`;
+    tr.style.display = 'none';
+  };
+  window.refit(); window.draw(0);
+})();
+</script>
+</body></html>

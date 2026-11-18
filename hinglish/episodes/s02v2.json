@@ -1,0 +1,226 @@
+{
+ "id": "s02v2",
+ "topic": "COD returns: Rs 12,000/month lost on returned parcels (lawn suits)",
+ "keyword": "CONFIRM",
+ "chip": "CASE STUDY",
+ "lines": [
+  "Our client had twelve K ke parcels return every month. Yeh dekho, hum ne kya kiya.",
+  "Lawn suit gaya, customer ne phone hi nahi uthaya. Straight up ghosted.",
+  "A hundred orders mein se thirty-five returns, and each one cost three fifty rupay.",
+  "So we set one rule. Order aate hi, WhatsApp pe confirm.",
+  "Customer said yes? Ship it. Said no? Paisa bacha. Sorted.",
+  "Guides ke hisaab se, returns almost half ho sakte hain.",
+  "Result? Returns kam, aur cash business mein stay.",
+  "Want a confirm bot? Comment CONFIRM, hum DM kar denge."
+ ],
+ "rows": {
+  "0": [
+   [
+    "Our client had",
+    44,
+    "white"
+   ],
+   [
+    "[12k|twelve K]",
+    92,
+    "amber"
+   ],
+   [
+    "ke parcels return",
+    50,
+    "white"
+   ],
+   [
+    "every month.",
+    50,
+    "white"
+   ],
+   [
+    "Yeh dekho, hum ne kya kiya.",
+    40,
+    "lime"
+   ]
+  ],
+  "1": [
+   [
+    "Lawn suit gaya,",
+    48,
+    "white"
+   ],
+   [
+    "customer ne phone",
+    50,
+    "white"
+   ],
+   [
+    "hi nahi uthaya.",
+    56,
+    "red"
+   ],
+   [
+    "Straight up",
+    50,
+    "white"
+   ],
+   [
+    "ghosted.",
+    74,
+    "red"
+   ]
+  ],
+  "2": [
+   [
+    "[100|A hundred] orders",
+    56,
+    "white"
+   ],
+   [
+    "mein se",
+    44,
+    "white"
+   ],
+   [
+    "[35|thirty-five] returns,",
+    66,
+    "red"
+   ],
+   [
+    "and each one cost",
+    44,
+    "white"
+   ],
+   [
+    "[Rs. 350|three fifty] rupay.",
+    56,
+    "amber"
+   ]
+  ],
+  "3": [
+   [
+    "So we set",
+    46,
+    "white"
+   ],
+   [
+    "one rule.",
+    66,
+    "lime"
+   ],
+   [
+    "Order aate hi,",
+    48,
+    "white"
+   ],
+   [
+    "WhatsApp pe",
+    56,
+    "white"
+   ],
+   [
+    "confirm.",
+    62,
+    "lime"
+   ]
+  ],
+  "4": [
+   [
+    "Customer said",
+    44,
+    "white"
+   ],
+   [
+    "yes? Ship it.",
+    62,
+    "lime"
+   ],
+   [
+    "Said no?",
+    54,
+    "red"
+   ],
+   [
+    "Paisa bacha.",
+    60,
+    "white"
+   ],
+   [
+    "Sorted.",
+    58,
+    "lime"
+   ]
+  ],
+  "5": [
+   [
+    "Guides ke hisaab se,",
+    50,
+    "white"
+   ],
+   [
+    "returns",
+    80,
+    "white"
+   ],
+   [
+    "almost half",
+    70,
+    "lime"
+   ],
+   [
+    "ho sakte hain.",
+    52,
+    "lime"
+   ]
+  ],
+  "6": [
+   [
+    "Result?",
+    80,
+    "amber"
+   ],
+   [
+    "Returns kam,",
+    66,
+    "white"
+   ],
+   [
+    "aur cash",
+    66,
+    "lime"
+   ],
+   [
+    "business mein stay.",
+    52,
+    "white"
+   ]
+  ],
+  "7": [
+   [
+    "Want a",
+    50,
+    "white"
+   ],
+   [
+    "confirm bot?",
+    56,
+    "white"
+   ],
+   [
+    "Comment",
+    48,
+    "white"
+   ],
+   [
+    "CONFIRM,",
+    84,
+    "lime"
+   ],
+   [
+    "hum DM kar denge.",
+    36,
+    "white"
+   ]
+  ]
+ },
+ "v": 3,
+ "note": "EXAMPLE CLIENT SCENARIO · MISAAL HAI"
+}
